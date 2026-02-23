@@ -270,6 +270,6 @@ Ein gutes Team überfordert sich aber auch nicht.
 Szenario: 
 
 * PO Rücksprache mit Produktion
-* Differenzen in bereinigter Datengrundlöage festgestellt.
+* Differenzen in bereinigter Datengrundlage festgestellt.
 * Produktion hat darum selbst einen Datenset im Format des Teams aufbereitet (dsp.alpha.ii.csv)
 * Produktion hat Abweichungen beschrieben, gezählt und reportet. (dsp.alpha.ii-report.csv)

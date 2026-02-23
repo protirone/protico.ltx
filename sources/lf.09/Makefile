@@ -6,8 +6,9 @@
 
 BLD=../../built/lf.09
 CCL=curriculum-check-list
+TCL=topic-check-list
 
-lessons: lesson-ccl
+lessons: checklists 
 	find . -maxdepth 1 -type d -name "sbj-*" | while read d; \
 		do echo $$d; \
 		( cd $$d; \
@@ -25,13 +26,12 @@ clean:
 		) \
 	done
 	if [ -f ${CCL}.pdf ]; then rm ${CCL}.pdf; fi
+	if [ -f ${TCL}.pdf ]; then rm ${TCL}.pdf; fi
 
-lesson-ccl: ccl 
+checklists:  
+	( cd sbj-00.curriculum && make ../${CCL}.pdf && make ../${TCL}.pdf)
 	mkdir -p ${BLD}
-	mv ${CCL}.pdf ${BLD}/
-	cp ${CCL}.md ${BLD}/
+	mv ${CCL}.pdf ${TCL}.pdf ${BLD}/
+	cp ${CCL}.md ${TCL}.md ${BLD}/
 
 	
-ccl:
-	( cd sbj-00.curriculum && make ../${CCL}.pdf)
-

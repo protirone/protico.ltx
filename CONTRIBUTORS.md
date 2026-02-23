@@ -24,4 +24,7 @@ These are the (main) contributors to the project *proTironeComputatri*
     Alexander, David, Daniel, Dominika, Evelina, Faezah,
     Janis, Jenny, Juliana, Justin, Luca, Matts, Tim, Waldemar
   * 'Lernfeld 9' Bilder vom Fadennetzwerk etc.
+* Gewerbliche Schulen Dillenburg / Klasse 11ip24 mit
+    Ali, Alina, Anamarija, Dennis, Hamza, Hannes,
+    Mattis, Maximilian, Mehmet, Lara, Tobia, Zuza
   
