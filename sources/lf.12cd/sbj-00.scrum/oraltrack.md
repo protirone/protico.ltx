@@ -94,9 +94,9 @@ tdb.
 **2.3) Prozess** **[→ ZP:Sheet:7]**
 
 * **Sprintplanning** am Sprintbeginn:
-  * *Projektowner* hat Produktbacklog repriorisiert / erweitert / reduziert
-  * *Produktowner* legt für jeden Eintrag eine Definition of Done fest.
-  * *Projektowner* erläutert seine funktionalen Wünsche (Art der Umsetzung bei Team)
+  * *Productowner* hat Produktbacklog repriorisiert / erweitert / reduziert
+  * *Productowner* legt für jeden Eintrag eine Definition of Done fest.
+  * *Productowner* erläutert seine funktionalen Wünsche (Art der Umsetzung bei Team)
   * *Planning Poker*: für alle (nächsten) Einträge
     * jeder Entwickler bestimmt für sich die Komplexität (1,2,3,5,8,13 | 20, 40)
     * jeder zeigt seine Zahl: Ausreißer nach oben / unter sagen warum
@@ -114,5 +114,9 @@ tdb.
 * **Sprintretrospektive**: Zwanglose Besprechung, was gut war, was das Team anders machen will, was es zusätzlich braucht.
 
 
+Anmerkung:
+
+* Warum 'Stilles Zeigen' vor der Diskussion: Damit jeder unbeeinflusst seine Meinung zeigt
+* Warum keine inhaltliche Bewertungskriterien, nur Zahlen: Damit das Team seine Intuition ausbildet. Formlisierung führt zu streit, Inutition pendelt sich ein.
 
 
