@@ -6,7 +6,7 @@
 # CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 #
 
-EXC=sose-01
+EXC=sose-03-selection-sort
 echo "executing exercise $EXC"
 
 # Task
