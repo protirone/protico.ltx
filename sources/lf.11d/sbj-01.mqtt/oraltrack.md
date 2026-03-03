@@ -77,7 +77,7 @@ Zur Installation
 ```
 
 *  **A4:** Portbelegung überprüfen:
-  * `sof -i -P -n | grep LISTEN` # ggf. grep nach 1883 oder mosquitto
+  * `sudo lsof -i -P -n | grep LISTEN` # ggf. grep nach 1883 oder mosquitto
   * `sudo netstat -tuln` # ggf. grep nach 1883
 * **A5:** Serverfazit:
   * Hauptkonfiguration: `/etc/mosquitto/mosquitto.conf`
