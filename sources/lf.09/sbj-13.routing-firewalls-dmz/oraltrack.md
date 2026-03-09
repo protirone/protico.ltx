@@ -21,7 +21,35 @@ Knüpft an Lösung der IPv4-Segmentierungsaufgabe *LF09:10* an
 
 <!-- uebung::end -->
 
-Lösung: **[→ ZP:Sheet:3]**
+Lösung: 5 Routen **[→ ZP:Sheet:3]**
+
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:02**</span>
+
+* [ ] Ermitteln Sie, wie viele Wege (ohne Schleifen) es vom Developer-Netz (192.168.1.64/26) ins Finance-Netz (192.168.1.128/27) gibt, wenn man folgende Regel(n) strikt anwendet:
+  * Jeder Router empfängt Pakete über seine eine Schnittstelle in dem Netz, für das er das Defaultgateway ist.
+  * Sind die Pakete auf der IP-Adresse-Ebene *nicht* an ihn adressiert, versteht er sie als Weiterleitungsauftrag.
+  * Bei jedem weiterzuleitenden Paket überprüft der Router zuerst, ob das Paket wenigstens in das Netz gehört, in das seine andere Schnittstelle eingebunden ist
+  * Wenn ja, sendet er das Paket in diesem Netz per ARP an den Adressaten.
+  * Wenn nein, sendet er das Paket in diesem Netz per ARP an den Router, das für seine andere Schnittstelle als Defaultgateway konfiguriert ist, damit dieses ihm den Weiterleitungsauftrag abnimmt.
+
+<!-- uebung::end -->
+
+Lösung: Nur eine Defaultroute nach draußen. Also keine Kommunikation von (192.168.1.64/26) zu (192.168.1.128/27)  **[→ ZP:Sheet:4]**
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:03**</span>
+
+* [ ] Schlagen Sie eine Lösung für die Diskrepanzen vor.
+
+<!-- uebung::end -->
+
+Lösung: Routingtabellen **[→ ZP:Sheet:5]**
 
 ---
 
@@ -117,7 +145,7 @@ Konsequenz: Trotz *Vendorenfalle*
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:02**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:04**</span>
 
 Das Tool `ip` (LNX) bzw. `route` (W11) kann aktuelle Routen auslesen und neue Routen setzen
 
@@ -125,7 +153,7 @@ Das Tool `ip` (LNX) bzw. `route` (W11) kann aktuelle Routen auslesen und neue Ro
 
 <!-- uebung::end -->
 
-Lösung **[→ ZP:Sheet:4]**
+Lösung **[→ ZP:Sheet:6]**
 
 ---
 
@@ -163,31 +191,29 @@ Lösung **[→ ZP:Sheet:4]**
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:03**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:05**</span>
 
-* [ ] Ermitteln Sie, viele Firewalls Sie in diesem Netz mindestens wo brauchen, um alle Zugriffe
-  steuern zu können.
+* [ ] Ermitteln Sie, viele Firewalls Sie in diesem Netz mindestens wo brauchen, um alle Zugriffe so steuern zu können, wie in der Segmentationsaufgabe LF09/10 gewünscht.
 
 <!-- uebung::end -->
 
-Lösung: **[→ ZP:Sheet:5]**
+Lösung: **[→ ZP:Sheet:7]**
 
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:04**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:06**</span>
 
-* [ ] Überlegen Sie, ob und wie Sie mit diesen Informationen über Routing- und Firewalltechniken
-      die bisherige Lösung aus Teilnetzen und Routerübergängen erfeinern können.
-* [ ] Zeichnen Sie das 'kondensierte Netz', wenn möglich
+* [ ] Überlegen Sie, ob und wie Sie mit diesen Informationen über Routing- und Firewalltechniken die bisherige Lösung aus Teilnetzen und Routerübergängen verfeinern können.
+* [ ] Zeichnen Sie das 'kondensierte Netz', wenn es existiert. 
 
 <!-- uebung::end -->
 
-Lösung: **[→ ZP:Sheet:6]**
+Lösung: **[→ ZP:Sheet:8]**
 
 ---
 
-### 4) Demilitarized Zone DMZ  **[→ ZP:Sheet:7]**
+### 4) Demilitarized Zone DMZ  **[→ ZP:Sheet:9]**
 
 > "A 'demilitarized zone' is an area, agreed upon between the parties to an 
 > armed conflict, which cannot be occupied or used for military purposes by 
@@ -205,7 +231,7 @@ Idee:
 > In der DMZ dürfen/können von außen kommende Rechner mehr als in der nachgelagerten geschützten Zone.
 
 
-gibt es als: **[→ ZP:Sheet:8]**
+gibt es als: **[→ ZP:Sheet:10]**
   
 * **einstufige DMZ**: trennt die Bereiche mit einem Router 
 * **zweistufige DMZ**: trennt die Bereiche mit zwei Routern 
@@ -226,7 +252,7 @@ gibt es als: **[→ ZP:Sheet:8]**
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:05**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:07**</span>
 
 Rekonzipieren Sie das bisherige 'IPv4-Firmennetz' im Hinblick auf Sicherheitsaspekte so, dass
 
@@ -237,15 +263,15 @@ Rekonzipieren Sie das bisherige 'IPv4-Firmennetz' im Hinblick auf Sicherheitsasp
 
 <!-- uebung::end -->
 
-Lösung: **[→ ZP:Sheet:9]**
+Lösung: **[→ ZP:Sheet:11]**
 
 ---
 
 
-### 5) VLAN
+### 5) VLAN 
 
 * steht für **Virtual Local Area Network**
-* setzt Nutzung eines Layer-III-Switches voraus. **[→ ZP:Sheet:10]**
+* setzt Nutzung eines Layer-III-Switches voraus. **[→ ZP:Sheet:12]**
 
 Dabei
 
@@ -286,7 +312,7 @@ Disclaimer: Begriff VLAN (wie Begriff Netz) doppeldeutig benutzt:
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:06**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:13:routing:08**</span>
 
 * [ ] Realisieren Sie die inneren Netze FIN, MNG und HR des rekonfigurierten 'IPv4-Firmennetzes' 
     jetzt mit einem(!) Layer-III-Switch als VLAN(s)
@@ -294,6 +320,6 @@ Disclaimer: Begriff VLAN (wie Begriff Netz) doppeldeutig benutzt:
 
 <!-- uebung::end -->
 
-Lösung: **[→ ZP:Sheet:11]**
+Lösung: **[→ ZP:Sheet:13]**
 
 ---
