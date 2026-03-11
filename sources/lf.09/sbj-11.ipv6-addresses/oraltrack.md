@@ -120,6 +120,8 @@ Für weitere Einzelheiten vgl. [https://www.ripe.net/media/documents/ipv6_refere
 Wenn doch jedes Interface eines Rechners leicht eine routbare IPv6-Adresse bekommen kann,
 wozu braucht man dann *Unique Local Addresses*?
 
+*Antwort*: Um *Unique Local Addresses* zu verwenden, braucht man keinen Provider zu involvieren, muss also für dessen Bereitstellungsleistung auch nichts bezahlen.
+
 ### 3) IPv6-Segmentierung [→ ZP:Sheet:5]
 
 
