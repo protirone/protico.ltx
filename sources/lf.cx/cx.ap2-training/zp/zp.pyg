@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# script literally
+# embedded into the
+# latex file by:
+# \begin{minted}
+
+MESSAGE="Hello World"
+echo $MESSAGE

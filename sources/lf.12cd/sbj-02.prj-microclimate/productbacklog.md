@@ -55,79 +55,81 @@
 
 ---
 
-**Heap**
+**Sprint C**
 
----
-
-* [ ] MQTT-Broker aktivieren
+* [X] MQTT-Broker aktivieren
   * {8} MQTT-Broker installieren (eclipse-mosquitto) 
-  * * [ ] DoD1: mosquitto ist installiert, Server läuft, 
-    * [ ] DoD2: Anlieferung ist per `mosquitto_pub` verifiziert,
-    * [ ] DoD3: Auslieferung ist per `mosquitto_sub` verifiziert,
+  * * [X] DoD1: mosquitto ist installiert, Server läuft, 
+    * [X] DoD2: Anlieferung ist per `mosquitto_pub` verifiziert,
+    * [X] DoD3: Auslieferung ist per `mosquitto_sub` verifiziert,
   * {1} hinreichend großen Testdatensatz pro Sensortyp erstellen.
-    * [ ] DoD1: Für alle Sensorentypen sind 10 Testwerte + Messzeitpunkt definiert.
-    * [ ] DoD2: Wenn mit Messreihen gearbeitet wird, sind 10 Testdatensätze definiert.
+    * [X] DoD1: Für alle Sensorentypen sind 10 Testwerte + Messzeitpunkt definiert.
+    * [X] DoD2: Wenn mit Messreihen gearbeitet wird, sind 10 Testdatensätze definiert.
   * {5} Testdatensatz-Publishing simulieren per Skript  mit/für `mosquitto_pub`
-    * [ ] DoD: Der Testdatensatz ist per `mosquitto_pub` zum MQTT-Broker übertragen
+    * [X] DoD: Der Testdatensatz ist per `mosquitto_pub` zum MQTT-Broker übertragen
   * {5} Testdatensatz-Subscribing simulieren per Skript mit/für `mosquitto_sub`
-    * [ ] DoD: Der Testdatensatz ist per `mosquitto_sub` vom MQTT-Broker abgeholt
+    * [X] DoD: Der Testdatensatz ist per `mosquitto_sub` vom MQTT-Broker abgeholt
   * {5} Daten(file)format im Aggregator festlegen
-    * [ ] DoD: In einer Spezifikation ist festgelegt, wie die Daten im Aggregator abgelegt werden
+    * [X] DoD: In einer Spezifikation ist festgelegt, wie die Daten im Aggregator abgelegt werden
   * {13} Testdatensatz im Aggregator bei Eintreffen im Daten(file)format ablegen
-    * [ ] DoD1: MQTT-Subscription-Client ist in Python programmiert
-    * [ ] DoD2: MQTT-Subscription-Client legt die Daten gemäß Spezifikation als Datei(en) ab
+    * [X] DoD1: MQTT-Subscription-Client ist in Python programmiert
+    * [X] DoD2: MQTT-Subscription-Client legt die Daten gemäß Spezifikation als Datei(en) ab
 
----
-
-* [ ] Datenauslieferung aktivieren
+* [X] Datenauslieferung aktivieren
   * { } HTTP-Anfrage vom Evaluator an Aggregator designen (Parameter)
-    * [ ] DoD: Es ist spezifiziert, was Evaluatoren-Clients als Datenparameter vorgeben können. 
-  * { } Aggregator-HTTP-Server installieren (nginx) 
-    * [ ] DoD1: `nginx` ist installiert und konfiguriert
-    * [ ] DoD2: `nginx` kann auf Datenbereich zugreifen
-    * [ ] DoD3: `nginx` liefert Beispieldaten über Browser aus
+    * [X] DoD: Es ist spezifiziert, was Evaluatoren-Clients als Datenparameter vorgeben können. 
+  * { } Aggregator-HTTP-Server installieren (Apache2) 
+    * [X] DoD1: `Apache2` ist installiert und konfiguriert
+    * [X] DoD2: `Apache2` kann auf Datenbereich zugreifen
+    * [X] DoD3: `Apache2` liefert Beispieldaten über Browser aus
   * { } Datenzugriffsmodul programmieren
-    * [ ] DoD1: Auslieferungsmodul ist programmiert + empfängt Datanausschnittsparameter
-    * [ ] DoD2: Auslieferungsmodul stellt Datenausschnitt gemäß Parameter zusammen
-    * [ ] DoD3: `nginx` liefert erfragten Datenausschnitt über Browser aus.
-  * { } HTTP-Client mit Request und Ablage im Fileformat in Python programmieren
-    * [ ] DoD1: HTTP-Client ist in Python programmiert
-    * [ ] DoD2: HTTP-Client holt die Datenausschnitte ab
-    * [ ] DoD3: gemäß Spezifikation als Datei(en) ab
+    * [X] DoD1: Auslieferungsmodul ist programmiert + empfängt Datanausschnittsparameter
+    * [X] DoD2: Auslieferungsmodul stellt Datenausschnitt gemäß Parameter zusammen
+    * [X] DoD3: `Apache2` liefert erfragten Datenausschnitt über Browser aus.
+  * {X} HTTP-Client mit Request und Ablage im Fileformat in Python programmieren
+    * [X] DoD1: HTTP-Client ist in Python programmiert
+    * [X] DoD2: HTTP-Client holt die Datenausschnitte ab
+    * [X] DoD3: gemäß Spezifikation als Datei(en) ab
 
 ---
 
-* [ ] Sensorik erweitern
+* [X] Sensorik erweitern
   * { } Sensorik auf Temperatur und Luftfeuchtigkeit erweitern.
-    * [ ] DoD: Sensoren für Temperatur, Luftdruck und Luftfeuchtigkeit liefern Daten
+    * [X] DoD: Sensoren für Temperatur, Luftdruck und Luftfeuchtigkeit liefern Daten
   * { } Sensoren testweise aktivieren
-    * [ ] DoD: Datensätze für Temperatur, Luftdruck und Luftfeuchtigkeit sind über MQTT-Broker und MQTT-Subscription-Client abgeholt und abgelegt
+    * [X] DoD: Datensätze für Temperatur, Luftdruck und Luftfeuchtigkeit sind über MQTT-Broker und MQTT-Subscription-Client abgeholt und abgelegt
   * { } Daten(file)format für Aggregator mitbestimmen
-    *  [ ] DoD: Daten(file)format ist final spezifiziert
+    *  [X] DoD: Daten(file)format ist final spezifiziert
 
 ---
-
-* [ ] Datenevaluation aktivieren
+* [X] Datenevaluation aktivieren
   * {8} Annahmeformat der Testdaten im/für Evaluator festlegen
-    * DoD: In einer Spezifikation ist festgelegt, wie die Daten im Evaluator ankommen und wo sie wie übergangshalber abgelegt werden
+    * [X] DoD: In einer Spezifikation ist festgelegt, wie die Daten im Evaluator ankommen und wo sie wie übergangshalber abgelegt werden
   * {8} Testdaten im/für Evaluator im Annahmeformat bereitstellen
-    * DoD: Testdaten sind wie spezifiziert zur Evaluation abgelegt
+    * [X] DoD: Testdaten sind wie spezifiziert zur Evaluation abgelegt
   * {8} Datenevaluationsmodule in Python designen und programmieren
-    * DoD: Framework für ein Evaluationsmodul ist programmiert
-    * DoD: Basic-Evaluation 'Datensatzanzahl' ist programmiert
+    * [X] DoD: Framework für ein Evaluationsmodul ist programmiert
+    * [X] DoD: Basic-Evaluation 'Datensatzanzahl' ist programmiert
   * {3} Grundlegende Auswertungen (Durchschnitt, Median) implementieren
-    * Median-Evaluation-Modul ist programmiert
-    * Durchschnitt-Evaluation-Modul ist programmiert
+    * [X] DoD: Median-Evaluation-Modul ist programmiert
+    * [X] DoD: Durchschnitt-Evaluation-Modul ist programmiert
 
----
 
-* { } Regelmäßig Datensicherung im/für Aggregator implementieren.
+**HEAP**
+
+* { } System für einen Produktionslauf von 3*24 vorbereiten und den ausführen
+  * [ ] DoD: Das System ist ohne Eingreifen 3*24 gelaufen
+  * [ ] DoD: Alle Daten sind über 3*24 gespeichert
+* { } Datenauswertung mit relevanten Analysen für den Bestand eines Produktionslauf von 3*24 vorbereiten und ausführen
+  * [ ] DoD: Alle 3*24-Daten sind als Ganzes ausgewertet
+  * [ ] DoD: Es gibt relevante Aussagen über das Mikroklima an den Schulräumen.
+* { } System für eine stündliche, dann tägliche und schließlich wöchentliche Datensicherung im Round-Robin-Verfahren vorbereiten und Datensicherung aktivieren
+  * [ ] DoD: Datensicherung ist konzipiert und mit Skripten ausführbar gemacht
+  * [ ] DoD: Datensicherung läuft während des 3*24 Produktionslaufes
+* { } Loggingsystem implementieren, um den Zustand während Produktionslaufes zu überwachen
+  * [ ] DoD: Loggingsystem ist konzipiert und mit Skripten ausführbar gemacht
+  * [ ] DoD: Loggingsystem läuft während des 3*24 Produktionslaufes
+  
 * { } Prozess der Datenerhebung designen und dokumentieren in BPMN
 * { } Datenanalyse auf Bestand gemäß `lf.11c/sbj-04.dta-evaluation` erweitern
 * { } Analyse der Prozessgüte auf Bestand gemäß `sbj-02.prc-analysis` erweitern
- 
-
-
-
-
-
