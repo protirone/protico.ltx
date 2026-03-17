@@ -8,42 +8,38 @@
 
 ### 1.) Grundlegende Begriffe **[→ ZP:Sheet:2]**
 
-Im Lernfeld 03 kommt es in erster Linie darauf, Begriffe und Konzepte kennenzulernen. In der Mittelstufe in Lernfeld 09 wird es dann um das Zusammenwirken und Ineinandergreifen gehen.
+Im Lernfeld 03 kommt es in erster Linie darauf, Begriffe und Konzepte kennenzulernen. In der Mittelstufe in Lernfeld 09 wird es dann um das Zusammenwirken und das Ineinandergreifen gehen.
 
-Um das Lernen der Begriffe zu erleichtern, folgen ich im LF03-Unterricht relativ eng dem Grundstufenbuch (Lernfelder 1-5) für die IT-Berufe aus dem Westermann-Verlag [→  Gratzke et.al: Grundstufe: Lernfelder 01-05, 2020] /* Bibliographische Angaben im FI-Literaturverzeichnis */  
-
-Hier die erste entsprechende Wortwolke:
-
-* [ ] Alarmanlage
-* [ ] Archivierungssystem
-* [ ] Anwendungssoftware
-* [ ] CRM
-* [ ] ERP
-* [ ] Datacenter
-* [ ] Datenendgerät
-* [ ] Datensicherung
-* [ ] Drucker
-* [ ] Gefahrenmeldeanlage
-* [ ] Host
-* [ ] Ip-Adresse
-* [ ] Kopierer
-* [ ] LAN
-* [ ] Scanner
-* [ ] Network-Devices
-* [ ] PC-Arbeitsplätze
-* [ ] Router
-* [ ] Rechenzentrum
-* [ ] Paket
-* [ ] Server
-* [ ] Speicher
-* [ ] Switch
-* [ ] Telefone
-* [ ] TK-Anlage
-* [ ] Videoüberwachung
-* [ ] WLAN/Wi-Fi
-* [ ] Zahlungsverkehr
-* [ ] Zeiterfassung
-* [ ] Zutrittskontrolle
+* **Alarmanlage**: 
+* **Archivierungssystem**:
+* **Anwendungssoftware**:
+* **CRM**:
+* **ERP**:
+* **Datacenter**:
+* **Datenendgerät**:
+* **Datensicherung**:
+* **Drucker**:
+* **Gefahrenmeldeanlage**:
+* **Host**:
+* **Ip-Adresse**:
+* **Kopierer**:
+* **LAN**:
+* **Scanner**:
+* **Network-Devices**:
+* **PC-Arbeitsplätze**:
+* **Router**:
+* **Rechenzentrum**:
+* **Paket**:
+* **Server**:
+* **Speicher**:
+* **Switch**:
+* **Telefone**:
+* **TK-Anlage**:
+* **Videoüberwachung**:
+* **WLAN/Wi-Fi**:
+* **Zahlungsverkehr**:
+* **Zeiterfassung**:
+* **Zutrittskontrolle**:
 
 ---
 
@@ -84,8 +80,7 @@ Hinweis:
 
 ---
 
-### Definitionen zum Netzaufbau:
-
+### Definitionen zum Netzaufbau: [→ ZP:Sheet:3]
 
 * **`arp`**:
   * Adress-Resolution-Protokoll
@@ -110,11 +105,25 @@ Hinweis:
   * steht für *Demilitarisierte Zone*
   * meint einen Bereich, in den es von außen leichter hineinzukommen ist
   * steht vor einem stärker geschützten Bereich
+* **Desktop PC**
+  * Lokaler Rechner
+  * steht auf dem Tisch
+* **Drucker**:
+  * Serverkomponente im Netz
+  * nimmt Druckaufträge
+  * liefert bedrucktes Papier.
+  * **Netzwerdrucker**:
+    * Serverkomponente im Netz
+    * nimmt Aufträge von anderen Geräte im Netz
+  * **Lokaler Drucker**:
+    * angeschlossen an Rechner
+    * nimmt Aufträge von diesem Rechner. 
+    * Lokaler Drucker + Rechner zusammen können als Netzwerkdrucker fungieren
 * **Firewall**
   * ist ein Programm
   * läuft meistens auf einem Router
   * erlaubt das Weiterleiten eines Paketes nur, wenn das den Regeln entspricht
-  * kann Ip-Adressen, Netzadressen und/oder Ports blocken oder arlauben
+  * kann Ip-Adressen, Netzadressen und/oder Ports blocken oder erlauben
   * wird zur Umsetzung zweier Strategien benutzt
     * *Default Allow Principle* = was nicht verboten ist, ist erlaubt
     * *Default Deny Principle* = was nicht erlaubt ist, ist verboten
@@ -133,6 +142,11 @@ Hinweis:
     * dient zur Verifikation der Netzfunktionalität
 * **Office-Lan**:
   * ein *Local-Area-Network*, in das Standgeräte von Nicht-IT-Mitarbeitern eingebunden sind
+* **Remote Desktop**
+  * "umgekehrter" Thin-Client
+  * Desktopvisualisierung wird auf einem 'Server' berechnet,
+  * aber zur eigentlichen Darstellung umgelenkt an einen Client
+  * genutzt für Remotewartung
 * **Route**
   * meint den Weg von einem Rechner zum nächsten,
   * hat ein Netz mehrere Router, kann es mehrere Wege von einem zum nächsten Rechner geben.
@@ -140,6 +154,10 @@ Hinweis:
    * ist in mindestens 2 Netze eingebunden,
    * leitet Pakete von einem Netz ins benachbarte weiter,
    * verbindet zwei Broadcastdomänen.
+* **Smartphone** 
+  * früher auch 'Handy',
+  * englisch korrekt: Mobilephone
+  * telefoniefähiger mobiler Kleincomputer
 * **Switch**:
   * spannt eine Broadcastdomain auf,
   * **Layer-II-Switch**: 
@@ -150,9 +168,195 @@ Hinweis:
     * arbeiten mit Layer-I/III-Mitteln
     * baut Virtual Local Area Networks über der Layer-II-Switch-Funktionalität auf
     * verwendet außerdem das IP-Protokoll (Layer III)
+* **Thin Client**
+  * Komponente einer Client-Server-Architektur
+  * bringt wenig eigene Rechenkapazität mit
+  * delegiert viele Werte- und Visualisierungsberechnung an einen Server.
+  * Je mehr der Server berechnet, desto stärker die Belastung des Netzes
+* **Thick Client**
+  * Komponente einer Client-Server-Architektur
+  * bringt viele eigene Rechenkapazität mit
+  * delegiert wenig Werteberechnungen einen Server.
+  * "schont" das Netz
 * **`tracert`** (W11) bzw. **`traceroute`**
   * listet die Hoppings (von einer Broadcastdomain in die nächste) auf, die nötig sind, um einen Zielrechner zu erreichen
   * guter Testzielrechner dafür ist `8.8.8.8`, der Google-DNS-Server
 * **Unicastadresse**:
   * IP-Adresse, die ein bestimmtes Netzwerkinterface eines Rechners identifiziert
   * umgangssprachlich oft den Rechner, in dem das Netzwerkinterface eingebaut ist
+
+### Definitionen zur Netztaxonomien:
+
+* **Netztaxonomie nach Reichweite:** [→ ZP:Sheet:4]
+  * **PAN**:
+    * steht für *Personal Area Network*
+    * Netzwerk aus mobilen Kleingeräten 
+    * per Kabel (USB, FireWire) oder per Funknetz (IrDa, Bluetooth, WLAN) 
+    * Reichweite: sehr gering (wenige Meter)
+    * Beispiel: Mobile Phone als WLAN-Hotspot 
+  * **LAN**:
+    * steht für *Local Area Network*
+    * Netzwerk für/in/auf einer/m Wohnung, Gebäude, Firmengelände, Campus
+    * kabelgebunden
+    * Reichweite: mehrere hundert Meter
+  * **WLAN**:
+    * steht für *Wireless Local Area Network*
+    * lokales Funknetz
+    * Reichweite: wenige Meter bis zu 500 - 1000 m 
+      * (Einschränkungen [Dämpfung] durch Bauweisen u. Umgebungen)
+      * über (aktive) WLAN-Repeater weiter ausdehnbar.
+  * **MAN**:
+    * steht für *Metropolitan Area Network*
+    * fassen Ballungsgebiete / Großstädte zusammen. 
+    * Übertragungen zwischen LANs zwecks geringerer Dämpfung oft mit Lichtwellenleiter.
+    * Reichweite: bis zu 100 km 
+  * **WAN**:
+    * steht für *Wide Area Network*
+    * verbinden große geografische Bereiche innerhalb von Nationen / Kontinenten. 
+    * Reichweite bis zu 1000km.
+  * **GAN**:
+    * steht für *Global Area Network*
+    * Reichweite: weltweit
+    * Beispiel: 
+      * Internet
+      * weltweites Firmennetz, getunnelt durchs Internet
+
+* **Netztaxonomie nach Funktionsnetz:** [→ ZP:Sheet:5]
+  * **Office-LAN**: 
+    * lokales Subnetz 
+    * mit Standgeräten
+    * kabelgebunden
+  * **Server-Lan**:
+    * lokales Subnetz 
+    * mit Servern (meist) ohne eigenen Monitorzugang
+    * kabelgebunden
+  * **WLan**:
+    * lokales Subnetz 
+    * mit Servern und Mobilgeräten
+  * **Intranet**:
+    * Local Area Network
+    * (meist) von einer Organisation / Firma
+    * (meist) bestehend aus mehreren Subnetzen
+    * (meist) aus privaten Adressen aufgebaut, die nach außen hinter ein (oder mehrerer) öffentliche IPs 'versteckt' werden.
+    * *intra* = etwas, das innerhalb bestimmter Grenzen agiert
+  * **Firmen-LAN**: wie Intranet
+  * **Internet**: Netz zwischen zwei Intranets
+    *  *inter* = etwas, das zwischen bestimmter Einheiten agiert / steht
+  * **Providernetz**: 
+    * Teil des Internets
+    * Provider verbinden Unternehmen, Behörden, Privatleute mit dem Internet
+  * **Carriernetz**: 
+    * Teil des Internets
+    * Carrier = Netzbetreiber
+  * **Telefonnetz**: 
+    * **analoge Telefonie**: Sprache/Töne → Wellen → Sprache/Töne
+    * **IP basierte Telefonie**: Sprache/Töne → IP-Pakete → Sprache/Töne
+
+* **Netztaxonomie nach Struktur/Topologie:** [→ ZP:Sheet:6]
+  * **Bus**-Topologie:
+    * alle Knoten linear über ein Medium verbunden. 
+    * keine aktiven Komponenten dazwischen.
+    * Pakete ’verschwinden’ am Ende des Busses.
+  * **Ring**-Topologie:
+    * Jeder Knoten auch Signalverstärker (Repeater), in dem er kreisendes Pakete liest und weiterschickt: 
+      * Ist es leer, ’steckt’ er seine Nachricht hinein. 
+      * Ist es für ihn, sendet er ein leeres Paket. 
+      * Ist es nicht für ihn, schickt er es so weiter.
+    * Vorteil: große Ringlängen von mehreren 100 m möglich.
+    * Nachteil: 
+      * Unterbrechung des Rings oder Ausfall eines Knotens führt zum Ausfall des ganzen Netzes
+      * Teilnahme verlangt regelkonforme Kooperation 
+  * **Stern**-Topologie:
+    * Alle Knoten sind an zentrale Komponente (Hub, Switch) angeschlossen.
+    * Vorteil: gute Erweiterbarkeit, Stabilität. Ausfall eines Knotens führt nicht zum Netzausfall
+    * Nachteil: Ausfall der zentralen Komponente führt zu Netzausfall, hoher Verkabelungsaufwand
+    * Beispiel: Fast-Ethernet, FibreChannel, InfiniBand und ’Token Ring’ (=logisch Ring, physisch Stern mit zentraler Einheit ’Media Access Unit)
+  * **Maschen**-Topologie:
+    * Jeder Knoten ist mit mehreren (teilvermascht) oder allen (vollvermascht) anderen Knoten verbunden.
+    * Vorteil: 
+      * Fallen Teilnehmer oder Verbindungen aus, sind alternative Routen möglich, hohe Ausfallsicherheit des Netzes an sich.
+      * Vollvermaschte Netze brauchen kein Routing (Jeder kennt den Weg zu dem)
+    * Nachteil: Exponentiell wachsender Verkabelungsaufwand, (n! Möglichkeiten). 
+      * ein voll(ständig) vermaschtes Netz entspricht einem "Vollständigen Graph" (= jeder Knoten mit jedem anderen Knoten durch eine Kante verbunden)
+      * und hat demnach die Berechnungsformel (n*(n-1))/2 = Gaus'sche Summenformel
+      * In (teil(!))vermaschten System relativ aufwendiges Routing
+      * kostenintensiv: Im vermaschten Subnetz mit n Knoten braucht jeder Maschine/Knoten (n*(n-1))/2 Netzwerkinterfaces oder einen zugeordneten Switch/Hub mit (n*(n-1))/2 Ports
+    * **Namensclash:**
+      * deutsch: *vollvermaschtes System* von Maschen.
+      * englisch: *full mesh topology* oder *fully meshed system*, NICHT: *mashed*! (mash = Brei, Matsch mashed = zerquestscht) 
+    * **Zellen**-Topologie:
+      * Bereiche der Erreichbarkeit überlagern sich, Geräte ’wandern’ von einer Zelle zur anderen.
+      * Vorteil: Ausfall eines Gerätes betrifft nicht das Netz als solches.
+      * Nachteil: begrenzte Reichweite von Basisstation
+  * **Baum**-Topologie:
+    * Definition:
+      * Knoten = Blatt oder Wurzel oder Knoten. 
+      * Jede Wurzel hat 1-n Verbindungen zu (Tochter-)Knoten.
+      * Jede Knoten ist ein Blatt oder hat 1-n Verbindungen zu (Tochter-)Knoten.
+      * Kein Knoten ist Tochter mehrerer Vaterknoten.
+      * Jeder Knoten mit Töchterknoten ist deren Vaterknoten
+    * Vorteil: Ausfall eines Knotens lässt das Netz bestehen. Gute Erweiterbarkeit. Große Entfernungen realisierbar.
+    * Nachteil: Je höher der Knoten im Baum, desto größer die Engpassgefahr. Beispiel: Switch- / Hub-Subnetz
+
+
+
+### Definitionen zur Netztaxonomien: [→ ZP:Sheet:7]
+
+* OSI = "Open Systems Interconnection model“
+* [ OSI auch: [Open Source Initiative]{https://opensource.org/} ]
+* = "Referenzmodell für Netzwerkprotokolle"
+* teilt die Kommunikation zwischen Rechnern in ”sieben in sich abgeschlossene Schichten auf" (→ Schreiner: Computernetzwerke, 2014, S.3): **[→ ZP:Sheet:4]**
+  * **Layer VII** : *Application Layer* (= Anwendungsschicht)
+    * Client-Server-Lösungen
+  * **Layer VI** : *Presentation Layer* (= Darstellungsschicht)
+    * MPEG, PNG, GIF, ASCII, UTF8,
+  * **Layer V** : *Session Layer* (= Kommunikationsschicht)
+    * http-Protokoll, smtp-Protokoll, ssh, ipsec
+  * **Layer IV** : *Transport Layer* (= Transportschicht)
+    * TCP-Protokoll, UDP-Protokoll, Ports
+  * **Layer III** : *Network Layer* (= Vermittlungsschicht)
+    * Routing, IP-Protokoll & -Adressen
+  * **Layer II** : *Data Link Layer* (= Sicherungsschicht)
+    * Switch, Hardwareadressen, MAC-Adresse, HUB
+  * **Layer I**: *Physical Layer* (= Physikalische Schicht)
+    * [L|W]AN: Kupferkabel | Glasfaser
+    * [WLAN]: Richtfunk | Satelliten-Funk, Signalformen, Frequenzen,
+    * TRANSmitter+reCIEVER, RJ-45 Kabel, CSMA/CD, Token-Ring, Kollisionsvermeidung
+
+
+*Aber*
+
+* Deutsche Namen z.T. irreführend:
+  * Bei der 'Sicherungsschicht' geht es nicht um Datenverschlüsselung, sondern um die Sicherstellung der Zustellung von Datenpaketen.
+  * Bei der 'Kommunikationsschicht' geht es nicht um die Kommunikation überhaupt, sondern um den Zusammenhang mehrerer Kommunikationsschritte. (= eben einer Session von Nachrichten)
+* Zuordnung hat etwas Willkürliches an sich:
+  * Ist das http-Protokoll ein Sessionprotokoll, kein Transportprotokoll? Andererseits setzt es ja auf TCP/IP auf.
+  * Ist Layer V wirklich unabhängig von Layer IV, wenn einige Services nicht mit UDP umsetzbar sind, andere nicht mit TCP? 
+  * Faktisch werden Layer-II und Layer-III-Elemente schon beim reinen ARP mit HUB gebraucht.
+  
+> OSI-Layer sind ein gute grobe Themenklusterung, keine strenge Taxonomie
+
+vgl.:
+* → [https://de.wikipedia.org/wiki/OSI-Modell](https://de.wikipedia.org/wiki/OSI-Modell)
+* → [https://en.wikipedia.org/wiki/OSI_model](https://en.wikipedia.org/wiki/OSI_model) 
+  
+
+**Realisierung 2: TCP/IP-Referenzmodell [→ ZP:Sheet:8]**
+
+verwendet nur 4 Schichten:
+
+* **Applicationlayer** (Anwendung)
+  * HTTP, UDS, FTP, SMTP, POP, Telnet, DHCP, OPC UA
+  * TLS, SOCKS
+* **Transportlayer** (Transport)
+  * TCP, UDP, SCTP
+* **Internetlayer** (Internet)
+  * IP (IPv4, IPv6), ICMP (über IP)
+* **Linklayer** (Netzzugang)
+  * Ethernet, Token Bus, Token Ring, FDDI
+
+
+* → [https://de.wikipedia.org/wiki/Internetprotokollfamilie](https://de.wikipedia.org/wiki/Internetprotokollfamilie)
+* → [https://en.wikipedia.org/wiki/Internet_protocol_suite](https://en.wikipedia.org/wiki/Internet_protocol_suite)
+
+

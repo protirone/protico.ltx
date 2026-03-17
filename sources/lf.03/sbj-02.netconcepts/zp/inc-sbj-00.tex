@@ -12,8 +12,67 @@
 \end{frame}
 
 \begin{frame}  
-  \frametitle{LF03:02:Begriffei:Netzwerk}
+  \frametitle{LF03:02:Begriffe:Netzwerk}
   \begin{center}
   \includegraphics[height=7.5cm]{\imgLf/lf03-net-concepts.png}
   \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF03:02:Begriffe:Reichweiten}
+  \begin{center}
+  \includegraphics[height=7.5cm]{\imgGl/network-area-taxonomy.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF03:02:Begriffe:Netzformen}
+  \begin{center}
+  \includegraphics[height=7.5cm]{\imgLf/functional-networks.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:02:Netzwerktopologien}
+  \begin{center}
+    \includegraphics[height=5cm]{\imgGl/network-topologies-wm.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LF03:02:OSI-Schichtenmodell}
+	\begin{itemize}
+		\item \textit{Layer VII}: \textbf{Application Layer} $\rightarrow$ Client-Server-Lösungen
+		\item \textit{Layer VI}: \textbf{Presentation Layer} $\rightarrow$ MPEG, PNG, GIF, ASCII, UTF8, ....
+		\item \textit{Layer V}: \textbf{Session Layer} $\rightarrow$ http-Protokoll, smtp-Protokoll, ssh 
+		\item \textit{Layer IV}: \textbf{Transport Layer} $\rightarrow$ TCP-Protokoll, UDP-Protokoll, ...
+		\item \textit{Layer III}: \textbf{Network Layer} $\rightarrow$ Routing, IP-Protokoll \& -Adressen, Ports
+		\item \textit{Layer II}: \textbf{Data Link Layer} $\rightarrow$ Switch, Hardwareadressen, MAC-Adresse
+		\item \textit{Layer I}: \textbf{Physical Layer} $\rightarrow$ (( [L$|$W]AN: Kupferkabel $|$ Glasfaser )  $|$ [WLAN]: Richtfunk $|$ Satelliten-Funk ), Signalformen, Frequenzen, TRANSmitter+reCIEVER, RJ-45 Kabel, HUBS, CSMA/CD, Token-Ring, Kollisionsvermeidung
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LF09:02:TCP-Interoperability-Model}
+
+  \begin{footnotesize}
+    \begin{tabularx}{\textwidth}{|c|c|c|X|}
+      * & OSI-Schichten & TCP/IP-Schichten & Beispiele \\
+      \hline
+      \hline
+      \textit{VII} & \textbf{Anwendungen} & \textbf{Anwendungen} & HTTP, UDS, FTP, SMTP, POP, Telnet, DHCP, OPC UA \\
+      \textit{VI} & \textbf{Darstellung} & & \\
+      \textit{V} & \textbf{Sitzung} & & TLS, SOCKS \\
+      \hline
+      \textit{IV} & \textbf{Transport} & \textbf{Transport} & TCP, UDP, SCTP \\
+      \hline
+      \textit{III} & \textbf{Vermittlung} & \textbf{Internet} & IP (IPv4, IPv6), ICMP (über IP) \\
+      \hline
+      \textit{II} & \textbf{Sicherung} & & Ethernet, Token Bus, Token Ring, FDDI \\
+      \textit{I} & \textbf{Bit-Übertragung} & \textbf{Netzzugang} & \\
+      \hline
+      \hline
+  
+    \end{tabularx}
+  \end{footnotesize}
 \end{frame}

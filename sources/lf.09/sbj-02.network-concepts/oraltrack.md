@@ -179,9 +179,9 @@ Netzwerke zumeist als Topologie dargestellt. ()
   * Über (aktive) WLAN-Repeater weiter ausdehnbar.
 * **Metropolitan Area Network** (*MAN*): 
   * Verbinden LANs
-  * fassen Ballungsgebiete / Großstädte bis zu 100 km zusammen. i
+  * fassen Ballungsgebiete / Großstädte bis zu 100 km zusammen. 
   * Übertragungen zwischen LANs zwecks geringerer Dämpfung oft mit Lichtwellenleiter. 
-  * Für entsprechende Funknetze s. Standard Standard WiMAX (Worldwide Interoperability for Microwave Access) (gemäß IEEE 802.16) [https://de.wikipedia.org/wiki/WiMAX](https://de.wikipedia.org/wiki/WiMAX)
+  * Für entsprechende Funknetze s. Standard WiMAX (Worldwide Interoperability for Microwave Access) (gemäß IEEE 802.16) [https://de.wikipedia.org/wiki/WiMAX](https://de.wikipedia.org/wiki/WiMAX)
 * **Wide Area Network** (*WAN*): 
   * verbinden große geografische Bereiche innerhalb von Nationen / Kontinenten. 
   * Ausdehnung bis zu 1000km.
