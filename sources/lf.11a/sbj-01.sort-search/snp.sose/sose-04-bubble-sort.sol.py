@@ -11,7 +11,7 @@ print(f"executing exercise <{EXC}>")
 
 # Task
 #
-# (A) Implementieren Sie eine Funktion <selection_sort>: sie nehme die Liste 
+# (A) Implementieren Sie eine Funktion <bubble_sort>: sie nehme die Liste 
 #     chaosl=["7","A","B","K","9","D","8","10"] mit Spielkarten und liefere eine 
 #     aufsteigend sortierte Liste <sortl> mit den Elementen aus chaosl zurück. 
 # 

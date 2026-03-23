@@ -6,7 +6,6 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-**[→ ZP:Sheet:1]**
 
 ### 1. AP2 Prüfungsstruktur 
 
@@ -91,7 +90,7 @@ Legende:
 |              |          | Betrieb/Erweiterung | | P **& L** |
 
 
-### 3. Systematische Erschließung von AP2-Prüfungsunterlagen
+### 3. Einstieg in die Erschließung von AP2-Prüfungsunterlagen
 
 
 <!-- uebung::start -->
@@ -130,11 +129,20 @@ Für ein gutes Ergebnis benötigen Sie
 1. ein Verfahren, die Verständnisorientierung auf <= 5 Min zu minimieren
 2. Training des Verfahrens
 
+### 4. Systematische Erschließung von AP2-Prüfungsunterlagen
 
-**Der Orientierungsalgorithmus:**
+#### 4.1
 
-* [ ] **Vorbereitung:** Besorgen Sie sich einen roten, grünen und blauen Textmarker (oder welche mit gleichwertigem Farbunterschied)
-* [ ] **Aufgabenermittlung:** Unterstreichen Sie in den Aufgabenblättern die Sätze **ROT**, die Ihnen sagen, dass Sie etwas tun sollen. Solche Sätze beginnen mit:
+**Orientierungsphase:** *[→ ZP:Sheet:2]*
+
+* [ ] **Vorbereitung:** Besorgen Sie sich 
+  * [ ] einen knalligen (rot) Textmarker, der den Text nicht überdeckt
+  * [ ] einen positiv-dezenten (pastell-grünen) Textmarker und
+  * [ ] einen positiv-sanften (pastell-blau) Textmarker
+  
+*[→ ZP:Sheet:2]*
+
+* [ ] **Aufgabenermittlung:**:Unterstreichen Sie in den Aufgabenblättern die Sätze **KNALLIG**, die Ihnen sagen, dass Sie etwas tun sollen. Solche Sätze beginnen mit:
   * Ergänzen Sie ...
   * Erläutern Sie ...
   * Beschreiben Sie ...
@@ -147,18 +155,40 @@ Für ein gutes Ergebnis benötigen Sie
   * ...
   * Fokussieren Sie sich auf solche Sätze.
   * Lesen Sie NICHT drumherum.
-  * Unterstreichen Sie **nur** diese einzelnen Sätze. Selbst wenn Sie für sich genommen nicht aus
-* [ ] **Kontextmittlung:** Streichen Sie in den Aufgabenblättern die Sätze am Rand **grün** an, die **unmittelbar** wichtig für das Verständnis der Aufgaben sind.
-  * **Weniger ist mehr!!!**
-* [ ] **Kontextverfeinerung:** Streichen Sie in den Aufgabenblättern zuletzt die Sätze am Rand **blau** an, an die Sie bei der Lösung auch denken sollten.
+  * Unterstreichen Sie **nur** diese einzelnen Sätze. (Selbst wenn Sie sie für sich genommen nicht aufschlüsseln können)
+  
+* [ ] **Kontextmittlung:** Streichen Sie in den Aufgabenblättern die Sätze am Rand **POSITIV-DEZENT** an, die **unmittelbar** wichtig für das Verständnis der Aufgaben sind.
+  * Hier gilt: **Weniger ist mehr!!!**
+  
+* [ ] **Kontextverfeinerung:** 
+  * [ ] Streichen Sie in den Aufgabenblättern zuletzt die Sätze am Rand **POSITIV-SANFT** an, an die Sie bei der Lösung auch denken sollten.
+  * [ ] Lesen Sie bei jeder Aufgabe ruhig die Eingangsstory durch und streichen Sie auch sie am Rand **POSITIV-SANFT** an
+  
+
 
 Was könnten Sie bei diesem Verfahren falsch machen?
 
-* Text um die Fragen herum lesen - anstatt stur nach Schema F farblich zu markieren,
-* schon mal eine einfache Frage direkt beantworten - anstatt Ihren Prozess einzuhalten,
-* Aufgaben und Kontext gleich auf einen Schlag markieren - anstatt das ganze Blatt **mehrmals** durchzugehen,
-* Mitten drin stoppen und zu den 'ernsten' Dingen übergehen - anstatt sich zuerst einen echten Überblick zu verschaffen,
+* Text um die Fragen herum lesen - anstatt nach Schema F farblich zu markieren. 
+  * (Sie stören ihr Gehirn dabei, sich ein Grundgerüst zu bilden).
+* Schon mal eine Frage direkt beantworten - anstatt Ihren Prozess einzuhalten. 
+  * (Sie steigen ganz aus dem Prozess aus, mit dem sich ihr Gehirn ein Grundgerüst bildet.)
+* Aufgaben und Kontext gleich auf einen Schlag markieren - anstatt das ganze Blatt **mehrmals** durchzugehen. 
+  * (Sie halten Ihrem Gehirn Wiederholungen vor, die es zur Stabilisierung benötigt.)
+* Mitten drin stoppen und zu den 'ernsten' Dingen übergehen - anstatt sich zuerst einen echten Überblick zu verschaffen.
+  * (Sie steigen ganz aus dem Prozess aus, einen Überblick zu gewinnen.)
 * diesen Orientierungsalgorithmus überhaupt auslassen und sich irgendwie 'reinlesen' - anstatt systematisch vorzugehen.
+  * (Sie fangen gar nicht erst an, sich Sicherheit zu verschaffen.)
+
+
+Anmerkungen zum Beispiel  *[→ ZP:Sheet:3]*
+
+* Welches reale Projekt ist nicht so umfangreiche, dass man sich mit verschiedenen Frage- und
+Problemstellungen bereits frühzeitig beschäftigen müßte? [Am Anfang ist jedes Projekt per definitionem unbekannt.]
+
+* Gibt es auch "gleiche Unterscheidungsmerkmale"?
+
+* Könnte man nicht einfach sagen "IST-Analyse der MDE Geräte des Kunden hinsichtlich Eigenschaften und Unterschiede
+
 
 ---
 
@@ -200,14 +230,23 @@ Lösung: siehe `AP2-FIDV-Sommer-2023-markiert.pdf`
 
 * *Sehen Sie, was NOISE ist, vor dem Sie sich schützen müssen?*
 
+#### 4.2 
+
+**Quick-Win-Phase:**
+
+* [ ] Lösen Sie jetzt die einfachen Sachen zuerst: (die 1-Minute Aufgaben) 
+* [ ] Sobald es (doch) länger (als erwartet) dauert, kein Problem: schieben Sie diese Aufgabe nach hinten.
 
 
-**Qick-Win einsammeln:**
+#### 4.3 
 
-* [ ] Lösen Sie die einfachen Sachen zuerst: (die 1-Minute Aufgaben) 
-* [ ] Wenn es länger dauert, schieben Sie die Aufgabe auf.
+**Dicke Bretter-Phase:**
 
-**Die dicken Bretter angehen:**
+Jetzt sind Sie gewappnet! Sie 
+
+* wissen worum es insgesamt geht, 
+* haben die schnellen Sachen eingesammelt
+* können jetzt schrittweise in die Breite denken und lösen, ohne sich zu verlieren.
 
 
 

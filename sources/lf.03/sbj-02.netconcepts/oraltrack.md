@@ -10,36 +10,36 @@
 
 Im Lernfeld 03 kommt es in erster Linie darauf, Begriffe und Konzepte kennenzulernen. In der Mittelstufe in Lernfeld 09 wird es dann um das Zusammenwirken und das Ineinandergreifen gehen.
 
-* **Alarmanlage**: 
-* **Archivierungssystem**:
-* **Anwendungssoftware**:
-* **CRM**:
-* **ERP**:
-* **Datacenter**:
-* **Datenendgerät**:
-* **Datensicherung**:
-* **Drucker**:
-* **Gefahrenmeldeanlage**:
-* **Host**:
-* **Ip-Adresse**:
-* **Kopierer**:
-* **LAN**:
-* **Scanner**:
-* **Network-Devices**:
-* **PC-Arbeitsplätze**:
-* **Router**:
-* **Rechenzentrum**:
-* **Paket**:
-* **Server**:
-* **Speicher**:
-* **Switch**:
-* **Telefone**:
-* **TK-Anlage**:
-* **Videoüberwachung**:
-* **WLAN/Wi-Fi**:
-* **Zahlungsverkehr**:
-* **Zeiterfassung**:
-* **Zutrittskontrolle**:
+* [ ] Alarmanlage**: 
+* [ ] Archivierungssystem**:
+* [ ] Anwendungssoftware**:
+* [ ] CRM**:
+* [ ] ERP**:
+* [ ] Datacenter**:
+* [ ] Datenendgerät**:
+* [ ] Datensicherung**:
+* [ ] Drucker**:
+* [ ] Gefahrenmeldeanlage**:
+* [ ] Host**:
+* [ ] Ip-Adresse**:
+* [ ] Kopierer**:
+* [ ] LAN**:
+* [ ] Scanner**:
+* [ ] Network-Devices**:
+* [ ] PC-Arbeitsplätze**:
+* [ ] Router**:
+* [ ] Rechenzentrum**:
+* [ ] Paket**:
+* [ ] Server**:
+* [ ] Speicher**:
+* [ ] Switch**:
+* [ ] Telefone**:
+* [ ] TK-Anlage**:
+* [ ] Videoüberwachung**:
+* [ ] WLAN/Wi-Fi**:
+* [ ] Zahlungsverkehr**:
+* [ ] Zeiterfassung**:
+* [ ] Zutrittskontrolle**:
 
 ---
 
@@ -253,6 +253,9 @@ Hinweis:
     * **IP basierte Telefonie**: Sprache/Töne → IP-Pakete → Sprache/Töne
 
 * **Netztaxonomie nach Struktur/Topologie:** [→ ZP:Sheet:6]
+  * **Linien**-Topologie
+    * alle beteiligten Komponenten in Reihe geschaltet
+    * jeder Knoten auch aktivier Signalverstärker (Repeater)
   * **Bus**-Topologie:
     * alle Knoten linear über ein Medium verbunden. 
     * keine aktiven Komponenten dazwischen.
@@ -358,5 +361,117 @@ verwendet nur 4 Schichten:
 
 * → [https://de.wikipedia.org/wiki/Internetprotokollfamilie](https://de.wikipedia.org/wiki/Internetprotokollfamilie)
 * → [https://en.wikipedia.org/wiki/Internet_protocol_suite](https://en.wikipedia.org/wiki/Internet_protocol_suite)
+
+
+### Graphentheorie im Crashkurs
+#### 
+Theorie
+
+* **Graph** = eine aus *Knoten* und *Kanten* bestehen Struktur
+* **Knoten** = ein etikettierbarer Punkt/Ecke in einem Graph
+* **Kante** = eine (direkte) etikettierbare Verbindung zwischen zwei Knoten
+* **Pfad** ist eine Möglichkeit, von einem Knoten zum nächsten zu kommen (rekursive Definition):
+  * Wenn in einem Graph *A* und *B* zwei Knoten sind und *AB* eine(!) Kante dazwischen ist,
+    dann ist <*A*,*B*,*AB*> ein Pfad
+  * Wenn <*X*, *A*, *XA*> ein Pfad ist und *A* und *B* zwei Knoten sind und *AB* eine Kante dazwischen ist,
+    dann ist auch <*X, *B*, *XB*> ein Pfad
+* **Ungerichteter Graph**: seine Kanten
+  * werden durch Linien gekennzeichnet
+  * haben keine Richtung
+  * können in beide Richtungen durchlaufen werden
+* **Gerichteter Graph** (engl. *Digraph*): seine Kanten
+  * werden durch (implizite) Pfeile gekennzeichnet 
+  * haben ein Richtung
+  * können nur in Richtung der Pfeile durchlaufen werden
+* **Zyklus in einem (gerichteten) Graph**:
+  * Wenn <*X*, *A*, *XA*> ein gerichteter Pfad ist und *AX* eine von *XA* verschiednete Kante ist,
+    dann ist <*X, *X*, *XB*> ein zyklischer Pfad (kurz: Zyklus)
+* **Gerichteter azyklischer Graph** (engl. *DAG* / *directed acyclic graph*):
+  * ist ein gerichteter Graph
+  * enthält keine zyklischen Pfade
+* **Baum** :- azyklischer Graph
+  * Jeder Knoten hat 0 - 1 Väterknoten 
+  * Jeder Knoten hat 0 - n Töchterknoten
+  * **Vaterknoten**: In einem Pfad *AB* ist *A* der Vaterknoten von *B*
+  * **Tochterknoten**: In einem Pfad *AB* ist *B* der Vaterknoten von *B*
+  * **Geschwisterknoten**: Sind *A*,*B* und *C* Knoten mit Pfaden *AB* und *AC*, 
+    dann sind *B* und *C* Geschwister 
+  * **Wurzelknoten**: der Knoten mit 0 Väterknoten
+  * **Blatt(knoten)**: die Knoten mit 0 Töchterknoten
+* [→[https://de.wikipedia.org/wiki/Graph_(Graphentheorie)](https://de.wikipedia.org/wiki/Graph_(Graphentheorie)) ]
+
+#### 
+Praxis:
+
+* IP-Adresssystematik 
+* Domain-Namen
+* Dateisystem
+
+weil: 
+
+* die jeweils nächst tiefer eingebettete Einheit entsteht durch Pfadverlängerung.
+  * Verlängerung der Netzmaske
+  * Verlängerung des Domainnamens durch weitere Spezifikatoren
+* außer an der obersten Stelle sind zu jedem Pfad Geschwisterknoten denkbar
+
+
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF03:02:Begriffe:01**</span>
+
+* [ ] Repräsentieren Sie die Hexsymbole [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f] 
+      als Liste von Listen mit 6 als Wurzelknoten und den Geschwisterknoten
+      0, 1, 3, 4, 5 und 8, 9 und a, b, c, e, f:
+
+* [ ] Erzeugen Sie dieselbe Struktur als System von Ordnern und Dateien und lassen
+      Sie Ihr Ergebnis per `tree`ausgeben 
+
+<!-- uebung::end -->
+
+Lösung [→ ZP:Sheet:9,10]
+
+---
+
+
+### Protokolle und Pakete im Crashkurs 
+
+**Pakete**
+
+* haben immer eine Präambel und einen Payload
+  * Die Präambel enthält die zur Adressierung notwendigen Informationen
+  * Der Payload enthält die Nachricht
+  * Def.:
+    * PA mit <PRAEA [PAYA]> und PAYA=MESSAGE ist ein Paket.
+    * Sind PX mit <PRAEX [PAYX]> und PY mit <PRAEY [PAYY]> Pakete, 
+      dann ist auch <PRAEX [PRAEY [PAYY]]> ein Paket
+
+Beispiel: 
+
+* Einbettung IP-Paket in Ethernetframe im ARP (Adress-Resolution-Protokoll) [→ ZP:Sheet:11]
+* Das kann ins Grundsätzliche gewendet werden [→ ZP:Sheet:12]
+* IP-Adressen identifizieren Rechner/Netzwerkschnittstellen
+* Ports identifizieren Applikationen, die das Betriebssystem beauftragt haben, bestimmte Pakete an sie weiterzuleiten. [→ ZP:Sheet:13]
+
+**Protokolle**
+* regeln welche Nachrichten in welchen Paketen mit welcher Abfolge erfolgen
+* Beispiel: TCP/IP 3-Wege-Handshake
+
+Beispiele: 
+
+* http(s): 
+  * Port 80 / 443 
+  * Zum Download von Dokumenten mit den Schritten GET, POST, PUT, DELETE, ...
+* smtp(s): 
+  * Port 25 / 587 
+  * Zum Versenden von Textdokumenten (Mails)
+* ssh: Port 22
+  * Zum Versenden von verschlüsselten Nachrichten
+* ICMP: 
+  * Internet Control Message Protocol
+  * wird von Routern und Hosts benutzt, um Reports/Irritationen zu übermitteln
+
+<!-- **Denkfrage:** Wieviel Pfade gibt es in einem ungerichteten Graph mit -->
 
 
