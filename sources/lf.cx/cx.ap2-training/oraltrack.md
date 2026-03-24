@@ -41,56 +41,7 @@ Legende:
 
 ---
 
-
-### 2.1 AP2 Prüfungsunterlagen: Daten- und Prozessanalyse
-
-
-| Zeit | Datum | Typ | Papier | Digital |
-|---|---|---|---|---|
-| Winter 25/26 | 20251126 | Prozessanalyse | P **& L** |
-|              |          | Datenqualität | P **& L**|
-| Sommer 2025  | 20250527 | Prozessanalyse | P **& L** |
-|              |          | Datenqualität | P **& L** |
-| Winter 24/25 | 20241127 | Prozessanalyse | P |
-|              |          | Datenqualität  | P |
-| Sommer 2024  | 20240424 | Prozessanalyse | P | P |
-|              |          | Datenqualität | P | P |
-| Winter 23/24 | 20231129 | Prozessanalyse | P | P |
-|              |          | Datenqualität  | P | P |
-| Sommer 2023  | 20230426 | Prozessanalyse | P **& L** | P **& L** |
-|              |          | Datenqualität | P **& L** | P **& L** |
-| Winter 22/23 | 20221123 | Prozessanalyse | | P |
-|              |          | Datenqualität  | | P |
-| Sommer 2022  | 20220504 | Prozessanalyse | P **& L** | P **& L** |
-|              |          | Datenqualität | P **& L** | P **& L** |
-| Winter 21/22 | 20221123 | Prozessanalyse | | P |
-|              |          | Datenqualität  | | P |
-
-#### 2.2 AP2 Prüfungsunterlagen: Digitale Vernetzung
-
-| FR | Zeit | Datum | Papier | Digital
-|---|---|---|---|---|
-| Winter 25/26 | 20251126 | Diagnose/Störung | P **& L** |
-|              |          | Betrieb/Erweiterung | P **& L**|
-| Sommer 25    |          | Diagnose/Störung    |  |   |
-|              |          | Betrieb/Erweiterung |  |   |
-| Winter 24/25 |          | Diagnose/Störung    |   |
-|              |          | Betrieb/Erweiterung |   |
-| Sommer 24    | 20240424 | Diagnose/Störung    | P | P |
-|              |          | Betrieb/Erweiterung | P | P |
-| Winter 23/24 | 20231129 | Diagnose/Störung    | P | P |
-|              |          | Betrieb/Erweiterung | P | P |
-| Sommer 23    | 20230426 | Diagnose/Störung    | P **& L** | P **& L** |
-|              |          | Betrieb/Erweiterung | P **& L** |P **& L** | 
-| Winter 22/23 | 20221123 | Diagnose/Störung    | |P **& L** |
-|              |          | Betrieb/Erweiterung | | P **& L** |
-| Sommer 2022  | 20220504 | Diagnose/Störung    | | P **& L** |
-|              |          | Betrieb/Erweiterung | | P **& L** |
-| Winter 21/22 | 20211124 | Diagnose/Störung    | | P **& L** |
-|              |          | Betrieb/Erweiterung | | P **& L** |
-
-
-### 3. Einstieg in die Erschließung von AP2-Prüfungsunterlagen
+### 2. Einstieg in die Erschließung von AP2-Prüfungsunterlagen
 
 
 <!-- uebung::start -->
@@ -129,9 +80,9 @@ Für ein gutes Ergebnis benötigen Sie
 1. ein Verfahren, die Verständnisorientierung auf <= 5 Min zu minimieren
 2. Training des Verfahrens
 
-### 4. Systematische Erschließung von AP2-Prüfungsunterlagen
+### 3. Systematische Erschließung von AP2-Prüfungsunterlagen
 
-#### 4.1
+#### 3.1
 
 **Orientierungsphase:** *[→ ZP:Sheet:2]*
 
@@ -142,7 +93,7 @@ Für ein gutes Ergebnis benötigen Sie
   
 *[→ ZP:Sheet:2]*
 
-* [ ] **Aufgabenermittlung:**:Unterstreichen Sie in den Aufgabenblättern die Sätze **KNALLIG**, die Ihnen sagen, dass Sie etwas tun sollen. Solche Sätze beginnen mit:
+* [ ] **Grobscan:**:Unterstreichen Sie in den Aufgabenblättern die Sätze **KNALLIG**, die Ihnen sagen, dass Sie etwas tun sollen. Solche Sätze beginnen mit:
   * Ergänzen Sie ...
   * Erläutern Sie ...
   * Beschreiben Sie ...
@@ -157,18 +108,16 @@ Für ein gutes Ergebnis benötigen Sie
   * Lesen Sie NICHT drumherum.
   * Unterstreichen Sie **nur** diese einzelnen Sätze. (Selbst wenn Sie sie für sich genommen nicht aufschlüsseln können)
   
-* [ ] **Kontextmittlung:** Streichen Sie in den Aufgabenblättern die Sätze am Rand **POSITIV-DEZENT** an, die **unmittelbar** wichtig für das Verständnis der Aufgaben sind.
-  * Hier gilt: **Weniger ist mehr!!!**
-  
-* [ ] **Kontextverfeinerung:** 
-  * [ ] Streichen Sie in den Aufgabenblättern zuletzt die Sätze am Rand **POSITIV-SANFT** an, an die Sie bei der Lösung auch denken sollten.
-  * [ ] Lesen Sie bei jeder Aufgabe ruhig die Eingangsstory durch und streichen Sie auch sie am Rand **POSITIV-SANFT** an
+* [ ] **Feinabklärung:** Gehen Sie die unterstrichenen Aufgabensätze durch:
+  * [ ] Streichen Sie in den Aufgabenblättern die Sätze **POSITIV-DEZENT** an, die **unmittelbar** wichtig für das Verständnis der Aufgaben sind. (Hier gilt: **Weniger ist mehr!!!**)
+  * [ ] Streichen Sie in den Aufgabenblättern dann die entfernteren die Sätze am Rand **POSITIV-SANFT** an, an die Sie bei der Lösung auch denken sollten.
+  * [ ] Berücksichtigen Sie dabei auch Eingangsstory der Aufgabe.
   
 
 
 Was könnten Sie bei diesem Verfahren falsch machen?
 
-* Text um die Fragen herum lesen - anstatt nach Schema F farblich zu markieren. 
+* Während des Grobscans Text um die Fragen herum lesen - anstatt nach Schema F farblich zu markieren. 
   * (Sie stören ihr Gehirn dabei, sich ein Grundgerüst zu bilden).
 * Schon mal eine Frage direkt beantworten - anstatt Ihren Prozess einzuhalten. 
   * (Sie steigen ganz aus dem Prozess aus, mit dem sich ihr Gehirn ein Grundgerüst bildet.)
@@ -180,7 +129,7 @@ Was könnten Sie bei diesem Verfahren falsch machen?
   * (Sie fangen gar nicht erst an, sich Sicherheit zu verschaffen.)
 
 
-Anmerkungen zum Beispiel  *[→ ZP:Sheet:3]*
+Anmerkungen zum Beispiel *[→ ZP:Sheet:3]*
 
 * Welches reale Projekt ist nicht so umfangreiche, dass man sich mit verschiedenen Frage- und
 Problemstellungen bereits frühzeitig beschäftigen müßte? [Am Anfang ist jedes Projekt per definitionem unbekannt.]
@@ -196,13 +145,13 @@ Problemstellungen bereits frühzeitig beschäftigen müßte? [Am Anfang ist jede
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:AP2-Training:02**</span>
 
 * [ ] Gehen Sie o.a. Prozess jetzt Schritt für Schritt in demselben Aufgabentext wie oben durch.
-* [ ] Sie haben dafür 5 Minuten 
+* [ ] Sie haben dafür 10 Minuten 
 
 <!-- uebung::end -->
 
 ---
 
-**Diskussion nach 5 Minuten**: 
+**Diskussion nach 10 Minuten**: 
 
 * *Wie fühlen Sie sich jetzt dem Aufgabenblatt gegenüber?*
 * *Wie war es, sich an das Verfahren zu halten?*
@@ -230,7 +179,7 @@ Lösung: siehe `AP2-FIDV-Sommer-2023-markiert.pdf`
 
 * *Sehen Sie, was NOISE ist, vor dem Sie sich schützen müssen?*
 
-#### 4.2 
+#### 3.2 
 
 **Quick-Win-Phase:**
 
@@ -238,7 +187,7 @@ Lösung: siehe `AP2-FIDV-Sommer-2023-markiert.pdf`
 * [ ] Sobald es (doch) länger (als erwartet) dauert, kein Problem: schieben Sie diese Aufgabe nach hinten.
 
 
-#### 4.3 
+#### 3.3 
 
 **Dicke Bretter-Phase:**
 
