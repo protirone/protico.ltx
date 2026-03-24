@@ -115,21 +115,23 @@
     * [X] DoD: Durchschnitt-Evaluation-Modul ist programmiert
 
 
-**HEAP**
+**Sprint D**
 
-* { } System für einen Produktionslauf von 3*24 vorbereiten und den ausführen
+* {8} System für einen Produktionslauf von 3*24 vorbereiten und den ausführen
   * [ ] DoD: Das System ist ohne Eingreifen 3*24 gelaufen
   * [ ] DoD: Alle Daten sind über 3*24 gespeichert
-* { } Datenauswertung mit relevanten Analysen für den Bestand eines Produktionslauf von 3*24 vorbereiten und ausführen
+* {5} Datenauswertung mit relevanten Analysen für den Bestand eines Produktionslaufs von 3*24 vorbereiten und ausführen
   * [ ] DoD: Alle 3*24-Daten sind als Ganzes ausgewertet
   * [ ] DoD: Es gibt relevante Aussagen über das Mikroklima an den Schulräumen.
-* { } System für eine stündliche, dann tägliche und schließlich wöchentliche Datensicherung im Round-Robin-Verfahren vorbereiten und Datensicherung aktivieren
+* {13} System für eine stündliche, dann tägliche und schließlich wöchentliche Datensicherung im Round-Robin-Verfahren vorbereiten und Datensicherung aktivieren
   * [ ] DoD: Datensicherung ist konzipiert und mit Skripten ausführbar gemacht
   * [ ] DoD: Datensicherung läuft während des 3*24 Produktionslaufes
-* { } Loggingsystem implementieren, um den Zustand während Produktionslaufes zu überwachen
+* {8} Loggingsystem implementieren, um den Zustand während Produktionslaufes zu überwachen
   * [ ] DoD: Loggingsystem ist konzipiert und mit Skripten ausführbar gemacht
   * [ ] DoD: Loggingsystem läuft während des 3*24 Produktionslaufes
   
+**HEAP**
+
 * { } Prozess der Datenerhebung designen und dokumentieren in BPMN
 * { } Datenanalyse auf Bestand gemäß `lf.11c/sbj-04.dta-evaluation` erweitern
 * { } Analyse der Prozessgüte auf Bestand gemäß `sbj-02.prc-analysis` erweitern
