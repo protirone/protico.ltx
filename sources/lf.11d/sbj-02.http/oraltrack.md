@@ -158,29 +158,45 @@ Die Nutzung der Server hängt davon ab
 
 ### (6) Beispiel B
 
-nach `>telnet 127.0.0.1 80` eingeben:
+Gesetzt, wir hätten folgendes simples PHP-Skript auf unserem Webserver laufen:
 
 ```
-GET /dwa/raum-1/index.php HTTP/1.1
+$USER=htmlspecialchars($_GET["user"]);
+print("<html>\n<head>\n</head>\n<body>\n<p>");
+print("Nachricht von $USER angekommen");
+print("</p>\n</body>\n</html>");
+
+```
+Dann könnten wir es
+
+* 1.) mit `http://127.0.0.1/auth.sim.php?user=karsten` aus dem Browser heraus aufrufen
+
+* 2.) nach Eingabe des Shell-Kommandos `>telnet 127.0.0.1 80` mit diesen Zeilen aufrufen:
+
+```
+GET /auth.sim.php?user=karsten HTTP/1.1
 HOST: localhost
 
 
 ```
 
+* 3.) nach Eingabe des Shell-Kommandos `>telnet 127.0.0.1 80` mit diesen Zeilen aufrufen:
+
 ```
-POST /dwa/raum-2/index.php HTTP/1.1
+POST /auth.sim.php HTTP/1.1
 HOST: localhost
-CONTENT-LENGTH: 12
+Content-Type: application/x-www-form-urlencoded
+CONTENT-LENGTH: 14
 
-Name=Karsten
-
-
-
-```
+user=karsten
 
 
 ```
-HEAD /dwa/raum-a/t/index.php HTTP/1.1
+
+* 4.) nach Eingabe des Shell-Kommandos `>telnet 127.0.0.1 80` mit diesen Zeilen aufrufen:
+  
+```
+HEAD /auth.sim.php HTTP/1.1
 HOST: localhost
 
 ```
