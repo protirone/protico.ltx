@@ -6,15 +6,15 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-### 1. Zusammenhänge:
+### 1. Zusammenhänge:  **[→ ZP:Sheet:2]**
 
 **(I) Prozesse** im Allgemeinen
 
-* sind Schrittfolgen, die als solche einen initialen Zustand (von Daten, Werkstücken, Materialien, ...) in einen anderen Zustand überführen.
-* sind als Schrittfolgen beschreibar und (anhand dieser Beschreibung) wiederholbar.
+* sind Schrittfolgen, die als solche einen initialen Zustand (von Daten, Werkstücken, Materialien, ...) in einen anderen Zustand überführen,
+* sind als Schrittfolgen beschreibbar und (anhand dieser Beschreibung) wiederholbar,
 * transformieren - als Einheit gesehen - ebenso den Input in einen veränderten Output,
 * wie ihre Schritte den jeweiligen Input in einen veränderten Output umwandeln. (Rekursive Definition)
-* haben eine innere Ordnung der Prozessschritte, die sich in einem Kontrollfluss manifiestiert.
+* haben eine innere Ordnung der Prozessschritte, die sich in einem Kontrollfluss manifestiert.
 
 Ein **(II) Geschäftsprozess**
 
@@ -40,7 +40,11 @@ Es gilt: **Keine verschiedenen Blickwinkel ohne _Prozessdokumentation_. Keine Pr
 [vgl. → Kersken: Daten- und Prozessanalyse für Fachinformatiker\*innen, 2021, S.424ff]
 
 
-### 2. Einfaches Beispiel:
+### 2. Einfaches Beispiel: **[→ ZP:Sheet:3]**
+
+---
+
+<!-- uebung::start -->
 
 **Prozessbeschreibung:**
 
@@ -61,17 +65,14 @@ Es gilt: **Keine verschiedenen Blickwinkel ohne _Prozessdokumentation_. Keine Pr
 * *tr* :- liest Daten von *stdin*, ersetzt alle Zeichen 'A' durch 'B' bzw. löscht 'A' und schreibt nach *stdout*
 * `>` :- liest von einem IO-Channel (hier *stdout*) und lenkt die Daten in eine Datei um.
 
----
-
-<!-- uebung::start -->
 
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:01:Prozessdokumentation:01**</span>
-
 
 * [ ] Dokumentieren Sie obigen Prozess als *Aktivitätsdiagramm*. 
 
 <!-- uebung::end -->
 
+Lösung: **[→ ZP:Sheet:4]**
 ---
 
 <!-- uebung::start -->
@@ -79,18 +80,26 @@ Es gilt: **Keine verschiedenen Blickwinkel ohne _Prozessdokumentation_. Keine Pr
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:01:Prozessdokumentation:02**</span>
 
 
-* [ ] Dokumentieren Sie obigen Prozess als *Flussdiagramm*. 
+* [ ] Dokumentieren Sie cat|sed|tr-Prozess als *Flussdiagramm*. 
 * [ ] Finden Sie Möglichkeiten, den Prozess zu verschlanken. 
 
 <!-- uebung::end -->
 
+Lösung: **[→ ZP:Sheet:5]** / Prozessschrittdoubletten sind ausgegraut
+
 ---
 
-### 3. Komplexeres Beispiel:
 
-**Prozessbeschreibung:**
 
-* Ich bin für's Einkaufen zuständig.
+### 3. Komplexeres Beispiel: **[→ ZP:Sheet:6]**
+
+---
+
+<!-- uebung::start -->
+
+**Prozessbeschreibung:** 
+
+* Ich bin bei uns für's Einkaufen zuständig.
 * Meine Frau schreibt den Einkaufszettel, schrittweise, wann immer ihr etwas einfällt, manchmal bis zur letzten Minute.
 * Irgendwann, bevor ich losfahre, checke ich, was uns an Wasch- und Hygieneartikel fehlt, und notiere das auf unserem Einkaufszettel.
 * Zum Einkaufen fahre ich freitags oder samstags.
@@ -102,11 +111,6 @@ Es gilt: **Keine verschiedenen Blickwinkel ohne _Prozessdokumentation_. Keine Pr
 * Sind wir zu zweit in *Erda*, beginnt meine Frau bei Rossmann, ich bei Edeka. Danach beenden wir den Edeka-Einkauf gemeinsam.
 * Auf dem Rückweg lutsche ich Lakritze - wenn ich allein bin.
 
-
----
-
-<!-- uebung::start -->
-
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:01:Prozessdokumentation:03**</span>
 
 
@@ -114,6 +118,8 @@ Es gilt: **Keine verschiedenen Blickwinkel ohne _Prozessdokumentation_. Keine Pr
 * [ ] Finden Sie Möglichkeiten, den Prozess zu verschlanken. 
 
 <!-- uebung::end -->
+
+Lösung:  **[→ ZP:Sheet:7]**
 
 ---
 
@@ -126,10 +132,16 @@ Es gilt: **Keine verschiedenen Blickwinkel ohne _Prozessdokumentation_. Keine Pr
 
 <!-- uebung::end -->
 
+Lösung:  **[→ ZP:Sheet:8]**
+
 ---
 
 
-### 4. Ausgefallenes Beispiel:
+### 4. Ausgefallenes Beispiel:  **[→ ZP:Sheet:9]**
+
+---
+
+<!-- uebung::start -->
 
 **Prozessbeschreibung:**
 
@@ -144,10 +156,6 @@ Der Chef lässt die Abteilungen allerdings oft und überraschend in andere Zimme
 
 Abteilungen, die mit der Frage nicht gemeint sind, ignorieren diese. Die tatsächlich gemeinte Abteilung schickt der anfragenden Abteilung -- sie hat deren Adresse im Absender gefunden -- jedoch als Antwort ihre eigene Adresse. Danach können die beiden Abteilungen für eine kleine Weile direkt Nachrichten austauschen.
 
----
-
-<!-- uebung::start -->
-
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:01:Prozessdokumentation:05**</span>
 
 * [ ] Wählen Sie aus den Prozessdokumentationstechniken *UML-Aktivitätsdiagramm*, *UML-Sequenzdiagramm*, *Flussdiagramm*, *BPMN-Diagramm* und *EPK-Diagramm* zunächst die aus, die Ihnen am leichtesten fällt. Und dann die, die für Sie am schwierigsten ist.
@@ -155,5 +163,7 @@ Abteilungen, die mit der Frage nicht gemeint sind, ignorieren diese. Die tatsäc
 * [ ] Gehen Sie dabei strikt nach dem Arbeitsschema vor, dass Ihnen das Diagramm-Tonspurdokument angeboten hat.
 
 <!-- uebung::end -->
+
+Lösung: 
 
 ---
