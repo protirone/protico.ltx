@@ -298,7 +298,7 @@ Zu Begründung heißt es, dieses Schließen ...
 
 Tatsächlich sind die Dinge schärfer geregelt:
 
-1. In EPK geht jeder Aktion ein Zustand voraus und es folgt ihr ein anderer Zustand. Zustände und Aktionen haben je höchstens einen Eingang und/oder Ausgang. Mehrere Nachfolger und mehrere Vorgänger müssen mithin durch Konnektoren zusammengeführt werden. Die 'Klammerungsregel' ist mithin obligatorisach.
+1. In EPK geht jeder Aktion ein Zustand voraus und es folgt ihr ein anderer Zustand. Zustände und Aktionen haben je höchstens einen Eingang und/oder Ausgang. Mehrere Nachfolger und mehrere Vorgänger müssen mithin durch Konnektoren zusammengeführt werden. Das läuft auf eine 'Klammerungsregel' hinaus. Allerdings müssen nicht alle eröffneten Wege auch wieder in einer Klammer zusammengeführt werden.
 2. BPMN erlaubt die Verzweigung und Zusammenführung ohne Konnektoren. Die Klammerung ist bestenfalls optional.
 
 

@@ -1,12 +1,12 @@
 {
   "img_name": "logo-oer.png",
-  "img_author": "Unesco",
+  "img_author": "Wikimedia Commons",
   "img_comment": "",
-  "license_name": "CC-BY-3.0",
-  "licensing_url": "https://commons.wikimedia.org/wiki/File:Global_Open_Educational_Resources_Logo.svg",
-  "license_url": "https://creativecommons.org/licenses/by/3.0/deed.en",
+  "license_name": "CC0",
+  "licensing_url": "https://de.wikipedia.org/wiki/Datei:Open_Educational_Resources_(OER)_logo_-_public_domain.svg",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
   "repo_name" : "Wikimedia",
-  "repo_url" : "https://commons.wikimedia.org/wiki/File:Global_Open_Educational_Resources_Logo.svg",
+  "repo_url" : "https://commons.wikimedia.org/wiki/",
   "repo_img_id" : "",
-  "download_date": "20251231"
+  "download_date": "20260401"
 }

@@ -73,6 +73,7 @@ Es gilt: **Keine verschiedenen Blickwinkel ohne _Prozessdokumentation_. Keine Pr
 <!-- uebung::end -->
 
 Lösung: **[→ ZP:Sheet:4]**
+
 ---
 
 <!-- uebung::start -->
@@ -119,7 +120,7 @@ Lösung: **[→ ZP:Sheet:5]** / Prozessschrittdoubletten sind ausgegraut
 
 <!-- uebung::end -->
 
-Lösung:  **[→ ZP:Sheet:7]**
+Lösung: **[→ ZP:Sheet:7]**
 
 ---
 
@@ -132,12 +133,11 @@ Lösung:  **[→ ZP:Sheet:7]**
 
 <!-- uebung::end -->
 
-Lösung:  **[→ ZP:Sheet:8]**
+Lösung: **[→ ZP:Sheet:8]**
 
 ---
 
-
-### 4. Ausgefallenes Beispiel:  **[→ ZP:Sheet:9]**
+### 4. Ausgefallenes Beispiel: **[→ ZP:Sheet:9]**
 
 ---
 
@@ -164,6 +164,8 @@ Abteilungen, die mit der Frage nicht gemeint sind, ignorieren diese. Die tatsäc
 
 <!-- uebung::end -->
 
-Lösung: 
+Lösung für BPMN-Diagramm: **[→ ZP:Sheet:10]**
+
+Lösung für EPK-Diagramm: **[→ ZP:Sheet:11]**
 
 ---

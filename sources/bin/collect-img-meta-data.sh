@@ -20,6 +20,7 @@ UNIQUE_IMAGELIST="unique-imagelist.tmp"
 # (0) clear environment
 touch $UNIQUE_IMAGELIST;
 echo "imgGl/logo-protirone.png" > $IMAGELIST
+echo "imgGl/logo-oer.png" >> $IMAGELIST
 
 # (1) collect all images + paths embedded into any tex-file
 cat texfiles.tmp | while read f; do
