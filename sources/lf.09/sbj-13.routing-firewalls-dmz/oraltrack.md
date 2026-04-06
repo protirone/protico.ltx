@@ -21,7 +21,7 @@ Knüpft an Lösung der IPv4-Segmentierungsaufgabe *LF09:10* an
 
 <!-- uebung::end -->
 
-Lösung: 5 Routen **[→ ZP:Sheet:3]**
+Lösung: 6 Routen **[→ ZP:Sheet:3]**
 
 
 ---

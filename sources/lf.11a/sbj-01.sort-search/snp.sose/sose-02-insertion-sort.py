@@ -24,6 +24,13 @@ print(f"executing exercise <{EXC}>")
 #     einzusortierenden Elemente benötigen und wieviele (Vergleichs)Schritte
 #     Sie zum Einsortieren der Elemente benötigen.
 #
+# Grundidee:
+#
+#     Nimm immer wieder das oberste Element vom Stapel der einzusortierenden und 
+#     gehe den Stapel der schon sortierten bis zu dem Element durch, das nach
+#     dem neu einzusortierenden kommen müsste. Sortiere das neu einzusortierende
+#     direkt davor ein.
+#
 # Hintergrund: 
 #
 # (1) Der Insertion-Sort nimmt die einzusortierenden Elemente der Reihe nach
@@ -32,14 +39,15 @@ print(f"executing exercise <{EXC}>")
 #     Element einzuordnen wäre. Direkt davor sortiert er das neue Element ein.
 #     
 #     Sonderfälle: 
-# 
-#     a) Schon das erste der bereits einsortierten Elemente sollte von der
-#     Reihenfolge her NACH dem neu einzusortierenden kommen: Das neu 
-#     einzusortierende wird am Anfang eingefügt.
 #
-#     b) Auch das letzte der bereits einsortierten Elemente sollte von der
-#     Reihenfolge her VOR dem neu einzusortierenden kommen: Das neu
-#     einzusortierende am Ende angehängt.
+#     a) Ist der Zielstapel noch leer, wird das neu einzusortierende eingefügt.
+# 
+#     b) Wenn schon das erste der bereits einsortierten Elemente NACH dem neu 
+#     einzusortierenden kommen sollte, wird das neu einzusortierende am Anfang 
+#     eingefügt.
+#
+#     c) Wenn auch das letzte der bereits einsortierten Elemente noch VOR dem 
+#     neu einzusortierenden käme, wird das neu einzusortierende am Ende angehängt.
 #
 # (2) Die Entscheidung, ob ein Element vor einem anderen einzusortieren ist, 
 #     soll an eine Einscheidungsfunktion delegiert werden, die <true> bzw. <false>

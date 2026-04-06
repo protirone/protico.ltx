@@ -22,6 +22,24 @@ print(f"executing exercise <{EXC}>")
 # (C) Notieren/Zählen Sie, wieviele (Vergleichs)Schritte Sie zum Herausnehmen der 
 #     einzusortierenden Elemente benötigen und wieviele (Vergleichs)Schritte
 #     Sie zum Einsortieren der Elemente benötigen.
+# 
+# Grundidee:
+#
+#     Du bist ein Sortieragent und kannst beliebig viele andere Sortieragenten
+#     mit Zuarbeiten beauftragen: Hat Deine Auftragsliste <= 1 Elemente, gib
+#     sie als sortierte Liste zurück, ansonsten teile Deine Auftragsliste in 
+#     zwei kleinere (möglichst gleich große) und beauftrage zwei andere Agenten 
+#     mit deren Sortierung. Die beiden sortierten Ergebnislisten, die Dir Deine
+#     Agent zurückgeben, sortierst Du nun in Deine Ergebnisliste und gibst
+#     die als Resultat zurück.
+#
+#     Im Unterschied zum Quicksort machst Du Deine eigene Sortierarbeit
+#     gewissermaßen auf dem "Rückweg": Du weißt jetzt, dass in jeder Ergebnisliste
+#     alle tatsächlich nach dem ersten Element kommenden Element auch nach diesem
+#     kommen sollen! Du kannst also solange die Elemente aus der einen Liste 
+#     ohne Extraarbeit in die Zielliste übernehmen, bis Du auf dabei auf ein Element 
+#     triffst, das nach dem ersten Element der anderen Teilliste kommen sollte. Dann
+#     tauschst Du die Rollen Deiner Teillisten.
 #
 # Hintergrund: Der Merge-Sort denkt rekursiv:
 #
@@ -54,6 +72,6 @@ print(f"executing exercise <{EXC}>")
 # 
 # (4) Bzgl. Python s. sose-02.py
 # (5) Bzgl. des Datentyps Liste s. sose-02.py:
-
+#
 # freely following [https://www.datacamp.com/tutorial/python-merge-sort-tutorial]
 # see also [https://de.wikipedia.org/wiki/Mergesort]

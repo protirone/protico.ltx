@@ -22,6 +22,12 @@ print(f"executing exercise <{EXC}>")
 # (C) Notieren/Zählen Sie, wieviele (Vergleichs)Schritte Sie zum Herausnehmen der 
 #     einzusortierenden Elemente benötigen und wieviele (Vergleichs)Schritte
 #     Sie zum Einsortieren der Elemente benötigen.
+# 
+# Grundidee:
+#
+#     Gehe den Stapel der zu sortierenden Elemente immer wieder von vorne durch 
+#     und tausche die benachbarten Karten miteinander, die in der falschen
+#     Reihenfolge stehen. Musstest Du keine Karten mehr tauschen, bist Du fertig.
 #
 # Hintergrund: 
 #

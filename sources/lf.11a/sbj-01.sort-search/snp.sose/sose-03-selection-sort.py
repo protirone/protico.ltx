@@ -24,6 +24,11 @@ print(f"executing exercise <{EXC}>")
 #     einzusortierenden Elemente benötigen und wieviele (Vergleichs)Schritte
 #     Sie zum Einsortieren der Elemente benötigen.
 #
+# Grundidee:
+#
+#     Suche immer wieder das kleinste Element aus der Liste der noch einzusortierenden
+#     Elemente heraus und hänge es an die Liste der sortierten an.
+#
 # Hintergrund: 
 #
 # (1) Der Selection-Sort durchsucht die unsortierte Liste immer wieder nach dem 

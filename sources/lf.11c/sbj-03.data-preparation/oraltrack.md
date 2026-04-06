@@ -47,7 +47,7 @@ Aber:
 *Anmerkung*: Die Kriterien *Vollständigkeit* und *Korrektheit* stammen aus der KI/Mathematik:
 
 * Ein Deduktionsalgorithmus ist vollständig, wenn er alle natürlichen Schlussfolgerung auch aus sich heraus ableitbar macht.
-* Ein Deduktionsalgorithmus ist korrekt, wenn all seine auch sich heraus ableitbaren Schlüsse auch natürlich legitime Schlussfolgerungen sind.
+* Ein Deduktionsalgorithmus ist korrekt, wenn all seine aus sich heraus ableitbaren Schlüsse auch natürlich legitime Schlussfolgerungen sind.
 * Ein vollständiger und korrekter Deduktionsalgorithmus ist z.B. der, den das Wissensrepräsentationssystem PROLOG verwendet.
 
 *Beispiel:*
@@ -178,6 +178,7 @@ Ein **Konverter**
 **Konverterarchitektur**:
 
 Das Konzept der 'Zwischenrepräsentation' (= Intermediate Representation)
+
 * stammt aus dem Compilerbau (→  [https://en.wikipedia.org/wiki/Intermediate_representation](https://en.wikipedia.org/wiki/Intermediate_representation) )
 * kann immer verwendet werden, wenn Daten / Programme aus dem einen Format ('Sourcecode', 'CSV') in andere Formate ('Binärcode für Architektur X, Y, Z', 'JSON, INI') überführt (konvertiert) werden sollen.
 
