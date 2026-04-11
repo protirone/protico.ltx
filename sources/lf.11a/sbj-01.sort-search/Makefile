@@ -44,6 +44,9 @@ lesson-ort: oraltrack
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
 		if [ -d $${TGD}/$${SJN}-snp.sose ]; then rm -rf $${TGD}/$${SJN}-snp.sose ]; fi && \
 		cp -rd snp.sose $${TGD}/$${SJN}-snp.sose && \
+		cp -rd snp.sose $${SJN}-snp.sose && \
+		zip -r $${TGD}/$${SJN}-snp.sose.zip $${SJN}-snp.sose && \
+		rm -rf $${SJN}-snp.sose && \
     mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
 	@ tree ${BLD}
 

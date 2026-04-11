@@ -46,6 +46,9 @@ lesson-ort: oraltrack
 		if [ -d $${TGD}/$${SJN}-snp.sh2go ]; then rm -rf $${TGD}/$${SJN}-snp.sh2go ]; fi && \
 		cp -rd exam.sh2go $${TGD}/$${SJN}-exam.sh2go && \
 		cp -rd snp.sh2go $${TGD}/$${SJN}-snp.sh2go && \
+		cp -rd snp.sh2go $${SJN}-snp.sh2go && \
+		zip -r $${TGD}/$${SJN}-snp.sh2go.zip $${SJN}-snp.sh2go && \
+		rm -rf $${SJN}-snp.sh2go && \
     mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
 	@ tree ${BLD}
 
