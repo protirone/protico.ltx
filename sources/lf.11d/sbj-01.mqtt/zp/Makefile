@@ -3,7 +3,7 @@
 # It is distributed under the terms of the creative commons license
 # CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 
-AUX_EXTS=url bbl blg aux dvi toc log lof nlo nls ilg ils ent out log bcf xml nav snm vrb json tmp
+AUX_EXTS=url bbl blg aux dvi toc log lof nlo nls ilg ils ent out log bcf xml nav snm vrb json tmp pyg
 RES_EXTS=ps pdf 
 
 TFL=texfiles.tmp

@@ -26,7 +26,8 @@ lesson: lesson-ort
 lesson-ort: oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-    mv oraltrack.pdf $${TGD}/$${SJN}-solutions.pdf	
+    mv oraltrack.pdf $${TGD}/$${SJN}-solutions.pdf && \
+		if [ -f diagrams.pdf ]; then cp diagrams.pdf $${TGD}/$${SJN}-diagrams.pdf; fi
 	@ tree ${BLD}
 
 ort: oraltrack
@@ -47,5 +48,5 @@ clear:
 	$(foreach EXT, ${AUX_EXTS}, if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; fi;)
 
 clean:	clear
-	find . -name "*.pdf" ! -name "*solution.*" | while read f; do rm $$f; done
+	find . -name "*.pdf" ! -name "*diagrams.*" | while read f; do rm $$f; done
 

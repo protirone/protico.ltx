@@ -1,5 +1,5 @@
 ---
-title: 'AP2:DV:mmyy:nr'
+title: 'AP2:DV:2024SO:A2'
 author: [K. Reincke]
 date: PTCDATE
 keywords: [AP2 Lösung FIDV]
@@ -13,4 +13,4 @@ lang: "de-DE"
 papersize: a4
 colorlinks: true
 ---
-## AP2:DV: Lösung für mm/yyyy, Aufgabe Nr. X
+## AP2:DV: Lösung für Sommerprüfung 2024, Aufgabe Nr. 2
