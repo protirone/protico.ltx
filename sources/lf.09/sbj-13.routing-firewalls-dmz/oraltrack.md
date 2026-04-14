@@ -294,8 +294,8 @@ Das bedeutet:
 **Grundsatz:**
 
 * Die tatsächlichen Fähigkeiten der Layer-III-Switche variieren:
-  * einfachere Layer-III-Switche erwarten physikalisch angeschlossene Router zur Realisierung des lokalen Hoppings
-  * komplexere Layer-III-Switche emulieren Router als Teil ihrer Software 
+  * einfachere Layer-III-Switche erwarten physikalisch angeschlossene Router zur Realisierung des lokalen Hoppings.
+  * komplexere Layer-III-Switche emulieren Router als Teil ihrer Software **[→ ZP:Sheet:12]**.
   
 So gilt:
 
@@ -320,6 +320,6 @@ Disclaimer: Begriff VLAN (wie Begriff Netz) doppeldeutig benutzt:
 
 <!-- uebung::end -->
 
-Lösung: **[→ ZP:Sheet:13]**
+Lösung: **[→ ZP:Sheet:14]**
 
 ---
