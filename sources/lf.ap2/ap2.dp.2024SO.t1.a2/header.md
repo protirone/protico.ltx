@@ -1,8 +1,8 @@
 ---
-title: 'LFCX:AP2-Training'
+title: 'AP2:DP:2024SO:T1.A2'
 author: [K. Reincke]
 date: PTCDATE
-keywords: [AP2, Fachinformatik]
+keywords: [AP2 Lösung FIDV]
 header-left: "\\theauthor"
 header-center: "proTirone"
 header-right: "\\thetitle" 
@@ -13,4 +13,4 @@ lang: "de-DE"
 papersize: a4
 colorlinks: true
 ---
-## LFCX:AP2-Training
+## AP2:DP: Lösung für Sommerprüfung 2024, Teil 1, Aufgabe Nr. 2

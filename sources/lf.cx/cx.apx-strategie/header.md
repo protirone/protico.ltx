@@ -1,8 +1,8 @@
 ---
-title: 'AP2:DV:2024SO:A2'
+title: 'LFCX:AP[1|2]-Strategie'
 author: [K. Reincke]
 date: PTCDATE
-keywords: [AP2 Lösung FIDV]
+keywords: [AP2, Fachinformatik]
 header-left: "\\theauthor"
 header-center: "proTirone"
 header-right: "\\thetitle" 
@@ -13,4 +13,4 @@ lang: "de-DE"
 papersize: a4
 colorlinks: true
 ---
-## AP2:DV: Lösung für Sommerprüfung 2024, Aufgabe Nr. 2
+## LFCX:_A_bschluss_P_rüfung[1|2]-Strategie
