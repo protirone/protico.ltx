@@ -27,4 +27,5 @@ These are the (main) contributors to the project *proTirone*
 * Gewerbliche Schulen Dillenburg / Klasse 11ip24 mit
     Ali, Alina, Anamarija, Dennis, Hamza, Hannes,
     Mattis, Maximilian, Mehmet, Lara, Tobia, Zuza
+* hellerKopf (fachinformatiker.de)
   

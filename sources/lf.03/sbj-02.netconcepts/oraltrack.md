@@ -314,18 +314,26 @@ Hinweis:
   * **Layer VI** : *Presentation Layer* (= Darstellungsschicht)
     * MPEG, PNG, GIF, ASCII, UTF8,
   * **Layer V** : *Session Layer* (= Kommunikationsschicht)
-    * http-Protokoll, smtp-Protokoll, ssh, ipsec
+    * smb-Protokoll, smtp-Protokoll, ssh, ipsec
   * **Layer IV** : *Transport Layer* (= Transportschicht)
     * TCP-Protokoll, UDP-Protokoll, Ports
   * **Layer III** : *Network Layer* (= Vermittlungsschicht)
     * Routing, IP-Protokoll & -Adressen
   * **Layer II** : *Data Link Layer* (= Sicherungsschicht)
-    * Switch, Hardwareadressen, MAC-Adresse, HUB
+    * Switch, Hardwareadressen, MAC-Adresse
   * **Layer I**: *Physical Layer* (= Physikalische Schicht)
-    * [L|W]AN: Kupferkabel | Glasfaser
+    * [L|W]AN: Kupferkabel | Glasfaser | HUB
     * [WLAN]: Richtfunk | Satelliten-Funk, Signalformen, Frequenzen,
     * TRANSmitter+reCIEVER, RJ-45 Kabel, CSMA/CD, Token-Ring, Kollisionsvermeidung
 
+vgl.:
+
+* → Schreiner: Computernetzwerke, 2014, S.3ff
+* → Baun: Computernetze kompakt, 2022, S.39ff
+* → Gratzeke et.al: Lernfelder 1-5, 2020, S.24f
+* → [https://de.wikipedia.org/wiki/OSI-Modell](https://de.wikipedia.org/wiki/OSI-Modell)
+* → [https://en.wikipedia.org/wiki/OSI_model](https://en.wikipedia.org/wiki/OSI_model) 
+* → [https://datatracker.ietf.org/doc/html/rfc9110](https://datatracker.ietf.org/doc/html/rfc9110)
 
 *Aber*
 
@@ -333,16 +341,13 @@ Hinweis:
   * Bei der 'Sicherungsschicht' geht es nicht um Datenverschlüsselung, sondern um die Sicherstellung der Zustellung von Datenpaketen.
   * Bei der 'Kommunikationsschicht' geht es nicht um die Kommunikation überhaupt, sondern um den Zusammenhang mehrerer Kommunikationsschritte. (= eben einer Session von Nachrichten)
 * Zuordnung hat etwas Willkürliches an sich:
-  * Ist das http-Protokoll ein Sessionprotokoll, kein Transportprotokoll? Andererseits setzt es ja auf TCP/IP auf.
-  * Ist Layer V wirklich unabhängig von Layer IV, wenn einige Services nicht mit UDP umsetzbar sind, andere nicht mit TCP? 
+  * Gehört das http-Protokoll zum Layer-VII, wenn das Client-Server-Modell, das http nutzt, zu Layer-VII gehört? Andererseits setzt es ja auf TCP/IP auf und kann so nicht zu Layer-IV gehören. Und wiederum andererseits sagt es in seinem RFC von sich selbst, es sei "application-layer protocol" (Dank an hellerKopf, fachinformatiker.de für den Hinweis)
+  * Außerdem: Ist Layer V wirklich unabhängig von Layer IV, wenn einige Services nicht mit UDP umsetzbar sind, andere nicht mit TCP? 
   * Faktisch werden Layer-II und Layer-III-Elemente schon beim reinen ARP mit HUB gebraucht.
   
-> OSI-Layer sind ein gute grobe Themenklusterung, keine strenge Taxonomie
+> OSI-Layer sind ein gute Themenklusterung, keine strenge Taxonomie.
 
-vgl.:
-* → [https://de.wikipedia.org/wiki/OSI-Modell](https://de.wikipedia.org/wiki/OSI-Modell)
-* → [https://en.wikipedia.org/wiki/OSI_model](https://en.wikipedia.org/wiki/OSI_model) 
-  
+
 
 **Realisierung 2: TCP/IP-Referenzmodell [→ ZP:Sheet:8]**
 
