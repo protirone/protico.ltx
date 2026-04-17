@@ -6,6 +6,109 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
+### 0. Praktischer Vorlauf
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.search-sort:01**</span>
+
+* [ ] Teilen Sie sich ich zwei Gruppen auf und wählen Sie in jeder Gruppe je eine Sortiererin.
+* [ ] Sie erhalten 8 Spielkarten: 7 8 9 10 B D K As. Mischen Sie diesen Stapel und geben Sie den Ihrer Sortiererin.
+* [ ] Gruppen Sie sich in Ihrer Gruppe um sie und beobachten Sie genau, was sie tut, wenn sie die Karten sortiert.
+* [ ] Sammeln Sie in Ihrer Gruppe Ihre Beobachtungen und bringen Sie die Schritte in eine Form, dass Sie einer anderen Sortiererin aus der anderen Gruppe Schritt für Schritt dazu anleiten können, Ihren 'Algorithmus' auszuführen
+
+<!-- uebung::end -->
+
+Lösung: 
+
+* Die Schülerinnen werden wahrscheinlich eine Variante des *Insertion Sorts* und/oder des *Selection Sorts* verwenden.
+* Die Lehrerin bringt den Namen des Algorithmus ein und führt den Algorithmus dann in seiner reinen Form vor
+  * *Insertion Sort* **[→ ZP:Sheet:5]**
+  * *Selection Sort* **[→ ZP:Sheet:8]**
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.search-sort:02**</span>
+
+* [ ] Versammeln Sie sich um die Lehrerin.
+* [ ] Beobachten Sie genau, was sie tut.
+* [ ] Lehrerin mischt den 8-Karten-Stack und führt unkommentiert den *Bubble-Sort* vor.
+* [ ] Sammeln Sie Ihre Beobachtungen und bringen Sie die Schritte in eine Form, dass das Funktionieren des Bubble-Sorts erklären können
+
+<!-- uebung::end -->
+
+Lösung: Immer wieder paarweiser Kartenswap. **[→ ZP:Sheet:9]**
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.search-sort:03**</span>
+
+* [ ] Beantworten Sie die Frage, warum der *Insertion Sort* "Insertion Sort" heißt.
+* [ ] Beantworten Sie die Frage, warum der *Selection Sort* "Selection Sort" heißt.
+* [ ] Beantworten Sie die Frage, warum der *Bubble Sort* "Bubble Sort" heißt.
+
+<!-- uebung::end -->
+
+Lösung: 
+
+* *Insertion Sort* : weil man immer die oberste Karte vom unsortierten Stapel nimmt und an der richtigen Stelle im Sortierstapel **einfügt**.
+* *Selection Sort* : weil aus dem unsortierten Stapel die von der Zielreihenfolge her jeweils nächste Karte **auswählt** und an die feste Stelle im Sortierstapel einfügt.
+* *Bubble Sort* : weil die Karten auf falschen Positionen schrittweise nach oben an die je richtigen wandern
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.search-sort:04**</span>
+
+* [ ] Betrachten Sie die Grafik zum Quicksort. **[→ ZP:Sheet:10]**
+* [ ] Sammeln Sie Ihre Beobachtungen und formulieren Sie die auszuführenden Schritte.
+* [ ] Beantworten Sie insbesondere die Frage, wo die Sortierarbeit stattfindet.
+* [ ] Klären Sie anhand der Grafik, woraus ein rekursiver Prozess besteht.
+
+<!-- uebung::end -->
+
+Lösung: 
+
+* Sortiererin 
+  * erhält unsortierten Stapel,
+  * gibt den, sofern er <= 1 Karten enthält, als sortiert zurück,
+  * sucht ansonsten ein von der Wertigkeit her ungefähr mittiges Vergleichselement (Pivot-Element)
+  * splittet den Stapel in zwei Unterstapel auf: einen mit allen Elementen < Pivot-Element und den anderen mit denen >= Pivot-Element
+  * beauftragt andere Sortiererinnen die beiden Unterstapel nach derselben Methode zu sortieren.
+  * nimmt die sortierten Unterstapel wieder in Empfang und legt den mit den kleineren Karten auf den mit den größeren
+  * gibt den erzeugten Stapel als sortiert zurück.
+* Die Sortierarbeit findet vor der Unterbeauftragung statt (auf dem Rekursionshinweg).
+* Bei einem rekursiven Prozess ruft jeder Schritt sich selbst mit veränderten Input wieder auf.
+* Am Anfang eines jeden Aufrufs wird die Abbruchbedingung getestet.
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.search-sort:05**</span>
+
+* [ ] Betrachten Sie die Grafik zum Mergsort. **[→ ZP:Sheet:11]**
+* [ ] Sammeln Sie Ihre Beobachtungen und formulieren Sie die auszuführenden Schritte.
+* [ ] Beantworten Sie insbesondere die Frage, wo die Sortierarbeit stattfindet.
+* [ ] Beantworten Sie die Frage, warum er Merge-Sort heißt.
+
+<!-- uebung::end -->
+
+Lösung: 
+
+* Sortiererin 
+  * erhält unsortierten Stapel,
+  * gibt den, sofern <= 1 Karten enthält, als sortiert zurück,
+  * teilt die Stapel in zwei von der Anzahl her ungefähr gleich große Stapel
+  * beauftragt andere Sortiererinnen die beiden Unterstapel nach derselben Methode zu sortieren.
+  * nimmt die sortierten Unterstapel wieder in Empfang 
+  * sortiert den einen in sich sortierten Stapel in den anderen in sich sortierten ein (mergt die beiden)
+  * gibt den erzeugten Stapel als sortiert zurück.
+* Die Sortierarbeit findet nach der Unterbeauftragung statt. (Auf dem Rekursionsrückweg)
+* Die von den Unteragenten zurückgelieferten Sub-Stapel sind in sich sortiert, müssen aber noch entsprechend gemergt werden.
+
 
 ### 1. Allgemeines 
 
@@ -121,7 +224,7 @@ vgl. dazu
 ### 4. Vorbereitung für Einzelanalyse
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:00**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:06**</span>
 
 * [ ] Laden Sie sich aus Ihrem Downloadbereiche den Ordner `sbj-01.sort-search-snp.sose` herunter
 
@@ -200,7 +303,7 @@ Darin finden Sie Dateipaare nach dem Muster `sose-XYZ.py` und `sose-XYZ.sol.py`:
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:01**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:07**</span>
 
 * Lösen Sie die Aufgaben
   * [ ] `sose-00-sequential-search.py`, 
@@ -233,7 +336,7 @@ dem neu einzusortierenden kommen müsste.
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:02**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:08**</span>
 
 * [ ] Lösen Sie die Aufgabe `sose-02-insertion-sort.py`, 
 * [ ] Vergleichen Sie Ihre Lösung danach mit der in `sose-02-insertion-sort.sol.py`
@@ -259,7 +362,7 @@ Grundidee:
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:03**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:09**</span>
 
 * [ ] Lösen Sie die Aufgabe `sose-03-selection-sort.py`, 
 * [ ] Vergleichen Sie Ihre Lösung danach mit der in `sose-03-selection-sort.sol.py`
@@ -289,7 +392,7 @@ Die 'optische' Idee ist dabei,
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:05**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:10**</span>
 
 * [ ] Lösen Sie die Aufgabe `sose-04-bubble-sort.py`, 
 * [ ] Vergleichen Sie Ihre Lösung danach mit der in `sose-04-bubble-sort.sol.py`
@@ -331,7 +434,7 @@ Anmerkung:
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:05**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.sort-search:11**</span>
 
 * [ ] Lösen Sie die Aufgabe `sose-05-quick-sort.py`, 
 * [ ] Vergleichen Sie Ihre Lösung danach mit der in `sose-05-quick-sort.sol.py`
@@ -369,7 +472,7 @@ Unterschied zum Quicksort:
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.merge-search:06**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-01.merge-search:12**</span>
 
 * [ ] Lösen Sie die Aufgabe `sose-06-merge-sort.py`, 
 * [ ] Vergleichen Sie Ihre Lösung danach mit der in `sose-06-merge-sort.sol.py`
