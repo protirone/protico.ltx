@@ -50,7 +50,7 @@ Legende:
 * [ ] Bitte setzen Sie sich so um, dass ein deutlicher Abstand zu Ihren Klassenkameradinnen besteht.
 * [ ] Schalten Sie alle elektronischen Geräte/Hilfsmittel ab und packen Sie sie ein.
 * [ ] Legen Sie nur einen Stift und Papier vor sich.
-* [ ] Kommen Sie jetzt still nach vorne, nehmen Sie die Prüfungsunterlagen in Empfang, legen Sie sie ungeöffnet auf Ihren Tisch und nehmen Sie wieder Platz.
+* [ ] Kommen Sie jetzt still nach vorne, nehmen Sie die Auszüge aus einer AP2-Prüfung in Empfang, legen Sie sie ungeöffnet auf Ihren Tisch und nehmen Sie wieder Platz.
 * [ ] Sie haben auf das GO hin 10 Minuten Zeit, sich klarzumachen was Sie tun müssen.
 
 <!-- uebung::end -->
@@ -93,7 +93,7 @@ Für ein gutes Ergebnis benötigen Sie
   
 *[→ ZP:Sheet:2]*
 
-* [ ] **Grobscan:**:Unterstreichen Sie in den Aufgabenblättern die Sätze **KNALLIG**, die Ihnen sagen, dass Sie etwas tun sollen. Solche Sätze beginnen mit:
+* [ ] **Grobscan:**:Unterstreichen Sie in den Aufgabenblätter die Sätze **KNALLIG**, die Ihnen sagen, dass Sie etwas tun sollen. Solche Sätze beginnen mit:
   * Ergänzen Sie ...
   * Erläutern Sie ...
   * Beschreiben Sie ...
@@ -158,8 +158,6 @@ Problemstellungen bereits frühzeitig beschäftigen müßte? [Am Anfang ist jede
 
 * Erwartung: Es ist beherrschbar
 
-Lösung: siehe `AP2-FIDV-Sommer-2023-markiert.pdf`
-
 * schrittweise durchgehen
 * diskutieren, warum angestrichen bzw. nicht angestrichen.
 
@@ -183,7 +181,7 @@ Lösung: siehe `AP2-FIDV-Sommer-2023-markiert.pdf`
 
 **Quick-Win-Phase:**
 
-* [ ] Lösen Sie jetzt die einfachen Sachen zuerst: (die 1-Minute Aufgaben) 
+* [ ] Lösen Sie jetzt die einfachen Sachen zuerst: (die 1-Minute Aufgaben).
 * [ ] Sobald es (doch) länger (als erwartet) dauert, kein Problem: schieben Sie diese Aufgabe nach hinten.
 
 

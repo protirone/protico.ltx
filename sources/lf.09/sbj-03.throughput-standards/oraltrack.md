@@ -267,17 +267,14 @@ also
 
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:03:Verdrahtung:04**</span>
 
-Aufgabe aus der AP1-Prüfung 2022(?)
 
-In einer PLY-Datei sind 3840 Punkte gespeichert. Jeder Punkt wird durch x, y und z Koordinaten bestimmt.
-Jede Koordinate wird durch einen 32-Bit-Float-Wert kodiert:
+Nehmen Sie an, sie hätten 3840 Messungen in einer Datei gespeichert und das jede einzelnen Messung 
+in drei 32-Bit-Zahlen erfasst sei.
 
-1. [ ] Berechnen Sie, wie viele Kibibyte Sie benötigen, um die 3840 Punkte zu speichern. Der Speicherbedarf
-      des Dateiheaders und Farbcodierungen sollen nicht berücksichtigt werden.
-2. [ ] Jeder Punkt soll jetzt im RGB-Farbraum mit je 8 Bit pro Farbkanal kodiert werden. Berechnen Sie,
-      wie viele Farben sich damit darstellen lassen.
-3. [ ] Berechnen Sie, wie viel Prozent Speicher Sie pro Bildpunkt Sie zusätzlich benötigen, um
-      die Farbwerte zu speichern.
+1. [ ] Berechnen Sie, wie viele Kibibyte Sie benötigen, um die 3840 Messungen zu speichern. 
+2. [ ] Nehmen Sie jetzt an, jede Messung solle zusätzliche durch ein 3 Byte großes Integer verfeinert werden. Berechnen Sie,
+      wieviel verschiedene Werte sich mit den 3 Bytes erfassen lassen.
+3. [ ] Berechnen Sie, wie viel Prozent Speicher Sie pro Messung zusätzlich benötigen, um auch das 3-Byte-Integer mit zu erfassen.
 
 <!-- uebung::end -->
 
@@ -287,7 +284,7 @@ Jede Koordinate wird durch einen 32-Bit-Float-Wert kodiert:
 *zu 1.)*
 
 ```
-A.) Bei 3840 Punkte und 3 Koordinatenwerte a 32 Bit pro Punkt 
+A.) Bei 3840 Messung mit je drei 32 Bit-Werten  
     ergeben sich 3840 * 3 * 32 = 368640 Bits
 B.) 1 Kibibyte = 2^10 Bytes * 8 = 8192 Bits
 C.) 368640 Bits / 8192 = 45 KiB
@@ -301,11 +298,11 @@ C.) 368640 Bits / 8192 = 45 KiB
   = 2^24 = 16.777.216
 ```
 
-*zu 2.)*
+*zu 3.)*
 
 ```
-A) Bisher pro Punkt Speicherbedarf 3*32 Bits = 96 Bits.
-B) Zusätzlicher Speicherbedarf für Farbkodierung pro Punkt: 
+A) Bisher pro Messung 3*32 Bits = 96 Bits.
+B) Zusätzlicher Speicherbedarf 3-Byte-Integer: 
    3*8 Bits = 24Bits
 C) Speicherbedarf insgesamt jetzt 120Bits.
 D) Mehrbedarf von 24Bits sind 25% von 96Bits (24/96*100=25%)
