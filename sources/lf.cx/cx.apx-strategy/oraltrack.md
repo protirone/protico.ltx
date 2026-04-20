@@ -77,21 +77,19 @@ Antwort:
 
 Für ein gutes Ergebnis benötigen Sie
 
-1. ein Verfahren, die Verständnisorientierung auf <= 5 Min zu minimieren
+1. ein Verfahren, die Verständnisorientierung auf <= 10 Min zu minimieren
 2. Training des Verfahrens
 
-### 3. Systematische Erschließung von AP2-Prüfungsunterlagen
+### 3. Systematische Erschließung + Abarbeitung von AP(1|2)-Prüfungsunterlagen
 
-#### 3.1
-
-**Orientierungsphase:** *[→ ZP:Sheet:2]*
+#### 3.1 *[→ ZP:Sheet:2]*
 
 * [ ] **Vorbereitung:** Besorgen Sie sich 
-  * [ ] einen knalligen (rot) Textmarker, der den Text nicht überdeckt
-  * [ ] einen positiv-dezenten (pastell-grünen) Textmarker und
-  * [ ] einen positiv-sanften (pastell-blau) Textmarker
+  * [ ] einen knalligen (pastell-violett) Textmarker, der den Text nicht überdeckt
+  * [ ] einen positiv-dezenten (pastell-blau) Textmarker und
+  * [ ] einen positiv-sanften (pastell-grün) Textmarker
   
-*[→ ZP:Sheet:2]*
+*[→ ZP:Sheet:3]*
 
 * [ ] **Grobscan:**:Unterstreichen Sie in den Aufgabenblätter die Sätze **KNALLIG**, die Ihnen sagen, dass Sie etwas tun sollen. Solche Sätze beginnen mit:
   * Ergänzen Sie ...
@@ -131,7 +129,7 @@ Was könnten Sie bei diesem Verfahren falsch machen?
 
 Anmerkungen zum Beispiel *[→ ZP:Sheet:3]*
 
-* Welches reale Projekt ist nicht so umfangreiche, dass man sich mit verschiedenen Frage- und
+* Welches reale Projekt ist nicht so umfangreich, dass man sich mit verschiedenen Frage- und
 Problemstellungen bereits frühzeitig beschäftigen müßte? [Am Anfang ist jedes Projekt per definitionem unbekannt.]
 
 * Gibt es auch "gleiche Unterscheidungsmerkmale"?
@@ -177,9 +175,11 @@ Problemstellungen bereits frühzeitig beschäftigen müßte? [Am Anfang ist jede
 
 * *Sehen Sie, was NOISE ist, vor dem Sie sich schützen müssen?*
 
+
+
 #### 3.2 
 
-**Quick-Win-Phase:**
+**Quick-Win-Phase:** 
 
 * [ ] Lösen Sie jetzt die einfachen Sachen zuerst: (die 1-Minute Aufgaben).
 * [ ] Sobald es (doch) länger (als erwartet) dauert, kein Problem: schieben Sie diese Aufgabe nach hinten.
@@ -196,4 +196,12 @@ Jetzt sind Sie gewappnet! Sie
 * können jetzt schrittweise in die Breite denken und lösen, ohne sich zu verlieren.
 
 
+#### 3.4
+
+Prozess im Überblick *[→ ZP:Sheet:4]*
+
+
+#### 3.5 
+
+Prozessergebnis  *[→ ZP:Sheet:5]*
 

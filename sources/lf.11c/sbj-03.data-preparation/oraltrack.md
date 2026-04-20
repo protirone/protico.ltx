@@ -117,7 +117,7 @@ In sehr großen Datenmengen machen obige Begriffe keinen Sinn mehr, weil das, wo
 
 Dieser Lösung nähern wir uns schrittweise:
 
-### [4] Phasen der Datenanalyse **[→ ZP:Sheet:5]**
+### [4] Phasen der Datenanalyse **[→ ZP:Sheet:4]**
 
 Analyse von Daten folgt immer dem Schema:
 
@@ -155,7 +155,88 @@ Analyse von Daten folgt immer dem Schema:
 
 ### [5] Probleme der Byte-Interpretation (SYDA.I) **[→ ZP:Sheet:5]**
 
-### [6] Verfahren beim Konverterbau **[→ ZP:Sheet:6]**
+* Bei der Datenanalyse der erste Blick immer mit einem HEX-Editor! 
+* Erst der zweite mit einem 'normalen' Code-Editor.
+
+Warum: Editoren interpretieren Bytewerte und -folgen schon als Zeichen. Man sieht so nicht, welche Zahlen (Bytes) wirklich auf der Platte stehen.
+
+**Zur Frage der (Text)Codierung**:
+
+Ein Byte repräsentiert **entweder** *eine Zahl* oder *ein Zeichen*! Was davon in welchem Kontext ist Interpretationssache.
+
+* Byte = Zahl: (s. [https://en.wikipedia.org/wiki/C_data_types](https://en.wikipedia.org/wiki/C_data_types "C-Datentypen im Detail"))
+
+* `sizeof(int)` : früher 2 Bytes (Word), heute meist 32 Bits = 4 Bytes
+* `sizeof(long)` : heute meist 64 Bits = 8 Bytes
+
+Byte = Zeichen ergibt
+
+* 7Bit-Ascii = (American Standard Code for Information Interchange) - 
+  * Zeichensatz: 7bit-Encodierung für den angelsächischen Raum. 
+  * Wertebereich: 0x00 - 0x7f: 
+    * `0x00-0x1F`: nicht druckbare (Drucker) Steuerzeichen
+    * `0x20-0x2F`: Satzzeichen, Sondersymbole
+    * `0x30-0x3F`: Ziffern und mathematische Sondersymbole
+    * `0x40-0x5F`: 26 Großbuchstaben, Klammern, (Satz)Zeichen
+    * `0x60-0x7F`: 26 Kleinbuchstaben, Klammern, (Satz)Zeichen
+* 8Bit-Ascii = ANSI (American National Standards Institute)   
+  * Zeichensatz: 8bit-Encodierung für den europäischen Raum.
+  * Wertebereich: 
+    * 0x00 - 0xFF: 
+      * `0x00-0x7F` wie ASCII
+      * `0x80-0xFF` verschiedene Zeichencodebelegungen wie *iso-latin-1*, ..., *iso-latin-15*, *Windows-1252*
+
+**UNICODE** = Universal Code 
+
+* ordnet allen weltweit genutzten Schriftzeichen zu eindeutigen Wert zu
+* erkennbar an Präfix`U+` 
+* gefolgt von 4 bis 6 HEX-Zahlen zwischen `0000` und `10FFFF`
+* Beispiel U+00C4 = 'Ä' 
+* `=>` bis jetzt gibt es 17 Ebenen zu je `2^16` = 65536 Zeichen = 154.998 Zeichen in der Version Unicode 16.0
+* `U+0000 - U+007F` = entspricht 7Bit-ASCII Zeichenbelegung.
+* Ein Zeichensatz, der alle UNICODE Zeichen drucken könnte, wäre ein Universal Coded Character Set
+* Als Speichercode unpraktisch, weil viele Bytes mit 0en verschwendet.
+
+* vgl. dazu [https://de.wikipedia.org/wiki/Unicode](https://de.wikipedia.org/wiki/Unicode "Unicode Systematik)
+
+**Problem:** Würde man nur Unicode verwenden, wären alle Texte sehr,sehr groß.
+
+**Lösung:** **UTF8** = Unicode Transformation Format - 8 Bit **[→ ZP:Sheet:6]**
+
+* Jede Unicode-Zahl wird in eine Zahl bestehend aus 1 - 4 Bytes transformiert.
+* Besteht die UTF-8-Zahl aus 1 Byte, ist das höchste Bit 0. Die restlichen Bits sind wie im 7Bit-Ascii mit Zeichen belegt.
+* Besteht die UTF-8-Zahl aus 2 Bytes, beginnt das höherwertige Byte mit 2 gesetzten Bits, gefolgt von einem ungesetzten `(110.....)`, das niederwertige Byte beginnt mit einem gesetzten und einem ungesetzten Bit `(10......)`
+* Besteht die UTF-8-Zahl aus 3 Bytes, beginnt das höherwertige Byte mit 3 gesetzten Bits und einem ungesetzten `(1110....)`, die beiden nachfolgenden Bytes beginnen jeweils mit einem gesetzten und einem ungesetzten Bit `(10......)`
+* Besteht die UTF-8-Zahl aus 4 Bytes, beginnt das höherwertige Byte mit 4 gesetzten Bits und einem ungesetzten `(11110...)`, die drei nachfolgenden Bytes beginnen jeweils mit einem gesetzten und einem ungesetzten Bit `(10......)`
+
+
+vgl. [https://de.wikipedia.org/wiki/UTF-8](https://de.wikipedia.org/wiki/UTF-8 "UTF-8-Systematik")
+
+* UTF16 = Code-Transformation.
+* Zweck beider ist es, häufige genutzte Zeichen mit möglichst wenig Bytes zu repräsentieren.
+
+Die Abbildung der UTF-8-Zahlen auf die UNICODE-Zahlen legt das UTF-8-Symbol fest.
+
+
+vgl. [https://wiki.selfhtml.org/wiki/Zeichencodierung/Bytes_und_Buchstaben](https://wiki.selfhtml.org/wiki/Zeichencodierung/Bytes_und_Buchstaben "UTF-Systematiken")
+
+**Beispiel Ä** 
+
+* = `U+00C4` in Unicode
+* = `0xC384` in UTF8
+* = `196` in ISO-Latin-1
+* = `#196;` als HTML-Zahl
+* = `&Auml;` als HTML-Symbol 
+
+vgl. 
+* [https://www.ascii-code.com/ISO-8859-1](https://www.ascii-code.com/ISO-8859-1)
+* [https://en.wikipedia.org/wiki/List_of_Unicode_characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
+* [https://www.fileformat.info/info/charset/UTF-8/list.htm](https://www.fileformat.info/info/charset/UTF-8/list.htm)
+* [https://www.ascii-code.com/](https://www.ascii-code.com/)
+* [https://www.w3schools.com/charsets](https://www.w3schools.com/charsets)
+
+
+### [6] Verfahren beim Konverterbau **[→ ZP:Sheet:7]**
 
 Ein **Konverter**
 
@@ -188,7 +269,7 @@ Eine explizite Zwischenrepräsentation (mit hard-gecodeten Beispieldaten) mit Ad
 2. Weitere Adapter für neue Formate können bestehende Vorarbeiten nutzen
 3. Das Konverterprogramm bleibt leserlich.
 
-**Konverterentwicklung**:
+**Konverterentwicklung**: 
 
 1. Vom den zu konvertierenden Daten 10% der Datensätze als Testdaten abspalten. 
 2. Von den Testdatensätzen zwei möglichst komplexe als 'hart-zu-kodierende' ZPR-Initialisierung auswählen
@@ -213,7 +294,7 @@ Was wäre das MVP für einen Konverter für gegebene Inputdaten im Format IF und
 
 ---
 
-*Lösung*: Verschiedene Ansätze denkbar. Meine bevorzugte Variante:  **[→ ZP:Sheet:7]**
+*Lösung*: Verschiedene Ansätze denkbar. Meine bevorzugte Variante:  **[→ ZP:Sheet:8]**
 
 
 1. **MVP**: der leere Konverter mit hart-gecodeter initialisierter ZPR, Funktions-/Methodenhülsen und passendem *main*-Bereich
@@ -254,22 +335,22 @@ Hinweis:
 
 *Lösung*: 
 
-* (SYDA.A, - SYDA.R + SEDA.K): Datenkorrektur **[→ ZP:Sheet:8]**
-* Weltausschnitt der Daten: Tageslängen **[→ ZP:Sheet:9]**
-* Konverter MVP: **[→ ZP:Sheet:10]**
+* (SYDA.A, - SYDA.R + SEDA.K): Datenkorrektur **[→ ZP:Sheet:9]**
+* Weltausschnitt der Daten: Tageslängen **[→ ZP:Sheet:10]**
+* Konverter MVP: **[→ ZP:Sheet:11]**
   * Die Funktionen sind insofern leer, als sie nur sagen, was sie tun, ohne es tatsächlich zu tun.
-* Konverter VP-0.1: **[→ ZP:Sheet:11]**
+* Konverter VP-0.1: **[→ ZP:Sheet:12]**
   * Die hinzugefügte Schreibadapter
     * iteriert über die Liste von Dictionaries in den hardgecodete Testdaten (L21)
     * nutzt f-Strings, um einen Datensatz neu zusammenzusetzen und zu schreiben. (L22)
-* Konverter VP-0.2/3: **[→ ZP:Sheet:12]**: importierbares Modul mit
+* Konverter VP-0.2/3: **[→ ZP:Sheet:13]**: importierbares Modul mit
   * A) einem Leseadapter (L5ff)
     * liest die CSV zeilenweise ein (L10),
     * entfernt überflüssige Whitespaces vor und nach dem Datensatz,
     * spaltet die Zeile anhand der Kommata,
     * fügt ein entsprechendes Dictionary in die Liste der Datensätze hinzu,
   * B) einem weiteren Schreibadapter (analog zu VP-0.1). (L26ff)
-* Konverter VP-1.0: **[→ ZP:Sheet:13]** 
+* Konverter VP-1.0: **[→ ZP:Sheet:14]** 
   * importiert Adapter-Modul
   * verwendet Kommandozeilenparameter um Zielformate etc. auswählbar zu machen
   * lässt die Daten einlesen (L25)
@@ -302,7 +383,7 @@ programmiert hat. Dazu gehen Sie so vor:
 
 ---
 
-*Lösung*: Blutdruckmessungen **[→ ZP:Sheet:4]**
+*Lösung*: Blutdruckmessungen **[→ ZP:Sheet:15]**
 
 Oder wie Mustafa (12ip/iv23) spontan sagte: "Ahh, der Herr Reincke hat Bluthochdruck".
 
