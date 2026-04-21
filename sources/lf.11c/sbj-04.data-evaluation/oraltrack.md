@@ -104,12 +104,12 @@ Das geht auch mathematisch / programmiertechnisch. Mit folgenden Definitionen:
 > different industries and scales of operation.* 
 > ( vgl. [https://www.sixsigmaonline.org/defects-per-million-opportunities-dpmo-six-sigma](https://www.sixsigmaonline.org/defects-per-million-opportunities-dpmo-six-sigma))
 
-    * Berechnung:
-      * Anzahl der gemessenen Fehler = D (was als Fehler gilt, wird definiert)
-      * Anzahl der produzierten / verglichenen Einheiten (units) = N (zählen)
-      * Anzahl der *möglichen* Fehler pro produzierter / verglichener Einheit = O(opportunities)
-      * Formel **`DPMO=(D/(N\*O))*1,000,000`** 
-      * ( vgl. [https://six-sigma-deutschland.de/defects-per-million-opportunities-dpmo/](https://six-sigma-deutschland.de/defects-per-million-opportunities-dpmo/) )
+* Berechnung:
+  * Anzahl der gemessenen Fehler = D (was als Fehler gilt, wird definiert)
+  * Anzahl der produzierten / verglichenen Einheiten (units) = N (zählen)
+  * Anzahl der *möglichen* Fehler pro produzierter / verglichener Einheit = O(opportunities)
+  * Formel **`DPMO=(D/(N\*O))*1,000,000`**
+  * ( vgl. [https://six-sigma-deutschland.de/defects-per-million-opportunities-dpmo/](https://six-sigma-deutschland.de/defects-per-million-opportunities-dpmo/) )
 
   * **Six Sigma** (*6S*)
     * meint Qualität eines Prozesses

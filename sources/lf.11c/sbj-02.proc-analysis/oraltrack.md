@@ -22,7 +22,7 @@
   
 #### B.1) 
 
-*FMEA*-Prozess
+*FMEA*-Prozess  **[→ ZP:Sheet:3]**
 
 * 1) Bilde interdisziplinäres Team (Experten) aus Konstruktion, Entwicklung, Versuch, Fertigungsplanung, Fertigungsausführung, Qualitätsmanagement.
 * 2) Beschreibe das System/den Prozess hinsichtlich Struktur und Funktion der seiner Elemente.
@@ -41,21 +41,22 @@
 
 Grundidee:
 
-* **A:** je häufiger ein Fehler auftritt, desto wichtiger ist es, sich um die Beseitigung seiner Ursache zu kümmern
 * **B:** je gewichtiger die Auswirkungen eines Fehlers, desto wichtiger ist es, sich um die Beseitigung seiner Ursache zu kümmern
-* **C:** je leichter / je schwere ein Fehler zu entdecken, desto mehr / weniger Ressourcen sollte man in die Bereinigungen stecken
+* **A:** je häufiger ein Fehler auftritt, desto wichtiger ist es, sich um die Beseitigung seiner Ursache zu kümmern
+* **E:** je leichter / je schwere ein Fehler zu entdecken, desto mehr / weniger Ressourcen sollte man in die Bereinigungen stecken
 
 `=>`
 
-* Im Idealfall basieren *A*, *B* und *C* auf empirisch gewonnene Daten.
+* Im Idealfall basieren *B*, *A* und *E*-Befunde auf empirisch gewonnenen Daten.
 * Praktisch liegen oft Expertenschätzungen zugrunde.
-* Gerade *C* ist eine Ermessenssache: 
+* Gerade *E* ist eine Ermessenssache: 
   * vom pekuniären Standpunkt: wenn der Fehler schwer entdeckt wird, brauchen wir auch nix zu tun.
   * vom moralischen Standpunkt (Image): Gerade wenn er schwer entdeckt wird, kümmern wir uns.
 
  `=>`
 
- Jeder ABC-Analyse muss eine auf den Firmenethos ausgerichtete Systematik zugrundegelegt werden.
+
+ Jede Bewertung der Dimensionen muss eine auf den Firmenethos ausgerichtete Systematik zu Grunde gelegt werden.
 
 #### B.3) 
 
@@ -91,74 +92,22 @@ Der *AP2-Abarbeitungsprozess* soll den Schülerinnen in der AP2 helfen. Mit der 
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:proc-analysis:01**</span>
 
 * [ ] Formulieren Sie auf der Basis Ihrer Erfahrung 3 Fehler, die man während des AP2-Abarbeitungsprozesses machen kann.
-* [ ] Führen Sie dafür eine ABC-Analyse durch.
+* [ ] Führen Sie dafür eine FMEA-Analyse durch.
 * [ ] Ranken Sie die Fehler entsprechend ihrer **RPZ**.
 
 <!-- uebung::end -->
 
 ---
 
-### C) **Ursache-Wirkungsdiagramm** **[→ ZP:Sheet:3]**
+### C) **Fehlerbaumanalyse**  **[→ ZP:Sheet:4]**
 
-* ist assoziatives Verfahren, um 'nichts' aus dem Blick zu verlieren,
-* trennt Identifikation und Aggregation von der Analyse,
-* stellt Ursache und Wirkung grafische dar, die zu einem Ergebnis führen oder dieses maßgeblich beeinflussen, 
-* expliziert faktische Abhängigkeiten,
-* hat mehrere Namen
-  *  **Ishikawa-Diagramm** bekannteste Form (stammt aus Qualitätsmanagement),
-  *  **Fischgrät-Diagramm** = Fischgräten-Diagramm = *Fishbone Diagram*,
-* dient zur systematischen und vollständigen Ermittlung von Problemursachen,
-* analysiert und strukturiert die Wirkung von Prozessschritten (Welche Phasen bewirken was),
-* → [https://de.wikipedia.org/wiki/Ursache-Wirkungs-Diagramm](https://de.wikipedia.org/wiki/Ursache-Wirkungs-Diagramm)
-
-#### C.1)
-Vorgehen
-
-* (I) **Formaler Start**
-  * 1) Trage rechts einen Fehlerbefund oder ein (noch nicht erreichtes Ziel) ein
-  * 2) Zeichne eine Linie von links nach rechts bis zum (Fehler)befund. Bedeutung: Alles, was die Linie berührt, beeinflusst / verursacht den Fehler / Zielerreichung
-  * 3) Trage von links nach rechts - ober- und unterhalb der Einflusslinie - die Einflusskategorien (als 'Quasilanes') ein - z.B.
-    * die vier Ms: Material, Maschine, Methode, Mensch
-    * die acht Ms: 4Ms + Management, Mitwelt (Milieu), Messung (Measurement) und Geld (Money)
-    * andere Verursacher: Prozesse etc.
-  * 4) Verbinde jede Haupteinflussgröße mit einem schräg zum Hauptpfeil verlaufenden Pfeil.
-* (II) Die eigentliche, assoziative* **Sammlungsarbeit**
-  * 5) Trage zu jeder Einflusskategorie die entsprechenden Ursachen/Wirkungen ein.
-  * 6) Schließe die Identifikation mit einem Vollständigkeitscheck ab
-  * 7) Lass Experten die identifizierten Ursachen nach dem Grad ihrer Wirkung / ihres Einflusses im Hinblick auf den Fehler klassifizieren
-
-#### C.2)
-Bewertung
-
-* Vorteile:
-  * liefert gute Diskussionsgrundlage für Gruppenarbeit,
-  * ermöglicht vielseitige Betrachtungsweise,
-  * braucht wenig Aufwand bei der Durchführung,
-  * ist leicht erlern- und anwendbar.
-* Nachteile:
-  * ist unübersichtlich und umfangreich bei komplexen Problemen,
-  * stellt keine vernetzten Ursache-Wirkungs-Zusammenhänge dar,
-  * erfasst keine Wechselwirkungen und zeitliche Abhängigkeiten.
-
----
-
-<!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:proc-analysis:02**</span>
-
-* [ ] Führen Sie für den wichtigsten der 3 ermittelten Fehler eine Ursache-Wirkungsanalyse durch. Nutzen Sie dabei die vier Ms.
-
-<!-- uebung::end -->
-
----
-
-### D) **Fehlerbaumanalyse** = Fault Tree Analysis (FTA) =  
-
+* heißt auch *Fault Tree Analysis (FTA)*  
 * ist ein Verfahren zur Zuverlässigkeitsanalyse von technischen Anlagen und Systemen unter Ausnutzung der boolschen Algebra
 * ist DIN normiert (DIN EN 61025)
 * arbeitet 'halb assoziativ'
 * → [https://de.wikipedia.org/wiki/Fehlerbaumanalyse](https://de.wikipedia.org/wiki/Fehlerbaumanalyse)
 
-#### D.1)
+#### C.1)
 Vorgehen
 
 * 1. Zeichne die Struktur des zu begutachtenden Systems als Baum von Subsystemen
@@ -168,7 +117,7 @@ Vorgehen
   * Trage an jedem Zustandsblatt die Wahrscheinlichkeit ein.  
   * Berechne dadurch die Ausfallwahrscheinlichkeit der Komponente.
   
-#### D.2)
+#### C.2)
 Bewertung
 
 * Vorteile: Verspricht Genauigkeit
@@ -176,25 +125,32 @@ Bewertung
   * aufwendiges Verfahren
   * mathematisch schwer/aufwendig auszuführen bei komplexen Systemen
 
-### E) **ABC**-Analyse: 
+
+### D) **ABC**-Analyse:  **[→ ZP:Sheet:5]**
 
 * ist ein betriebswirtschaftliches Analyseverfahren zum Klassifizieren von Ereignisse in wichtige, mittlere und unwichtige Fehler, Befunde, Ereignisse
 * setzt eine Liste von Wertepaaren (Typ -> Wert) voraus
 * → [https://de.wikipedia.org/wiki/ABC-Analyse](https://de.wikipedia.org/wiki/ABC-Analyse)
 * 
-#### E.1)
+#### D.1)
 Vorgehen
 
-* 1. Sortiere Liste absteigend
-* 2. Ermittle für jeden Eintrag den Anteil am Gesamtbestand
-* 3. Schaffe 3 Klassen: 
-  * wichtig: alle, die an 80% Beitrag zum Gesamtergebnisse beteiligt sind.
-  * mittel: alle, die an 15% Beitrag zum Gesamtergebnisse beteiligt sind.
-  * unwichtig: alle, die an 5% Beitrag zum Gesamtergebnisse beteiligt sind.
-* 4. Kümmere dich zuerst um die 80%-Beiträger
+* 1. Ermittle alle Fehler
+* 2. Ermittle für jeden Fehler den absoluten Wert des Schadens
+* 3. Ermittle für jeden Fehler seine Häufigkeit
+* 4. Ermittle für jeden Fehler den relativen Schadenswert (Häufigkeit*abs.Schadenswert)
+* 5. Addiere alle relativen Schadenswerte zum Gesamtschaden
+* 6. Ermittle für jeden relativen Schadenswert den Anteil am Gesamtschaden
+* 7. Erzeuge eine Liste von Wertpaaren 'Fehler:Anteil am Gesamtschaden'
+* 8. Sortiere die Liste absteigend
+* 9. Erzeuge drei Cluster (Klassen):
+  * **Klasse A Fehler**: die ersten Fehler, die zusammen 80\% des Gesamtschadens ausmachen.
+  * **Klasse B Fehler**: die nächsten Fehler, die zusammen 15\% des Gesamtschadens ausmachen.
+  * **Klasse C Fehler:** die letzten Fehler, die zusammen 5\% des Gesamtschadens ausmachen.
+* 10. Kümmere Dich als zuerst um die Klasse A Fehler
 
-#### E.2)
-Beispiel **[→ ZP:Sheet:3]**
+#### D.2)
+Beispiel **[→ ZP:Sheet:6]**
 
 ---
 
@@ -218,7 +174,7 @@ Gesetzt, Sie wollten ermitteln, worum Sie am ehesten kümmern sollten, wenn Sie 
 
 <!-- uebung::end -->
 
-Lösung:
+Lösung: **[→ ZP:Sheet:7]**
 
 *Prozessschritte pro Füllerleben*:
 
@@ -244,14 +200,14 @@ Lösung:
 
 ---
 
-### F) Nutzwert-Analyse: 
+### E) Nutzwert-Analyse: **[→ ZP:Sheet:8]**
 
 * ist eine systematische Methode zur Bewertung von Alternativen, 
 * erlaubt es, qualitative und/oder quantitative Kriterien einzubeziehen.
 * dient einer geordnete Entscheidungsfindung
 * →  [https://www.munich-business-school.de/l/bwl-lexikon/nutzwertanalyse](https://www.munich-business-school.de/l/bwl-lexikon/nutzwertanalyse)
 
-#### F.1)
+#### E.1)
 Vorgehen
 
 1. Liste die Alternativen auf
@@ -261,7 +217,7 @@ Vorgehen
 5. Multipliziere für jede Alternative den Kriteriumswert mit dem Gewicht
 6. Multipliziere alles zum Gesamtnutzen der Alternative
 
-#### F.2)
+#### E.2)
 Bewertung
 
 * *Vorteil*: mathematisch
@@ -269,7 +225,7 @@ Bewertung
   * Kriterienwahl und -bewertung beeinflusst Ergebnis
   * für normierte Systematik umfangreiche mathematische Absicherung nötig
 
-#### F.3)
+#### E.3)
 Beispiel:
 
 Es gelte:
@@ -289,22 +245,22 @@ Es gelte:
 
 Ergebnis: Gewonnen hat Ps1
 
-### G) Entscheidungsmatrix 
+### F) Entscheidungsmatrix **[→ ZP:Sheet:9]**
 
 * liefert fundierte Entscheidungen
 * berücksichtigt dabei einzelne Kriterien 
 * → [https://studyflix.de/wirtschaft/entscheidungsmatrix-7025](https://studyflix.de/wirtschaft/entscheidungsmatrix-7025)
 
-#### G.1)
+#### F.1)
 Vorgehen
 
 * 1. Konzipiere Punktevergabe
 * 2. Konzipiere Kriteriumsgewichtung
 * 3. Vergib pro Kriterium die geplanten Punkte
-* 4. Berechne die ewichtete Punktzahl pro Kriterium
+* 4. Berechne die gewichtete Punktzahl pro Kriterium
 * 5. Addiere die gewichteten Punkte  
 
-#### G.2)
+#### F.2)
 Beispiel
 
 Es gelte:
@@ -315,11 +271,66 @@ Es gelte:
 
 | Kriterium | Gewicht | PS1 | PS2 | PS3 |
 |---|---|---|---|---|
-| Kosten | 0.3 | 100*0.3 = 30 | 200*0.6=60 | 50*0.3= 15 |
+| Kosten | 0.3 | 100*0.3 = 30 | 200*0.3=60 | 50*0.3= 15 |
 | Geschwindigkeit | 0.7 | 5*0.7=3.5 | 2*0.7= 1.4 | 6*0.7= 4.2 | 
 | Gesamt | 1 | 33.5 | 61,4 | 19.2 |
 
 Hier gewinnt Ps2
+
+
+
+### G) **Ursache-Wirkungsdiagramm** **[→ ZP:Sheet:3]**
+
+* ist assoziatives Verfahren, um 'nichts' aus dem Blick zu verlieren,
+* trennt Identifikation und Aggregation von der Analyse,
+* stellt Ursache und Wirkung grafische dar, die zu einem Ergebnis führen oder dieses maßgeblich beeinflussen, 
+* expliziert faktische Abhängigkeiten,
+* hat mehrere Namen
+  *  **Ishikawa-Diagramm** bekannteste Form (stammt aus Qualitätsmanagement),
+  *  **Fischgrät-Diagramm** = Fischgräten-Diagramm = *Fishbone Diagram*,
+* dient zur systematischen und vollständigen Ermittlung von Problemursachen,
+* analysiert und strukturiert die Wirkung von Prozessschritten (Welche Phasen bewirken was),
+* → [https://de.wikipedia.org/wiki/Ursache-Wirkungs-Diagramm](https://de.wikipedia.org/wiki/Ursache-Wirkungs-Diagramm)
+
+#### G.1)
+Vorgehen
+
+* (I) **Formaler Start**
+  * 1) Trage rechts einen Fehlerbefund oder ein (noch nicht erreichtes Ziel) ein
+  * 2) Zeichne eine Linie von links nach rechts bis zum (Fehler)befund. Bedeutung: Alles, was die Linie berührt, beeinflusst / verursacht den Fehler / Zielerreichung
+  * 3) Trage von links nach rechts - ober- und unterhalb der Einflusslinie - die Einflusskategorien (als 'Quasilanes') ein - z.B.
+    * die vier Ms: Material, Maschine, Methode, Mensch
+    * die acht Ms: 4Ms + Management, Mitwelt (Milieu), Messung (Measurement) und Geld (Money)
+    * andere Verursacher: Prozesse etc.
+  * 4) Verbinde jede Haupteinflussgröße mit einem schräg zum Hauptpfeil verlaufenden Pfeil.
+* (II) Die eigentliche, assoziative* **Sammlungsarbeit**
+  * 5) Trage zu jeder Einflusskategorie die entsprechenden Ursachen/Wirkungen ein.
+  * 6) Schließe die Identifikation mit einem Vollständigkeitscheck ab
+  * 7) Lass Experten die identifizierten Ursachen nach dem Grad ihrer Wirkung / ihres Einflusses im Hinblick auf den Fehler klassifizieren
+
+#### G.2)
+Bewertung
+
+* Vorteile:
+  * liefert gute Diskussionsgrundlage für Gruppenarbeit,
+  * ermöglicht vielseitige Betrachtungsweise,
+  * braucht wenig Aufwand bei der Durchführung,
+  * ist leicht erlern- und anwendbar.
+* Nachteile:
+  * ist unübersichtlich und umfangreich bei komplexen Problemen,
+  * stellt keine vernetzten Ursache-Wirkungs-Zusammenhänge dar,
+  * erfasst keine Wechselwirkungen und zeitliche Abhängigkeiten.
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:proc-analysis:02**</span>
+
+* [ ] Führen Sie für den wichtigsten der 3 ermittelten Fehler eine Ursache-Wirkungsanalyse durch. Nutzen Sie dabei die vier Ms.
+
+<!-- uebung::end -->
+
+---
 
 
 ### H) Prozess-Analyse-Kritierien:
@@ -428,12 +439,14 @@ SixSigma
 
 SixSigma- Konzeption:
 
-* Realiter schwankt die Qualität von Prozessduchläufen über längere Zeiträume, sie haben also einen DPMO-Wert größer 0
-* Deswegen wird der Überschreitungsanteil für die Grenze 6sigma  mit 3,4 DPMO festgelegt.
-* Verfahren: Wende DMAIC an und verkleinere den DPMO-Wert Deines Prozesses, sodass Du Dir gemäß folgeden Tabelle einen besseren 6Sigma-Wert zuordnen kannst
+* Realiter schwankt die Qualität von Prozessdurchläufen über längere Zeiträume, sie haben also einen DPMO-Wert größer 0
+  * Im besten Fall wäre jedes Prozessergebnis in jedem Prozessdurchlauf in jeder Hinsicht richtig (= 0 DPMO)
+  * Im schlimmsten Fall wäre jedes Prozessergebnis in jedem Prozessdurchlauf in jeder Hinsicht defekt (= 1.000.000 DPMO)
+* Deswegen wird der Überschreitungsanteil für die Grenze 6sigma mit 3,4 DPMO festgelegt.
+* Verfahren: Wende DMAIC an und verkleinere den DPMO-Wert Deines Prozesses, sodass Du Dir gemäß folgenden Tabelle einen besseren 6Sigma-Wert zuordnen kannst
 
 
-| Sigma level	| DPMO	| fehlerhaft | fehlerfrei |
+| Sigma Level	| DPMO	| fehlerhaft | fehlerfrei |
 |---|---|---|---|
 | 1	| 691.462	| 68 %	| 32 % |
 | 2	| 308.538	| 31 %	| 69 % |

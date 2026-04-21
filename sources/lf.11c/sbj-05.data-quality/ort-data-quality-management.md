@@ -299,3 +299,33 @@ siehe auch 'systemmonitor' und befehl top
 <!-- LTeX:Language=de-DE -->
 
 
+
+* **Data Mining** = will branchen-, software- und anwendungsunabhängigen standardisierten Prozessablauf des Data Minings für Unternehmen bereitstellen
+  * **Problem**: in großen unstrukturierten Datenmengen sind enhaltene Informationen nicht direkt ableitbar
+  * **Lösung**: Prozess aus 6 Schritten
+    * **Business Understanding (Aufgabendefinition)**: verstehe, was zu welchem Zweck gesucht werden soll
+    * **Data Understanding** : verstehe wie vorliegende Daten erzeugt worden sind, suche nach Ergänzungsdaten
+    * **Data Preparation** : erzeuge den endgültigen Datensatz
+    * **Modeling** : wähle das Modellierungsverfahren und erzeuge das (elektroniische) Modell der natürlichen Daten
+    * **Evalusiere** : Vergleiche ob sich Modell und Ausgangsdaten hinsichtlich Anwendung / Anfragen gleich verhalten
+    * **Deploymenmt** : Bringe das Modell in den Betrieb und lass es die natürlichen Daten ersetzen.
+  * vgl. [https://datasolut.com/crisp-dm-standard/](https://datasolut.com/crisp-dm-standard/) 
+
+* **ETL** ist keine Managementmethode, sondern meint den Prozess *Extract, Transform, Load*,  mit dem Daten aus mehreren, gegebenenfalls unterschiedlich strukturierten Datenquellen in einer Zieldatenbank vereinigt werden.
+  * oft genutzt im Datawarehouse Bereich
+  * **Vorgehen**:
+      * *Extrahiere* Daten aus verschiedenen Quellen
+      * *Transformiere* die Daten in das Schema und Format der Zieldatenbank (= setzt Konverter voraus)
+      * *Lade* die Daten in die Zieldatenbank
+  * **Anlass** kann periodisch oder ereignisgesteuert sein
+  * **Syntaktische Transformation** = Verbesserung und/oder Korrektur der Daten basierend auf formalen Aspekten.
+  * **Semantische Transformation** = inhaltliche Aspekte überprüfen und wenn nötig Daten modifizieren und/oder angereichert
+    * Duplikate entfernen
+    * Datenwerte anpassen
+    * offensichtliche Fehlerbereinigen 
+  * **Laden** ...
+* Variante **ELT**: Daten werden wie extrahiert geladen = onthefly-Konvertierung 
+  * Vorteil: 
+    * angeblich schneller
+    * angeblich sicherer, weil Originaldaten erhalten
+* vgl. [https://de.wikipedia.org/wiki/ETL-Prozess](https://de.wikipedia.org/wiki/ETL-Prozess)

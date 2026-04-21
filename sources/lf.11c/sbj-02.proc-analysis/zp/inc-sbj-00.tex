@@ -5,25 +5,167 @@
 
 \selectlanguage{ngerman}
 \begin{frame}  
-  \frametitle{LF11C:02:Prozessverbesserung:AP2}
+  \frametitle{LF11C:02:Prozessverbesserung:AP2.PRC}
   \begin{center}
   \includegraphics[height=7.5cm]{\imgGl/apx-process.png}
   \end{center}
 \end{frame}
 
+
 \begin{frame}  
-  \frametitle{LF11C:02:Prozessverbesserung:Fish-Bone}
+  \frametitle{LF11C:02::AP2.PRC:FMEA:Und jetzt?}
+
+  \underline{F}ailure \underline{M}ode and \underline{E}ffects \underline{A}nalysis:
+
+  \vspace{0.2cm}  
+  \begin{itemize}
+    \item bilde interdisziplinäres Team
+    \item beschreibe System-/Prozessstruktur
+    \item liste für jede Komponente mögliche Fehler auf
+    \item bewerte jeden Fehler (je [1 - 10]) hinsichtlich seiner
+    \begin{itemize}
+      \item \textbf{B}edeutung (\textbf{S}everity)
+      \item \textbf{A}uftretenswahrscheinlichkeit (\textbf{O}ccurence)
+      \item \textbf{E}ntdeckungswahrscheinlichkeit (\textbf{D}etection)
+    \end{itemize}
+    \item bilde für jeden Fehler die Risiko-Prioritätszahl \textbf{RPZ} mittels \texttt{B*A*E}
+    \item kümmere Dich als Nächstes um den Fehler mit der höchsten RPZ
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11C:02::AP2.PRC:FTA:Und jetzt?}
+  \begin{center}
+  \includegraphics[height=6cm]{\imgLf/fta-ap2-proc.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11C:02::AP2.PRC:ABC-Analyse:Und jetzt?}
+
+ \begin{footnotesize}
+  \begin{itemize}
+    \item Ermittle alle Fehler
+    \item  Ermittle für jeden Fehler:
+      \begin{itemize}  
+      \item den absoluten Schadenswert
+      \item seine Häufigkeit
+      \item den relativen Schadenswert (Häufigkeit*abs.Schadenswert)
+    \end{itemize}
+    \item Addiere alle relativen Schadenswerte zum Gesamtschaden
+    \item Ermittle für jeden relativen Schadenswert den Anteil am Gesamtschaden
+    \item Erzeuge eine Liste von Wertpaaren 'Fehler:Anteil am Gesamtschaden'
+    \item Sortiere die Liste absteigend
+    \item Gruppiere sie in drei Cluster (Klassen):
+    \begin{itemize}
+      \item \textbf{Klasse A}: die ersten Fehler, die zusammen 80\% des Schadens bilden.
+      \item \textbf{Klasse B}: die nächsten Fehler, die zusammen 15\% des Schadens bilden.
+      \item \textbf{Klasse C}: die letzten Fehler, die zusammen 5\% des Schadens bilden
+    \end{itemize}
+    \item Kümmere Dich als zuerst um die Klasse A Fehler
+  \end{itemize}
+\end{footnotesize}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11C:02::AP2.PRC:ABC-Analyse:Tintencase}
+  \begin{center}
+  \includegraphics[height=4cm]{\imgLf/tinten-case.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11C:02::AP2.PRC:ABC-Analyse:Tintencase}
+    \begin{center}
+
+  \vspace{0.6cm}
+  \begin{footnotesize}
+  \renewcommand{\arraystretch}{1.5} 
+  \begin{tabular}{|r|c|c|c|c|c|c|}
+  \hline
+  \textbf{Schritt} & \textbf{Fehler} & \textbf{Häufigkeit} & \textbf{abs.Sch} & \textbf{rel.Sch} & \textbf{\% G.Sch} & KL\\ \hline
+  Füllerkauf & Haarriss im Kolben & 0.1 & 300€ & 30€ & 0.09 & C\\ \hline
+  Füllerkauf & Feder verbogen & 0.5 & 300€ & 30€ & 0.04& C\\ \hline \hline
+  Tintenkauf & Tinte vertrocknet & 50*0.2 & 10€ & 100€ & 0.29& A\\ \hline \hline
+  Befüllung & Kolbenüberlauf & 1000*0.2 & 1€ & 200€ &0.58&  A\\ \hline
+   &  &  & G.Sch.: & 345€ & 0.58\\ \hline
+  \end{tabular}
+  \end{footnotesize}
+\end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11C:02::AP2.PRC:Nutzwertanalyse:Und jetzt?}
+
+ \begin{tiny}
+  \begin{itemize}
+    \item Liste Alternativen auf
+    \item Liste Bewertungskriterien auf
+    \item Gewichte Kriterien nach Wichtigkeit im Vergleich zu anderen Kriterien
+    \item Ermittle für jeden relativen Schadenswert den Anteil am Gesamtschaden
+    \item Ermittle für jede Alternative für jedes Kriterium den entsprechenden Wert
+    \item Multipliziere für jede Alternative den Kriteriumswert mit dem Gewicht
+    \item Multipliziere Kriteriumswerte einer Alternative zum Gesamtnutzen der Alternative
+  \end{itemize}
+  \end{tiny}
+
+  \vspace{0.2cm}
+  \begin{footnotesize}
+  \begin{center}
+   \renewcommand{\arraystretch}{1.5} 
+  \begin{tabular}{|r|c|c|c|c|c|}
+  \hline
+  \textbf{PRC} & \textbf{€/DL} & \textbf{H/DL} & \textbf{gw(€)} & \textbf{gw(H)} & \textbf{\% G.Nutzen}\\ \hline
+   &  &  & €(DL)*0.3 & H(DL)*0.7 & ge(€)*gw(H) \\ \hline
+  Ps1 & 100 & 5 & 30 & 3.5 & \textbf{105!} \\ \hline
+  Ps2 & 200 & 2 & 60 & 1.4 &  84 \\ \hline
+  Ps3 &  50 & 6 & 15 & 4.2 &  63 \\ \hline
+  \end{tabular}
+\end{center}
+\end{footnotesize}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11C:02::AP2.PRC:Entscheidungsmatrix:Und jetzt?}
+
+ \begin{tiny}
+  \begin{itemize}
+    \item Konzipiere Punktevergabe (Hier: jeder € 1 Punkt, jede H 1 Punkt)
+    \item Konzipiere Kriteriumsgewichtung: (Schnelligkeit vor Kosten 0.7:0.3)
+    \item Gewichte Kriterien nach Wichtigkeit im Vergleich zu anderen Kriterien
+    \item Vergib pro Kriterium die geplanten Punkte
+    \item Berechne die gewichtete Punktzahl pro Kriterium
+    \item Addiere die gewichteten Punkte
+  \end{itemize}
+  \end{tiny}
+
+  \vspace{0.2cm}
+  \begin{footnotesize}
+  \begin{center}
+   \renewcommand{\arraystretch}{1.5} 
+  \begin{tabular}{|r|c|c|c|c|c|}
+  \hline
+  \textbf{Kriterium} & \textbf{Gewicht} & \textbf{PS1} & \textbf{PS2} & \textbf{PS3} \\ \hline
+  Kosten & 0.3 & 100€*0.3=30P & 200€*0.3=60P & 50€*0.3=15P \\ \hline
+  Geschwindigkeit & 0.7 & 5H*0.7=3.5P & 2H*0.7=1.4P & 6H*0.7=4.2P\\ \hline
+  Gesamt &  1 & 33.5 & \textbf{61.4!} & 19.2 \\ \hline
+  \end{tabular}
+\end{center}
+\end{footnotesize}
+\end{frame}
+
+
+\begin{frame}  
+  \frametitle{LF11C:02:Prozessverbesserung:Fish-Bone:Gründe?}
   \begin{center}
   \includegraphics[height=6cm]{\imgLf/fish-bone-diagram.png}
   \end{center}
 \end{frame}
 
-\begin{frame}  
-  \frametitle{LF11C:02:Prozessverbesserung:Tintencase}
-  \begin{center}
-  \includegraphics[height=4cm]{\imgLf/tinten-case.png}
-  \end{center}
-\end{frame}
+
+
+
 
 
 
