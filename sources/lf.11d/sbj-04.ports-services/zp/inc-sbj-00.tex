@@ -1,0 +1,54 @@
+% This file is part of the Open Source project 'proTirone'
+% (c) 2025 Karsten Reincke (https://github.com/protirone/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\selectlanguage{ngerman}
+
+\begin{frame}  
+  \frametitle{LF11d.Packages,Ports\&Services:TCP/IP versus UDP}
+  \begin{center}
+  \includegraphics[height=7.4cm]{\imgGl/ports-services-layers.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11d.Packages,Ports\&Services:Portsystematik}
+
+ 
+    \begin{itemize}
+    \item \footnotesize{Systemports := 0 - 1023 ('well-known ports', registriert bei der IANA)}.
+      \begin{itemize}
+        \item \tiny{\texttt{  7} ECHO-Service} 
+        \item \tiny{\texttt{ 20} FTP (Datenübertragung: nur TCP)} 
+        \item \tiny{\texttt{ 21} FTP (Verbindungsaufbau und Steuerung: TCP, UDP)}
+        \item \tiny{\texttt{ 22} SSH (TCP, UDP)}
+        \item \tiny{\texttt{ 23} Telnet (unverschlüsseltes Textprotokoll, z. B. für Fernwartung)}
+        \item \tiny{\texttt{ 25} SMTP (Simple Mail Transfer Protocol)}
+        \item \tiny{\texttt{ 67} Bootstrap Protocol (auch von DHCP genutzt: nur UDP)}
+        \item \tiny{\texttt{ 80} HTTP (TCP, UDP)}
+        \item \tiny{\texttt{123} NTP (Network Time Protocol)}
+        \item \tiny{\texttt{319} PTP (Precision Time Protocol) / Events (nur UDP)}
+        \item \tiny{\texttt{320} PTP (Precision Time Protocol) / General Messages (nur UDP)}
+        \item \tiny{\texttt{443} HTTPS (Hypertext Transfer Protocol over SSL/TLS: TCP, UDP)}
+      \end{itemize}
+    \item \footnotesize{Registrierte Ports := 1024 - 49151 (per Konvention / 'Gebrauchsrecht')}
+      \begin{itemize}
+        \item \tiny{\texttt{1434} MSSQL}
+        \item \tiny{\texttt{1883} MQTT}
+        \item \tiny{\texttt{3306} Mysql}
+        \item \tiny{\texttt{8080} HTTP Alternative, für Poxyserver (Vermittler zwischen Client und realem Server) genutzt}
+      \end{itemize}
+    \end{itemize}
+
+
+
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11d.Packages,Ports\&Services:Services}
+  \begin{center}
+  \includegraphics[height=7.4cm]{\imgGl/package-family-tree.png}
+  \end{center}
+\end{frame}
+

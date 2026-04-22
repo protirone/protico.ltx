@@ -1,0 +1,107 @@
+% This file is part of the Open Source project 'proTirone'
+% (c) 2025 Karsten Reincke (https://github.com/protirone/protico.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+
+\documentclass[]{beamer}
+
+% design beamer:
+% --------------
+%\usetheme{EastLansing}
+\usetheme{Madrid}
+%\usetheme{Boadilla}
+%\usetheme{Berkeley}
+\usecolortheme{spruce}
+
+
+% customize your presentation
+% ---------------------------
+% set paths:
+
+\def\imgGl{../../../img.gl/}
+\def\bibGl{../../../bib.gl}
+\def\cfgGl{../../../cfg.gl/}
+\def\snpGl{../../../snp.gl}
+\def\imgLf{../../img.lf}
+\def\cfgLf{../../cfg.lf}
+\def\snpLf{../../snp.lf}
+
+% language:
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+
+\usepackage[backend=biber,style=authortitle-dw,sortlocale=auto,]{biblatex}
+\input{\cfgGl/inc.cfg-biber-de.tex}
+\ExecuteBibliographyOptions{annotation=false}
+\renewcommand*{\bibfont}{\fontsize{8}{10}\selectfont}
+\addbibresource{\bibGl/lit.fachinformatik.bib}
+
+%\input{\cfgGl/inc.cfg-ncl-de.tex} %integrate nomenclature
+
+\usepackage{nameref} %for using label as nameref
+%language specific quoting signs
+\usepackage[style=german,autostyle=true,]{csquotes}
+
+% language specific hyphenation
+\input{\cfgGl/inc.babelhyphenations.tex}
+
+\usepackage{hyperref} % allow to use hypelinks
+\hypersetup{bookmarks=true,breaklinks=true,colorlinks=true,citecolor=blue,draft=false}
+
+% design:
+\usepackage{microtype} % improve the grey value and the line feed handling
+\usepackage[absolute,overlay]{textpos}
+
+\usepackage{multirow,tabularx}
+\usepackage{fontawesome}
+\usepackage{rotating}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{minted}
+
+\newcommand\tcrotate[1]{\begin{turn}{90}{#1}\end{turn}}
+
+\input{\cfgGl/inc.logo}
+
+\addtobeamertemplate{footnote}{\hskip -2em}{}
+
+% title frame
+\title{LF11d:05:RAID-Systematik}
+\subtitle{für die Ausbildung zur Fachinformatikerin\input{\cfgGl/inc.lfn-zp}}
+\institute{GS-LDK}
+\author{Karsten Reincke}
+\date{\today}
+
+\begin{document}
+% in a presentation normally it should not benecessary 
+% to include the complete bibliography
+%\nocite{*} 
+\selectlanguage{ngerman}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% add the other topic snippets here
+\input{inc-sbj-00}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% be careful to modify the closing commands
+
+% 1. Insert the legally necessary closure sheet
+% that should be the same for each
+% proTirone presentation
+\input{\cfgGl/inc.zp-cls}
+
+% 2. hide the logo
+\logo{}
+\newpage
+
+% 3. insert the image credit list
+\input{\cfgGl/inc.zp-bnw}
+
+% 4. insert the liteature hints 
+%\input{\cfgGl/inc.zp-lvz}
+
+\end{document}
