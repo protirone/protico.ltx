@@ -162,6 +162,43 @@ das Sanduhrprinzip
 ---
 
 #### 4.B
+die Storyline
+
+* Legen Sie Ihr Thema fest.
+* Entscheiden Sie sich für eine Take-Home-Message
+  * das, was Sie wollen, was die Zuschauer/Hörer im Kopf mitnehmen
+  * Formulieren Sie dazu eine Aussage in einem kurzen Satz / einem Schlagwort
+* Nehmen Sie Ihre Idee für einen Opener, einen Hook auf, wenn er Ihnen einfällt. 
+* Entscheiden Sie sich für eine zeitlich sinnvolle Folienanzahl
+* Formulieren Sie für jede Folie = Abschnitt 3 aufeinander aufbauende Teilaussagen
+  * Gehen Sie von hinten nach vorne
+  * Nehmen Sie sich die Freiheit, zu springen, wenn Sie einen Einfall haben.
+* Verfeinern und glätten Sie die einzelnen Schritte.
+
+Storyline: Thema, Hook, 3*3 Aussagen und Take-Home-Message
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:Rhetorik:03**</span>
+
+* [ ] Entscheiden Sie sich für ein (irgendein) Thema
+* [ ] Legen Sie Ihre Take-Home-Message fest
+* [ ] Arbeiten Sie Ihre Storyline aus
+
+<!-- uebung::end -->
+
+---
+
+#### 4.C
+Recherche
+
+* Sammeln Sie Bilder zu Ihren Aussagen
+* Sammeln Sie Belege zu Ihren Aussage
+* Sammeln Sie Detailmaterial.
+
+
+#### 4.D
 Die gute Präsentation:
 
 * Zeige die _schlechte übervolle Folie_ [→ ZP:Sheet:6]
