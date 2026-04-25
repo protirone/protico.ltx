@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Bitte sagen Sie uns, wo(zu) Sie sich was (mehr) wünschen:**
+**Bitte sagen Sie uns, wo(zu) Sie sich was (zusätzlich) wünschen:**
 
 * _Lernfeld:_ **LF.??**
 * _Fachrichtigung:_ **FIAE**, **FISI**, **FIDPA**, **FIDV**
