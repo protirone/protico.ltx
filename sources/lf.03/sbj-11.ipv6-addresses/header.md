@@ -1,9 +1,8 @@
 ---
-title: 'LF[11,12]c:00:Curriculum'
+title: 'LF03:11:IPv6-Adressen\&-Netze'
 author: [K. Reincke]
-subject: "lf11c/sbj-00"
 date: PTCDATE
-keywords: [LF11c Curriculum]
+keywords: [Layer-II, Layer-III, MAC-Adressen, IPv6-Adressen, IPv6-Netze]
 header-left: "\\theauthor"
 header-center: "proTirone"
 header-right: "\\thetitle" 
@@ -13,8 +12,8 @@ footer-right: "S. \\thepage"
 lang: "de-DE"
 papersize: a4
 colorlinks: true
+---
 
 **Disclaimer**: *Dies Dokument entstammt dem OER-Projekt [proTirone](https://github.com/protirone/), das [freie Unterrichtsmaterialien](https://github.com/protirone/protirone.lessons) samt [Quellcode](https://github.com/protirone/protico.ltx) unter den Bedingungen der [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de)-Lizenz zur Verfügung stellt. proTirone-Unterlagen werden so angeboten, wie sie sind, ohne Zusage bestimmter Eigenschaften und ohne Gewährleistung (§5). Dafür dürfen sie -- bei angemessener Namensnennung (§3) -- für beliebige (auch kommerzielle) Zwecke verändert und weitergegeben werden (§2).*
 
----
-## LF[11,12]c:00:Daten- & Prozessanalyse:Curriculum
+## LF09:11:IPv6-Adressen und -Netze

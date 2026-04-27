@@ -58,7 +58,8 @@
 \usepackage{rotating}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[]{ccicons}
-\usepackage{minted}
+%\usepackage{minted}
+\usepackage{setspace}
 
 \newcommand\tcrotate[1]{\begin{turn}{90}{#1}\end{turn}}
 
@@ -69,7 +70,7 @@
 % title frame
 \title{LFCX:FOSS:CC-Lizenzen und Freie Bilder}
 \subtitle{Check-Frame\input{\cfgGl/inc.lfn-zp}}
-\institute{GS-LDK}
+\institute[GS-LDK]{Gewerbliche Schulen Dillenburg}
 \author{Karsten Reincke}
 \date{\today}
 
@@ -81,6 +82,10 @@
 
 \begin{frame}
   \titlepage
+
+  \input{\cfgGl/inc.licensing}
+
+  \input{\cfgGl/inc.licensing}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

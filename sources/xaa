@@ -1,8 +1,8 @@
 ---
-title: 'LF00:00:flat'
+title: 'LF00:00:00:topic'
 author: [K. Reincke]
 date: PTCDATE
-keywords: [sbj-00.flat]
+keywords: [tpc-00.name]
 header-left: "\\theauthor"
 header-center: "proTirone"
 header-right: "\\thetitle" 

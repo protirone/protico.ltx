@@ -6,7 +6,7 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-### 1.) Dafür benötigte Software 
+### 1.) Benötigte Software 
 
 **[→ ZP:Sheet:2]**
 
