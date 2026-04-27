@@ -20,8 +20,8 @@ echo "executing Uebung $EXC"
 
 # (1) Schreiben Sie wieder das heutige Datum mit dem Format +'%Y%m%d" in eine Datei. Nutzen Sie dafür das Tool <date> 
 # (2) Hängen Sie wieder aus dem Skript heraus die Zeile '2024 war besser' an Ihre Datei
-# (3) Ersetzen Sie mit dem Streameditor automatisiert aus dem Skript heraus jede Jahreszahl durch das Jahr 3030
-
+# (3) Ersetzen Sie mit dem Streameditor automatisiert aus dem Skript heraus die Jahr 2024 oder 2025 durch das Jahr 3030
+# (4) Berichtigen Sie danach im selben Durchgang das Jahr 3030 per sed durch das Jahr 1958
 
 # Hintergrund: 
 #
@@ -29,9 +29,6 @@ echo "executing Uebung $EXC"
 # (B) cat nimmt einem Dateiname und liest den Inhalt der Datei ein und gibt ihn zeilenweis aus.
 # (C) sed (= Stream-Editor) liest von stdin Zeile für Zeile ein. 
 # (D) sed nimmt als Parameter einen (Ersaetzungs)Befehl der Form "s/RegEx/Neu/" und wendet den auf jede Zeile an.
-# (E) Als Stream-Editor erwartet der Editor die zu modifizierenden Zeilen von stdin. Deshalb muss der
+# (E) mit meheren -e (Ersaetzungs)Befehlen hintereinander kann man mehrere Ersetzungsoperationen für eine Zeile in Reihe schalten.
+# (F) Als Stream-Editor erwartet der Editor die zu modifizierenden Zeilen von stdin. Deshalb muss der
 #     Inhalt einer Datei zuvor mit cat eingelesen und mit | zu sed gepipet werden.
-
-echo `date +'%Y%m%d'` > mf.txt
-echo '2024 war besser' >> mf.txt
-cat mf.txt | sed "s/202[45]/3030/"

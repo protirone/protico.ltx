@@ -40,7 +40,10 @@ echo "Zeile 3" >> t.txt
 echo "Zeile 4" >> t.txt
 echo "Zeile 5" >> t.txt
 
-cat t.txt | while read l; do echo "$l : kr"; done
+cat t.txt |
+while read l; 
+  do echo "$l : krx"; 
+done
 
 P=`echo 1 2 3 4`
 
