@@ -17,7 +17,7 @@
 
 * Biete Schülerinnen Training zum Thema Präsentation an.
 * Fachinformatiker brauchen das.
-* Lehre immer: keine Selbstvorstellung.
+* Lehre immer: Keine Selbstvorstellung. Niemals!
 * Und jetzt mache ich es selbst.
 * Denn es ist eine legitime Frage: warum hier so ein Rentner?
 
@@ -25,7 +25,7 @@
   * vorher 35 Jahre Softwareentwickler
   * davon 26 Jahre eng verbandelt mit der Open-Source-Entwicklung
   * davon zuletzt 23 Jahre bei Deutsche Telekom
-  * zuletzt als Principal-Open-Source-Advisor
+  * zuletzt als *Principal-Open-Source-Advisor*
 * Wollte aber immer länger arbeiten.
 * Warum nicht bei der Telekom? Betriebsrat / Abbauzahlen
 * Selbsterinnerung: 1. Staatsexamen
@@ -40,11 +40,11 @@ Aber:
 
 * Einen Monat davor:
   * Studium des Rahmenlehrplans **[→ ZP:Sheet:3]**
-  * Lernen der Lernfelder **[→ ZP:Sheet:4]**
-  * ihre Verteilung über die 3 Lehrjahre, ihre Dauer
   * ernüchternde High-Flyer-Beschreibung im RLP
-  * Entdecken der Prüfungskataloge mit etwas spezifischeren Anforderungen **[→ ZP:Sheet:5]**
+  * Entdecken der Prüfungskataloge mit etwas spezifischeren Anforderungen 
     * (c) ZPA-Nord-West / Vertrieb U-Form-Verlag
+  * Aber: Lernen der durch RLP vorgegebene Lernfelder **[→ ZP:Sheet:4]**
+  * ihre Verteilung über die 3 Lehrjahre, ihre Dauer
 
 **WAS ES ABER NICHT GAB**
 
@@ -56,7 +56,7 @@ Natürlich im Internet gesucht:
 * immer wieder im universitären Kontext "Fach Informatik" gelandet,
 * einige Unterrichtsmaterialien für gymnasiales Fach Informatik gefunden,
 * aber keine systematische Abdeckung eines oder gar aller Lernfelder.
-* Bei dem, was vorlag, Nutzungsrechte nicht oder unklar geregelt
+* Bei dem, was vorlag: Nutzungsrechte nicht oder unklar geregelt
 
 Am 27.05.2025 in fachinformatiker.de gefragt
 
@@ -77,18 +77,18 @@ Antwort der Lehrer/Lehrlinge:
 
 * 1. Für jedes Lernfeld 
   * eine Liste der Topics, die in einem Jahr (oder einem halben) zu behandeln wären 
-  * ausgerichtet und abgeglichen mit den Prüfungskatalogen und den tatsächlichen Prüfungen. **[LF.09-Curriculum]**
-* 2. Eine aufeinander aufbauende Folge von Unterrichtseinheiten - den Topics zugeordnet. **[LF.09-Curriculum-Checkliste]**
-* 3. Für jedes Topic ein (oder mehrere) Unterrichtseinheiten - klar zugeordnet **[LF.09-Topi-Checkliste]**
+  * ausgerichtet und abgeglichen mit den Prüfungskatalogen und den tatsächlichen Prüfungen. **[→ ./lf.09-sbj-00.curriculum-oraltrack.pdf, S.7]**
+* 2. Eine aufeinander aufbauende Folge von Unterrichtseinheiten - den Topics zugeordnet. **[→  lf.09-curriculum-check-list.pdf, S. 1f]**
+* 3. Für jedes Topic ein (oder mehrere) Unterrichtseinheiten - klar zugeordnet **[→ lf.09-topic-check-list.pdf, S.f]**
 * 4. Für jede Unterrichtseinheit (z.B. arp-router)
-  * eine visualisierende Präsentation zur Veranschaulichung für die Schülerinnen,
-  * ein Tonspur-Dokument, das den von mir anhand der Folien einzubringenden Stoff in Stichworten vorgibt,
-  * darin eingebetteten Schüleraufgaben und Lösungen,
-  * ein Aufgabenexzerpt ohne Lösungen zum Verteilen an die Schüler.
+  * eine visualisierende Präsentation zur Veranschaulichung für die Schülerinnen **[→ lf.09-sbj-06.arp-router-zenprese.pdf, S.6]**
+  * ein Tonspur-Dokument, das den von mir anhand der Folien einzubringenden Stoff in Stichworten vorgibt, **[→ lf.09-sbj-06.arp-router-oraltrack.pdf, S.1]**
+  * darin eingebetteten Schüleraufgaben und Lösungen, **[→ lf.09-sbj-06.arp-router-oraltrack.pdf, S.3]**
+  * ein Aufgabenexzerpt ohne Lösungen zum Verteilen an die Schüler. **[→ lf.09-sbj-06.arp-router-exercises.pdf, S.1]**
 
 Und das alles unter einer CC- oder einer Open-Source-Lizenz. 
 
-Im Zuge der Suche danach, bin ich auf erfreuliche Tatsachen gestoßen **[→ ZP:Sheet:6]**
+Im Zuge der Suche danach, bin ich auf erfreuliche Tatsachen gestoßen **[→ ZP:Sheet:5]**
 
 1. Es gibt schon einen Begriff dafür: *Open Educational Resources*.
 2. Der Begriff ist international und institutionell hoch aufgehängt: bei der UNESCO
@@ -99,7 +99,7 @@ Im Zuge der Suche danach, bin ich auf erfreuliche Tatsachen gestoßen **[→ ZP:
 
 Sehr tröstlich!
 
-### 3.) Wie hätte ich so etwas als Open-Source umgesetzt?
+### 3.) Wie hätte ich das, was es nicht gab, als Open-Source umgesetzt?
 
 * eine GitHub-Organisation als Rahmen/Anlaufstelle für verschiedener Repositories
   * → [https://github.com/protirone/](https://github.com/protirone/)
@@ -109,7 +109,7 @@ Sehr tröstlich!
   * als PDFs zum Download bereitstellt.
   * → [https://github.com/protirone/protirone.lessons](https://github.com/protirone/protirone.lessons)
 * darin auch ein "UE-Quell-Repository" mit 
-  * dem Source-Code oder der veränderbare Datei
+  * dem Source-Code oder der veränderbaren Datei
   * allen Bildern, 
   * und Makefiles,
   * aus und mit denen die PDFs generiert werden
@@ -119,23 +119,31 @@ Sehr tröstlich!
 
 ### 4.) Was hätte die Allgemeinheit davon? 
 
-1. Lehrer hätten fein-granulare systematisch verbunden Unterlagen, auf die sie aufsetzen, weiterverwenden könnten und dürften. 
-2. Schüler könnten diese freien Lehrmittel auch als Lernmittel verwenden und ausgehändigt gekommen.
-3. Lehrer/Schülerinnen könnten Arbeiten durchsehen, kommentierten und mit automatisierten Prozessen verbessern.
-4. Das Einzelkämpferdasein der Lehrer (unter- und gegeneinander) hörte auf: Viele könnten ihr Weniges einbringen und es entstünde eine große Fülle und Vielfalt!
-5. Schüler könnten sich das, was bei Ihnen im Unterricht fehlt (30:60-Regel) holen.
-6. Es bräuchte keine Institution und kein Budget, um die Materialien zu hosten. (GitHub frei, MS gesponsert. *inf-schule.de* dagegen vom "Pädagogisches Landesinstitut Rheinland-Pfalz. Was, wenn das Budget gekürzt wird?).
-7. Es bestünde keine Gefahr des Datenverlustes wegen Plattformabschalten: git/github ist ein verteiltes System
+* 1. Lehrer hätten 
+  * fein-granulare systematisch verbunden Unterlagen, 
+  * auf die sie aufsetzen könnten und
+  * die sie weiterreichen könnten und dürften. 
+* 2. Schülerinnen
+  * könnten diese freien Lehrmittel auch als Lernmittel verwenden, 
+  * könnten sie ausgehändigt gekommen und
+  * dürften sie ihrerseits weiterreichen
+* 3. Lehrer/Schülerinnen könnten Arbeiten durchsehen, kommentierten und **mit etablierten automatisierten Prozessen verbessern**.
+* 4. Das Einzelkämpferdasein der Lehrer (unter- und gegeneinander) hörte auf: Viele könnten ihr Weniges einbringen und es entstünde eine große Fülle und Vielfalt!
+* 5. Schüler könnten sich das, was bei Ihnen im Unterricht fehlt (30:60-Regel) holen.
+* 6. Es bräuchte keine Institution und kein Budget, um die Materialien zu hosten. 
+  * GitHub ist frei, (wenn auch MS besessen)
+  * *inf-schule.de* dagegen vom *Pädagogischen Landesinstitut Rheinland-Pfalz* - nur was, wenn das Budget gekürzt wird?
+* 7. Es bestünde keine Gefahr des Datenverlustes wegen Plattformabschalten: **git/github ist ein in sich verteiltes System**
 
-### 5.) Womit hätte bei solch einer Unternehmung kommunikativ rechnen müssen? **[→ ZP:Sheet:7]**
+### 5.) Womit hätte bei solch einer Unternehmung kommunikativ rechnen müssen? **[→ ZP:Sheet:6]**
 
 Wer freie Dokumente offen anfragt oder bereitstellt, trifft auf einen rauen Ton:
 
-* Mir wurde Faulheit unterstellt
+* *Faulheitsvorwurf*
 
 > Whiz-zarD@fachinformatiker.de: 'Ich denke, er sucht komplett fertige Aufgaben/Präsentationen, die er einfach nur runterladen braucht. Sprich, er möchte seine Arbeit outsourcen und das gratis'
 
-* Wegen Fehlern wurde meine Kompetenz angriffen und die Arbeit an sich desavouiert: 
+* *Kompetenzangriffen* 
 
 > Skylake@fachinformatiker.de: 'absolute Grundvoraussetzungen, dass Unterrichtsmaterialien fehlerfrei sind', 
 
@@ -144,28 +152,30 @@ Wer freie Dokumente offen anfragt oder bereitstellt, trifft auf einen rauen Ton:
 
 (Anlass war eine falsche Zuordnung von HUB zu Layer-II und HTTP zu Layer V statt VII im OSI-Modell)
 
+* Fazit *
 
-Wer in der Open-Source-Szene arbeitet, muss damit rechnen, dass einige, die 'kommentieren'
+Wer in der Open-Source-Szene arbeitet, muss damit rechnen, dass einige, die 'kommentieren',
+
 * die schrittweise Verbesserung in der Open-Source-Entwicklung selbst nicht erlebt haben
 * von einem selbst erdachten 'So-Ist-Es-'-Modell ausgehen.
 
 
-### 6.) Braucht es wirklich eine Qualitätssicherung? **[→ ZP:Sheet:8]**
+### 6.) Braucht es wirklich eine Qualitätssicherung? 
 
-In einer Diskussion ging es um die Forderung nach einer institutionalisierten Qualitätssicherung:
+In einer Diskussion ging es um die Forderung nach einer "didaktisch bzw. fachlich belastbar Veröffentlichung" über eine institutionalisierten Qualitätssicherung:
 
 
 > hellerKopf@fachinformatiker.de: Es gibt noch eine 'wichtige Zwischenstufe', die 'Qualitätssicherung'. 'Es ist eben nicht nur wichtig, dass etwas öffentlich verfügbar ist, sondern auch, dass es didaktisch bzw. fachlich belastbar veröffentlicht ist. Nicht, weil man sich abschotten sollte, sondern weil es sinnvoll wäre, wenn Material erst einmal von einem kleineren Kreis geprüft, kommentiert und überarbeitet werden könnte, bevor es für alle sichtbar öffentlich wird.'
 
-* Dahinter steht das Denkmodell 'Arbeiter' und 'Prüfer' und 'Zertifikat der Korrektheit'.
-* Das ist 'institutionalisierte Qualitätssicherung' - wie ofzt in großen Firmen verankert.
+* Dahinter steht das Denkmodell 'Arbeiter' und 'Prüfer' und 'Zertifikat der Korrektheit'. **[→ ZP:Sheet:7]**
+* Das ist 'institutionalisierte Qualitätssicherung' - wie oft in großen Firmen verankert.
 * Aber: Das Komplementäruniversum ist unendlich:
   * Es gibt unendlich viel mehr mögliche Fehler als Richtiges.
   * Zu überprüfen, dass die Fehler nicht eintreten etc., ist unmöglich.
   * Deshalb clustern Qualitätssicherungsabteilung.
   * Und damit ist der Nachweis einer absoluten Fehlerlosigkeit schon unterlaufen.
 
-* Die Open-Source-Entwicklung geht anders vor:
+* Die Open-Source-Entwicklung geht anders vor: **[→ ZP:Sheet:8]**
   * Offenheit des Quellcodes als prinzipielle Kontrollmöglichkeit
   * freie Nutzbarkeit ohne Qualitätszusagen (Disclaimer)
   * uninstitutionalisierte Communities als Umsetzung des Mehraugenprinzips (Die noch extremere Variante des Xtreme-Programmings).
@@ -173,20 +183,20 @@ In einer Diskussion ging es um die Forderung nach einer institutionalisierten Qu
 
 * Erfahrung in meinem Unterricht: Meine Schülerinnen
   * mögen es, auf Ungenauigkeiten und Fehler hinweisen zu dürfen
-  * durchdenken Dinge genauer, wenn sie die Wirken ihres Mitdenkens in Verbesserungen sehen
+  * durchdenken Dinge genauer, wenn sie die Wirkung ihres Mitdenkens in aktualisierten Unterlagen sehen
   * sind stolz darauf, als Kontributoren genannt zu werden. **→ [https://github.com/protirone/protico.ltx/blob/main/CONTRIBUTORS.md](https://github.com/protirone/protico.ltx/blob/main/CONTRIBUTORS.md)**
 
-für OER-Verbesserung 
+Also für OER-Verbesserung 
 
 * keine 'institutionalisierte Qualitätskontrolle',
 * sondern mehr Mitwirkende, die mehr sehen.
 
 ### 7.) Was wäre mein BIG-Picture? 
 
-* 1) Es würden weitere Fachinformatiklehrerinnen ein Lernfeld übernehmen: Eigenes Repository ...
+* 1) Weitere Fachinformatiklehrerinnen würden ein Lernfeld übernehmen (im eigenen Repository)
    * →  [https://github.com/protirone/protico.ltx/tree/main/sources](https://github.com/protirone/protico.ltx/tree/main/sources)
-* 2) Es gäbe für die Lernfelder die Kern von Aktiven und das Feld der Diskutanten und Reviewer
-* 3) Es stießen andere Unterrichtsfächer zu diesem Modell der OER-Entwicklung dazu
+* 2) Jedes Lernfeld hätte seine eigene Community mit Entwicklern, Diskutanten und Reviewer
+* 3) Andere Unterrichtsfächer wären im Downloadrepo als OER-Materialien präsent
   * →  [https://github.com/protirone/protirone.lessons](https://github.com/protirone/protirone.lessons)
 
 Oder kurz:
