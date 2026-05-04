@@ -2,7 +2,7 @@
 title: 'LF09:91:Ersatzleistung:1HBJ'
 author: [K. Reincke]
 date: PTCDATE
-keywords: [sbj-00.flat]
+keywords: [Klausur]
 header-left: "\\theauthor"
 header-center: "proTirone"
 header-right: "\\thetitle" 

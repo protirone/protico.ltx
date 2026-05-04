@@ -26,7 +26,11 @@
 Lösung: 
 
 * lf.09/sbj-02.network-concepts-zenprese.pdf Sheet 6
-* gerichteter azyklischer Graph = jeder Knoten höchstens 1 Vaterknoten
+* gerichteter azyklischer Graph + 
+  * jeder Knoten 0-1 Vaterknoten
+  * jeder Knoten 0-n Töchterknoten
+  * Wurzelknoten: 0 Vaterknoten
+  * Blatknoten: 0 Töchterknoten
 
 ---
 

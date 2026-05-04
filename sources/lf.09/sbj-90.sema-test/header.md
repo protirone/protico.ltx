@@ -2,7 +2,7 @@
 title: 'LF09:90:Klausur:1HBJ:VA'
 author: [K. Reincke]
 date: PTCDATE
-keywords: [sbj-00.flat]
+keywords: [Klausur]
 header-left: "\\theauthor"
 header-center: "proTirone"
 header-right: "\\thetitle" 
