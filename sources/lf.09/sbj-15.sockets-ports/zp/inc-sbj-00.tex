@@ -42,3 +42,66 @@
     \includegraphics[height=6cm]{\imgGl/question-252536-oca.png}
   \end{center}
 \end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:15:L7-to-L7-with-Hopping:Request}
+
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgLf/ports-sockets-request-activity.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:15:L7-to-L7-with-Hopping:Response}
+
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgLf/ports-sockets-response-activity.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:15:L7-to-L7-with-Hopping:Embedded Packages}
+
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgGl/ports-services-layers.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF109:15:Packages,Ports\&Services:Portsystematik}
+
+    \begin{itemize}
+    \item \tiny{Systemports := 0 - 1023 ('well-known ports', registriert bei der IANA)}.
+      \begin{itemize}
+        \item \tiny{\texttt{  7} ECHO-Service} 
+        \item \tiny{\texttt{ 20} FTP (Datenübertragung: nur TCP)} 
+        \item \tiny{\texttt{ 21} FTP (Verbindungsaufbau und Steuerung: TCP, UDP)}
+        \item \tiny{\texttt{ 22} SSH (TCP, UDP)}
+        \item \tiny{\texttt{ 23} Telnet (unverschlüsseltes Textprotokoll, z. B. für Fernwartung)}
+        \item \tiny{\texttt{ 25} SMTP (Simple Mail Transfer Protocol)}
+        \item \tiny{\texttt{ 67} Bootstrap Protocol (auch von DHCP genutzt: nur UDP)}
+        \item \tiny{\texttt{ 80} HTTP (TCP, UDP)}
+        \item \tiny{\texttt{110} POP3 (Post Office Protocol 3 = Mailclient zu Mailserver)}
+        \item \tiny{\texttt{123} NTP (Network Time Protocol)}
+        \item \tiny{\texttt{143} IMAP (Internet Message Access Protocol = Mailclient zu Mailserver)}
+        \item \tiny{\texttt{319} PTP (Precision Time Protocol):Events  \texttt{320} PTP:General Messages (nur UDP)}
+        \item \tiny{\texttt{443} HTTPS (Hypertext Transfer Protocol over SSL/TLS: TCP, UDP)}
+      \end{itemize}
+    \item \tiny{Registrierte Ports := 1024 - 49151 (per Konvention / 'Gebrauchsrecht')}
+      \begin{itemize}
+        \item \tiny{\texttt{1434} MSSQL}
+        \item \tiny{\texttt{1883} MQTT}
+        \item \tiny{\texttt{3306} Mysql}
+      \item \tiny{\texttt{8080} HTTP über Poxyserver als Vermittler zwischen Client und realem Server}
+      \end{itemize}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:15:Packages,Ports\&Services::Package System}
+
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgGl/package-family-tree.png}
+  \end{center}
+\end{frame}
