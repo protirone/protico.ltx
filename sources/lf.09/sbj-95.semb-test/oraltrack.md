@@ -121,7 +121,7 @@ Lösung:
 
 * 6.1 Segmentieren Sie das Netz 192.168.3.0/24 in zwei /25 Netze: Geben Sie für jedes Ihrer neuen Netze Netzadresse, Subnetzmaske und Broadcastdresse an. (4 Punkte)
 * 6.2 Segmentieren Sie das Netz 192.168.3.240/29 in zwei /30 Netze: Geben Sie Netzadresse und Broadcastdresse an. (4 Punkte)
-* 6.3 *Geben Sie für jedes der vier neuen Netze aus 5.1 und 5.2 eine der üblicherweise genutzten Gatewayadressen an.* (4 Z-Punkte)
+* 6.3 *Geben Sie für jedes der vier neuen Netze aus 6.1 und 6.2 eine der üblicherweise genutzten Gatewayadressen an.* (4 Z-Punkte)
 
 <!-- uebung::end -->
 
@@ -186,7 +186,7 @@ Lösung:
 <span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:95:8**</span>
 
 8) Ihre Chefin bittet Sie, die beiden kleineren Netze aus 6.2 als VLAN so umzusetzen, dass jedes Gerät in einem Netz Zugang zum Internet hat. Dazu sollen Sie einen alten Layer-III-Switch mit 32 Ports ohne embedded Router-, DNS, oder Firewallfunktionen benutzen und dürfen sich aus dem Pool der einfachen alten Router frei bedienen.
-* 8.1 Gegen Sie an, wie viele Netze Sie für die Umsetzung brauchen. (4 Punkte)
+* 8.1 Geben Sie an, wie viele Netze Sie für die Umsetzung brauchen. (4 Punkte)
 * 8.2 Spezifizieren Sie die Netze, die sie über 6.2 hinaus brauchen. (4 Punkte)
 * 8.3 Skizzieren Sie kurz, was Sie tun müssen, damit die Rechner aus dem einen Netz auch die aus dem anderen erreichen können. (2 Punkte)
 * 8.4 Zeichnen Sie den zugehören Netzwerkplan. (10 Z-Punkte)
