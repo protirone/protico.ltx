@@ -77,7 +77,7 @@ Sie haben schon ein komplexes Firmennetz aufgebaut. Die Netzwerkkarten aller ang
 * 4.1 Kreuzen Sie die der folgenden Aussagen an, die Sie ihr bereits guten Gewissens zusagen können: (4 Punkte)
   * [ ] Alle eingebunden Rechner haben Zugang zum Internet.
   * [ ] Alle Rechner können mit den anderen Rechnern des Firmennetzes kommunizieren.
-  * [ ] Alle Rechner eines Subnetzes können die anderen des Subnetzes kontaktieren.
+  * [ ] Alle Rechner eines Subnetzes können die anderen desselben Subnetzes kontaktieren.
   * [ ] Sie haben die Abschottung von Subnetzen von anderen bereits technisch vorbereitet.
 * 4.2 Skizzieren Sie kurz, was Sie noch tun müssen, um das, was Sie noch nicht erreicht haben, auch noch zusagen zu können. (4 Punkte) 
 

@@ -149,3 +149,103 @@ vgl. [https://de.wikipedia.org/wiki/Liste_der_Portnummern]
 
 
 ### 5. Die wichtigsten Services im Überblick **[→ ZP:Sheet11]**
+
+
+---
+
+Bauanleitung:
+
+1. Organisieren Sie 4 * 3 ineinander legbare Kartons.
+2. Drucken Sie preambels.odt aus.
+3. Legen Sie in jedes innerste Paket die Message.
+4. Schneiden Sie für jedes Paket die Präambelzeilen ab
+5. Kleben Sie die Präambeln von innen nach außen an die Unterseite der einzeln Schachteln.
+6. Verpacken Sie alles zusammen in Geschenkpapier (steht für Ethernetpackage)
+
+<!-- uebung::start -->
+
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/15:services:02**</span>
+
+* [ ] Bitte teilen Sie sich in vier Gruppen auf
+* [ ] Bitte nehmen Sie gruppenweise Ihr 'Geschenk' entgegen und entpacken Sie es vorsichtig.
+* [ ] Kriegen Sie bitte heraus, was Sie da bekommen haben. Das sollten Sie in ca. 40 Min. erledigen können.
+* [ ] Erstellten Sie dann in ca. 20 Min. eine kurze Präsentation, anhand Sie Ihren Mitschülerinnen charmant erläutern können, was Sie da bekommen haben. Leitfragen sind:
+  * Was haben Sie bekommen?
+  * Wie ist es aufgebaut und wie funktioniert es?
+  * Wofür stehen die Komponenten des 'Geschenks' in der Wirklichkeit
+
+<!-- uebung::end -->
+
+
+Lösung:
+
+__P1 *echo* (tcp/ipv4)__
+
+* L7: 
+> "Well done"
+* L4 (tcp): `0xFFFB 0x0007 4*x 4*x 0x0 3*x 4*x
+* L3 (ip): 4*x 4*x 1*x 0x06 2*x 0x23451234 0x43215423>
+* L2 (ef): 8*x 0x847321 0x123748 4*x 0x0800 4*? 12*x
+
+Besonderheit: 
+
+* Echo-Server-Port = 7 = 0x07, 
+* Protocol-Nummer für TCP = 6 = 0x06
+* EType für IP = 0x0800
+* Geschenkpapier ist Ethernetpackage.
+
+__P2 *http* (tcp/ipv4)__
+
+* L7: 
+> "GET /index.html HTTP/1.1\n
+> Host: http://tierschutz.hessen.de/\n
+> \n
+> "
+* L4 (tcp): `0xFFFA 0x0050 4*x 4*x 0x0 3*x 4*x`
+* L3 (ip): 4*x 4*x 1*x 0x06 2*x 0x23451234 0x43215423
+* L2 (ef): 8*x 0x847321 0x123748 4*x 0x0800 4*? 12*x
+
+Besonderheit: 
+
+* Http-Server-Port = 80 = 0x50
+* Protocol-Nummer für TCP = 6 = 0x06
+* EType für IP = 0x0800
+* Geschenkpapier ist Ethernetpackage.
+
+
+
+__P3 *http* (udp/ipv4)__
+
+* L7: 
+> "GET /index.html HTTP/3.0\n
+> Host: http://vegan.de/\n
+> \n
+> "
+* L4 (udp): `0xFFFC 0x0050 0x0030 2*x`
+* L3 (ip): 4*x 4*x 1*x 0x11 2*x 0x23451234 0x43215423
+* L2 (ef): 8*x 0x847321 0x123748 4*x 0x0800 4*? 12*a
+* Geschenkpapier ist Ethernetpackage.
+
+Besonderheit: 
+
+* Http-Server-Port = 80 = 0x50
+* Protocol-Nummer für UDP = 17 = 0x11
+* EType für IP = 0x0800
+* Geschenkpapier ist Ethernetpackage.
+
+__P4 *telnet* (tcp/ipv6)__
+
+* L7:
+> "echo ‘well done’"
+* L4 (tcp): `0xFFFD 0x0017 4*x 4*x 0x0 0x? 3*x 4*x`
+* L3 (ipv6): 4*x 0x10 0x06 1*x 0x2001234767891618 0x2001816198767432
+* L2 (ef): 8*x 0x847321 0x123748 4*x 0x86DD 4*? 12*
+
+Besonderheit: 
+
+* Telnet-Server-Port = 23 = 0x17
+* Protocol-Nummer für TCP = 6 = 0x06
+* EType für IPv6 = 0x86DD
+* Geschenkpapier ist Ethernetpackage.
+
+---

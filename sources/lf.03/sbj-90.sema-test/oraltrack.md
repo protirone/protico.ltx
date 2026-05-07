@@ -6,11 +6,10 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
+
 <!-- uebung::start -->
 
-## Block 1: 'Netzwerkarchitekturen'
-
-<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF03:90:1**</span>
+<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF03:90:task:1**</span>
 
 *Netzwerksysteme werden auch nach der Art ihrer Struktur klassifiziert.*
 
@@ -19,13 +18,29 @@
 
 <!-- uebung::end -->
 
+Lösung: 
+
+1.1:
+
+```
+CL1---|                                   |--SERV2
+      (Internet)---ROUTER---Loadbalancer--|--SERV1    
+CL2---|                                   |--SERV3
+```
+
+1.2:
+
+```
+(CL+SV)1 --- (CL+SV)3
+   |      X     |
+(CL+SV)2 --- (CL+SV)4
+```
+
 ---
 
 <!-- uebung::start -->
 
-## Block 2: MAC-Adressen 
-
-<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF03:90:2**</span>
+<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF03:90:task:2**</span>
 
 MAC-Adressen dienen zur weltweit eindeutigen Nummerierung von Netzwerkinterfaces/-karten:
 
@@ -38,18 +53,17 @@ Hinweis: Exponentialzahl reicht als Lösung.
 
 Lösung: 
 
-* MAC-Adresse = 6 Bytes, 3 für Vendorencode, 3 für vendoren spezifische Nummerierung
-* `2^8 * 2^8 * 2^8 * 2^8 * 2^8 * 2^8 = 2^(6*8) = 2^48`
- 
+
+* 2.1: 6 Bytes = die linken 3 Bytes = Vendorencode, die rechten 3 Bytes = Seriennummer
+* 2.2: 2^8 * 2^8 * 2^8 * 2^8 * 2^8 * 2^8 = 2^(8+8+8+8+8+8) = 2^48
+
 ---
 
 <!-- uebung::start -->
 
-## Block 3: IPv4-Adressen
+<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF03:90:task:3**</span>
 
-<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF03:90:3**</span>
-
-IPv4-Adressen haben eine innere Struktur und definieren im Verbund ein Netz.
+IPv4-Adressen keine innere Struktur. Sie wird ihnen über die Subnetzmaske zugeschrieben. Zusammen definieren sie im Verbund ein Netz.
 
 * 3.1 __Beschreiben Sie, wie viele Bytes eine IPv4-Adresse hat__ (2P)
 * 3.2 __*Berechnen Sie mit Bitoperatoren aus der IPv4-Adresse '192.168.110.42' und der Subnetzmaske '255.255.255.0' die folgenden Adressen:*__
@@ -61,44 +75,46 @@ Hinweis: Beschreiben Sie Ihren Rechenweg.
 
 <!-- uebung::end -->
 
-Lösung:
+Lösung: 
 
-* IPv4-Adresse = 4 Bytes
-* `192.168.110.42 & 255.255.255.0 = 192.168.110.0`
-* `192.168.110.0 | 0.0.0.255 = 192.168.110.255`
-* a) `192.168.110.0 + 1 = 192.168.110.1` 
-* b) `192.168.110.255 - 1 = 192.168.110.254`
+* 3.1: 4 Bytes
+* 3.2:
+  * `192&255 -> 192`
+  * `168&255 -> 168`
+  * `110&255 -> 110`
+  * ` 42&0   ->  0` 
+  * Netzadresse = `192.168.110.0` (kleinste Zahl im Hostabteil)
+  * Broadcastadresse = `129.168.119.255` (höchste Zahl im Hostanteil) 
+  * Gateway =  `192.168.110.1` oder `129.168.110.254`
 
 ---
 
 <!-- uebung::start -->
 
-<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF03:90:4**</span>
+<span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF03:90:task:4**</span>
 
 Außerdem sind IPv4-Adressen in Gruppen mit speziellen Zwecken geordnet.
 
-* 3.3. __Beschreiben Sie, wozu man private IPv4-Adressen nutzt.__ (2P)
-* 3.4. __*Beschreiben Sie, wozu und wie man (wer?) APIPA-Adressen nutzt.*__ (2ZP)
+* 4.1. __Beschreiben Sie, wozu man private IPv4-Adressen nutzt.__ (2P)
+* 4.2. __*Beschreiben Sie, wozu und wie man (wer?) APIPA-Adressen nutzt.*__ (2ZP)
  
+
 <!-- uebung::end -->
 
----
+Lösung: 
 
-Lösung:
-
-* Zum Aufbau eines privaten Netzes, dessen IP-Adressen nicht ins Internet geroutet werden.
-* Darf sich ein Rechner übergangshalber aus dem APIPA-Pool frei nehmen, wenn DHCP-Server nicht erreichbar
+* 4.1 Private Adressen nutzt man für ein privates Netz, das auch segmentiert sein kann. Private Adressen werden über Router im privaten Netz geroutet. Sie werden aber niemals ins Internet geroutet.
+* 4.2 Erhält ein Rechner bei einer DHCP-Anfrage kein Konfigurationspaket, darf er sich selbst eine Adresse aus dem APIPA-Bereich nehmen. Er sollte dazu einen Algorithmus mit Zufallssteuerung verwenden, um die Wahrscheinlichkeit zu minimieren, dass andere dieselbe Adresse herausgreifen.
 
 ---
 
-Bewertung:
+<!-- uebung::start -->
+
+<span style="color: green;">_BEWERTUNG_</span> <span style="color:magenta;">**LF03:90**</span>
 
 * 10 Standardpunkte (P) + 7 Zusatzpunkte (ZP) möglich.
 * 10 Punkte insgesamt = 2.0
 * ab 12 Punkte insgesamt = 1.0
 * Rest: [https://www.lehrerfreund.de/notenschluesselrechner/form-ihk-notenschluessel] mit dem Höchstwert 12
-  
----
 
-
-
+<!-- uebung::end -->
