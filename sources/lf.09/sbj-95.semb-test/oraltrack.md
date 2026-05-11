@@ -120,7 +120,7 @@ Lösung:
 <span style="color: green;">_AUFGABE_</span> <span style="color:magenta;">**LF09:95:6**</span>
 
 * 6.1 Segmentieren Sie das Netz 192.168.3.0/24 in zwei /25 Netze: Geben Sie für jedes Ihrer neuen Netze Netzadresse, Subnetzmaske und Broadcastdresse an. (4 Punkte)
-* 6.2 Segmentieren Sie das Netz 192.168.3.240/29 in zwei /30 Netze: Geben Sie Netzadresse und Broadcastdresse an. (4 Punkte)
+* 6.2 Segmentieren Sie das Netz 192.168.3.240/29 in zwei /30 Netze: Geben Sie für jedes Ihrer neuen Netze Netzadresse, Subnetzmaske und Broadcastdresse an. (4 Punkte)
 * 6.3 *Geben Sie für jedes der vier neuen Netze aus 6.1 und 6.2 eine der üblicherweise genutzten Gatewayadressen an.* (4 Z-Punkte)
 
 <!-- uebung::end -->
@@ -151,7 +151,7 @@ Sie finden auf einem Gerät in Ihrem Firmennetz den Hinweis, dass dessen Netzwer
 
 * 7.1 Erläutern Sie am Beispiel dieser Adresse Merkmale und Struktur von IPv6-Adressen und geben Sie den Typ dieser speziellen Adresse an. (10 Punkte)
 * 7.2 Erläutern Sie, welche Informationen Sie auf welcher Basis aus diesen Informationen über das bestehende Netz ableiten können. (6 Punkte)
-* 7.3 *Gegen Sie an, welche Netzsegmentierung Sie Ihrer Chefin empfehlen.* (8 Z-Punkte)
+* 7.3 *Geben Sie an, welche Netzsegmentierung Sie Ihrer Chefin empfehlen.* (8 Z-Punkte)
 
 <!-- uebung::end -->
 

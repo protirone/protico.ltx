@@ -42,7 +42,8 @@ exercises:
 lesson-ort: oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-    mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
+    mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf && \
+	  cp peambels.odt $${TGD}/$${SJN}-preambels.odt
 	@ tree ${BLD}
 
 ort: oraltrack

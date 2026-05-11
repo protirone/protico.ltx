@@ -150,17 +150,20 @@ vgl. [https://de.wikipedia.org/wiki/Liste_der_Portnummern]
 
 ### 5. Die wichtigsten Services im Überblick **[→ ZP:Sheet11]**
 
+### 6. Package-in-Package-Übung
 
 ---
 
 Bauanleitung:
 
-1. Organisieren Sie 4 * 3 ineinander legbare Kartons.
-2. Drucken Sie preambels.odt aus.
-3. Legen Sie in jedes innerste Paket die Message.
-4. Schneiden Sie für jedes Paket die Präambelzeilen ab
-5. Kleben Sie die Präambeln von innen nach außen an die Unterseite der einzeln Schachteln.
-6. Verpacken Sie alles zusammen in Geschenkpapier (steht für Ethernetpackage)
+*Die Lehrerin ...**
+
+1. organisiert vorab 4 * 3 ineinander legbare Kartons. (Matruschka-Prinzip)
+2. druckt dann die Datei `preambels.odt`mit Libre-Office aus.
+3. legt danach - entsprechend der Lösungsbeschreibung - in jedes innerste Paket die Messages von den Seiten P1 - P4.
+4. schneidet schließlich für jedes Paket die entsprechenden Präambelzeilen ab und
+5. klebt die Präambeln - von innen nach außen gehend - je an die Unterseite der einzeln Schachteln.
+6. verpackt zuletzt alles zusammen in Geschenkpapier (Symbol für Ethernetpackage)
 
 <!-- uebung::start -->
 
@@ -172,10 +175,9 @@ Bauanleitung:
 * [ ] Erstellten Sie dann in ca. 20 Min. eine kurze Präsentation, anhand Sie Ihren Mitschülerinnen charmant erläutern können, was Sie da bekommen haben. Leitfragen sind:
   * Was haben Sie bekommen?
   * Wie ist es aufgebaut und wie funktioniert es?
-  * Wofür stehen die Komponenten des 'Geschenks' in der Wirklichkeit
+  * Wofür stehen die Komponenten des 'Geschenks' in der Wirklichkeit?
 
 <!-- uebung::end -->
-
 
 Lösung:
 
@@ -196,11 +198,12 @@ Besonderheit:
 
 __P2 *http* (tcp/ipv4)__
 
-* L7: 
-> "GET /index.html HTTP/1.1\n
-> Host: http://tierschutz.hessen.de/\n
-> \n
-> "
+* L7:
+```
+GET /index.html HTTP/1.1\n
+Host: http://tierschutz.hessen.de/\n
+\n
+```
 * L4 (tcp): `0xFFFA 0x0050 4*x 4*x 0x0 3*x 4*x`
 * L3 (ip): 4*x 4*x 1*x 0x06 2*x 0x23451234 0x43215423
 * L2 (ef): 8*x 0x847321 0x123748 4*x 0x0800 4*? 12*x
@@ -217,10 +220,12 @@ Besonderheit:
 __P3 *http* (udp/ipv4)__
 
 * L7: 
-> "GET /index.html HTTP/3.0\n
-> Host: http://vegan.de/\n
-> \n
-> "
+```
+GET /index.html HTTP/3.0\n
+Host: http://vegan.de/\n
+\n
+```
+
 * L4 (udp): `0xFFFC 0x0050 0x0030 2*x`
 * L3 (ip): 4*x 4*x 1*x 0x11 2*x 0x23451234 0x43215423
 * L2 (ef): 8*x 0x847321 0x123748 4*x 0x0800 4*? 12*a
