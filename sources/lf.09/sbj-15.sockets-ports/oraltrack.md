@@ -254,3 +254,8 @@ Besonderheit:
 * Geschenkpapier ist Ethernetpackage.
 
 ---
+
+### 7. Zur Analyse von 'listening Ports'
+
+
+
