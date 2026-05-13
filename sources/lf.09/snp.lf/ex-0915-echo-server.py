@@ -1,5 +1,5 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
-# in broad terms following https://realpython.com/python-sockets/
+# in broad terms inspired by https://realpython.com/python-sockets/
 import socket
 
 server_addr = "127.0.0.1"  # loopback interface address (localhost)
