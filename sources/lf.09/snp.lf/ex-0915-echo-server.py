@@ -1,18 +1,20 @@
+# (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
+# in broad terms following https://realpython.com/python-sockets/
 import socket
 
-# example taken from https://realpython.com/python-sockets/
-
-HOST = "127.0.0.1"  # Standard loopback interface address (localhost)
-PORT = 65432  # Port to listen on (non-privileged ports are > 1023)
+server_addr = "127.0.0.1"  # loopback interface address (localhost)
+# wkp: 0 - 1023 | rp: 1024 - 49151 | dp: 49152 – 65535 | wkp echo: 7
+server_port = 65432 # better using a 'handcrafted' dynamic port ;-)
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind((HOST, PORT))
-    s.listen()
-    conn, addr = s.accept()
-    with conn:
-        print(f"Connected by {addr}")
-        while True:
-            data = conn.recv(1024)
-            if not data:
-                break
-            conn.sendall(data)
+  s.bind((server_addr, server_port))
+  s.listen()
+  print(f"acting on/for {server_addr}:{server_port}")
+  while True:                      
+    conn, addr = s.accept()        # waiting for next request
+    print(f"requested by {addr}")
+    while True:
+      data = conn.recv(1024)
+      if not data: break
+      conn.sendall(data)
+    print(f"served response")
