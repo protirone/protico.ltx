@@ -359,6 +359,8 @@ Lösung: Echo-Client: **[→ ZP:Sheet12]**, Echo-Server **[→ ZP:Sheet13]**
 
 ### 9. Übung zur Server-Status-Überwachung
 
+<!-- uebung::start -->
+
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/15:services:05**</span>
 
 * [ ] Öffnen Sie 3 Terminals nebeneinander.
@@ -367,7 +369,7 @@ Lösung: Echo-Client: **[→ ZP:Sheet12]**, Echo-Server **[→ ZP:Sheet13]**
 * [ ] Rufen Sie im dritten Terminal (fortlaufend) vor jeder Ausgabe in Terminal 2 `lsof -i -n`.
 * [ ] Beschreiben Sie, wie sich der Status Ihres Echo-Servers immer wieder verändert.
 
-<!-- uebung::start -->
+<!-- uebung::end -->
 
 Lösung:
 

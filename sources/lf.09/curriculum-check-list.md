@@ -41,12 +41,14 @@
 |  | Adressen | DMZ \& Firewalls | sbj-13.routing-firewalls-dmz* |
 |  | Adressen | VLAN & Layer-III-Switches | sbj-13.routing-firewalls-dmz* |
 |  | Adressen | DNS | sbj-14.dns* |
-|  | Layer II-IV | Protokolle \& Packaging | ...* |
-|  | Layer IV | Ports | ...* |
+|  | Layer II-IV | Protokolle \& Packaging | sbj-15.sockets-ports* |
+|  | Layer IV | Ports | sbj-15.sockets-ports* |
 |  | Layer IV | NAT \& Hopping | ...* |
-|  | Layer IV | ICMP, TCP-IP, UDP ...| ...* |
-|  | Layer VII | Services ...| ...* |
-|  | Layer VII | Packaging| ...* |
+|  | Layer IV | ICMP, TCP-IP, UDP | sbj-15.sockets-ports* |
+|  | Layer VII | Services | sbj-15.sockets-ports* |
+|  | Layer VII | Packaging | sbj-15.sockets-ports* |
+|  | Verschlüsselung | Konzepte | ...* |
+|  | Verschlüsselung | ssh & Signierung & Tunnelling | ...* |
 |  | Layer VII | HTTP-Protokoll | ...* |
 
 ## Fallweise Einsprengsel
