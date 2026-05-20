@@ -15,7 +15,60 @@
   \end{center}
 \end{frame}
 
+\begin{frame}  
+  \frametitle{LF09:16:Verschlüsselung:Begriffe}
+  \begin{center}
+    \includegraphics[height=7.5cm]{\imgLf/encryption-terminology.png}
+  \end{center}
+\end{frame}
 
+\begin{frame}
+\frametitle{LF09:16:Verschlüsselung}
+
+  \begin{center}
+    \includegraphics[height=5.5cm]{\imgLf/encryption-cover.png}
+    
+    \textcolor{blue}{\tiny{\texttt{\href{https://de.wikipedia.org/wiki/Der\_Teufel\_trägt\_Prada}{0x3f0x1e0x90x5b0x2f0x1e0xe0x1d0x1e0x170x5b0xf0x90xb80xdf0x1c0xf0x5b0x2b0x90x1a0x1f0x1a}}}}
+    \textcolor{blue}{\tiny{\texttt{?0x1e{\textbackslash}t[/0x1e0x0e0x1d0x1e0x17[0x0f{\textbackslash}t0xb80xdf0x1c0x0f[+{\textbackslash}t0x1a0x1f0x1a}}}
+    
+  \end{center}
+\end{frame}
+
+
+\begin{frame}  
+  \frametitle{LF09:16:Verschlüsselung:XOR}
+  \vspace{0.2cm}
+  \begin{small}
+  \begin{center}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{cr|c|c|c|}
+	   & \texttt{42} & \texttt{42} & \\
+	   & \textcolor{blue}{\texttt{00101010}} & \textcolor{blue}{\texttt{00101010}} & Zahl \\
+     $\veebar$ & \textcolor{red}{\texttt{11111111}} & \textcolor{teal}{\texttt{00010111}} & Schlüssel \\
+    = & \textcolor{violet}{\texttt{11010101}} & \textcolor{violet}{\texttt{00111101}} & Chiffrat \\
+    $\veebar$ & \textcolor{red}{\texttt{11111111}} & \textcolor{teal}{\texttt{00010111}} & Schlüssel\\
+    & \textcolor{blue}{\texttt{00101010}} & \textcolor{blue}{\texttt{00101010}} & Zahl \\
+    & \texttt{42} & \texttt{42} \\
+    \end{tabular}
+
+  \vspace{1cm}
+    \texttt{Z1 $\veebar$ Z2 $\rightarrow$ Z3} \\
+    \texttt{Z3 $\veebar$ Z2 $\rightarrow$ Z1} \\
+    \texttt{Z3 $\veebar$ Z1 $\rightarrow$ Z2} \\
+  \end{center}
+  \end{small}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:16:XOR-Verschlüsselung}
+
+  \begin{center}
+    \begin{minipage}{0.9\textwidth}
+      \inputminted[fontsize=\footnotesize,linenos]{python}{\snpLf/ex-0916-encryption.py}
+    \end{minipage}
+  \end{center}
+
+\end{frame}
 
 \begin{frame}  
   \frametitle{LF09:16:Verschlüsselung:TLS-Handshake}
@@ -23,4 +76,19 @@
     \includegraphics[height=8cm]{\imgLf/encryption-tls-handshake.png}
   \end{center}
 \end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:16:Verschlüsselung:TSL-Handshake}
+  \begin{center}
+    \includegraphics[height=5cm]{\imgLf/ssl-handshake-top-wm.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF09:16:Verschlüsselung:TSL-Handshake}
+  \begin{center}
+    \includegraphics[height=5cm]{\imgLf/ssl-handshake-bottom-wm.png}
+  \end{center}
+\end{frame}
+
 

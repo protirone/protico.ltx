@@ -37,7 +37,7 @@ Lösung:
 * → Veranschaulichung: [https://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung](https://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung)
 ---
 
-### 2. Begriffe 
+### 2. Begriffe **[→ ZP:Sheet3]**
 
 * **Verschlüsselung** (= Chiffrierung, Codierung)
   * = Umwandlung (elektronischer) Texte, Bilder, Sprachnachrichten, Sourcecode, Payloads eines Netzpaketes - will sagen: den 'Klartext' - "[...] in eine unverständliche Zeichenfolge" - will sagen: in den 'Geheimtext' (Chiffrat [BSI])
@@ -69,22 +69,36 @@ Lösung:
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:Verschlüsselung:02**</span>
 
+**Vorbereitung:**
+
 * [ ] Vereinbaren Sie einen Kanal/Medium, über den/das Sie Nachrichten an alle Mitglieder der Klasse versenden können.
 * [ ] Teilen Sie sich in zwei Gruppen auf.
+
+**Ausarbeitung:**
+
 * [ ] Einigen Sie sich in jeder Gruppe auf einen Verschlüsselungsalgorithmus und einen Schlüssel. Lassen Sie Ihre Fantasie walten.
 * [ ] Testen Sie Prozedere in der Gruppe.
-* [ ] Jede Gruppe sende eine Emissärin aus Ihrer Gruppe mit ihrem Messanger zur Lehrerin. 
-* [ ] Jede Emissärin setze sich deutlich getrennt von Ihrer Gruppe (und der Konkurrenz) hin und
-  * [ ] empfange eine spezifische Nachricht, 
-  * [ ] verschlüssele diese Nachricht gemäß des Gruppenalgorithmus/Schlüssels
+* [ ] Jede Gruppe sende eine 'Emissärin' aus Ihrer Gruppe mit ihrem Messanger zur Lehrerin. 
+* [ ] Jede 'Emissärin' setze sich deutlich getrennt von Ihrer Gruppe (und der Konkurrenz) hin und
+  * [ ] empfange eine spezifische Nachricht von der Lehrerin, 
+  * [ ] verschlüssele diese Nachricht gemäß des Gruppenalgorithmus / Schlüssels
   * [ ] versende diese Nachricht über den für alle Schülerinnen zugänglichen Kanal.
 * [ ] Jede Gruppe 
   * [ ] empfange die Nachricht,
-  * [ ] entschlüssele sie
-  * [ ] und notiere sie
-  * [ ] stecke die Notiz in einem Umschlang und
-  * [ ] notieren sich die verschlüsselte Nachricht der anderen Gruppe
-* [ ] Jede Gruppe versuche, die Nachricht der anderen Gruppe zu entziffern.
+  * [ ] entschlüssele sie,
+  * [ ] notiere sie still auf einem Zettel
+  * [ ] übergebe den an die Lehrerin,
+  * [ ] entziffere die verschlüsselte Nachricht der anderen Gruppe,
+  * [ ] dokumentieren das eigene Verschlüsselungsverfahren,
+  * [ ] und skizziere das Verschlüsselungsverfahren der Gegenseite
+  
+Wer die Nachricht der anderen Gruppe zuerst entziffert hat, hat gewonnen.
+
+**Resumée:**
+
+* [ ] Jede Gruppe gebe die Nachricht der anderen bekannt,
+* [ ] Beschreibe das Verschlüsselungsverfahren der Gegenseite,
+* [ ] Beschreibe das eigene Verschlüsselungsverfahren.
 
 Hinweis:
 
@@ -96,12 +110,21 @@ Hinweis:
 
 Lösung: 
 
+* **1.**: Matts, Daniel (GSLDK, 11IV24):
+  * wähle ein Pangramm = "The quick brown fox jumps over the lazy dog" als Schlüssel,
+  * weise jedem Buchstaben des Alphabets eine der Nummern zu, die er auch im Pangramm hat ( T=0, h=1, ...)
+  * ersetze die Buchstaben im Satz 'Tief ist der Brunnen der Vergangenheit' durch diese Nummern, das Blank bleibe eine Blank
+  * → 0,5,2,13 5,20,25 32,23,9 8,24,4,12,12,27,12 2,23,9 22,2,9,34,29,12,34,2,12,1,2,5,25
+* **2.**: Waldemar, David, Faezeh, Juliana, Evelina, Alexander, Dominika (GSLDK, 11IV24):
+  * lege in einer Substitionstabelle fest, welcher Buchstabe welche Zahl haben soll u.u.
+  * ersetze die Buchstaben im Satz 'Morgen war Weihnachten' durch diese Nummern, das Blank habe die Nummer 00
+  * → 08 02 25 26 01 15 00 16 17 25 00 16 01 19 06 15 17 22 06 13 01 15
 
 ---
 
-### Verfahren:
+### Verfahren: **[→ ZP:Sheet3]**
 
-* **symmetrische Verfahren** verwenden zur Ver- und Entschlüsselung denselben Schlüssel
+* **Symmetrische Verfahren** verwenden zur Ver- und Entschlüsselung denselben Schlüssel
   * *Substitutionsverfahren* = z.B. Monoalphabetische Substitution: Caesar-Verschlüsselung [A>C]
   * *Transpositionsverfahren* = Durcheinanderwürfeln des Textes
   * *Stromverschlüsslung*: die Zeichen des Klartextes jeweils einzeln und nacheinander verschlüsselt.
@@ -117,7 +140,7 @@ Lösung:
       *  gilt als sicher  
   * Vorteil: schnellere Berechnung 
   * Nachteil: Schlüssel ist mehreren bekannt.
-* **asymmetrische Verfahren** (= Public-key cryptography), benutzen zur Verschlüsselung einen "völlig anderen" Schlüssel als zur Entschlüsselung
+* **Asymmetrische Verfahren** (= Public-key cryptography), benutzen zur Verschlüsselung einen "völlig anderen" Schlüssel als zur Entschlüsselung
   * *öffentlicher Schlüssel* zum Verschlüsseln 
     * wird weitergegeben
     * kann den Text NICHT entschlüsseln, (nicht mal vom Verschlüssler)
@@ -141,9 +164,61 @@ Lösung:
   * Nachteil: die erhöhte Rechenleistung (RSA 1000 mal langsamer als AES)
 * **hybride Verfahren**: organisieren Schlüsselaustausch asymmetrisch, die Verschlüsselung symmetrisch.
 
-### Hashverfahren
 
-**Hashfunktion** bildet einen Text variabler Länge (große Daten) auf kleineren Text/Zahl fester Länge ab.
+---
+
+**[→ ZP:Sheet4]**
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:Verschlüsselung:02**</span>
+
+* [ ] Bitte entziffern Sie den folgenden String. (Der Einfachheit halber auch als Hex-Valuestream)
+  
+```
+?\x1e\t[/\x1e\x0e\x1d\x1e\x17[\x0f\t\xb8\xdf\x1c\x0f[+\t\x1a\x1f\x1a'
+
+=
+
+0x3f0x1e0x90x5b0x2f0x1e0xe0x1d0x1e0x170x5b
+0xf0x90xb80xdf0x1c0xf0x5b0x2b0x90x1a0x1f0x1a
+
+```
+* [ ] Beschreiben Sie den Algorithmus
+
+Sie erhalten in kürzeren Abständen kleine Hilfestellungen
+
+<!-- uebung::end -->
+
+**Hilfen:**
+
+1. Der Algorithmus lässt sich ohne jede Programmänderung zum Verschlüsseln und Entschlüsseln verwenden.
+2. Es geht um einen gerade aktuellen Film.
+3. Der Schlüssel ist `123`.
+
+Lösung: **[→ ZP:Sheet5]**
+
+* `Der Teufel trägt Prada` byteweise XOR-verknüpft mit Schlüssel `123` ergibt
+ 
+```
+?\x1e\t[/\x1e\x0e\x1d\x1e\x17[\x0f\t\xb8\xdf\x1c\x0f[+\t\x1a\x1f\x1a'
+```
+
+* der String wieder byteweise XOR-verknüpft mit Schlüssel `123` ergibt `Der Teufel trägt Prada`
+
+---
+
+**[→ ZP:Sheet6]** mit Vorführung in VSCODE
+
+
+**_Seitenfrage_**: Wo wird diese XOR-Fähigkeit noch genutzt?
+
+**_Seitenantwort_**: Exkurs zu RAID (s `lf.11d/sbj-05.raid\*`)?
+
+
+### Hashverfahren
+`
+**Hashfunktion** bildet einen Text variabler Länge (große Daten) auf kleineren Text/Zahl fester Länge ab:
+
 * Der Hashwert sollte für jeden Text eineindeutig sein.
 * kurzer Hash:
   * Vorteil: schnellere Berechnung
@@ -160,7 +235,7 @@ Lösung:
 * Entscheidungskriterium 
   * 'sicher': SHA-2 oder SHA-3
   * Effizienz: MD5 oder SHA-1 (aber knackbar = leicht Kollision zu erzeugen)
-* Anwendungs
+* Anwendung:
     * Download-Verifikation
     * s. google.
 * Anwendungen
@@ -168,6 +243,16 @@ Lösung:
   * bash/LX: `echo 'hello world' | sha256sum`
   * powershell/WIN: Get-FileHash
   * commandshell: CertUtil
+
+
+* **Signatur/Unterschrift**: Nachweise der Autorenschaft
+  * Allgemeines Eigenschaft: *öffentliche Schlüssel* können entschlüsseln, was *Private* Schlüssel **ver**schlüsselt haben. (Reziproke Anwendung)
+  * Anwendung:
+    * Aus Text wird ein Hash erzeugt.
+    * Autor verschlüsselt des Hash mit seinem privaten Schlüssel.
+    * reicht beides zusammen weiter.
+    * Empfänger des Textes entschlüsselt Text mit öffentlichem Schlüssel des Autors: Nachweis erbracht.
+  * Voraussetzung: verlässliche Schlüsselweitergabe **Schlüsselparties**
 
 
 ### Verschlüsselung in Netzwerken
@@ -186,21 +271,10 @@ Lösung:
   * Vorgänger Secure Sockets Layer (SSL 1.0/1994 - SSL 3.0/1996)
   * Handshake s. Bild
 * **IPSEC** (Internet Protocol Security) 
-  * arbeitet direkt auf der Vermittlungsschicht (Internet Layer, entspricht OSI Layer 3
+  * arbeitet direkt auf der Vermittlungsschicht (Internet Layer, entspricht OSI Layer 3)
   * soll verschlüsselungsbasierte Sicherheit auf Netzwerkebene bereitstellen
   * soll das Mitlesen beim Umschreiben / Routing verhindern
   * führt bei NAT u.U. zu Problem (Änderung quell-IP)
-
-
-* **Signatur/Unterschrift**: Nachweise der Autorenschaft
-  * Allgemeines Eigenschaft: *öffentliche Schlüssel* können entschlüsseln, was *Private* Schlüssel **ver**schlüsselt haben. (Reziproke Anwendung)
-  * Anwendung:
-    * Aus Text wird ein Hash erzeugt.
-    * Autor verschlüsselt des Hash mit seinem privaten Schlüssel.
-    * reicht beides zusammen weiter.
-    * Empfänger des Textes entschlüsselt Text mit öffentlichem Schlüssel des Autors: Nachweis erbracht.
-  * Voraussetzung: verlässliche Schlüsselweitergabe **Schlüsselparties**
-
 
 
 

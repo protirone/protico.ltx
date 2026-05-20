@@ -1,0 +1,200 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram name="Page-1" id="Akw2Q-pSFAfZWxvwG1ob">
+    <mxGraphModel dx="1314" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-46" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.29333292643229164;arrowSize=0.11346122546073718;rotation=-180;fillColor=#FFCCCC;" vertex="1" parent="1">
+          <mxGeometry x="420" y="692" width="316" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-45" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.29333292643229164;arrowSize=0.11346122546073718;fillColor=#CCFFCC;" vertex="1" parent="1">
+          <mxGeometry x="420" y="632" width="316" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-36" value="" style="shape=doubleArrow;whiteSpace=wrap;html=1;arrowWidth=0.34000040690104166;arrowSize=0.11963738847715256;fillColor=#CCCCFF;" vertex="1" parent="1">
+          <mxGeometry x="409" y="499" width="331" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-32" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="461.5" y="477" width="227" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-13" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="130" y="250" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-12" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-13">
+          <mxGeometry width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-7" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Entzifferung&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dechiffrierung, Decodierung&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-size: 13px;&quot;&gt;&lt;font face=&quot;Garamond&quot; color=&quot;#0000ff&quot;&gt;&lt;b&gt;&lt;i&gt;&#39;Enträtselung&#39; eines codierten Textes in Unkenntnis Schlüssels&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-13">
+          <mxGeometry x="5" y="10" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-15" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="360" y="250" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-10" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-15">
+          <mxGeometry width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-4" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Verschlüssung&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Chiffrierung, Codierung&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font color=&quot;#0000ff&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;&lt;b&gt;Umwandlung eines Klartextes&amp;nbsp;&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;i style=&quot;font-size: 13px; color: rgb(0, 0, 255); font-family: Garamond; background-color: initial;&quot;&gt;&lt;b&gt;in eine unverständlichen Zeichenfolge&lt;/b&gt;&lt;/i&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-15">
+          <mxGeometry x="2.5" y="2" width="195" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-16" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="585" y="250" width="210" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-8" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-16">
+          <mxGeometry x="5" y="3" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-5" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Entschlüssung&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Dechiffrierung, Decodierung&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font color=&quot;#0000ff&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;&lt;b&gt;Rückverwandlung eines&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;i style=&quot;font-size: 13px; color: rgb(0, 0, 255); font-family: Garamond; background-color: initial;&quot;&gt;&lt;b&gt;&amp;nbsp;kodierten Textes in Kenntnis des Schlüssels&lt;/b&gt;&lt;/i&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-16">
+          <mxGeometry width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-20" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="170" y="140" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-17" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f3f3;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-20">
+          <mxGeometry x="10" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Garamond&quot;&gt;Krypt(o)analyse&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wissenschaft von der&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font color=&quot;#0000ff&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;&lt;b&gt;Entzifferung von Geheimtexten&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-20">
+          <mxGeometry y="5" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-21" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="470" y="140" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-18" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f3f3;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-21">
+          <mxGeometry x="10" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Garamond&quot;&gt;Kryptographie&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wissenschaft der&amp;nbsp;&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font color=&quot;#0000ff&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;&lt;b&gt;Verschlüsselungstechniken&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-21">
+          <mxGeometry y="5" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-22" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="340" y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-19" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3f3f3;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-22">
+          <mxGeometry width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Garamond&quot;&gt;Kryptologie&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;Wissenschaft von der&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;Garamond&quot;&gt;&lt;font color=&quot;#0000ff&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;i&gt;&lt;b&gt;Verschlüsselung&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="VqC_BBLglAM-_MQVvWJ_-22">
+          <mxGeometry width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-23" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="VqC_BBLglAM-_MQVvWJ_-17" target="VqC_BBLglAM-_MQVvWJ_-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="110" as="sourcePoint" />
+            <mxPoint x="230" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-24" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="VqC_BBLglAM-_MQVvWJ_-18" target="VqC_BBLglAM-_MQVvWJ_-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="90" as="sourcePoint" />
+            <mxPoint x="630" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-25" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="VqC_BBLglAM-_MQVvWJ_-12" target="VqC_BBLglAM-_MQVvWJ_-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="330" as="sourcePoint" />
+            <mxPoint x="90" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-26" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="VqC_BBLglAM-_MQVvWJ_-4" target="VqC_BBLglAM-_MQVvWJ_-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="450" as="sourcePoint" />
+            <mxPoint x="520" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-27" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="VqC_BBLglAM-_MQVvWJ_-5" target="VqC_BBLglAM-_MQVvWJ_-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="470" as="sourcePoint" />
+            <mxPoint x="570" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-28" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.key_permissions" vertex="1" parent="1">
+          <mxGeometry x="600" y="504" width="26" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-29" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.gear;" vertex="1" parent="1">
+          <mxGeometry x="510" y="499" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-38" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;" vertex="1" parent="1">
+          <mxGeometry x="280" y="620" width="120" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-39" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=process;whiteSpace=wrap;rounded=1;size=0.14;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="464" y="632" width="227" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-40" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#006600;shape=mxgraph.mscae.enterprise.key_permissions" vertex="1" parent="1">
+          <mxGeometry x="502.76" y="643" width="19.24" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-42" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;" vertex="1" parent="1">
+          <mxGeometry x="750" y="620" width="120" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-43" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;" vertex="1" parent="1">
+          <mxGeometry x="795" y="680" width="30" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-44" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#CC0000;shape=mxgraph.mscae.enterprise.key_permissions" vertex="1" parent="1">
+          <mxGeometry x="626" y="706.5" width="19.24" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-51" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;" vertex="1" parent="1">
+          <mxGeometry x="280" y="450" width="120" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-52" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=20;" vertex="1" parent="1">
+          <mxGeometry x="750" y="452.5" width="120" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-53" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;" vertex="1" parent="1">
+          <mxGeometry x="795" y="512.5" width="30" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-54" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;Klartext&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="593" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-55" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;Chiffrat&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-56" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;&lt;font color=&quot;#006600&quot;&gt;asynchrone&lt;/font&gt; &lt;font color=&quot;#660000&quot;&gt;Verschlüsselung&lt;/font&gt;&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="525" y="760" width="112" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-57" value="&lt;font color=&quot;#000099&quot; style=&quot;font-size: 16px;&quot; face=&quot;Garamond&quot;&gt;&lt;i&gt;synchrone Verschlüsselung&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="522" y="405.5" width="112" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-58" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VqC_BBLglAM-_MQVvWJ_-54" target="VqC_BBLglAM-_MQVvWJ_-51">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="570" as="sourcePoint" />
+            <mxPoint x="260" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-60" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VqC_BBLglAM-_MQVvWJ_-54" target="VqC_BBLglAM-_MQVvWJ_-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="618" as="sourcePoint" />
+            <mxPoint x="290" y="537" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-61" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=120;exitDy=86.5;exitPerimeter=0;" edge="1" parent="1" source="VqC_BBLglAM-_MQVvWJ_-52" target="VqC_BBLglAM-_MQVvWJ_-55">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="490" as="sourcePoint" />
+            <mxPoint x="300" y="547" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-62" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.987;exitY=0.51;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="VqC_BBLglAM-_MQVvWJ_-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="549" as="sourcePoint" />
+            <mxPoint x="960" y="610" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-64" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Garamond&quot;&gt;&lt;i style=&quot;&quot;&gt;Algorithmus&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="551.5" width="100" height="41.5" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-65" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Garamond&quot;&gt;&lt;i style=&quot;&quot;&gt;Schlüssel&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="588" y="479.5" width="54" height="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-66" value="&lt;font color=&quot;#006600&quot; style=&quot;font-size: 14px;&quot; face=&quot;Garamond&quot;&gt;&lt;i style=&quot;&quot;&gt;öffentlicher Schlüssel&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="522" y="640.5" width="137" height="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-67" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.gear;" vertex="1" parent="1">
+          <mxGeometry x="550" y="665" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-68" value="&lt;font color=&quot;#990000&quot; style=&quot;font-size: 14px;&quot; face=&quot;Garamond&quot;&gt;&lt;i style=&quot;&quot;&gt;privater Schlüssel&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="715" width="121" height="24.5" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-69" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;i style=&quot;&quot;&gt;Algo-&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510.76" y="676.5" width="50" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="VqC_BBLglAM-_MQVvWJ_-70" value="&lt;font face=&quot;Garamond&quot;&gt;&lt;i style=&quot;&quot;&gt;rithmus&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="591" y="676.5" width="60" height="27" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
