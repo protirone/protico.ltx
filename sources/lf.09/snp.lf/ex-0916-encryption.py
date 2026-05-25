@@ -1,5 +1,5 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
-msg="Der Teufel trägt Prada";key=123
+msg="Der Teufel trägt Prada";key=75
 
 def crypt(bar,key):
   cft=bytearray();i=0
