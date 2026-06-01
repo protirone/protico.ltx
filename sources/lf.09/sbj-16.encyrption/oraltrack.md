@@ -108,7 +108,7 @@ Hinweis:
 
 <!-- uebung::end -->
 
-Lösung: 
+Lösung:
 
 * **1.**: Matts, Daniel (GSLDK, 11IV24):
   * wähle ein Pangramm = "The quick brown fox jumps over the lazy dog" als Schlüssel,
@@ -122,7 +122,7 @@ Lösung:
 
 ---
 
-### Verfahren: **[→ ZP:Sheet3]**
+### 3. Verfahren: **[→ ZP:Sheet3]**
 
 * **Symmetrische Verfahren** verwenden zur Ver- und Entschlüsselung denselben Schlüssel
   * *Substitutionsverfahren* = z.B. Monoalphabetische Substitution: Caesar-Verschlüsselung [A>C]
@@ -185,17 +185,18 @@ Lösung:
 ```
 * [ ] Beschreiben Sie den Algorithmus
 
-Sie erhalten in kürzeren Abständen kleine Hilfestellungen
+Sie erhalten - wenn nötig -- in kürzeren Abständen kleine Hilfestellungen.
 
 <!-- uebung::end -->
 
 **Hilfen:**
 
-1. Der Algorithmus lässt sich ohne jede Programmänderung zum Verschlüsseln und Entschlüsseln verwenden.
+1. Der Algorithmus lässt sich ohne jede Programmänderung zum Verschlüsseln und Entschlüsseln verwenden. 
 2. Es geht um einen gerade aktuellen Film.
 3. Der Schlüssel ist `123`.
+4. XOR-Verschlüsselungsmethodik **[→ ZP:Sheet5]**
 
-Lösung: **[→ ZP:Sheet5]**
+Lösung: 
 
 * `Der Teufel trägt Prada` byteweise XOR-verknüpft mit Schlüssel `123` ergibt
  
@@ -209,24 +210,23 @@ Lösung: **[→ ZP:Sheet5]**
 
 **[→ ZP:Sheet6]** mit Vorführung in VSCODE
 
-
 **_Seitenfrage_**: Wo wird diese XOR-Fähigkeit noch genutzt?
 
 **_Seitenantwort_**: Exkurs zu RAID (s `lf.11d/sbj-05.raid\*`)?
 
 
-### Hashverfahren
-`
-**Hashfunktion** bildet einen Text variabler Länge (große Daten) auf kleineren Text/Zahl fester Länge ab:
+### 5. Hashverfahren
+
+Eine **Hashfunktion** bildet einen Text variabler Länge (große Daten) auf kleineren Text/Zahl fester Länge ab:
 
 * Der Hashwert sollte für jeden Text eineindeutig sein.
-* kurzer Hash:
+* Kurzer Hash:
   * Vorteil: schnellere Berechnung
-  * Nachteil: größere Gefahr der Kollision
-* langer Hash:
+  * Nachteil: größere Gefahr der Kollision.
+* Langer Hash:
   * aufwendige Berechnung
-  * kleine Kollisionsgefahr,
-* **md5** ( = Message Digest 5) älterer Algorithmus v. 1991 
+  * kleine Kollisionsgefahr.
+* **MD5** ( = Message Digest 5) älterer Algorithmus v. 1991. 
 * **SHA** ( Secure Hash Algorithm) in verschiedenen Versionen
   * SHA-1 = 160-Bit-Ausgabe
   * SHA-2 = 224-, 256-, 384- oder 512-Bit-Ausgabe
@@ -245,7 +245,7 @@ Lösung: **[→ ZP:Sheet5]**
   * commandshell: CertUtil
 
 
-* **Signatur/Unterschrift**: Nachweise der Autorenschaft
+### 6. **Signatur/Unterschrift**: Nachweise der Autorenschaft
   * Allgemeines Eigenschaft: *öffentliche Schlüssel* können entschlüsseln, was *Private* Schlüssel **ver**schlüsselt haben. (Reziproke Anwendung)
   * Anwendung:
     * Aus Text wird ein Hash erzeugt.
@@ -254,8 +254,57 @@ Lösung: **[→ ZP:Sheet5]**
     * Empfänger des Textes entschlüsselt Text mit öffentlichem Schlüssel des Autors: Nachweis erbracht.
   * Voraussetzung: verlässliche Schlüsselweitergabe **Schlüsselparties**
 
+### 7. Zwischenfazit
 
-### Verschlüsselung in Netzwerken
+#### A:
+Kommunikation ohne Authentifizierung
+
+* Sender:
+  * organisiert sich den öffentlichen Schlüssel des Empfängers,
+  * **verschlüsselt** den Text mit dem öffentlichen Schlüssel des Empfängers,
+  * sendet die verschlüsselte Nachricht an Empfänger.
+  * Die **verschlüsselte Nachricht kann jetzt nur noch vom Besitzer des privaten Schlüssels dekodiert werden.
+  * **ABER**: (Ohne Zusatzmaßnahmen) weiß der Sender nicht, wer der Empfänger / Besitzer des privaten Schlüssels *in persona* ist.
+* Empfänger: 
+  * empfängt eine Nachricht,
+  * entschlüsselt diese mit seinem privaten Schlüssel.
+  * Der Empfänger kennt die Nachricht, weiß aber nicht wirklich, von wem sie kommt. (Mailabsender könnte gehackt sein)
+
+Lösung (I)
+
+Man gibt seine public-Keys auf Schlüsselparties in persona weiter. Dann
+
+* weiß der Sender, dass der Empfänger der intendierte Adressat ist:
+  * den öffentlichen Schlüssel hat der Sender vom intendierten Empfänger bekommen,
+  * nur der Besitzer des *Private Keys* kann die Nachricht lesen
+  * ist die Adresse des intendierten Empfängers korrumpiert, bleibt der Inhalt geschützt
+  
+* Problem 1: Wenn der ganze Account des Empfängers samt Schlüsseln gehackt, ist kein Schutz mehr da
+* Problem 2: Der Empfänger weiß nicht, von wem die Nachricht wirklich kommt.
+
+Lösung (II):
+
+Zusätzlich zu (I)
+
+* Sender:
+  * erzeugt einen Hashwert der (unverschlüsselten) Nachricht,
+  * verschlüsselt den Hashwert mit seinem **privaten Key**
+  * sendet beides an den Empfänger.
+* Empfänger:
+  * entschlüsselt die Nachricht mit seinem privaten Key (und kennt den Inhalt)
+  * bildet den Empfänger-Hashwert aus der (unverschlüsselten) Nachricht
+  * entschlüsselt den verschlüsselten Hash-Wert mit dem öffentlichen Schlüssel des Senders,
+  * vergleicht den Empfänger-Hashwert mit dem Empfänger-Hashwert: sind beide gleich, weiß der, dass der Sender in persona der ist, der er zu sein vorgibt.
+  
+**ABER**: Diese Verfahren funktioniert nur, wenn beide Parteien ihre öffentlichen Schlüssel NUR in persona austauschen (und sie sich nicht ersatzweise einfach so herunterladen!)
+
+Konsequenz:
+
+Wir wissen bereits, dass es verschlüsselte Kommunikationen ohne Schlüsselparties (persönliche Authentifizierung) gibt.
+
+ERGO: Es muss andere Verfahren geben:
+
+### 8. Verschlüsselung in Netzwerken
 
 * **Leitungsverschlüsselung** = Nachricht nur jeweils für den Nachbarrechner verschlüsselt, der entschlüsselt die Nachricht, verschlüsselt sie wiederum (mit einem möglicherweise anderen Verfahren) und schickt sie an seinen Nachbarn
   * Vorteil: nur Nachbarrechner müssen sich auf ein Verschlüsselungsverfahren und verwendete Schlüssel einigen
@@ -265,20 +314,58 @@ Lösung: **[→ ZP:Sheet5]**
   * Vorteil: Man-in-the-Middle-Attacks nicht möglich
   * Nachteil: Sender muss mit jedem Empfänger ein Verschlüsselungsverfahren und zugehörige(n) Schlüssel ausmachen
 
+**[→ ZP:Sheet7]**
+
 * **TSL** (= Transport Layer Security ) Verschlüsselung zwischen Layer VII und Layer IV 
   * Beispiels `https` - aber auch andere. 
   * TSL 1.0/1999 1.1/2006 1.2/2008 1.3/2018
-  * Vorgänger Secure Sockets Layer (SSL 1.0/1994 - SSL 3.0/1996)
-  * Handshake s. Bild
+  * Vorgänger: Secure Sockets Layer (SSL 1.0/1994 - SSL 3.0/1996)
 * **IPSEC** (Internet Protocol Security) 
   * arbeitet direkt auf der Vermittlungsschicht (Internet Layer, entspricht OSI Layer 3)
   * soll verschlüsselungsbasierte Sicherheit auf Netzwerkebene bereitstellen
   * soll das Mitlesen beim Umschreiben / Routing verhindern
   * führt bei NAT u.U. zu Problem (Änderung quell-IP)
 
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:Verschlüsselung:03**</span>
+
+* [ ] Bitte ermitteln und beschreiben Sie die Struktur eines Zertifikats.
+* [ ] Bitte 'erfinden' Sie (ohne die Hilfe von ChatGPT, Wikipedia etc.) ein Verfahren/Prozess/Protokoll, bei dem die Kommunikation zwischen Client und Server
+  * [ ] automatisiert 'on the fly' = adhoc verschlüsselt wird, also
+  * [ ] ohne den Austausch vorab authentifizierter Schlüssel auskommt 
+  * [ ] und trotzdem abgesichert ist
+* [ ] Bitte ermitteln Sie die prinzipiellen Grenzen Ihres Verfahrens/Prozesses/Protokolls.
+* [ ] Bitte ermitteln Sie danach den Unterschied zwischen Ihrem Verfahren und TLS (bzw. IPSEC)
+
+<!-- uebung::end -->
+
+Lösung: **[→ ZP:Sheet8-10]** 
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:Verschlüsselung:04**</span>
+
+* [ ] Bitte beschreiben Sie, wie eine 2-Faktorauthentifizierung die Grenzen Ihres und des TLS-Verfahrens absichern kann.
+* [ ] Bitte beschreiben Sie, wie das z.B. beim Internet-Banking eingesetzt wird.
+  
+<!-- uebung::end -->
+
+Lösung:
+
+* Kunde hinterlegt den Zugang zu einem vom ersten Kommunikationsweg unabhängigen Mittel zum Informationsaustausch.
+  * Smartphonenummer für Zusendung von SMS-Freigabecode
+  * Verifikationsapp auf einem Mobile-Phone
+  * Einmal-Tan-Generator / Einmal-Tan-Übersendungsapp (à la GitHub).
+  
+* → Vorführung GitHub-Zugriff mit eigenem GH-Account mit 2-Faktorauthentifizierung per `Aegis`
+
+---
 
 
-
+### 9. Hinweise
 
 * → [https://de.wikipedia.org/wiki/Verschlüsselung](https://de.wikipedia.org/wiki/Verschlüsselung)
 * → [BSI/Datenverschlüsselung](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Daten-sichern-verschluesseln-und-loeschen/Datenverschluesselung/datenverschluesselung_node.html)

@@ -289,9 +289,11 @@ Besonderheit:
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/15:services:03**</span>
 
 * [ ] Lassen Sie sich über die folgenden Befehle die auf Ihrem Rechner arbeitenden Server-Applikationen und ihre Ports anzeigen:
-  * `netstat -ano | grep tcp`
-  * `netstat -ano | grep udp`
-  * `lsof -i -n` (nur LNX)
+  * *LNX/MACOS*: `netstat -ano | grep tcp`
+  * *LNX/MACOS*: `netstat -ano | grep udp`
+  * *LNX/MACOS*: `lsof -i -n | grep tcp`
+  * *W11/pwsh*: `netstat -ano | select-string TCP`
+  * *W11/pwsh*: `netstat -ano | findstr HERGESTELLT`
 * [ ] Führen Sie diese Befehle nun als Root/Admin aus (LNX: `sudo lsof -i -n`). Beschreiben Sie, was jetzt angezeigt wird.?
 * [ ] Beschreiben Sie, was auf Ihrem Rechner 'los ist'.
 
