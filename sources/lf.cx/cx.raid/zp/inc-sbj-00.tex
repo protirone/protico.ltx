@@ -6,15 +6,58 @@
 \selectlanguage{ngerman}
 
 \begin{frame}  
-  \frametitle{LF11d:RAID:Systematik}
+  \frametitle{LFCX:RAID:Systematik}
   \begin{center}
   \includegraphics[height=7.4cm]{\imgLf/raid-systems.png}
   \end{center}
 \end{frame}
 
 \begin{frame}  
-  \frametitle{LF11d:RAID:XOR-Parithetik}
+  \frametitle{LFCX:RAID:XOR-Parithetik}
   \begin{center}
   \includegraphics[height=7.5cm]{\imgLf/raid-xor.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LFCX:RAID:XOR:Restaurierbarkeit}
+
+  Woher wissen wir, dass
+
+  \begin{itemize}
+    \item für alle zwei beliebig gleich langen Bitzahlen 
+    \item mit XOR eine dritte Bitzahl erzeugt werden kann,
+    \item aus der mit XOR und einer der beiden Zahlen die anderen rekonstruiert werden kann?
+  \end{itemize}
+
+  \vspace{0.3cm}
+  
+  Woher wissen wir, dass
+
+  \begin{itemize}
+    \item für alle beliebig langen Ketten
+    \item von gleich langen Bitzahlen 
+    \item mit XOR eine nächste Bitzahl erzeugt werden kann,
+    \item aus der mit XOR und eine der Kettenzahlen rekonstruiert werden kann?
+  \end{itemize}
+
+
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LFCX::Beweisverfahren}
+  \begin{center}
+  \includegraphics[height=7.5cm]{\imgLf/logical-conclusion.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]  
+  \frametitle{LFCX::Beweisverfahren:Software-Korrektheit}
+
+  \begin{center}
+  \begin{minipage}{0.9\textwidth}
+    \inputminted[fontsize=\footnotesize,linenos]{python}{\snpLf/palidro.py}
+  \end{minipage}
   \end{center}
 \end{frame}

@@ -216,9 +216,81 @@ Dies gilt auch für in der Reihe verknüpfte Operanden, sofern die Reihenfolge b
 
 <!-- uebung::end -->
 
-Lösung:
+*[→ ZP:Sheet:4]*
 
-* Für A) Induktionsbeweis über die Anzahl der Binärstellen der beiden beteiligten Ausgangszahlen.
-* Für B) Induktionsbeweis über die Anzahl der XOR-Verknüpfungen (unter Rückgriff auf Beweis zu A).
+**Hintergrund:** In der Informatik/Mathematik gibt es 3 (bzw. 4) Arten der Beweisformen
+
+
+* Ein __*Deduktionsbeweis*__:
+  * Gegeben sei eine gültige Regel der Form `für alle x gilt: wenn p(x) -> q(x)`
+  * Wenn außerdem gegeben ist ein Faktum der Form
+    * `p(A)`, dann folgt daraus - gemäß Modus Ponens - `q(A)` (weil die Wahrheit der Implikation `für alle x gilt: wenn p(x) -> q(x)` es nicht zulässt, dass `nicht(q(A)`)
+    * `non q(A)` dann folgt daraus - gemäß Modus Tollens - `non p(A)` (weil die Wahrheit der Implikation `für alle x gilt: wenn p(x) -> q(x)` es nicht zulässt, dass `nicht(p(A)`)
+
+Beweis über Wahrheitstabellen:
+
+| **p(A)** | **q(A)** | *p(A) → q(A)* |
+|---|---|---|
+| w | w | w | 
+| w | f | f | 
+| f | w | w | 
+| f | f | w | 
+
+Also:
+
+* wenn `p(A)=w` und `p(A) -> q(A) = w`, muss `q(A) != f` (Modus Ponens)
+* wenn `q(A)=f` und `p(A) -> q(A) = w`, muss `p(A) = f` (Modus Tollens)
+
+**Aber:** Deduktion als Beweis hier nicht anwendbar, da nicht alle unendlich vielen Einzelfälle auflistbar
+
+* Ein __*Induktionsbeweis*__:
+  * Gegeben sei eine erfüllte Startbedingung 
+    * Reproduzierbarkeit zweier 1-Bit-Zahlen per XOR-Restaurierung gelingt. Beweis mit XOR-Definition.
+  * Induktionsvoraussetzung: Für zwei beliebige n-Bit-Zahlen nb1 und nb2 sei angenommen, deren XOR-Reproduzierbarkeit sei bereits nachgewiesen.
+  * Gesetzt, die beiden Zahlen nb1+ und nb2+ seien je aus nb1 bzw. nb2 gewonnen, in dem diese um 1 Bit verlängert seien.
+  * Dann gilt: 
+    * Werden die beiden neuen Bits XOR-Verknüpft sind sie für sich XOR-reproduzierbar. (Folgt aus XOR-Definition)
+    * Die Zahlen nb1 und nb2 sind XOR-reproduzierbar. Die beiden neuen Bits werden bei der Repoduktion von nb1 bzw. nb2 nicht beeinflusst. (Kein Bit-Übertrag. Folgt aus XOR-Definition)
+
+  * Also nb1+ und nb2+ sind auch XOR-reproduzierbar
+  * Also unendlich viele
+
+**Aber:** Es müsste noch genau formuliert werden, dass und wie die XOR-reproduzierbarkeit auf die XOR-Definition zurück geführt werden kann.
+
+* Ein __*Wiederspruchsbeweis*__:
+
+Klassisches Beispiel: Zu beweisen ist, dass es unendlich viele Primzahlen gibt.
+  
+* (1) Angenommen, es gäbe nur endlich viele Primzahlen.
+* (2) Dann müsste es eine höchste Primzahl geben. Nennen wir die `hpz`
+* (3) `hpz` ist nur durch 1 und `hpz` teilbar. (Folgt aus Primzahl)
+* (4) Sei `twohpz = 2 * hpz`. 
+  * (5) `twohpz` ist durch `1`, durch `hpz` und durch `2` teilbar
+* (6) Sei `twohpz_pl_1 = twohpz + 1`.
+  * (7) `twohpz_pl_1` ist durch `1`, durch `hpz` aber NICHT durch `2` (oder sonst wie teilbar.
+* (8) Also: `twohpz_pl_1` ist eine Primzahl und größer als `hpz`
+* (9) `hpz` sollte aber die größte Primzahl sein. Widerspruch zu (1)
+
+Also gilt `non (1)`
+
+Lösung XOR-Reproduzierbarkeit:
+
+* **Induktionsbeweis**:
+  * Für **A**: Induktionsbeweis über die Anzahl der Binärstellen der beiden beteiligten Ausgangszahlen (wie o.a.).
+  * Für **B**: Induktionsbeweis über die Anzahl der XOR-Verknüpfungen (unter Rückgriff auf Beweis zu A) analog.
+* **Beweis durch Widerspruch**: 
+  * Für **A**: Zu beweisen ist, XOR-Reproduzierbarkeit für Paare beliebig langer gleichlanger Bitzahlen gilt.
+    * (1) Gesetzt, nicht alle Paare beliebig langer gleichlanger Bitzahlen sind XOR-reproduzierbar.
+    * (2) Dann müsste es ein Paar gleichlanger Bitzahlen < bz1, bz2 > geben, bei denen an mindestens einer beliebigen ersten Bit-Position das in der Prüfzahl gesetzte/nicht-gesetze Bit nicht den Regeln der XOR-Verknüpfung folgt. Sei n die Position.
+    * (3) Alle Bits in der Prüfzahl an kleiner Position als n folgen dem XOR-Regeln.
+    * (4) Die XOR-Regeln sehen keinen Überlauf vor (die Bitsetzung an Position m beinflusst nicht die Bitsetzen an Position m+1)
+    * (5) Also folgen die Bitsetzung an Position n auch den Regeln der XOR-Regeln.
+    * (6) Also ist n nicht die Position, wo zum ersten Mal die XOR-Setzungsregeln gebrochen werden. Widerspruch!
+    * Also gilt `non (1)`
+  * Für **B**: Induktionsbeweis über die Anzahl der XOR-Verknüpfungen (unter Rückgriff auf Beweis zu A) analog.
+
+Zweck der Beweistechniken für Fachinformatiker:
+
+Beweis der Softwarekorrektheit: *[→ ZP:Sheet:5]*
 
 ---

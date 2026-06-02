@@ -83,8 +83,6 @@ Anmerkungen:
 
 ### 2. Exkurs in Sachen Rechtemanagement
 
-
-
 ### 3. Secure Shell (ssh) in der Praxis
 
 ---
@@ -99,15 +97,12 @@ Sie erhalten einen
   * einem User `root` mit Passwort `lgsldkPw4all`
 * und für das Schul-Wlan einen WLAN-User `fius` mit Passwort `fachinformatikeruser`.
 
-**Aufgabe 1**: Organisieren Sie Server und Client so, dass Sie sich per ssh vom Client auf den Server einloggen können.
+**Organisieren Sie Server und Client so, dass Sie sich per ssh vom Client auf den Server einloggen können.**
 
-Bei deren Lösung
-
-1. ermitteln Sie bitte für alle folgenden Teilschritten zuerst, "wie man das macht", 
-2. setzen Sie den gewonnenen Plan um und
+1. Ermitteln Sie bitte für alle Teilschritte zuerst, "wie man das macht", 
+2. setzen Sie dann den gewonnenen Plan um und
 3. dokumentieren und erläutern Sie Ihre Schritte in einer Markdown-Datei:
    
-
 * [ ] Checken und aktivieren Sie ggfls. einen ssh-Server auf dem Serverrechner.
 * [ ] Binden Sie den ssh-Server ins Schul-Wlan ein.
 * [ ] Checken und aktivieren Sie ggfls. einen ssh-Client auf Ihrem Arbeitsrechner (W11, MACOS oder WSL).
@@ -175,13 +170,12 @@ Alle Schülerinnen müssen Server-User und dessen Passwort kennen und immer wied
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:SSH:02**</span>
 
-**Aufgabe 1**: Automatisieren Sie ihren Zugang so, dass Sie das Passwort des Users auf dem Server nicht mehr eingeben müssen.
+**Automatisieren Sie jetzt ihren Zugang so, dass Sie das Passwort des Users auf dem Server nicht mehr eingeben müssen.**
 
 * [ ] Erzeugen Sie sich mit `ssh-keygen` ein eigenes Schlüsselpaar.
 * [ ] Transferieren Sie Ihren neue generierten öffentlichen Schlüssel an die richtige Stelle auf dem ssh-Server-Rechner.
 * [ ] Loggen Sie sich wieder aus und wieder ein. Beschreiben Sie den Unterschied.
   
-
 <!-- uebung::end -->
 
 Lösung:
@@ -214,29 +208,75 @@ Lösung:
 
 * ALL: Logge Dich auf der ssh-Server aus und wieder ein: Du wirst ohne Passwortfrage eingeloggt.
 
+Hinweis: Wenn Sie die Passphrase mit einem Passwort belegen, verschlüsselt der Client Ihren privaten(!) Schlüssel damit und fragt Sie lokal vor dessen Nutzung jeweils nach dieser Passphrase.
+- Vorteil: Wenn der private Schlüssel Ihres Clients gestohlen wird, braucht der Dieb, um als Sie auf dem Server zu agieren, immer noch die Passphrase.
+- Nachteil: Sie müssen nun die Passphrase anstatt des Userpassworts angeben. Zur Automatisierung braucht man aber oft eine 'unterbrechungsfreie' Kommunikation
 
-Hinweis: Wenn Du die Passphrase mit einem Passwort belegt, verschlüsselt der Client Deinen privaten(!) Schlüssel damit und fragt Dich lokal vor dessen Nutzung jeweils nach der Passphrase.
-- Vorteil: Wenn der private Schlüssel von Deinem Client gestohlen wird, braucht der Dieb, um als Du auf dem Server zu agieren, immer noch die Passphrase.
-- Nachteil: Du musst nun die Passphrase anstatt des Userpassworts angeben. Zur Automatisierung brauchst Du aber einer 'unterbrechungsfreie' Kommunikation
+Diesen 'Nachteil' können Sie dann mit dem `ssh-agent` auflösen. 
 
-Diesen 'Nachteil' kannst Du mit ssh-agent auflösen. (TODO: beschreibe ssh-agent Vorgehen)
+---
 
+### 4. Tunneling per ssh
 
-* [LNX] 1) vgl. [https://www.thomas-krenn.com/de/wiki/OpenSSH_Public_Key_Authentifizierung_unter_Ubuntu](https://www.thomas-krenn.com/de/wiki/OpenSSH_Public_Key_Authentifizierung_unter_Ubuntu)
-* [WIN] 1) vgl. [https://www.ionos.de/digitalguide/server/konfiguration/windows-11-ssh/](https://www.ionos.de/digitalguide/server/konfiguration/windows-11-ssh/)
-  
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:SSH:03**</span>
 
 
+Bringen Sie folgende Beschreibung eines Tunnels von Heise mit Ihrem Rechner als Client und dem Tuxedo-Server zum Laufen.
 
-### 4. Tunneling per ssh 
+* `ssh gsldkm@SERVERIP -L 9000:SERVERIP:80`
 
+> *"Zunächst wird eine ganz normale SSH-Verbindung mit dem Nutzer "gsldkm" zum SSH-Server aufgebaut. Die Option "L" leitet dann den Tunnel ein: Zunächst folgt der lokale Port "9000", dann die Adresse des Webservers "SERVER:80". Es folgt die Passwortabfrage. Anschließend können Sie im Browser auf dem lokalen Rechner "127.0.0.1:9000" eingeben und bekommen zu sehen, was auch unter "SERVER:80" zu sehen ist.* (vgl. [https://www.heise.de/tipps-tricks/SSH-Tunnel-nutzen-so-geht-s-4320041.html](https://www.heise.de/tipps-tricks/SSH-Tunnel-nutzen-so-geht-s-4320041.html))
+
+<!-- uebung::end -->
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:SSH:04**</span>
+
+Steigern Sie jetzt die Komplexität
+
+1. Erzeugen Sie von Ihrem Rechner zum Tuxedo-Server einen Tunnel.
+2. Holen Sie von dort aber nicht die Tuxedo-eigene-Html-Seite, sondern die vom Lehrerrechner.
+
+Achtung: Recht tricky. Szenario: Sie sitzen hinter einer Firewall, die nur ssh durchlässt, tunneln Ihre Arbeitsaufträge auf einen Ihnen zugänglichen Server vor der Firewall, lassen sich den Inhalt von dort holen und ausliefern.
+
+Viel Spaß beim Grübeln, Recherchieren und Lösen. 
+
+<!-- uebung::end -->
+
+---
+
+
+**Fazit** Ein Tunnel schaltet sich zwischen Layer VII und Layer IV auf den Server, verschlüsselt die Pakete, sendet sie über den Tunnel zum Client, der entschüsselt sie und macht sie auf dem lokalen Port abrufbar.
 
 ### 5. Zur Systematik von VPNs
 
 
-### 6. Hinweise
+Virtual Private Network (deutsch „virtuelles privates Netzwerk“; kurz: VPN) bezeichnet eine Netzwerkverbindung, die von Unbeteiligten nicht einsehbar ist:
+
+>*"Ein VPN oder Virtuelles Privates Netzwerk schafft eine private Netzwerkverbindung zwischen Geräten über das Internet. VPNs werden zur sicheren und anonymen Übertragung von Daten über öffentliche Netze verwendet. Sie funktionieren, indem sie die IP-Adressen der Benutzer maskieren und die Daten verschlüsseln, so dass sie von Leuten, die nicht befugt sind, sie zu empfangen, nicht gelesen werden können.*
+  
+Alle Netzwerkaufrufe von Client-Rechnern/Applikationen werden
+
+* von VPN-Clients auf dem Client-Rechner abgefangen und zum VPN-Server gesendet, der sie nach Freigaben ins Internet oder Intranet umlenkt.
+* getunnelt
+* verschlüsselt
+
+**FAZIT**
+
+Ein VPN-Server nimmt die verschlüsselten Netzaufrufe von seinen VPN-Clients entgegen, entschlüsselt sie und reicht sie an die zuständigen Programme weiter:
+
+* Aufrufe ins Intranet sendet er ins Intranet.
+* Aufrufe nach außen sendet er nach außen (sofern erlaubt)
+* Die Antworten von innen oder außen nimmt er, verschlüsselt sie wieder und sendet sie an den zuständigen VPN-Client zurück.
+
+Hinweis: das VPN-Server und VPN-Client eigenständige Tools sind, sind sie nicht an PAT (Port Address Translation) und dessen Portanzahl gebunden.
 
 
 * → [https://www.heise.de/tipps-tricks/SSH-Tunnel-nutzen-so-geht-s-4320041.html](https://www.heise.de/tipps-tricks/SSH-Tunnel-nutzen-so-geht-s-4320041.html)
 * → [https://de.wikipedia.org/wiki/Virtual_Private_Network](https://de.wikipedia.org/wiki/Virtual_Private_Network)
-* → [https://aws.amazon.com/de/what-is/vpn/](https://aws.amazon.com/de/what-is/vpn/)
+* → [https://aws.amazon.com/de/what-is/vpn/](https://aws.amazon.com/de/what-is/vpn/) 
+* [LNX] 1) vgl. [https://www.thomas-krenn.com/de/wiki/OpenSSH_Public_Key_Authentifizierung_unter_Ubuntu](https://www.thomas-krenn.com/de/wiki/OpenSSH_Public_Key_Authentifizierung_unter_Ubuntu)
+* [WIN] 1) vgl. [https://www.ionos.de/digitalguide/server/konfiguration/windows-11-ssh/](https://www.ionos.de/digitalguide/server/konfiguration/windows-11-ssh/)
