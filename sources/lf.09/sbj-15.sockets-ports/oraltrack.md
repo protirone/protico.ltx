@@ -292,8 +292,8 @@ Besonderheit:
   * *LNX/MACOS*: `netstat -ano | grep tcp`
   * *LNX/MACOS*: `netstat -ano | grep udp`
   * *LNX/MACOS*: `lsof -i -n | grep tcp`
-  * *W11/pwsh*: `netstat -ano | select-string TCP`
-  * *W11/pwsh*: `netstat -ano | findstr HERGESTELLT`
+  * *W11/pwsh* (V.7.x): `netstat -ano | select-string TCP`
+  * *W11/powershell* (V.5.1): `netstat -ano | findstr HERGESTELLT`
 * [ ] Führen Sie diese Befehle nun als Root/Admin aus (LNX: `sudo lsof -i -n`). Beschreiben Sie, was jetzt angezeigt wird.?
 * [ ] Beschreiben Sie, was auf Ihrem Rechner 'los ist'.
 
