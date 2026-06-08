@@ -29,8 +29,8 @@ clean:
 	if [ -f ${TCL}.pdf ]; then rm ${TCL}.pdf; fi
 
 checklists:  
-	( cd sbj-00.curriculum && make ../${TCL}.pdf)
+	( cd sbj-00.curriculum && make ../${CCL}.pdf && make ../${TCL}.pdf)
 	mkdir -p ${BLD}
-	mv ${TCL}.pdf ${BLD}/
-	cp ${TCL}.md ${BLD}/
+	mv ${TCL}.pdf ${CCL}.pdf ${BLD}/
+	cp ${TCL}.md ${CCL}.md ${BLD}/
 

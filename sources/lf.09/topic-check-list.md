@@ -9,22 +9,22 @@
 ### Topic-Checklist [LF09]
 
 
-**Scope Lernfeld 03** (auf PK-Level) [→  Katolog, S. 11](https://www.u-form-shop.de):
+**Scope Lernfeld 03** (auf PK-Level) [→ Katolog, S. 11](https://www.u-form-shop.de):
 
 - [ ] Netzwerkkomponenten (Bridge, Switch, Router, Gateway, Accesspoint) [auch LF09/20]
-  *[s. lf.09/sbj-04.arp-hub, lf.09/sbj-05.arp-switch, lf.09/sbj-06.arp-router]*
-- [ ] Cloudlösungen (SaaS, DaaS, Edgecomputing) *[s. sbj-03.architectures]*
-- [ ] Client-Server-Systeme *[s. sbj-03.architectures]*
-- [ ] Einbindung in Domäne *[s. sbj-09.ipv4-addresses, sbj-10.ipv4-classes]
-- [ ] Netzwerkprotokolle und OSI-Modelle (Ethernet, IP, DNS) *[s. sbj-02.general-concepts, lf.09/sbj-02.network-concepts]*
+ *[s. lf.09/sbj-04.arp-hub, lf.09/sbj-05.arp-switch, lf.09/sbj-06.arp-router]*
+- [ ] Cloudlösungen (SaaS, DaaS, Edge-Computing) *[s. lf.03/sbj-03.architectures]*
+- [ ] Client-Server-Systeme *[s. lf.03/sbj-03.architectures]*
+- [ ] Einbindung in Domäne *[s. lf.09/sbj-09.ipv4-addresses, lf.09/sbj-10.ipv4-classes]*
+- [ ] Netzwerkprotokolle und OSI-Modelle (Ethernet, IP, DNS) *[s. lf.09/sbj-02.general-concepts, lf.09/sbj-02.network-concepts]*
 - [ ] Leistungsumfang v. Netzwerkkarte, Gateway, Router, Switch 
-  *[s. lf.09/sbj-04.arp-hub, lf.09/sbj-05.arp-switch, lf.09/sbj-06.arp-router]*
+ *[s. lf.09/sbj-04.arp-hub, lf.09/sbj-05.arp-switch, lf.09/sbj-06.arp-router]*
 - [ ] Ethernetstandards, WLAN-Standards *[s. lf.09/sbj-03.data-throughput]*
 - [ ] Übertragungsdaten, -zeiten, Datenmengen *[s. lf.09/sbj-03.data-throughput]*
-- [ ] Plan, Do, Check, Act als Qualitätsmanagementmethode 
-- [ ] Grafische Darstellung / Diagramme [auch LF09/17] *[s. lf.cx/cx.diagramming]*
+- [ ] Plan, Do, Check, Act als Qualitätsmanagementmethode __*[complete lf.11c/sbj-05.data-quality]*__
+- [ ] grafische Darstellung / Diagramme [auch LF09/17] *[s. lf.cx/cx.diagramming]*
 - [ ] Ausdehnung \& Topologien [auch LF09/20] *[s. sbj-02.general-concepts, lf.09/sbj-02.network-concepts]*
-- [ ] IPv4-Adressen und -Segmentierung *[s. sbj-09.ipv4-addresses, sbj-10.ipv4-classes]*
+- [ ] IPv4-Adressen und -Segmentierung *[s. lf.09/sbj-09.ipv4-addresses, lf.09/sbj-10.ipv4-classes]*
 - [ ] IPv6-Adressen und -Segmentierung *[s. lf.09/sbj-11.ipv6-addresses]*
 - [ ] RAID mit Mengenberechnung
 
@@ -32,19 +32,15 @@
 
 - [ ] Sicherheitsrisiken gemäß BSI IT-Grundschutz-Kompendium
 - [ ] Präsentationsrechner außerhalb Institutsnetz *[s. lf.09/sbj-12.netanalysis]*
-- [ ] IP-Adressensegmentierung *[s. sbj-09.ipv4-addresses, sbj-10.ipv4-classes]*
+- [ ] IP-Adressensegmentierung *[s. lf.09/sbj-09.ipv4-addresses,  lf.09/sbj-10.ipv4-classes]*
 - [ ] DHCP + APIPA-Adresse *[s. sbj-09.ipv4-addresses]*
-- [ ] Manuelle Netzwerkonfiguration *[s. sbj-09.ipv4-addresses]*
-- [ ] Netzwerkermitteln ping auf Gateway (nicht ipconfig, weil DHCP ja nicht erfreichbar) *[s. lf.09/sbj-12.netanalysis]*
-- [ ] Konsolenbefehle MAC-Adressen ipconfig /all ifconfig getmac/v *[s. lf.09/sbj-12.netanalysis, sb-07.mac-addresses]*
-- [ ] Rechnertypen
-- [ ] BSI IT-Grundschutz-Kompendium
-- [ ] RAID mit Kapazitätsberechnung
+- [ ] manuelle Netzwerkkonfiguration *[s. lf.09/sbj-09.ipv4-addresses]*
+- [ ] Netzwerkermitteln ping auf Gateway (nicht ipconfig, weil DHCP ja nicht erreichbar) *[s. lf.09/sbj-12.netanalysis]*
+- [ ] Konsolenbefehle MAC-Adressen ipconfig /all ifconfig getmac/v *[s. lf.09/sbj-12.netanalysis, lf.09/sb-07.mac-addresses]*
+- [ ] Rechnertypen __*[complete ...]*__
+- [ ] BSI IT-Grundschutz-Kompendium __*[complete ...]*__
+- [ ] RAID mit Kapazitätsberechnung *[s. lf.cx/cx.raid]*
 - [ ] Vorteile IPv6 gegenüber IPv4 *[s. lf.09/sbj-11.ipv6-addresses]*
-  - [ ] ipSec in Netzwerkschicht eingebaut
-  - [ ] schlanker Protokoll-Header
-  - [ ] Routing ohne Paketfragmentierung
-  - [ ] Eingebaute QoS
 - [ ] IPv6 Eigenschaften *[s. lf.09/sbj-11.ipv6-addresses]*
 - [ ] Standortpräfix versus Teilnetz-ID berechnen *[s. lf.09/sbj-11.ipv6-addresses]*
 - [ ] gekürzte Adressen in ungekürzte umwandeln *[s. lf.09/sbj-11.ipv6-addresses]*
@@ -55,61 +51,61 @@
 - [ ] IPv6-Adressarten *[s. lf.09/sbj-11.ipv6-addresses]*
 - [ ] Mengenberechnung MiB zu TiB *[s. lf.09/sbj-03.data-throughput]*
 
-**Scope Lernfeld 09** (auf PK-Level) [s. [→  Katolog, S. 19,20,21](https://www.u-form-shop.de)
+**Scope Lernfeld 09** (auf PK-Level) [s. [→ Katolog, S. 19,20,21](https://www.u-form-shop.de)
 
-- [ ] Techniksystematik, Schichtenmodelle *[s. sbj-02.network-concepts]*
+- [ ] Techniksystematik, Schichtenmodelle *[s. lf.09/sbj-02.network-concepts]*
 - [ ] Physikalische Schicht, Repeater, Hub, ARP *[s. lf.09/sbj-04.arp-hub]*
-- [ ] Sicherungsschicht, Bridge, Switch, ARP *[s. lf.09/sbj-05.arp-switch, f.09/sbj-06.arp-router, sbj-07.mac-addresses]*
-- [ ] Vermittlungsschicht, Router, IPv4 Adressen *[s. sbj-09.ipv4-addresses, sbj-08.bitwise-operations]*
-- [ ] Segmentierung, IPv4-Adressen \& Typisierung *[s. sbj-10.ipv4-classes]*
-- [ ] VLAN *[s. sbj-13.routing-firewalls-dmz]* 
-- [ ] Routing *[s. sbj-13.routing-firewalls-dmz]*
+- [ ] Sicherungsschicht, Bridge, Switch, ARP *[s. lf.09/sbj-05.arp-switch, lf.09/sbj-06.arp-router, lf.09/sbj-07.mac-addresses]*
+- [ ] Vermittlungsschicht, Router, IPv4 Adressen *[s. lf.09/sbj-09.ipv4-addresses, lf.09/sbj-08.bitwise-operations]*
+- [ ] Segmentierung, IPv4-Adressen \& Typisierung *[s. lf.09/sbj-10.ipv4-classes]*
+- [ ] VLAN *[s. lf.09/sbj-13.routing-firewalls-dmz]* 
+- [ ] Routing *[s. lf.09/sbj-13.routing-firewalls-dmz]*
 - [ ] Penetrationtest, Identity-/Access-Management 
-- [ ] DNS \& DHCP *[s. sbj-14.dns]*
-- [ ] Layer II/III Multicasts 
-- [ ] Layer IV [s. Ports \& Sockets 
-- [ ] TCP/IP u. UDP/IP Protokoll 
-- [ ] HTTP/HTTPS Protokoll 
-- [ ] VPN-Modelle \& Tunnelling 
-- [ ] IT-Grundschutz (BSI) 
-- [ ] Sicherheitskonzepte/Firewalling 
+- [ ] DNS \& DHCP *[s. lf.09/sbj-14.dns]*
+- [ ] Layer II/III Multicasts __*[complete ...]*__
+- [ ] Layer IV Ports \& Sockets *[s. lf.09/sbj-15.sockets-ports]*
+- [ ] TCP/IP u. UDP/IP Protokoll *[s. lf.09/sbj-15.sockets-ports]*
+- [ ] HTTP/HTTPS Protokoll *[s. lf.09/sbj-15.sockets-ports, lf.11d/sbj-02.http-rest]*
+- [ ] VPN-Modelle \& Tunnelling *[s. lf.09/sbj-17.ssh-tunnel-vpn]*
+- [ ] IT-Grundschutz (BSI) __*[complete ...]*__
+- [ ] Sicherheitskonzepte/Firewalling *[s. lf.09/sbj-13.routing-firewalls-dmz]*
 - [ ] Netzwerkplanung *[s. lf.cx/cx.diagramming, sbj-10.ipv4-classes]*
-- [ ] Net-Address-Translation (NAT), PAT, Masquerading 
-- [ ] WLAN *[s. sbj-03.data-throughput*]
-- [ ] Verschlüsselung auf Netzwerkebene 
-- [ ] MQTT Protokoll für IOT
-- [ ] IPv6-Adressen *[s. sbj-11.ipv6-addresses]*
-- [ ] User- \& Zugriffsmanagement 
-- [ ] Firewall \& Webfilter 
-- [ ] Portsecurity 
-- [ ] Netzwerkkomponenten \& -protokolle (NAS, SAN, iSCSI, SMB, NFS, Ethernet, FirbreChannel)
+- [ ] Net-Address-Translation (NAT), PAT, Masquerading __*[complete ...]*__
+- [ ] WLAN *[s. lf.09/sbj-03.data-throughput*]
+- [ ] Verschlüsselung auf Netzwerkebene *[s. lf.09/sbj-16.encyrption]*
+- [ ] MQTT Protokoll für IOT *[s. lf.11d/sbj-01.mqtt]*
+- [ ] IPv6-Adressen *[s. lf.09/sbj-11.ipv6-addresses]*
+- [ ] User- \& Zugriffsmanagement __*[complete ...]*__
+- [ ] Firewall \& Webfilter *[s. lf.09/sbj-13.routing-firewalls-dmz, ]*
+- [ ] Port-Security *[s. lf.09/sbj-15.sockets-ports, ...]*
+- [ ] Netzwerkkomponenten \& -protokolle (NAS, SAN, iSCSI, SMB, NFS, Ethernet, FiberChannel) __*[complete ...]*__
 - [ ] Datenaustauschformate XML, JSON, CVS, YAML *[s. lf.cx/cx.datafiles]*
 
 **Scope Lernfeld 09** in AP1 Prüfungen
 
-- [ ] REST
-- [ ] HTTP (Get-Post-Delete)
+- [ ] REST *[s. lf.11d/sbj-02.http-rest]*
+- [ ] HTTP *[s. lf.11d/sbj-02.http-rest]*
 - [ ] Client-Server *[s. lf.03/sbj-03.architectures]*
 - [ ] UML-Sequenzdiagramm *[s. lf.cx/cx.diagramming]*
-- [ ] Netzwerkdesign *[s. lf.cx/cx.diagramming, sbj-10.ipv4-classes, sbj-11.ipv6-addresses]*
-- [ ] Unterschied UDP versus TCP
-- [ ] Industrieswitch versus herkömmlichem Switch
-- [ ] PoE
-- [ ] managed Switch
-- [ ] ns-lookup, Domänenbaum
-- [ ] Funktechnologie NFC, RFID, LoRaWan
-- [ ] Geräteparameter (RAM, FLASH, WLAN-Typ, Verschlüsselung, IP65 (Staubschutz))
-- [ ] OSI-Modell *[s. sbj-02.network-concepts]*
-- [ ] Verschlüsselung AES / RSA
-- [ ] verteiltes Netwerk: Design mit IPV4 *[ sbj-10.ipv4-classes]*
-- [ ] Firewall: Allow- versus Blocklist
-- [ ] Datenberechnung Byte versus Mbyte *[s. sbj-03.data-throughput]*
-- [ ] Gateway: Konsequenzen Fehlfunktionen, Hackingangriff
-- [ ] Mobilfunkgateway
-- [ ] LoRaWAN
+- [ ] Netzwerkdesign *[s. lf.cx/cx.diagramming, lf.09/sbj-10.ipv4-classes, lf.09sbj-11.ipv6-addresses]*
+- [ ] Unterschied UDP versus TCP *[s. lf.09/sbj-15.sockets-ports]*
+- [ ] Industrieswitch versus herkömmlichem Switch *[s. lf.09/sbj-13.routing-firewalls-dmz]*
+- [ ] PoE __*[s. ...]*__
+- [ ] managed Switch *[s. lf.09/sbj-13.routing-firewalls-dmz]*
+- [ ] ns-lookup, Domänenbaum *[s. lf.09/sbj-14.dns]*
+- [ ] Funktechnologie NFC, RFID, LoRaWan *[s. lf.11d/sbj-03.lorawan]*
+- [ ] Geräteparameter (RAM, FLASH, WLAN-Typ, Verschlüsselung, IP65 (Staubschutz)) __*[complete ...]*__
+- [ ] OSI-Modell *[s. lf.09/sbj-02.network-concepts]*
+- [ ] Verschlüsselung AES / RSA *[s. lf.09/sbj-16.encyrption]*
+- [ ] verteiltes Netwerk: Design mit IPV4 *[ lf.09/sbj-10.ipv4-classes]*
+- [ ] Firewall: Allow- versus Blocklist *[s. lf.09/sbj-13.routing-firewalls-dmz, ]*
+- [ ] Datenberechnung Byte versus Mbyte *[s. lf.09/sbj-03.data-throughput]*
+- [ ] Gateway: Konsequenzen Fehlfunktionen, Hackingangriff __*[complete ...]*__
+- [ ] Mobilfunkgateway *[s. lf.09/sbj-02.network-concepts]*
+- [ ] LoRaWAN *[s. lf.11d/sbj-03.lorawan]*
 - [ ] Edge-Computing *[s. lf.03/sbj-03.architectures]*
 - [ ] FOG-Computing *[s. lf.03/sbj-03.architectures]*
-- [ ] Interface-Übertragungsstandards
-- [ ] NAT/PAT (Fehler)
-- [ ] DNS Strukturen
-- [ ] POST-HTTP-Protokoll
+- [ ] Interface-Übertragungsstandards *[s. lf.09/sbj-02.network-concepts]*
+- [ ] NAT/PAT (Fehler) __*[complete ...]*__
+- [ ] DNS Strukturen *[s. lf.09/sbj-14.dns]*
+- [ ] POST-HTTP-Protokoll *[s. lf.11d/sbj-02.http-rest]*

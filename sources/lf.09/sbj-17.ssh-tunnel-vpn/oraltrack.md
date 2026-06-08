@@ -83,6 +83,8 @@ Anmerkungen:
 
 ### 2. Exkurs in Sachen Rechtemanagement
 
+s. lf.cx/cx.access-mangement
+
 ### 3. Secure Shell (ssh) in der Praxis
 
 ---

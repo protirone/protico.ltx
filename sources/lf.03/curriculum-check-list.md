@@ -6,48 +6,50 @@
 -->
 
 <!-- LTeX:Language=de-DE -->
-# Curriculumslinie LF09 
+# Curriculumslinie LF03 
 
 **Legende**: * '**\***' → '*-[zenprese\/oraltrack/exercises].pdf*'
-
 
 ## Systematische Abfolge
 
 | Datum | Thema | Aspekt | Material |
 |---|---|---|---|
-| 250825 | Formalia | Vorstellung, Benotung | cx.opening* |
-| 250993 | Curriculum | Herleitung | sbj-00.curriculum* |
-| 250910 | Tooling | VSCode \& Markdown | cx.tooling* |
-| 250917 | Tooling | Drawio | cx.tooling* |
-| 250917 | UML | Einführung | cx.diagramming* |
-| 250917 | UML | Activitydiagram | cx.diagramming* |
-| 250917 | UML | Sequencediagram | cx.diagramming* |
-| 25[0924,1029] | Netzwerk | Begriffsmindmap |  |
-| 251022 | Faden-Netzwerk | Aufbau | sbj-01.thread-network* |
-| 251105 | Technologies | Cloud & EdgeComputing | sbj-03.architectures* |
-| 251112 | Adressen | MAC | sbj-07.mac-addresses* |
-| 251119 | Adressen | IPv4 | sbj-09.ipv4-addresses* |
-| 251126 | Adressen | Binäroperatoren | sbj-08.bitwise-operations* |
-| 260121 | Adressen | Netzsegmentierung| sbj-08.bitwise-operations* |
-| 260204 | Layer I | Begriffe | Datendurchsatz | sbj-04.data-throughput* |
-| 260218 | Adressen | IPv6 | sbj-11.ipv6* |
-| 260304 | Adressen | Net-Analyse | sbj-12.network-analysis* |
-| 260311 | Netzwerk | Layer \& Typologien | sbj-02.network-concepts* |
-| 260318 | Netzwerk | Taxonomien | sbj-02.network-concepts* |
-| 260318 | Patterns | Systemarchitekturen | sbj-03.architectures* |
-
+|  | Formalia | Vorstellung, Benotung | lf.cx/cx.opening* |
+|  | Curriculum | Herleitung | lf.03/sbj-00.curriculum* |
+|  | Tooling | VSCode \& Markdown | lf.03/sbj-01.tooling* |
+|  | Tooling | Drawio | lf.03/sbj-01.tooling* |
+|  | UML | Einführung | lf.cx/cx.diagramming* |
+|  | UML | Activitydiagram | lf.cx/cx.diagramming* |
+|  | UML | Sequencediagram | lf.cx/cx.diagramming* |
+|  | Netzwerk | Begriffsmindmap | lf.03/sbj-02.netconcepts |
+|  | Faden-Netzwerk | Aufbau | lf.09/sbj-01.thread-network* |
+|  | Technologies | Cloud & EdgeComputing | lf.03/sbj-03.architectures* |
+|  | Adressen | Zweck | lf.03/sbj-06.addressing
+|  | Adressen | MAC | lf.03/sbj-07.mac-addresses* |
+|  | Adressen | IPv4 | lf.03/sbj-09.ipv4-addresses* |
+|  | Adressen | Binäroperatoren | lf.03/sbj-08.bitwise-operations* |
+|  | Adressen | Netzsegmentierung| lf.03/sbj-08.bitwise-operations* |
+|  | Layer I | Begriffe | Datendurchsatz | lf.03/sbj-04.data-throughput* |
+|  | Adressen | IPv6 | lf.03/sbj-11.ipv6* |
+|  | Adressen | Net-Analyse | lf.09/sbj-12.network-analysis* |
+|  | Netzwerk | Layer \& Typologien | lf.03/sbj-02.network-concepts* |
+|  | Netzwerk | Taxonomien |  lf.03/sbj-02.network-concepts* |
+|  | Patterns | Systemarchitekturen |  lf.03/sbj-03.architectures* |
+|  | Patterns | Graphentheorie / Sortieralgorithmen | lf.11a/sbj-01.sort-search* |
+|  | Patterns | RAID | lf.cx/cx.raid* |
 
 
 ## Fallweise Einsprengsel
 
 | Datum | Thema | Aspekt | Material |
 |---|---|---|---|
-| 251001 | Open-Source | Copyright | cx.foss* |
+|  | Open-Source | Copyright | cx.foss* |
 |  | Open-Source | Geschichte | cx.foss* |
-| 260325 | Open-Source | Bilder | cx.foss* |
-| 26[0128,0225,0422] | Rethorik | Debattieren, Storyline \& Präsentieren | cx.rhetoric* |
-| 260211  | Formate | Datenaustausch | cx.datafiles*
-| 250917 | Tooling | *freeplane* | ...* |
-| 260415 | Graphentheorie und Sortieralgorithmen |  | ...* |
+|  | Open-Source | Bilder | cx.foss* |
+|  | Rhethorik | Debattieren, Storyline \& Präsentieren | cx.rhetoric* |
+|  | Formate | Datenaustausch | cx.datafiles*
+|  | Tooling | *freeplane* | ...* |
+|  | Graphentheorie und Sortieralgorithmen |  | lf.11a/sbj-01.sort-search** |
+|  | mathematische Beweisformen |  | lf.cx/cx.raid* |
 
 
