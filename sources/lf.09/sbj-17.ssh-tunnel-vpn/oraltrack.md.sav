@@ -290,25 +290,11 @@ Eine SSH-Verbindung folgt dem Client-Server-Model. Aber mehr als singuläres Req
 * Lösung 2: **[→ ZP:Sheet4]**
 
 ---
-
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/17:SSH:06**</span>
 
-1. Wiederholen Sie die Aufagbe 04 so, dass Sie von Ihrem Rechner aus einen Tunnel zum ssh-Serverrechner aufbauen und sich über ihn die Schulhomepage `https://www.gs-ldk.de/` anzeigen lassen.
-
-<!-- uebung::end -->
-
-
----
-
-<!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/17:SSH:06**</span>
-
-0. Bilden Sie 3 Gruppen
-1. Konzipieren Sie je Gruppe eine Software, die die Lösung von 5.2 generalisiert.
-2. Spezifizieren Sie, auf welchen Layern Ihre Lösung arbeiten müsste.
-3. Finden Sie einen Namen für Ihre Lösung
-4. Präsentieren und erläutern Sie Ihre Gruppenlösung Ihren Mitschülerinnen.
+1. Konzipieren Sie eine Software, die die Lösung von 5.2 generalisiert.
+2. Auf welchen Layern müsste die arbeiten.
 
 <!-- uebung::end -->
 
@@ -317,8 +303,8 @@ Eine SSH-Verbindung folgt dem Client-Server-Model. Aber mehr als singuläres Req
 
 **Fazit** Ein Tunnel schaltet sich zwischen Layer VII und Layer IV auf den Server, verschlüsselt die Pakete, sendet sie über den Tunnel zum Client, der entschüsselt sie und macht sie auf dem lokalen Port abrufbar.
 
-#### A
-Zur Systematik von VPNs
+### 5. Zur Systematik von VPNs
+
 
 Virtual Private Network (deutsch „virtuelles privates Netzwerk“; kurz: VPN) bezeichnet eine Netzwerkverbindung, die von Unbeteiligten nicht einsehbar ist:
 
