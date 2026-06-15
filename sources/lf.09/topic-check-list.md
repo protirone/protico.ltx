@@ -26,7 +26,7 @@
 - [ ] Ausdehnung \& Topologien [auch LF09/20] *[s. sbj-02.general-concepts, lf.09/sbj-02.network-concepts]*
 - [ ] IPv4-Adressen und -Segmentierung *[s. lf.09/sbj-09.ipv4-addresses, lf.09/sbj-10.ipv4-classes]*
 - [ ] IPv6-Adressen und -Segmentierung *[s. lf.09/sbj-11.ipv6-addresses]*
-- [ ] RAID mit Mengenberechnung
+- [ ] RAID mit Mengenberechnung *[s. lf.cx/cx.raid ]*
 
 **Scope Lernfeld 03** in AP1 Prüfungen
 

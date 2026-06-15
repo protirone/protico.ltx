@@ -36,7 +36,7 @@
 |  | Adressen | Binäroperatoren | sbj-08.bitwise-operations* |
 |  | Adressen | IPv4 | sbj-09.ipv4-addresses* |
 |  | Adressen | Netzsegmentierung | sbj-10.ipv4-classes* |
-|  | Adressen | IPv6 | sbj-11.ipv6-adreses* |
+|  | Adressen | IPv6 | sbj-11.ipv6-addresses* |
 |  | Adressen | Net-Analyse | sbj-12.network-analysis* |
 |  | Adressen | DMZ \& Firewalls | sbj-13.routing-firewalls-dmz* |
 |  | Adressen | VLAN & Layer-III-Switches | sbj-13.routing-firewalls-dmz* |
