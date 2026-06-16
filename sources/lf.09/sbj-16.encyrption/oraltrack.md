@@ -170,7 +170,7 @@ Lösung:
 **[→ ZP:Sheet4]**
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:Verschlüsselung:02**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:Verschlüsselung:03**</span>
 
 * [ ] Bitte entziffern Sie den folgenden String. (Der Einfachheit halber auch als Hex-Valuestream)
   
@@ -212,10 +212,10 @@ Lösung:
 
 **_Seitenfrage_**: Wo wird diese XOR-Fähigkeit noch genutzt?
 
-**_Seitenantwort_**: Exkurs zu RAID (s `lf.11d/sbj-05.raid\*`)?
+**_Seitenantwort_**: Exkurs zu RAID (s `lf.cx/cx.raid\*`)?
 
 
-### 5. Hashverfahren
+### 5. Hashverfahren **[→ ZP:Sheet7]**
 
 Eine **Hashfunktion** bildet einen Text variabler Länge (große Daten) auf kleineren Text/Zahl fester Länge ab:
 
@@ -245,7 +245,7 @@ Eine **Hashfunktion** bildet einen Text variabler Länge (große Daten) auf klei
   * commandshell: CertUtil
 
 
-### 6. **Signatur/Unterschrift**: Nachweise der Autorenschaft
+### 6. **Signatur/Unterschrift**: Nachweise der Autorenschaft **[→ ZP:Sheet7]**
   * Allgemeines Eigenschaft: *öffentliche Schlüssel* können entschlüsseln, was *Private* Schlüssel **ver**schlüsselt haben. (Reziproke Anwendung)
   * Anwendung:
     * Aus Text wird ein Hash erzeugt.
@@ -314,7 +314,7 @@ ERGO: Es muss andere Verfahren geben:
   * Vorteil: Man-in-the-Middle-Attacks nicht möglich
   * Nachteil: Sender muss mit jedem Empfänger ein Verschlüsselungsverfahren und zugehörige(n) Schlüssel ausmachen
 
-**[→ ZP:Sheet7]**
+**[→ ZP:Sheet78]**
 
 * **TSL** (= Transport Layer Security ) Verschlüsselung zwischen Layer VII und Layer IV 
   * Beispiels `https` - aber auch andere. 
@@ -329,7 +329,7 @@ ERGO: Es muss andere Verfahren geben:
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:Verschlüsselung:03**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:Verschlüsselung:04**</span>
 
 * [ ] Bitte ermitteln und beschreiben Sie die Struktur eines Zertifikats.
 * [ ] Bitte 'erfinden' Sie (ohne die Hilfe von ChatGPT, Wikipedia etc.) ein Verfahren/Prozess/Protokoll, bei dem die Kommunikation zwischen Client und Server
@@ -346,7 +346,7 @@ Lösung: **[→ ZP:Sheet8-10]**
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:Verschlüsselung:04**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09/16:Verschlüsselung:05**</span>
 
 * [ ] Bitte beschreiben Sie, wie eine 2-Faktorauthentifizierung die Grenzen Ihres und des TLS-Verfahrens absichern kann.
 * [ ] Bitte beschreiben Sie, wie das z.B. beim Internet-Banking eingesetzt wird.
