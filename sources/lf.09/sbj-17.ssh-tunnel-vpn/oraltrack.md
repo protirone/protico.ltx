@@ -39,7 +39,7 @@
   * interpretiert diese lokal 
   * verschlüsselt das Ergebnis + die remote auszuführenden Befehle
   * sendet beides zum ssh-Server. 
-* **sftp-Serversubsystem 
+* **sftp-Serversubsystem** 
   * entschlüsselt die erhaltenen Befehle
   * führt sie bei sich lokal = remote aus.
   
@@ -115,7 +115,7 @@ Sie erhalten einen
 * [ ] Erkunden Sie mit `find`, `grep` und `ls -la` die Umgebung auf dem ssh-Server.
 * [ ] Legen Sie per remote-Befehl im Homeverzeichnis des ssh-users auf dem ssh-Server einen Ordner mit dem Namen Ihrer Klasse an. (`mkdir -p wieauchimmer`)
 * [ ] Erzeugen Sie per remote-Befehl eine Datei, die Ihrem Vornamen entspricht (nur 7bit-Ascii)
-* [ ] Bitte ermitteln Sie, welches Schlüsselpaar genutzt wird, wenn Sie sich selbst noch gar keinen ssh-Schüssel erzeugt haben.
+* [ ] Bitte ermitteln Sie, wie die Verschlüsselung der Kommunikation von Client und Server sichergestellt wird, wenn Sie für Ihren (Client- &| Server-)User noch gar kein Schlüsselpaar generiert haben.
 * [ ] Bitte ermitteln Sie die Schwäche des Verfahrens bis hier hin!
   
 <!-- uebung::end -->
@@ -160,10 +160,21 @@ Lösung:
 * [ ] Bei Nachfrage des Clients das Passwort des auf dem Server zu nutzende Users eingeben
 * [ ] Erkunden und Dateien anlegen.
 
-**Step 4** Die genutzten Schlüssel: Rechnerspezifisches allgemeines Paar `ls /etc/ssh/ssh_host_rsa_key.pub`
+**Step 4** Die genutzten Schlüssel:
+
+* Der SSH-Server hat ein Rechner-spezifisches, systemweit gültiges Schlüsselpaar
+
+* LNX: `ls /etc/ssh/ssh_host_rsa_key.*`
+* W11: `ls C:\ProgramData\ssh\*`
+
+Verabredung eines gemeinsamen Schlüssels nach Diffie-Hellman-Schlüsselaustausch
+
+1. [https://de.wikipedia.org/wiki/Diffie-Hellman-Schl%C3%BCsselaustausch](https://de.wikipedia.org/wiki/Diffie-Hellman-Schl%C3%BCsselaustausch)
+2. Server nutzt dabei sein Rechner-spezifisches, systemweit gültiges Schlüsselpaar
+3. Client erzeugt ein einmal-Ssh-Schlüssel-Paar, sofern der User noch kein User-spezifisches Schlüsselpaar besitzt.
 
 
-**Step 5** Nachteil des Verfahrens in so weit:
+**Step 5** Nachteil des Verfahrens insoweit:
 
 Alle Schülerinnen müssen Server-User und dessen Passwort kennen und immer wieder nutzen.
 

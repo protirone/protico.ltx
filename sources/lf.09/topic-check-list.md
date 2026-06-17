@@ -81,7 +81,7 @@
 - [ ] Netzwerkkomponenten \& -protokolle (NAS, SAN, iSCSI, SMB, NFS, Ethernet, FiberChannel) __*[complete ...]*__
 - [ ] Datenaustauschformate XML, JSON, CVS, YAML *[s. lf.cx/cx.datafiles]*
 
-**Scope Lernfeld 09** in AP1 Prüfungen
+**Scope Lernfeld 09** in AP2 Prüfungen
 
 - [ ] REST *[s. lf.11d/sbj-02.http-rest]*
 - [ ] HTTP *[s. lf.11d/sbj-02.http-rest]*
