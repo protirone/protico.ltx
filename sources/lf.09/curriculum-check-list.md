@@ -47,9 +47,10 @@
 |  | Layer IV | ICMP, TCP-IP, UDP | sbj-15.sockets-ports* |
 |  | Layer VII | Services | sbj-15.sockets-ports* |
 |  | Layer VII | Packaging | sbj-15.sockets-ports* |
-|  | Layer VII | Dateizugriffe | cx.access-managament* |
 |  | Verschlüsselung | Konzepte | sbj-16.encryption* |
 |  | Verschlüsselung | ssh, Signierung, Tunnelling, VPN | sbj-17.ssh-tunnel-vpn* |
+|  | Layer VII | Access mit Autorisation und Authentifikation | sbj-18.access-management* |
+|  | Layer VII | Dateizugriffe | sbj-18.access-managament* |
 |  | Layer VII | HTTP-Protokoll | ...* |
 
 ## Fallweise Einsprengsel

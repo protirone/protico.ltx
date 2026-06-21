@@ -70,12 +70,12 @@
 - [ ] IT-Grundschutz (BSI) __*[complete ...]*__
 - [ ] Sicherheitskonzepte/Firewalling *[s. lf.09/sbj-13.routing-firewalls-dmz]*
 - [ ] Netzwerkplanung *[s. lf.cx/cx.diagramming, sbj-10.ipv4-classes]*
-- [ ] Net-Address-Translation (NAT), PAT, Masquerading __*[complete ...]*__
+- [ ] Net-Address-Translation (NAT), PAT, Masquerading __*[s. lf.09/sbj-19.miscellaneous]*__
 - [ ] WLAN *[s. lf.09/sbj-03.data-throughput*]
 - [ ] Verschlüsselung auf Netzwerkebene *[s. lf.09/sbj-16.encyrption]*
 - [ ] MQTT Protokoll für IOT *[s. lf.11d/sbj-01.mqtt]*
 - [ ] IPv6-Adressen *[s. lf.09/sbj-11.ipv6-addresses]*
-- [ ] User- \& Zugriffsmanagement __*[complete ...]*__
+- [ ] User- \& Zugriffsmanagement __*[s. lf.09/sbj-18.access-management]*__
 - [ ] Firewall \& Webfilter *[s. lf.09/sbj-13.routing-firewalls-dmz, ]*
 - [ ] Port-Security *[s. lf.09/sbj-15.sockets-ports, ...]*
 - [ ] Netzwerkkomponenten \& -protokolle (NAS, SAN, iSCSI, SMB, NFS, Ethernet, FiberChannel) __*[complete ...]*__
@@ -90,7 +90,7 @@
 - [ ] Netzwerkdesign *[s. lf.cx/cx.diagramming, lf.09/sbj-10.ipv4-classes, lf.09sbj-11.ipv6-addresses]*
 - [ ] Unterschied UDP versus TCP *[s. lf.09/sbj-15.sockets-ports]*
 - [ ] Industrieswitch versus herkömmlichem Switch *[s. lf.09/sbj-13.routing-firewalls-dmz]*
-- [ ] PoE __*[s. ...]*__
+- [ ] PoE __*[complete ...]*__
 - [ ] managed Switch *[s. lf.09/sbj-13.routing-firewalls-dmz]*
 - [ ] ns-lookup, Domänenbaum *[s. lf.09/sbj-14.dns]*
 - [ ] Funktechnologie NFC, RFID, LoRaWan *[s. lf.11d/sbj-03.lorawan]*
@@ -106,6 +106,6 @@
 - [ ] Edge-Computing *[s. lf.03/sbj-03.architectures]*
 - [ ] FOG-Computing *[s. lf.03/sbj-03.architectures]*
 - [ ] Interface-Übertragungsstandards *[s. lf.09/sbj-02.network-concepts]*
-- [ ] NAT/PAT (Fehler) __*[complete ...]*__
+- [ ] NAT/PAT (Fehler) __*[lf.09/sbj-19.miscellaneous]*__
 - [ ] DNS Strukturen *[s. lf.09/sbj-14.dns]*
 - [ ] POST-HTTP-Protokoll *[s. lf.11d/sbj-02.http-rest]*
