@@ -8,10 +8,52 @@
 
 *Tonspur* **[→ ZP:Sheet:1]**
 
-### TPC 00.00.A 
+### A) BSI IT-Grundschutzkonzept Kompendium
 
-* IS1
-* IS2
+#### A.1
+Konzeptstruktur
+
+#### A.2 Sicherheitsrisiken gemäß BSI IT-Grundschutz-Kompendium
+
+
+### B) Securtity
+
+#### B.1
+Penetrationtest
+
+Gateway: Konsequenzen Fehlfunktionen, Hackingangriff
+
+### C) Multicasts
+
+### (D) Adresstranslation und Masquerading
+
+#### D.1
+NAT (Net-Address-Translation)
+
+#### D.2
+PAT (Port-Address-Translation)
+
+
+### (E) (Spezielle) Netzwerkkomponenten und -protokolle
+
+* **NAS**:
+* **SAN**:
+* **iSCSI**:
+* **SMB**;
+* **NFS**:
+* **Ethernet**:
+* **FiberChannel**:
+
+### (F) PoE
+
+### (G) Geräteparameter
+
+* **RAM**:
+* **FLASH**:
+* **WLAN-Typ**:
+* **Verschlüsselung**:
+* **IP65 (Staubschutz))**:
+
 
 ---
 

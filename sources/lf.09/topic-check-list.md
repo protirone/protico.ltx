@@ -21,7 +21,7 @@
  *[s. lf.09/sbj-04.arp-hub, lf.09/sbj-05.arp-switch, lf.09/sbj-06.arp-router]*
 - [ ] Ethernetstandards, WLAN-Standards *[s. lf.09/sbj-03.data-throughput]*
 - [ ] Übertragungsdaten, -zeiten, Datenmengen *[s. lf.09/sbj-03.data-throughput]*
-- [ ] Plan, Do, Check, Act als Qualitätsmanagementmethode __*[complete lf.11c/sbj-05.data-quality]*__
+- [ ] Plan, Do, Check, Act als Qualitätsmanagementmethode *[__lf.11c__/sbj-05.data-quality]*
 - [ ] grafische Darstellung / Diagramme [auch LF09/17] *[s. lf.cx/cx.diagramming]*
 - [ ] Ausdehnung \& Topologien [auch LF09/20] *[s. sbj-02.general-concepts, lf.09/sbj-02.network-concepts]*
 - [ ] IPv4-Adressen und -Segmentierung *[s. lf.09/sbj-09.ipv4-addresses, lf.09/sbj-10.ipv4-classes]*
@@ -30,15 +30,19 @@
 
 **Scope Lernfeld 03** in AP1 Prüfungen
 
+<<<<<<< HEAD
 - [ ] Sicherheitsrisiken gemäß BSI IT-Grundschutz-Kompendium *[s. lf.09/sbj-20.miscellaneous]*
+=======
+- [ ] Sicherheitsrisiken gemäß BSI IT-Grundschutz-Kompendium *[s, lf.09/sbj-19.miscellaneousi]*
+>>>>>>> f4c8c7dde9b5840e4850133910a0c22dc4dcea2b
 - [ ] Präsentationsrechner außerhalb Institutsnetz *[s. lf.09/sbj-12.netanalysis]*
-- [ ] IP-Adressensegmentierung *[s. lf.09/sbj-09.ipv4-addresses,  lf.09/sbj-10.ipv4-classes]*
+- [ ] IP-Adressensegmentierung *[s. lf.09/sbj-09.ipv4-addresses, lf.09/sbj-10.ipv4-classes]*
 - [ ] DHCP + APIPA-Adresse *[s. sbj-09.ipv4-addresses]*
 - [ ] manuelle Netzwerkkonfiguration *[s. lf.09/sbj-09.ipv4-addresses]*
 - [ ] Netzwerk ermitteln mit ping auf Gateway (nicht ipconfig, weil DHCP ja nicht erreichbar) *[s. lf.09/sbj-12.netanalysis]*
 - [ ] Konsolenbefehle MAC-Adressen ipconfig /all ifconfig getmac/v *[s. lf.09/sbj-12.netanalysis, lf.09/sb-07.mac-addresses]*
-- [ ] Rechnertypen *[s. lf.03/sbj-02.netconcepts]*
-- [ ] BSI IT-Grundschutz-Kompendium *[s. lf,09/sbj-20.miscellaneous]*
+- [ ] Rechnertypen *[s. lf.03/sbj-02.network-concepts]*
+- [ ] BSI IT-Grundschutz-Kompendium *[s. lf.09/sbj-19.miscellaneous]*
 - [ ] RAID mit Kapazitätsberechnung *[s. lf.cx/cx.raid]*
 - [ ] Vorteile IPv6 gegenüber IPv4 *[s. lf.09/sbj-11.ipv6-addresses]*
 - [ ] IPv6 Eigenschaften *[s. lf.09/sbj-11.ipv6-addresses]*
@@ -74,7 +78,7 @@
 - [ ] Net-Address-Translation (NAT), PAT, Masquerading *[s. lf.09/sbj-20.miscellaneous]*
 - [ ] WLAN *[s. lf.09/sbj-03.data-throughput*]
 - [ ] Verschlüsselung auf Netzwerkebene *[s. lf.09/sbj-16.encyrption]*
-- [ ] MQTT Protokoll für IOT *[s. lf.11d/sbj-01.mqtt]*
+- [ ] MQTT Protokoll für IOT *[s. __lf.11d__/sbj-01.mqtt]*
 - [ ] IPv6-Adressen *[s. lf.09/sbj-11.ipv6-addresses]*
 - [ ] User- \& Zugriffsmanagement *[s. lf.09/sbj-18.access-management]*
 - [ ] Firewall \& Webfilter *[s. lf.09/sbj-13.routing-firewalls-dmz, ]*
@@ -103,7 +107,7 @@
 - [ ] Datenberechnung Byte versus Mbyte *[s. lf.09/sbj-03.data-throughput]*
 - [ ] Gateway: Konsequenzen Fehlfunktionen, Hackingangriff *[s. lf.09/sbj-20.miscellaneous]*
 - [ ] Mobilfunkgateway *[s. lf.09/sbj-02.network-concepts]*
-- [ ] LoRaWAN *[s. lf.11d/sbj-03.lorawan]*
+- [ ] LoRaWAN *[s. __lf.11d__/sbj-03.lorawan]*
 - [ ] Edge-Computing *[s. lf.03/sbj-03.architectures]*
 - [ ] FOG-Computing *[s. lf.03/sbj-03.architectures]*
 - [ ] Interface-Übertragungsstandards *[s. lf.09/sbj-02.network-concepts]*
