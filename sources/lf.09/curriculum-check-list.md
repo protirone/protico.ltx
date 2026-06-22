@@ -43,7 +43,7 @@
 |  | Adressen | DNS | sbj-14.dns* |
 |  | Layer II-IV | Protokolle \& Packaging | sbj-15.sockets-ports* |
 |  | Layer IV | Ports | sbj-15.sockets-ports* |
-|  | Layer IV | NAT \& Hopping | ...* |
+|  | Layer IV | NAT \& Hopping | sbj-20.miscellaneous* |
 |  | Layer IV | ICMP, TCP-IP, UDP | sbj-15.sockets-ports* |
 |  | Layer VII | Services | sbj-15.sockets-ports* |
 |  | Layer VII | Packaging | sbj-15.sockets-ports* |
@@ -51,7 +51,7 @@
 |  | Verschlüsselung | ssh, Signierung, Tunnelling, VPN | sbj-17.ssh-tunnel-vpn* |
 |  | Layer VII | Access mit Autorisation und Authentifikation | sbj-18.access-management* |
 |  | Layer VII | Dateizugriffe | sbj-18.access-managament* |
-|  | Layer VII | HTTP-Protokoll | ...* |
+|  | Layer VII | HTTP-Protokoll | sbj-19.http-rest* |
 
 ## Fallweise Einsprengsel
 

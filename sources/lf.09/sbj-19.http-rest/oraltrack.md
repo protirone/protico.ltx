@@ -88,7 +88,7 @@ Dann bräuchten wir in unserem HTTP-Server folgende Datenstruktur:
 
 ### (3) REST
 
-* steht für *Representational State Transfer *
+* steht für *Representational State Transfer*
 * dient bevorzugt für Maschine-zu-Maschine-Kommunikation
 * "kodiert keine Methodeninformation in den URI, da ein URI nur den Ort (URL) oder Namen (URN) einer Ressource angibt, nicht aber die Funktionalität, die der Web-Dienst zu der Ressource anbietet"
 * verlangt, dass weder der Server noch die Anwendung Zustandsinformationen zwischen zwei Nachrichten speichern sollen (**stateless**)
@@ -217,3 +217,30 @@ Anmerkung zu Telnet:
 
 
 
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:19:http-rest:01**</span>
+
+Ihnen steht wieder der Rechner mit ssh-Server aus den vergangenen Stunden zur Verfügung: 
+
+* einen Ubuntu 25.04 Serverrechner mit
+  * einem User `gsldkm` mit Passwort `.gsldkPw4all` und 
+  * einem User `root` mit Passwort `lgsldkPw4all`
+* und für das Schul-Wlan einen WLAN-User `fius` mit Passwort `fachinformatikeruser`.
+
+Auf dem Rechner läuft auch ein Apache2.0-Weberserver mit HTTP-Root /var/www/html.
+
+* [ ] Konfigurieren und/oder bauen Sie den Rechner so um, dass er jetzt auch die HTTP-Befehle `PUT` und `DELETE` akzeptiert und umsetzt.
+* [ ] Lassen Sie per HTTP-Befehl vom Client aus einen nach Ihrer Klasse benannten Ordner anlegen.
+* [ ] Legen Sie jeder eine nach Ihnen benannte Datei in dem Ordner ab.
+
+<!-- uebung::end -->
+
+Lösung:
+
+* 1. Check, ob Zugriff auf `/var/www/html` mittels Browser `http://IPADRESSE/index.html`.
+* 2. Ein CGI-Skript (in Python) schreiben, dass die Befehle PUT und Delete umsetzt.
+* 3. Apache so konfigurieren, dass er PUT und DELETE-Befehle an das CGI-Skript umlenkt.
+
+---

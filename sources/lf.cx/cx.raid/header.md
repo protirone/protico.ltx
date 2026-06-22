@@ -1,5 +1,5 @@
 ---
-title: 'LFRCX:RAID'
+title: 'LFCX:RAID'
 author: [K. Reincke]
 date: PTCDATE
 keywords: [RAID]
