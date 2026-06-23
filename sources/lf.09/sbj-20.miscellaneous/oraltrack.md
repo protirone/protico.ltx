@@ -16,7 +16,7 @@ Konzeptstruktur
 #### A.2 Sicherheitsrisiken gemäß BSI IT-Grundschutz-Kompendium
 
 
-### B) Securtity
+### B) Security
 
 #### B.1
 Penetrationtest
@@ -42,7 +42,7 @@ PAT (Port-Address-Translation)
 * **SMB**;
 * **NFS**:
 * **Ethernet**:
-* **FiberChannel**:
+* **FibreChannel**:
 
 ### (F) PoE
 
