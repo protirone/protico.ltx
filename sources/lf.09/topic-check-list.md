@@ -30,11 +30,7 @@
 
 **Scope Lernfeld 03** in AP1 Prüfungen
 
-<<<<<<< HEAD
 - [ ] Sicherheitsrisiken gemäß BSI IT-Grundschutz-Kompendium *[s. lf.09/sbj-20.miscellaneous]*
-=======
-- [ ] Sicherheitsrisiken gemäß BSI IT-Grundschutz-Kompendium *[s, lf.09/sbj-19.miscellaneousi]*
->>>>>>> f4c8c7dde9b5840e4850133910a0c22dc4dcea2b
 - [ ] Präsentationsrechner außerhalb Institutsnetz *[s. lf.09/sbj-12.netanalysis]*
 - [ ] IP-Adressensegmentierung *[s. lf.09/sbj-09.ipv4-addresses, lf.09/sbj-10.ipv4-classes]*
 - [ ] DHCP + APIPA-Adresse *[s. sbj-09.ipv4-addresses]*

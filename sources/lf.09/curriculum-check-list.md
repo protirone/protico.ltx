@@ -52,6 +52,8 @@
 |  | Layer VII | Access mit Autorisation und Authentifikation | sbj-18.access-management* |
 |  | Layer VII | Dateizugriffe | sbj-18.access-managament* |
 |  | Layer VII | HTTP-Protokoll | sbj-19.http-rest* |
+|  | Sonstiges | RAID | lf.cx/cx.raid* |
+|  | Sonstiges | Miszellen | sbj-19.miscellaneous* |
 
 ## Fallweise Einsprengsel
 
