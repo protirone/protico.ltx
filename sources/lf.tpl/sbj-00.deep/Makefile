@@ -10,8 +10,8 @@ DEL_FILE=exercises
 # the file into which the sub content is collected
 INCOLL=tmp.tmp
 
-LNX_TD="../.."
-PTC_TD="../${LNX_TD}"
+LNX_TD=../..
+PTC_TD=../${LNX_TD}
 BLD=${PTC_TD}/built
 MDHTMP=mdh.tmp
 
@@ -26,7 +26,7 @@ lessons: lesson-exc lesson-ort lesson-zpr
 
 # --- SECTION EXERCISE ---
 # recreates exercise document, releases it into the lesson directory tree
-lesson-exc: exercises 
+lesson-exc: bld exercises 
 	@ if [ -f exercises.pdf ]; then \
 	    WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	    TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
@@ -53,7 +53,7 @@ exercises:
 
 # --- SECTION ORALTRACK ---
 # recreates oraltrack document, releases it into the lesson directory tree
-lesson-ort: oraltrack
+lesson-ort: bld oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
     mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
@@ -76,10 +76,10 @@ oraltrack:
 
 # --- SECTION ZENPRESE ---
 # recreates the zp document, releases it into the lesson directory tree
-lesson-zpr: zenprese
+lesson-zpr: bld zenprese
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-    mv zenprese.pdf $${TGD}/$${SJN}-zenprese.pdf	
+          mv zenprese.pdf $${TGD}/$${SJN}-zenprese.pdf	
 	@ tree ${BLD}
 
 zpr: zenprese
@@ -87,6 +87,10 @@ zpr: zenprese
 zenprese:
 	@ echo "writing zenprese"
 	@ (cd zp && make clean && make zp.pdf && mv zp.pdf ../zenprese.pdf)
+
+
+bld:
+	mkdir -p ${BLD}
 
 .SUFFIXES: .md .pdf 
 

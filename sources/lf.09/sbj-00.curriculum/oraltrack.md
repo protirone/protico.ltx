@@ -227,7 +227,7 @@ Bonne Chance!
 * [ ] Grafische Darstellung / Diagramme [auch LF09/17]
 * [ ] Ausdehnung \& Topologien [auch LF09/20]
 * [ ] IPv4-Adressen und -Segmentierung
-* [ ] IPv4-Adressen und -Segmentierung
+* [ ] IPv6-Adressen und -Segmentierung
 * [ ] RAID mit Mengenberechnung
 
 **Scope Lernfeld 09 (auf PK-Level)**: [→  Katolog, S. 19,20,21](https://www.u-form-shop.de)

@@ -9,7 +9,7 @@ CCL=curriculum-check-list
 TCL=topic-check-list
 
 lessons: checklists 
-	find . -maxdepth 1 -type d -name "sbj-*" | while read d; \
+	find . -maxdepth 1 -type d -name "sbj-*" | sort | while read d; \
 		do echo $$d; \
 		( cd $$d; \
 		  make lessons; \

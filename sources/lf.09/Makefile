@@ -9,7 +9,7 @@ CCL=curriculum-check-list
 TCL=topic-check-list
 
 lessons: checklists 
-	find . -maxdepth 1 -type d -name "sbj-*" | while read d; \
+	find . -maxdepth 1 -type d -name "sbj-*" | sort | while read d; \
 		do echo $$d; \
 		( cd $$d; \
 		  make lessons; \
@@ -31,7 +31,6 @@ clean:
 checklists:  
 	( cd sbj-00.curriculum && make ../${CCL}.pdf && make ../${TCL}.pdf)
 	mkdir -p ${BLD}
-	mv ${CCL}.pdf ${TCL}.pdf ${BLD}/
-	cp ${CCL}.md ${TCL}.md ${BLD}/
+	mv ${TCL}.pdf ${CCL}.pdf ${BLD}/
+	cp ${TCL}.md ${CCL}.md ${BLD}/
 
-	

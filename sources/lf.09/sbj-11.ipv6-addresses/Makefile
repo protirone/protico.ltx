@@ -7,8 +7,8 @@ AUX_EXTS=tmp
 RES_EXTS=pdf
 DEL_FILE=exercises
 
-LNX_TD="../.."
-PTC_TD="../${LNX_TD}"
+LNX_TD=../..
+PTC_TD=../${LNX_TD}
 BLD=${PTC_TD}/built
 MDHTMP=mdh.tmp
 
@@ -23,7 +23,7 @@ lessons: lesson-exc lesson-ort lesson-zpr
 
 # --- SECTION EXERCISE ---
 # recreates exercise document, releases it into the lesson directory tree
-lesson-exc: exercises 
+lesson-exc: bld exercises 
 	@ if [ -f exercises.pdf ]; then \
 	    WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	    TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
@@ -39,7 +39,7 @@ exercises:
 
 # --- SECTION ORALTRACK ---
 # recreates oraltrack document, releases it into the lesson directory tree
-lesson-ort: oraltrack
+lesson-ort: bld oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
     mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
@@ -52,13 +52,16 @@ oraltrack:
 
 # --- SECTION ZENPRESE ---
 # recreates the zp document, releases it into the lesson directory tree
-lesson-zpr: zenprese
+lesson-zpr: bld zenprese
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
           mv zenprese.pdf $${TGD}/$${SJN}-zenprese.pdf	
 	@ tree ${BLD}
 
 zpr: zenprese
+
+bld:
+	mkdir -p ${BLD}
 
 zenprese:
 	@ echo "writing zenprese"
@@ -80,6 +83,5 @@ clear:
 clean:	clear
 	$(foreach EXT, ${RES_EXTS}, @if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; echo "removing existing .${EXT}-target-files"; fi;)
 	$(foreach BNA, ${DEL_FILE}, @if [ ! "x`ls ${BNA}.* 2>/dev/null`" = "x" ]; then rm ${BNA}.*; echo "removing existing derivated ${BNA}.*"; fi;)
-
 	(cd zp && make clean)
 

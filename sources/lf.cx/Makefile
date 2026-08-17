@@ -6,7 +6,7 @@
 
 
 lessons:
-	find . -maxdepth 1 -type d -name "cx.*" | while read d; \
+	find . -maxdepth 1 -type d -name "cx.*" | sort | while read d; \
 		do echo $$d; \
 		( cd $$d; \
 		  make lessons; \
