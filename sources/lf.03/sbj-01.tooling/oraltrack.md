@@ -243,3 +243,28 @@ Hinweis: draw.io gibt es als Desktopvariante (kann offline genutzt werden) oder 
 <!-- uebung::end -->
 
 ---
+
+### *Freeplane als Konzeptionstool für LF03, LF09, LF11*
+
+*Nutzungsbegründung*:
+
+  * ist freie Software.
+  * läuft unter Java.
+  * erstellt Mindmaps in XML-Format, Ergebnisse sind daher leicht austauschbar.
+
+* Freeplane  
+  * Windows:
+    * `Freeplane-Setup-X.Y.Z.exe` von [https://github.com/freeplane/freeplane/releases](https://github.com/freeplane/freeplane/releases) downloaden & starten
+    * GPL License akzeptierten = Installer laufen lassen
+  * Linux(Ubuntu/Debian)
+    * `freeplane_xxx~upstream-1_all.deb` Datei herunterladen
+    * `sudo apt-get install ./freeplane_xxx~upstream-1_all.deb` (Menueintrag wird unter Kategorie *Office* angelegt)
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF03:01:Tooling:04**</span>
+
+* [ ] Installieren Sie die für Sie passende freeplan-Version
+* [ ] Erzeugen Sie eine Beispieltaxonomie mit 2 Subkategorien
+
+<!-- uebung::end -->
+
