@@ -10,7 +10,7 @@
 
 **[→ ZP:Sheet:2]**
 
-1. **Powershell 7.5.x** :- weil Linux- und Windowsbefehle zur Netzwerkkonfiguration syntaktisch unterschiedliche Aufrufe und Ergebnisse liefern.
+1. **Powershell 7.[5|6|...].x** :- weil Linux- und Windowsbefehle zur Netzwerkkonfiguration syntaktisch unterschiedliche Aufrufe und Ergebnisse liefern.
 2. **Markdown-Editor** (*VSCODE* bzw. *VSCODIUM* mit Extension):- weil Sie Dokumentationen einfach und schnell erstellen können sollen.
 5. **Python3** :- weil Sie Netzwerk und Datenanalysen programmieren können sollten.
 3. **drawio** :- weil Sie Netzwerke, Protokolle und Prozesse einfach und untereinander austauschbar erstellen können sollen.
@@ -93,8 +93,9 @@ Powershell 7 ersetzt nicht vollständig Powershell 5. Deshalb existiert Powershe
     * suche darin nach Powershell 7.
     * lasse es installieren
   * per [→ GitHub-Repository](https://github.com/PowerShell/PowerShell)
-    * suche `PowerShell-7.5.2-win-x64.exe` unter [https://github.com/PowerShell/PowerShell/releases/tag/v7.5.2](https://github.com/PowerShell/PowerShell/releases/tag/v7.5.2)
+    * suche `PowerShell-7.5.2-win-x64.zip` unter [https://github.com/PowerShell/PowerShell/releases/tag/v7.5.2](https://github.com/PowerShell/PowerShell/releases/tag/v7.5.2)
     * Lade es runter in Deinen privaten App-Ordner.
+    * Entpacke es.
     * Lasse dafür Link in Panel / Start anlegen
 * Installation verifizieren:
   * Starte Powershell 5: 
@@ -150,7 +151,7 @@ Hinweis:
 **A) Varianten der Bereitstellung**:
 
 1. **auf einem zweiten Rechner/Laptop**
-  * [ ] Ubuntu-24.04.03 LTS ISO-Datei von [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop) herunterladen.
+  * [ ] Ubuntu-26.04.0X LTS ISO-Datei von [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop) herunterladen.
   * [ ] Mit Windowsmitteln einen bootfähigen USB-Stick erzeugen.
   * [ ] Rechner von USB-Stick booten.
   * [ ] Installationsanleitung folgen
@@ -166,8 +167,7 @@ Hinweis:
        * Lizenzen für VMware Workstation sind über diese Produktnummer nicht mehr erhältlich. Die Nachfolge-Lizenz war VMware Desktop Hypervisor Pro, diese ist aber auch im November 2024 nicht mehr erhältlich [→ https://www.software-express.de/hersteller/vmware/workstation/player/](https://www.software-express.de/hersteller/vmware/workstation/player/)
        * Antwort der Community: GitHub-Projekt zum Sammeln existierender Keys. [→ https://github.com/hegdepavankumar/VMware-Workstation-Pro-17-Licence-Keys](https://github.com/hegdepavankumar/VMware-Workstation-Pro-17-Licence-Keys).
        * Aber trotzdem keine seriöse Variante mehr.
-  * [ ] Virtualisierungssoftware auf Host *MAC* von [→ https://ubuntu.com/download/desktop](https://mac.getutm.app/) installieren
-  * [ ]  Ubuntu-24.04.03 LTS ISO-Datei von [→ https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop) herunterladen.
+  * [ ]  Ubuntu-26.04.0X LTS ISO-Datei von [→ https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop) herunterladen.
   * [ ] In Virtualisierungssoftware als Start-/Bootmedium aktivieren
   * [ ] Virtuelle Maschine booten.
   * [ ] Installationsanleitung folgen 
@@ -184,8 +184,9 @@ Hinweis:
   * [ ] Powershell 7.5.x nach Windowsanleitung installieren [→ https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5)
   * [ ] Powershell (Adminmode) aufrufen
   * [ ] gemäß [→ Microsoftanleitung WSL-Aktivierung](https://learn.microsoft.com/de-de/windows/wsl/install) verfahren - bzw.
-    * [ ] powershell: `wsl --install`     
-    * [ ] powershell: `wsl --set-version UBUNTU 2` 
+    * [ ] powershell: `wsl --install` (oder: `wsl --install -d Ubuntu`)
+    * [ ] powershell: `wsl --set-version Ubuntu 2` 
+  * (-> [https://learn.microsoft.com/en-us/windows/wsl/basic-commands](https://learn.microsoft.com/en-us/windows/wsl/basic-commands))
 
 **B) Verifikation**:
 
@@ -303,8 +304,6 @@ Die Community stellt aber unter dem Namen [→ VSCODIUM](https://vscodium.com/) 
 
 ---
 
----
-
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:Tooling:04**</span>
 
@@ -345,7 +344,7 @@ Hinweis: draw.io gibt es als Desktopvariante (kann offline genutzt werden) oder 
 * [ ] Erzeugen Sie ein neues Netzwerk-Diagramm
 * [ ] Suchen Sie die Netzwerk-Symbole.
 * [ ] Dokumentieren Sie darin und damit ein Netzwerk bestehend aus `Laptop` → `Switch` →  `Router` →  `Loadbalancer` → `Server` und Linien als Kabel
-* [ ] Laden Sie Ihr Ergebnis unter einem Dateinamen nach dem Muster `lf09-ueb-YYYYMMDD-ihrname`in den Ordner `uebungen` hoch. (Dabei stehe *YYYYMMDD* für das Datum im [ISO 8601 Format](https://de.wikipedia.org/wiki/ISO_8601). Alles andere bitte in Kleinbuchstaben.)
+* [ ] Laden Sie Ihr Ergebnis unter einem Dateinamen nach dem Muster `ueb-YYYYMMDD-ihrname.[md|pdf|...]`in den Ordner `uebungen` hoch. (Dabei stehe *YYYYMMDD* für das Datum im [ISO 8601 Format](https://de.wikipedia.org/wiki/ISO_8601). Alles andere bitte in Kleinbuchstaben.)
 
 <!-- uebung::end -->
 

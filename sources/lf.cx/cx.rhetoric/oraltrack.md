@@ -79,6 +79,11 @@ Wie im realen Berufsleben: **_eine überraschende Kommunikationsaufgabe_**, der 
   - die, die so elegant ist, dass sie unseren Zuhörerinnen Wohlempfinden bereitet
   - UND, die so bequem ist, dass wir uns darin wohlfühlen und gut bewegen können.
 * [ ] Sind unsere Schuhe geputzt?
+  - Präsentieren oft auf Podest.
+  - Zuschauerinnen müssen den Kopf heben = anstregend
+  - Das beenden sie deswegen früher.
+  - Beim Kopfsenken bleibt der Blick auf den ungeputzten Schuhen hängen. Oder an zu legerer Kleidung.
+  - Das ablenkende Gedankenkarussell beginnt = Sie verlieren Ihr Publikum.
 
 Dies vorab vorzubereiten, macht uns bei der Präsentation, der Debatte oder dem Vortrag ruhig. Und unsere Ruhe sorgt für Geborgenheit beim Publikum.
 
@@ -283,8 +288,6 @@ Für das verbleibende Auditorium:
 * [ ] Geben Sie Feedback zum Gelingen: Wie hat das auf Sie gewirkt.
 
 <!-- uebung::end -->
-
----
 
 ---
 

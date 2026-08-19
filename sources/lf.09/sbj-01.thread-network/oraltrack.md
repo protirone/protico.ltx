@@ -93,7 +93,7 @@ Am Ende werden Sie verstanden haben,
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:01-Fadennetzwerk:03**</span>
 
-* [ ] Suchen Sie in drawio die Palette mit den Netzworksymbolen.
+* [ ] Suchen Sie in drawio die Palette mit den Netzwerksymbolen.
 * [ ] Dokumentieren Sie Ihr Fadennetzwerk mit diesen Symbolen.
 
 
