@@ -10,44 +10,44 @@
 
 Im Lernfeld 03 kommt es in erster Linie darauf, Begriffe und Konzepte kennenzulernen. In der Mittelstufe in Lernfeld 09 wird es dann um das Zusammenwirken und das Ineinandergreifen gehen.
 
-* [ ] Alarmanlage**: 
-* [ ] Archivierungssystem**:
-* [ ] Anwendungssoftware**:
-* [ ] CRM**:
-* [ ] ERP**:
-* [ ] Datacenter**:
-* [ ] Datenendgerät**:
-* [ ] Datensicherung**:
-* [ ] Drucker**:
-* [ ] Gefahrenmeldeanlage**:
-* [ ] Host**:
-* [ ] Ip-Adresse**:
-* [ ] Kopierer**:
-* [ ] LAN**:
-* [ ] Scanner**:
-* [ ] Network-Devices**:
-* [ ] PC-Arbeitsplätze**:
-* [ ] Router**:
-* [ ] Rechenzentrum**:
-* [ ] Paket**:
-* [ ] Server**:
-* [ ] Speicher**:
-* [ ] Switch**:
-* [ ] Telefone**:
-* [ ] TK-Anlage**:
-* [ ] Videoüberwachung**:
-* [ ] WLAN/Wi-Fi**:
-* [ ] Zahlungsverkehr**:
-* [ ] Zeiterfassung**:
-* [ ] Zutrittskontrolle**:
-
 ---
 
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF03:02:Begriffe:01**</span>
 
 * [ ] Suchen Sie in drawio Standardsymbole für Netzwerkgeräte. (Gruppe Network)
-* [ ] Konzipieren und dokumentieren Sie ein Netzwerk, zu dessen sprachlicher Beschreibung man möglichst viele der o.a. Begriffe benötigte.  
+* [ ] Konzipieren und dokumentieren Sie ein Netzwerk, zu dessen sprachlicher Beschreibung man möglichst viele der folgenden Begriffe benötigte.  
+  * [ ] **Alarmanlage**: 
+  * [ ] **Archivierungssystem**:
+  * [ ] **Anwendungssoftware**:
+  * [ ] **CRM**:
+  * [ ] **ERP**:
+  * [ ] **Datacenter**:
+  * [ ] **Datenendgerät**:
+  * [ ] **Datensicherung**:
+  * [ ] **Drucker**:
+  * [ ] **Gefahrenmeldeanlage**:
+  * [ ] **Host**:
+  * [ ] **IP-Adresse**:
+  * [ ] **Kopierer**:
+  * [ ] **LAN**:
+  * [ ] **Scanner**:
+  * [ ] **Network-Devices**:
+  * [ ] **PC-Arbeitsplätze**:
+  * [ ] **Router**:
+  * [ ] **Rechenzentrum**:
+  * [ ] **Paket**:
+  * [ ] **Server**:
+  * [ ] **Speicher**:
+  * [ ] **Switch**:
+  * [ ] **Telefone**:
+  * [ ] **TK-Anlage**:
+  * [ ] **Videoüberwachung**:
+  * [ ] **WLAN/Wi-Fi**:
+  * [ ] **Zahlungsverkehr**:
+  * [ ] **Zeiterfassung**:
+  * [ ] **Zutrittskontrolle**:
+
 
 Hinweis:
 
@@ -63,7 +63,7 @@ Hinweis:
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF03:02:Begriffe:02**</span>
 
-* [ ] Installieren Sie Freeplane auf Ihrem Rechner (eine freie Mindmap-Software)
+* [ ] Installieren Sie *Freeplane* auf Ihrem Rechner (eine freie Mindmap-Software)
 * [ ] Bilden Sie zwei Gruppen
 * [ ] Konzipieren Sie in ihrer Gruppe eine Mindmap, die obige Begriffe sortiert.
 * [ ] Erstellen Sie eine Liste der Begriffe, die in dieser Liste noch fehlen.
