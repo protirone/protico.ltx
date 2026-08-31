@@ -58,6 +58,8 @@ Hinweis:
 
 <!-- uebung::end -->
 
+Lösung: **[→ ZP:Sheet32]**
+
 ---
 
 <!-- uebung::start -->
@@ -66,7 +68,7 @@ Hinweis:
 * [ ] Installieren Sie *Freeplane* auf Ihrem Rechner (eine freie Mindmap-Software)
 * [ ] Bilden Sie zwei Gruppen
 * [ ] Konzipieren Sie in ihrer Gruppe eine Mindmap, die obige Begriffe sortiert.
-* [ ] Erstellen Sie eine Liste der Begriffe, die in dieser Liste noch fehlen.
+* [ ] Erstellen Sie eine Liste der Begriffe, die Ihrer Meinung nach in dieser Liste noch fehlen.
 * [ ] Ordnen Sie diese fehlenden Begriffe in Ihre Mindmap ein.
 
 Hinweis:
@@ -74,11 +76,52 @@ Hinweis:
 1. Beginnen Sie mit den Begriffen, die Netzwerkgeräte im engeren Sinne meinen.
 2. Eine unvollständige repräsentierte Lösung ist besser als eine reine gedachte, vollständige.
 3. Kooperieren Sie.
+4. Wenn Sie Begriffe nicht kennen, kreieren Sie eine Kategorie 'Known Unknowns'
 
 
 <!-- uebung::end -->
 
 ---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF03:02:Begriffe:03**</span>
+
+Erweitern Sie Ihre Mindmap um folgende Begriffe:
+
+* [ ] arp
+* [ ] Broadcastdomain
+* [ ] Broadcastadresse
+* [ ] CIDR-Notation
+* [ ] DHCP
+* [ ] DMZ
+* [ ] Desktop PC
+* [ ] Netzwerdrucker
+* [ ] Lokaler Drucker
+* [ ] Firewall
+* [ ] Gateway-Adresse
+* [ ] IP-Adresse
+* [ ] Multicastadresse
+* [ ] Office-Lan
+* [ ] Remote Desktop
+* [ ] Route
+* [ ] Router
+* [ ] Smartphone
+* [ ] Switch
+* [ ] Layer-III-Switch
+* [ ] Layer-II-Switch
+* [ ] Thin Client
+* [ ] Thick Client
+* [ ] tracert
+* [ ] Unicastadresse
+
+Hinweis: *Taxonomien / Ontologien leben. Sie müssen gelegentlich 'redesigned' werden.*
+
+<!-- uebung::end -->
+
+Lösung: s. network-concepts-mm.pdf
+
+---
+
 
 ### Definitionen zum Netzaufbau: [→ ZP:Sheet:3]
 

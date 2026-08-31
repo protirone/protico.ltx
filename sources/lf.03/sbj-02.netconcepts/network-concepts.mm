@@ -1,0 +1,344 @@
+<map version="freeplane 1.12.1">
+<!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
+<bookmarks>
+    <bookmark nodeId="ID_696401721" name="Root" opensAsRoot="true"/>
+</bookmarks>
+<node TEXT="Netzwerk" FOLDED="false" ID="ID_696401721" CREATED="1610381621824" MODIFIED="1761076488248" BACKGROUND_COLOR="#ffffff" STYLE="oval">
+<font SIZE="18"/>
+<hook NAME="MapStyle" zoom="0.8">
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_tags="UNDER_NODES" associatedTemplateLocation="template:/standard-1.6.mm" show_note_icons="true" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false"/>
+    <tags category_separator="::"/>
+
+<map_styles>
+<stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
+<font SIZE="24"/>
+<stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="default" ID="ID_271890427" ICON_SIZE="12 pt" COLOR="#000000" STYLE="fork">
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_271890427" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<font NAME="SansSerif" SIZE="10" BOLD="false" ITALIC="false"/>
+<richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
+<richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.details"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.tags">
+<font SIZE="10"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.attributes">
+<font SIZE="9"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.note" COLOR="#000000" BACKGROUND_COLOR="#ffffff" TEXT_ALIGN="LEFT"/>
+<stylenode LOCALIZED_TEXT="defaultstyle.floating">
+<edge STYLE="hide_edge"/>
+<cloud COLOR="#f0f0f0" SHAPE="ROUND_RECT"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.selection" BACKGROUND_COLOR="#afd3f7" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#afd3f7"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="bottom_or_right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="styles.topic" COLOR="#18898b" STYLE="fork">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.subtopic" COLOR="#cc3300" STYLE="fork">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.subsubtopic" COLOR="#669900">
+<font NAME="Liberation Sans" SIZE="10" BOLD="true"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.important" ID="ID_67550811">
+<icon BUILTIN="yes"/>
+<arrowlink COLOR="#003399" TRANSPARENCY="255" DESTINATION="ID_67550811"/>
+</stylenode>
+</stylenode>
+<stylenode LOCALIZED_TEXT="styles.AutomaticLayout" POSITION="bottom_or_right" STYLE="bubble">
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level.root" COLOR="#000000" STYLE="oval" SHAPE_HORIZONTAL_MARGIN="10 pt" SHAPE_VERTICAL_MARGIN="10 pt">
+<font SIZE="18"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,1" COLOR="#0033ff">
+<font SIZE="16"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,2" COLOR="#00b439">
+<font SIZE="14"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,3" COLOR="#990000">
+<font SIZE="12"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,4" COLOR="#111111">
+<font SIZE="10"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,5"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,6"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,7"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,8"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,9"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,10"/>
+<stylenode LOCALIZED_TEXT="AutomaticLayout.level,11"/>
+</stylenode>
+</stylenode>
+</map_styles>
+</hook>
+<hook NAME="AutomaticEdgeColor" COUNTER="16" RULE="ON_BRANCH_CREATION"/>
+<node TEXT="LAYER I" POSITION="top_or_left" ID="ID_1826429366" CREATED="1761073849481" MODIFIED="1761076584368" BACKGROUND_COLOR="#ccffff" STYLE="bubble">
+<edge COLOR="#00007c"/>
+</node>
+<node TEXT="Layer II" POSITION="top_or_left" ID="ID_1437780725" CREATED="1761074137196" MODIFIED="1761076563936" BACKGROUND_COLOR="#ccccff" STYLE="bubble">
+<edge COLOR="#007c00"/>
+<node TEXT="Repeater" ID="ID_1571006130" CREATED="1758697282673" MODIFIED="1765313470136" TEXT_ALIGN="CENTER">
+<font NAME="DejaVu Sans Mono"/>
+</node>
+<node TEXT="Hub" ID="ID_837366443" CREATED="1758697282673" MODIFIED="1761683068888"/>
+<node TEXT="Switch (Layer II)" ID="ID_1109520132" CREATED="1758697368084" MODIFIED="1761683101932"/>
+<node TEXT="MAC-Adressen&#xa;(sbj-07.mac-adresses)" POSITION="bottom_or_right" ID="ID_1758796302" CREATED="1758697482369" MODIFIED="1765313205980" BACKGROUND_COLOR="#ccffcc" STYLE="oval" TEXT_ALIGN="CENTER">
+<font NAME="DejaVu Sans Mono" BOLD="true"/>
+<node TEXT="MAC" ID="ID_1565035119" CREATED="1761117777166" MODIFIED="1765313261688" COLOR="#339900">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="MAC-Adressblock" ID="ID_1132286158" CREATED="1761117777166" MODIFIED="1765313392822" COLOR="#339900">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="MA-L" ID="ID_1631095187" CREATED="1761117777166" MODIFIED="1765313339099" COLOR="#339900">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="MA-M" POSITION="top_or_left" ID="ID_729674490" CREATED="1761117777166" MODIFIED="1765313353716" COLOR="#339900">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="MA-S" ID="ID_635637838" CREATED="1761117777166" MODIFIED="1765313364499" COLOR="#339900">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="OUI" POSITION="top_or_left" ID="ID_509510240" CREATED="1761117777166" MODIFIED="1765313277698" COLOR="#339900">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Vendorencode" POSITION="top_or_left" ID="ID_723317031" CREATED="1761117777166" MODIFIED="1765313308314" COLOR="#339900">
+<font BOLD="true" ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Protokolle" POSITION="top_or_left" ID="ID_1558451952" CREATED="1761119678852" MODIFIED="1761119728784" VSHIFT_QUANTITY="-25.2 pt">
+<node TEXT="Ethernet-Protocol" ID="ID_1507611278" CREATED="1761119701914" MODIFIED="1761683011601" VSHIFT_QUANTITY="15.6 pt"/>
+<node TEXT="Ethernet-Frame" ID="ID_1738313765" CREATED="1761119701914" MODIFIED="1761683028161" VSHIFT_QUANTITY="15.6 pt"/>
+</node>
+</node>
+<node TEXT="Layer III" POSITION="top_or_left" ID="ID_60042545" CREATED="1761074181334" MODIFIED="1761076552571" BACKGROUND_COLOR="#ffccff" STYLE="bubble">
+<edge COLOR="#7c007c"/>
+<node TEXT="Switch (Layer III)" POSITION="top_or_left" ID="ID_948874395" CREATED="1758697368084" MODIFIED="1765313489030"/>
+<node TEXT="Router" POSITION="top_or_left" ID="ID_369400835" CREATED="1758697202072" MODIFIED="1758697376958" HGAP_QUANTITY="18.5 pt" VSHIFT_QUANTITY="0.75 pt"/>
+<node TEXT="IP-Adresse&#xa;(sbj-09.ipv4-addresses)" ID="ID_1537616843" CREATED="1758697482369" MODIFIED="1765313974504" BACKGROUND_COLOR="#ffccff" STYLE="oval" TEXT_ALIGN="CENTER">
+<font NAME="DejaVu Sans Mono" BOLD="true"/>
+<node TEXT="binär-Notation" ID="ID_516899889" CREATED="1761117777166" MODIFIED="1765313657701" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Broadcastadresse" ID="ID_864353543" CREATED="1761117777166" MODIFIED="1765313802318" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="CIDR-Notation" ID="ID_436194536" CREATED="1761117777166" MODIFIED="1765313846162" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="dottet-Notation" ID="ID_790345639" CREATED="1761117777166" MODIFIED="1765313628181" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Gatewayadresse" ID="ID_1430032187" CREATED="1761117777166" MODIFIED="1765313821086" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Hoststanteil" ID="ID_1240839621" CREATED="1761117777166" MODIFIED="1765313767123" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="IPv4-Adresse" ID="ID_870597687" CREATED="1761117777166" MODIFIED="1765313598300" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Netzadresse" ID="ID_123018115" CREATED="1761117777166" MODIFIED="1765313788716" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Netzanteil" ID="ID_212312341" CREATED="1761117777166" MODIFIED="1765313745969" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Subnetzmaske" ID="ID_438752093" CREATED="1761117777166" MODIFIED="1765313698051" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Operatoren&#xa;(sbj-08.bitwise-operators" ID="ID_701494596" CREATED="1761117777166" MODIFIED="1765314557206" COLOR="#000000" BACKGROUND_COLOR="#ffccff" STYLE="bubble" TEXT_ALIGN="CENTER">
+<font NAME="DejaVu Sans Mono" BOLD="true" ITALIC="false"/>
+<node TEXT="bin-2-dec" ID="ID_1355469255" CREATED="1761117777166" MODIFIED="1765314172840" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Ausmaskierung" ID="ID_1377891808" CREATED="1761117777166" MODIFIED="1765314272646" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="binär-nicht" ID="ID_681488650" CREATED="1761117777166" MODIFIED="1765314223608" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="binär-oder" ID="ID_1263257374" CREATED="1761117777166" MODIFIED="1765314216117" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="binär-und" ID="ID_176590145" CREATED="1761117777166" MODIFIED="1765314237744" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="dec-2-bin" ID="ID_962135301" CREATED="1761117777166" MODIFIED="1765314152530" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="logisch-NICHT" ID="ID_1938015020" CREATED="1761117777166" MODIFIED="1765314383655" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="logisch-ODER" ID="ID_538197319" CREATED="1761117777166" MODIFIED="1765314371238" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="logisch-UND" ID="ID_639897749" CREATED="1761117777166" MODIFIED="1765314360037" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="ver-oder-n" ID="ID_97688398" CREATED="1761117777166" MODIFIED="1765314312005" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="ver-und-ern" ID="ID_1895440715" CREATED="1761117777166" MODIFIED="1765314291381" COLOR="#990099">
+<font BOLD="true" ITALIC="true"/>
+</node>
+</node>
+</node>
+<node TEXT="Protokolle" ID="ID_1573540729" CREATED="1761119678852" MODIFIED="1761119728784" VSHIFT_QUANTITY="-25.2 pt">
+<node TEXT="IP-Protocol" ID="ID_1492768629" CREATED="1761119701914" MODIFIED="1761682915262" VSHIFT_QUANTITY="15.6 pt"/>
+<node TEXT="IP-Package" ID="ID_63375371" CREATED="1758697689416" MODIFIED="1761682901592" COLOR="#000000"/>
+</node>
+</node>
+<node TEXT="Layer IV" POSITION="top_or_left" ID="ID_1806318538" CREATED="1761074221441" MODIFIED="1761076538815" BACKGROUND_COLOR="#ffcccc" STYLE="bubble">
+<edge COLOR="#007c7c"/>
+<node TEXT="Host" POSITION="bottom_or_right" ID="ID_214655166" CREATED="1758697532651" MODIFIED="1758697537880"/>
+<node TEXT="Client" POSITION="bottom_or_right" ID="ID_881490027" CREATED="1758697542490" MODIFIED="1758697544309"/>
+<node TEXT="Protokolle" ID="ID_1021935995" CREATED="1761119678852" MODIFIED="1761119728784" VSHIFT_QUANTITY="-25.2 pt">
+<node TEXT="TCP" ID="ID_710165593" CREATED="1761685604400" MODIFIED="1761685622001">
+<node TEXT="TCP-Package" POSITION="top_or_left" ID="ID_980027382" CREATED="1761119701914" MODIFIED="1761682962091" VSHIFT_QUANTITY="15.6 pt"/>
+<node TEXT="TCP-Protocol" POSITION="top_or_left" ID="ID_1198695458" CREATED="1761119701914" MODIFIED="1761682942265" VSHIFT_QUANTITY="15.6 pt"/>
+</node>
+<node TEXT="UDP" ID="ID_1947287761" CREATED="1761685662004" MODIFIED="1761685670298">
+<node TEXT="UDP-Package" POSITION="top_or_left" ID="ID_339106012" CREATED="1761119701914" MODIFIED="1761682980740" VSHIFT_QUANTITY="15.6 pt"/>
+<node TEXT="UDP-Protocol" POSITION="top_or_left" ID="ID_1080656085" CREATED="1761119701914" MODIFIED="1761685572618" VSHIFT_QUANTITY="15.6 pt"/>
+</node>
+</node>
+</node>
+<node TEXT="Layer VII" POSITION="top_or_left" ID="ID_1913018894" CREATED="1761074290122" MODIFIED="1761076451233" BACKGROUND_COLOR="#ffffdd" STYLE="bubble">
+<edge COLOR="#7c7c00"/>
+<node TEXT="Systeme" ID="ID_1515379047" CREATED="1761074332071" MODIFIED="1761074538783" STYLE="oval">
+<node TEXT="Anwendungsserver" POSITION="top_or_left" ID="ID_1635734949" CREATED="1758697956497" MODIFIED="1762888493175" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Archivierungssystem" POSITION="top_or_left" ID="ID_1417445687" CREATED="1758704441605" MODIFIED="1762888493183" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="CRM" POSITION="top_or_left" ID="ID_1995823467" CREATED="1758697659252" MODIFIED="1762888493184" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Datensicherung" POSITION="top_or_left" ID="ID_1248376100" CREATED="1758700151059" MODIFIED="1762888493184" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="ERP" POSITION="top_or_left" ID="ID_765471195" CREATED="1758697666967" MODIFIED="1762888493185" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Speicher (Cloud)" POSITION="top_or_left" ID="ID_794834057" CREATED="1758704460583" MODIFIED="1762888493186" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Terminal-Server" ID="ID_1057330832" CREATED="1758697973180" MODIFIED="1762888493187" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Funktionen" ID="ID_526200687" CREATED="1761074361966" MODIFIED="1761074408956" STYLE="oval">
+<node TEXT="Alarmanlage" POSITION="top_or_left" ID="ID_467597100" CREATED="1758697066040" MODIFIED="1762888493189" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Datenübertragung" POSITION="top_or_left" ID="ID_573336807" CREATED="1758704062585" MODIFIED="1762888493190" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Gefahrenmeldeanlage" POSITION="top_or_left" ID="ID_583362154" CREATED="1758697127466" MODIFIED="1762888493191" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Telefone" POSITION="top_or_left" ID="ID_1502439801" CREATED="1758697300219" MODIFIED="1762888493192" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="TK-Anlage" POSITION="top_or_left" ID="ID_801045943" CREATED="1758704494582" MODIFIED="1762888493194" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Videoüberwachung" POSITION="top_or_left" ID="ID_320092572" CREATED="1758697345087" MODIFIED="1762888493195" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Zahlungsverkehr" ID="ID_63825967" CREATED="1758704512390" MODIFIED="1762888493197" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Zeiterfassung" POSITION="top_or_left" ID="ID_1359080316" CREATED="1758704540360" MODIFIED="1762888493198" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Zutrittskontrolle" ID="ID_643435657" CREATED="1758704560896" MODIFIED="1762888493198" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Services" ID="ID_741578632" CREATED="1761074554892" MODIFIED="1761074597955" STYLE="oval">
+<node TEXT="DNS-Server" ID="ID_1365195417" CREATED="1758697888962" MODIFIED="1762888493200" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="File-Server" POSITION="top_or_left" ID="ID_1048557765" CREATED="1758697844581" MODIFIED="1762888493202" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Mail-Server" ID="ID_13572062" CREATED="1758697877266" MODIFIED="1762888493203" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="NAS-Server" POSITION="top_or_left" ID="ID_796621208" CREATED="1758697991573" MODIFIED="1762888493204" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Print-Server" POSITION="top_or_left" ID="ID_1513624340" CREATED="1758697862802" MODIFIED="1762888493209" COLOR="#660066">
+<font ITALIC="true"/>
+<node TEXT="Drucker" POSITION="top_or_left" ID="ID_1650600424" CREATED="1758697120382" MODIFIED="1762888493206" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Kopierer" POSITION="top_or_left" ID="ID_1008636016" CREATED="1758697140271" MODIFIED="1762888493207" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Scanner" POSITION="top_or_left" ID="ID_496298234" CREATED="1758697150548" MODIFIED="1762888493208" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Shop-Server" ID="ID_919249837" CREATED="1758697894822" MODIFIED="1762888493211" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Update-Server" ID="ID_691916897" CREATED="1758697913911" MODIFIED="1762888493212" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Web-Server" ID="ID_1539629571" CREATED="1758697902618" MODIFIED="1762888493214" COLOR="#660066">
+<font ITALIC="true"/>
+</node>
+</node>
+</node>
+<node TEXT="CRX-Begriffe" POSITION="bottom_or_right" ID="ID_316154278" CREATED="1761075186332" MODIFIED="1761076120798" STYLE="bubble">
+<edge COLOR="#ff0000"/>
+<node TEXT="Network-Devices" POSITION="top_or_left" ID="ID_1609648489" CREATED="1758697568364" MODIFIED="1758697575284"/>
+<node TEXT="Rechenzentrum/Datencenter" POSITION="top_or_left" ID="ID_285472650" CREATED="1758704672509" MODIFIED="1761076265588" COLOR="#000000"/>
+</node>
+<node TEXT="Arten" POSITION="bottom_or_right" ID="ID_146092004" CREATED="1761075435882" MODIFIED="1761075593908" STYLE="bubble">
+<edge COLOR="#0000ff"/>
+<node TEXT="Formen" ID="ID_1312343205" CREATED="1761075612986" MODIFIED="1761075641436" STYLE="oval">
+<node TEXT="PAN" ID="ID_1330378804" CREATED="1761075700693" MODIFIED="1761075707766"/>
+<node TEXT="LAN" ID="ID_794317718" CREATED="1761075700693" MODIFIED="1761075721950"/>
+<node TEXT="WLAN" ID="ID_1630621950" CREATED="1761075700693" MODIFIED="1761075780015"/>
+<node TEXT="MAN" ID="ID_1966311311" CREATED="1761075700693" MODIFIED="1761075792312"/>
+<node TEXT="WAN" ID="ID_1852645283" CREATED="1761075700693" MODIFIED="1761075903295"/>
+<node TEXT="GAN" ID="ID_400654168" CREATED="1761075700693" MODIFIED="1761075809591"/>
+</node>
+<node TEXT="Topologien" FOLDED="true" ID="ID_756687172" CREATED="1761075612986" MODIFIED="1761682696677" STYLE="oval">
+<node TEXT="Stern" ID="ID_1056855250" CREATED="1761117777166" MODIFIED="1761117783135"/>
+<node TEXT="Ring" ID="ID_1342851229" CREATED="1761117788142" MODIFIED="1761117798238"/>
+</node>
+</node>
+<node TEXT="Architekturen&#xa;(sbj-03.architectures)" POSITION="bottom_or_right" ID="ID_91337942" CREATED="1761075612986" MODIFIED="1762889969228" COLOR="#006666" BACKGROUND_COLOR="#ccffff" STYLE="oval" TEXT_ALIGN="CENTER">
+<font NAME="DejaVu Sans Mono" BOLD="true"/>
+<edge COLOR="#00ffff"/>
+<node TEXT="Client-Server-Model" ID="ID_150220784" CREATED="1761117777166" MODIFIED="1762889816815" COLOR="#009999">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Client-Server-Architektur" ID="ID_1344087145" CREATED="1761117788142" MODIFIED="1762889816824" COLOR="#009999">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Peer-To-Peer-Architektur" ID="ID_1130173871" CREATED="1761117788142" MODIFIED="1762889816826" COLOR="#009999">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Cloud-Architektur" ID="ID_1703233563" CREATED="1761117788142" MODIFIED="1762889816827" COLOR="#009999">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="Edge-Computing" ID="ID_1826949868" CREATED="1761117788142" MODIFIED="1762889816828" COLOR="#009999">
+<font BOLD="true" ITALIC="true"/>
+</node>
+<node TEXT="FOG-Computing" ID="ID_1950843092" CREATED="1761117788142" MODIFIED="1762889816829" COLOR="#009999">
+<font BOLD="true" ITALIC="true"/>
+</node>
+</node>
+</node>
+</map>

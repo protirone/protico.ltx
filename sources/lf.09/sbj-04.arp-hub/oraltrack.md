@@ -40,12 +40,12 @@ Man darf sich die Zusammenarbeit zwischen Layer II (MAC-Adresse) und Layer III (
 * Die *IP-Adresse* ist der **Name** des Rechners.
 * Die *MAC-Adresse* die Adresse des Rechners (seiner Netzwerkkarte).
 
-Und wir beim Schreiben/Beantworten eines Briefes
+Und wie beim Schreiben/Beantworten eines Briefes muss man
 
-1. *muss man den Namen des Empfängers wissen und dessen Adresse kennen.*
-2. *schreibt man ...*
-  * *seine eigene Adresse (aus Adressfeld des erhaltenen Briefes ;-) ) in den Absenderbereich des Antwortbriefes*
-  * *die Absenderadresse vom erhaltenen Brief in das Adressfeld des Antwortbriefes*
+* __1.__ *den Namen des Empfängers wissen und dessen Adresse kennen.*
+* __2.__ *seine eigene Adresse [= die aus dem Adressfeld des erhaltenen Briefes ;-) ] in den Absenderbereich des Antwortbriefes schreiben*
+* __3.__ *die Absenderadresse vom erhaltenen Brief in das Adressfeld des Antwortbriefes schreiben*
+
 
 ---
 
@@ -53,7 +53,25 @@ Und wir beim Schreiben/Beantworten eines Briefes
 
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:04:HUB&ARP:01**</span>
 
-* [ ] Erfinden Sie - wie beim Fadennetzwerk - ein passendes Protokoll, mit dem Nachrichten in einem (Hub-basierten) Layer-II-Netzwerk auch unter der Bedingung verlässlich übermittelt werden, dass die MAC-Adresse über längere Zeiträume nicht verlässlich konstant ist.
+Sie leben in einem bemerkenswerten Dorf: 
+
+* Seine Einwohnerinnen können nicht sprechen oder hören, aber lesen und schreiben. 
+* Zudem kommunizieren sie ausschließlich über ihre kuriose Dorfbriefträgerin: Die übergibt jeder anderen Dorfbewohnerin eine Kopie eines jeden Briefes, den eine Bewohnerin sie zu übermitteln beauftragt.
+* Außerdem hat das Dorf viel mehr Häuser, als Bewohnerinnen. Darum ziehen die Bewohnerinnen ohne Vorankündigung oder Bekanntmachung immer wieder einmal in eines der freien, vielleicht ja komfortableren Häuser um. 
+* Gelegentlich zieht eine Bewohnerin auch ganz weg oder es kommt eine neue dazu, die sich nach kurzer Eingewöhnungszeit auch an die Regeln des Zusammenlebens hält.
+
+Ihre Aufgabe ist es jetzt, für dieses Dorf ein Kommunikationsprotokoll zu entwickeln, mit dem jede Bewohnerin - trotz aller Unwägbarkeiten - sicher sein kann, sich mit jeder noch vorhandenen Dorfbewohnerin austauschen zu können.
+
+* [ ] Teilen Sie sich in Gruppen von 5+n Personen auf
+* [ ] Jede Gruppe bilde mit Faden und x Menschen einen Stern mit x-1 Senderin/Empfängerin.
+* [ ] Geben Sie jedem Senderin/Empfängerin einen Namen (IP-Adresse) und ein Wohnadresse (MAC-Adresse)
+* [ ] Erfinden Sie ein Protokoll, mit dem in einem solchen Dorf (Netz) Nachrichten von einer Senderin zu einer Empfängerin übertragen werden kann. Setzen Sie dabei die folgenden Bedingungen voraus:
+  * [ ] Die zentrale Einheit im Stern kriegt eine Nachricht und leitet sie immer an alle weiter. Sie kopiert die Nachrichten, aber sie liest und versteht sie nicht.
+  * [ ] Jeder Senderin/Empfängerin nimmt sicherheitshalber an, dass ein Eintrag in ihrem Adressbuch nicht länger als 5 Minuten gilt.
+* [ ] Simulieren Sie mit Ihrem Protokoll das Senden eine Nachricht.
+* [ ] Simulieren Sie den Zuzug einer neuen Bewohnerin.
+* [ ] Simulieren Sie den Umzug einer Bewohnerin.
+* [ ] Notieren Sie sich die Regeln Ihres Protokolls als md-Datei.
 
 <!-- uebung::end -->
 

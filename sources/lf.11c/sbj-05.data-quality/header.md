@@ -1,8 +1,9 @@
 ---
-title: 'LF11c:99:condensates'
+title: 'LF11c:05:Data-Quality'
 author: [K. Reincke]
+subject: "lf11c/sbj-05"
 date: PTCDATE
-keywords: [sbj-00.flat]
+keywords: [LF11c Datenqualität]
 header-left: "\\theauthor"
 header-center: "proTirone"
 header-right: "\\thetitle" 
@@ -16,4 +17,4 @@ colorlinks: true
 
 **Disclaimer**: *Dieses OER-Dokument stammt aus dem Projekt [proTirone](https://github.com/protirone/), das über GitHub [freie Unterrichtsmaterialien](https://github.com/protirone/protirone.lessons) samt [Quellcode](https://github.com/protirone/protico.ltx) offeriert. proTirone-Materialien werden unter den Bedingungen der [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de)-Lizenz so angeboten, wie sie sind, ohne Zusage bestimmter Eigenschaften und ohne Gewährleistung (§5). Dafür dürfen sie -- bei angemessener Namensnennung (§3) -- für beliebige (auch kommerzielle) Zwecke verändert und weitergegeben werden (§2).*
 
-## LF11c:99:condensates:
+## LF11c:05:Datenqualität:

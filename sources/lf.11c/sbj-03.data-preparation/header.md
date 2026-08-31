@@ -1,6 +1,7 @@
 ---
 title: 'LF11c:03:Datenaufbereitung'
 author: [K. Reincke]
+subject: "lf11c/sbj-03"
 date: PTCDATE
 keywords: [data,analysis]
 header-left: "\\theauthor"

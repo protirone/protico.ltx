@@ -19,7 +19,7 @@ help:
 	echo "make [ help | lessons | lesson-exc | exercises | lesson-ort | oraltrack | lesson-zpr | zenprese ] "
 
 # recreates all sbj documents and releases them into the lesson directory tree
-lessons: lesson-exc lesson-ort lesson-zpr 
+lessons: lesson-exc lesson-ort  
 
 # --- SECTION EXERCISE ---
 # recreates exercise document, releases it into the lesson directory tree
@@ -75,11 +75,10 @@ zenprese:
 
 clear:
 	$(foreach EXT, ${AUX_EXTS}, if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; fi;)
-	(cd zp && make clear)
+#	(cd zp && make clear)
 
 clean:	clear
 	$(foreach EXT, ${RES_EXTS}, @if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; echo "removing existing .${EXT}-target-files"; fi;)
 	$(foreach BNA, ${DEL_FILE}, @if [ ! "x`ls ${BNA}.* 2>/dev/null`" = "x" ]; then rm ${BNA}.*; echo "removing existing derivated ${BNA}.*"; fi;)
 
-	(cd zp && make clean)
 
