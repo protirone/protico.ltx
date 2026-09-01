@@ -55,9 +55,13 @@ Und wie beim Schreiben/Beantworten eines Briefes muss man
 
 Sie leben in einem bemerkenswerten Dorf: 
 
-* Seine Einwohnerinnen können nicht sprechen oder hören, aber lesen und schreiben. 
-* Zudem kommunizieren sie ausschließlich über ihre kuriose Dorfbriefträgerin: Die übergibt jeder anderen Dorfbewohnerin eine Kopie eines jeden Briefes, den eine Bewohnerin sie zu übermitteln beauftragt.
-* Außerdem hat das Dorf viel mehr Häuser, als Bewohnerinnen. Darum ziehen die Bewohnerinnen ohne Vorankündigung oder Bekanntmachung immer wieder einmal in eines der freien, vielleicht ja komfortableren Häuser um. 
+* Seine Einwohnerinnen können nicht sprechen oder hören -- aber lesen und schreiben. 
+* Diese kommunizieren untereinander ausschließlich mithilfe einer etwas eigenwilligen Dorfbriefträgerin: 
+  * Die Dorfbriefträgerin: nimmt Nachrichten von jeder Einwohnerin an und reicht sie an die Adressatin(nen) weiter. 
+  * Die Einwohnerinnen glauben, dass sie dabei Name und Adresse der Empfängerin angeben müssen.
+  * Tatsächlich kopiert die Dorfbriefträgerin heimlich alle Nachrichten und übergibt jeder Einwohnerin eine Kopie davon. Immer. Und eben ohne dass die Bewohnerinnen das merken.
+  * Die Dorfbewohnerinnen sind das schon so gewohnt, dass sie schon nicht mehr stutzen, wenn sie an andere erhalten. Sie ignorieren die einfach.
+* Außerdem hat das Dorf viel mehr Häuser, als Bewohnerinnen. Darum ziehen die Bewohnerinnen ohne Vorankündigung oder Bekanntmachung immer wieder einmal in eines der freien, vielleicht ja komfortableren Häuser um. Alle Bewohnerinnen wissen, das jede Bewohnerin das tut, sie wissen nur nicht wann.
 * Gelegentlich zieht eine Bewohnerin auch ganz weg oder es kommt eine neue dazu, die sich nach kurzer Eingewöhnungszeit auch an die Regeln des Zusammenlebens hält.
 
 Ihre Aufgabe ist es jetzt, für dieses Dorf ein Kommunikationsprotokoll zu entwickeln, mit dem jede Bewohnerin - trotz aller Unwägbarkeiten - sicher sein kann, sich mit jeder noch vorhandenen Dorfbewohnerin austauschen zu können.

@@ -25,7 +25,7 @@ Bilden Sie drei Gruppen, die mithilfe des eigenen Wissens, KI, Wikipedia und Goo
   * [ ] Was unterscheidet das BGE vom Grundsicherungsgeld?
   * [ ] In welchen Ländern gibt es so etwas schon?
 * [ ] Gruppe 3:
-  * [ ] Konzipieren Sie, wie man ein 'Bedingungsloses Grundeinkommen' sinnvoll aug die schulische Benotung übertragen könnte.
+  * [ ] Konzipieren Sie, wie man ein 'Bedingungsloses Grundeinkommen' sinnvoll auf die schulische Benotung übertragen könnte.
   * [ ] Erläutern Sie den (politischen/philosophischen) Kontext für Ihre Ausformung.
 
 
