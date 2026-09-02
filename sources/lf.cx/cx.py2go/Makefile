@@ -45,6 +45,7 @@ lesson-ort: bld oraltrack
 	if [ -d $${TGD}/$${SJN}-snp.py2go ]; then rm -rf $${TGD}/$${SJN}-snp.py2go ]; fi && \
 	cp -rd snp.py2go $${TGD}/$${SJN}-snp.py2go && \
 	zip -r $${TGD}/$${SJN}-snp.py2go.zip $${TGD}/$${SJN}-snp.py2go && \
+	rm -rf $${TGD}/$${SJN}-snp.py2go && \
 	mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf
 	@ tree ${BLD}
 
