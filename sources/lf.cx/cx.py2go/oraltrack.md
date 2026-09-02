@@ -74,5 +74,13 @@ Jetzt Sie sind bereit
 * Sprint-Retrospektive:
   * 9. Überlegen Sie, was Sie beim nächsten Sprint besser machen können, um das gesetzte Ziel inhaltlich und von der Anzahl her besser zu erreichen.
 
+---
 
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**CRX:py2go:XX**</span>
+
+* [ ] Laden Sie sich den Ordner snp.py2go herunter.
+* [ ] Beginnen Sie mit den Aufgaben in Ihrem privaten Scrum-Mode
+
+<!-- uebung::end -->
 

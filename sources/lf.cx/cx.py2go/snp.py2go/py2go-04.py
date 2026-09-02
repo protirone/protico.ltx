@@ -31,18 +31,3 @@ med="Ich heiße " + my_first_name
 
 
 '''
-
-my_first_name="Karsten"
-my_last_name="Reincke"
-my_age=67
-
-meb=(f"Ich, {my_first_name} {my_last_name}, {my_age}, programmiere gerade")
-mea="Ich ,"+ my_first_name + " " + my_last_name + ", " + str(my_age) + ", programmiere gerade."
-
-mec="Ich,{} {}, {}, programmiere gerade",my_first_name,my_last_name,my_age
-med="Ich ,",my_first_name," ",my_last_name,", ",str(my_age),", programmiere gerade."
-
-print(mea)
-print(meb)
-print(mec) 
-print(med)

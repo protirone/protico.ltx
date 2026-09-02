@@ -41,9 +41,11 @@ exercises:
 # recreates oraltrack document, releases it into the lesson directory tree
 lesson-ort: bld oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
-	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-    mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf && \
-		cp -rd snp.py2go $${TGD}/$${SJN}-snippets
+	TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
+	if [ -d $${TGD}/$${SJN}-snp.py2go ]; then rm -rf $${TGD}/$${SJN}-snp.py2go ]; fi && \
+	cp -rd snp.py2go $${TGD}/$${SJN}-snp.py2go && \
+	zip -r $${TGD}/$${SJN}-snp.py2go.zip $${TGD}/$${SJN}-snp.py2go && \
+	mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf
 	@ tree ${BLD}
 
 ort: oraltrack
@@ -85,6 +87,5 @@ clear:
 clean:	clear
 	$(foreach EXT, ${RES_EXTS}, @if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; echo "removing existing .${EXT}-target-files"; fi;)
 	$(foreach BNA, ${DEL_FILE}, @if [ ! "x`ls ${BNA}.* 2>/dev/null`" = "x" ]; then rm ${BNA}.*; echo "removing existing derivated ${BNA}.*"; fi;)
-
 	(cd zp && make clean)
 
