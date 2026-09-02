@@ -39,9 +39,3 @@ d. C/C++ und Java lieben capitalized Variablen (myName). Die Pythone-Community
 
 '''
 
-myName="Karsten Reincke"
-my_age=67
-
-print("Ich,",myName,", bin jetzt",my_age,"Jahre alt")
-print("Ich, {}, bin jetzt {} Jahre alt".format(myName,my_age))
-print(f"Ich, {myName}, bin jetzt {my_age} Jahre alt")
