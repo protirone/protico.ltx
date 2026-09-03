@@ -43,9 +43,9 @@ lesson-ort: bld oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
 	if [ -d $${TGD}/$${SJN}-snp.py2go ]; then rm -rf $${TGD}/$${SJN}-snp.py2go ]; fi && \
-	cp -rd snp.py2go $${TGD}/$${SJN}-snp.py2go && \
-	zip -r $${TGD}/$${SJN}-snp.py2go.zip $${TGD}/$${SJN}-snp.py2go && \
-	rm -rf $${TGD}/$${SJN}-snp.py2go && \
+	cp -rd snp.py2go $${SJN}-snp.py2go && \
+	zip -r $${TGD}/$${SJN}-snp.py2go.zip $${SJN}-snp.py2go && \
+	rm -rf $${SJN}-snp.py2go && \
 	mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf
 	@ tree ${BLD}
 
