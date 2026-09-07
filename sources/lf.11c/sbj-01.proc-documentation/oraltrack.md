@@ -70,6 +70,8 @@ Es gilt: **Keine verschiedenen Blickwinkel ohne _Prozessdokumentation_. Keine Pr
 
 * [ ] Dokumentieren Sie obigen Prozess als *Aktivitätsdiagramm*. 
 
+*Spezifikation in `lf.cx/cx.diagramming-...`*
+
 <!-- uebung::end -->
 
 Lösung: **[→ ZP:Sheet:4]**
@@ -83,6 +85,8 @@ Lösung: **[→ ZP:Sheet:4]**
 
 * [ ] Dokumentieren Sie cat|sed|tr-Prozess als *Flussdiagramm*. 
 * [ ] Finden Sie Möglichkeiten, den Prozess zu verschlanken. 
+
+*Spezifikation in `lf.cx/cx.diagramming-...`*
 
 <!-- uebung::end -->
 
@@ -118,6 +122,8 @@ Lösung: **[→ ZP:Sheet:5]** / Prozessschrittdoubletten sind ausgegraut
 * [ ] Dokumentieren Sie den Einkaufsprozess als *BPMN-Diagramm*. 
 * [ ] Finden Sie Möglichkeiten, den Prozess zu verschlanken. 
 
+*Spezifikation in `lf.cx/cx.diagramming-...`*
+
 <!-- uebung::end -->
 
 Lösung: **[→ ZP:Sheet:7]**
@@ -130,6 +136,8 @@ Lösung: **[→ ZP:Sheet:7]**
 
 
 * [ ] Dokumentieren Sie den Einkaufsprozess als *eEPK-Diagramm*. 
+
+*Spezifikation in `lf.cx/cx.diagramming-...`*
 
 <!-- uebung::end -->
 
@@ -169,3 +177,21 @@ Lösung für BPMN-Diagramm: **[→ ZP:Sheet:10]**
 Lösung für EPK-Diagramm: **[→ ZP:Sheet:11]**
 
 ---
+
+### 5. Sehr ausgefallenes Beispiel: **[→ ZP:Sheet:10]**
+
+---
+
+<!-- uebung::start -->
+
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:01:Prozessdokumentation:06**</span>
+
+* [ ] Lernen Sie, das Spiel *Werwölfe* zu spielen. ([https://de.wikipedia.org/wiki/Die_Werwölfe_von_Düsterwald_(Spiel)](https://de.wikipedia.org/wiki/Die_Werwölfe_von_Düsterwald_(Spiel)))
+* [ ] Dokumentieren einen Spieldurchgang als *UML-Aktivitätsdiagramm*, *UML-Sequenzdiagramm*, *Flussdiagramm*, *BPMN-Diagramm* ODER *EPK-Diagramm*.
+
+<!-- uebung::end -->
+
+Lösung: 
+
+---
+

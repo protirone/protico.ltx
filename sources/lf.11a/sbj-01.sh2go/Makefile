@@ -41,15 +41,15 @@ exercises:
 # recreates oraltrack document, releases it into the lesson directory tree
 lesson-ort: bld oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
-	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-		if [ -d $${TGD}/$${SJN}-exam.sh2go ]; then rm -rf $${TGD}/$${SJN}-exam.sh2go ]; fi && \
-		if [ -d $${TGD}/$${SJN}-snp.sh2go ]; then rm -rf $${TGD}/$${SJN}-snp.sh2go ]; fi && \
-		cp -rd exam.sh2go $${TGD}/$${SJN}-exam.sh2go && \
-		cp -rd snp.sh2go $${TGD}/$${SJN}-snp.sh2go && \
-		cp -rd snp.sh2go $${SJN}-snp.sh2go && \
-		zip -r $${TGD}/$${SJN}-snp.sh2go.zip $${SJN}-snp.sh2go && \
-		rm -rf $${SJN}-snp.sh2go && \
-    mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
+	TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
+	if [ -d $${TGD}/$${SJN}-exam.sh2go ]; then rm -rf $${TGD}/$${SJN}-exam.sh2go ]; fi && \
+	if [ -d $${TGD}/$${SJN}-snp.sh2go ]; then rm -rf $${TGD}/$${SJN}-snp.sh2go ]; fi && \
+	cp -rd exam.sh2go $${SJN}-exam.sh2go && \
+	zip -r $${TGD}/$${SJN}-exam.zip $${SJN}-exam.sh2go && \
+	cp -rd snp.sh2go $${SJN}-snp.sh2go && \
+	zip -r $${TGD}/$${SJN}-snp.zip $${SJN}-snp.sh2go && \
+	rm -rf $${SJN}-snp.sh2go $${SJN}-exam.sh2go && \
+	mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
 	@ tree ${BLD}
 
 ort: oraltrack

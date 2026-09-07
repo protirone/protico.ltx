@@ -15,6 +15,20 @@
 * bietet eine Sammlung von Anleitungen und Symbolen und 
 * dient der Konstruktion von Diagrammen mit unterschiedlichem Zweck
 
+
+* wird definiert / gepflegt von der OMG (= [Object Management Group](https://www.omg.org/) )
+* ist in der Version 2.5.1 aus dem Jahr 2017 zuletzt verabschiedet: [https://www.omg.org/spec/UML/#documents](https://www.omg.org/spec/UML/#documents)
+* wird im Kern durch 6 Dokumente spezifiziert
+  * durch 1 'human readable' Spezifikation [https://www.omg.org/spec/UML/2.5.1/PDF](https://www.omg.org/spec/UML/2.5.1/PDF) [754 S.]
+  * durch 4 'machine readable' Spezifikationen 
+  * durch 1 'informatives' Dokument (Change Nachweise)
+* arbeitet mit 'Clauses' (Chapter)
+  * Clauses 7-12: 'modeling of structure'
+  * Clauses 13-17: 'modeling of behavior'
+  * Clauses 18-20: 'supplementary concepts including UseCases, Deployments, and InformationFlows'
+  
+(→ [https://www.omg.org/spec/UML/2.5.1/PDF](https://www.omg.org/spec/UML/2.5.1/PDF), S. 16)
+
 **(II) Systematik [→ ZP:Sheet:3]**
 
 Die Literatur zu UML klassifiziert Diagramme in zwei Gruppen, nämlich in die
@@ -27,7 +41,7 @@ Die Literatur zu UML klassifiziert Diagramme in zwei Gruppen, nämlich in die
   * Verteilungsdiagramm
   * Paketdiagramm
   * Profildiagramm (= Stereotypen)
-  * Anwendungsfalldiagramm *(Use Case Diagram)* (gelegentlich verwirrenderweise auch *Verhaltensdiagramm* genannt) := dokumentiert Systeme und Nutzer, zeigt Akteure, Anwendungsfälle und deren Beziehungen untereinander. (= Wer tut was für wen?)
+  * **Anwendungsfalldiagramm** *(Use Case Diagram)* (gelegentlich verwirrenderweise auch *Verhaltensdiagramm* genannt) := dokumentiert Systeme und Nutzer, zeigt Akteure, Anwendungsfälle und deren Beziehungen untereinander. (= Wer tut was für wen?)
 * **Verhaltensdiagramme** *(Behavioral Diagrams)*
   * **Aktivitätsdiagramm** *(Activity Diagram}* := dokumentiert das Tun von beteiligten Komponenten, beschreibt einen Ablauf mittels Knoten und Kontrollflüssen (Wer tut was, wenn vorher wer was getan hat?)
   * Interaktionsdiagramme
@@ -42,7 +56,7 @@ Die Literatur zu UML klassifiziert Diagramme in zwei Gruppen, nämlich in die
 
 Ironie:
 
-* Das *(Use Case Diagram)* wird ja gelegentlich auch als *Verhaltensdiagramm* bezeichnet, weil es die verschiedenen Möglichkeiten eines Users mit einem System zu interagieren als Set von verschiedenen *Use Case Diagrammen* erfasst.
+* Das *Use Case Diagram* wird ja gelegentlich auch als *Verhaltensdiagramm* bezeichnet, weil es die verschiedenen Möglichkeiten eines Users mit einem System zu interagieren als Set von verschiedenen *Use Case Diagrammen* erfasst.
 * Die *Verhaltensdiagramme* sind dagegen vom Typ 'Verhaltensdiagramm', weil sie den Ablauf eines Verhaltens in einem Diagramm dokumentieren.
 
 **[→ ZP:Sheet:4]**
@@ -51,6 +65,13 @@ Betrachtet man nur die wichtigen Diagrammtypen (die fett markierten), wird das G
 
 * drei *Strukturdiagramme*, nämlich das *Klassendiagramm*, das *Objektdiagramm* und das *Usecase-Diagramm*
 * zwei/drei *Behavioral Diagrams*, nämlich das *Aktivitätsdiagramm*, das *Sequenzdiagramm* und vielleicht noch das *Zustandsdiagramm*.
+
+---
+
+> Alle kommenden Anwendungsbeispiele modellieren den Amazonbestellprozess **WIE ICH IHN VERSTEHE / ERLEBT HABE**. Das Ziel ist nicht, den Prozess wirklichkeitsgetreu zu modellieren, sondern an einem Beispiel alle Symbole vorzuführen.
+
+> Anders gesagt: MIt mir über die Adäquatheit meiner Modellierung bezogen auf die Wirklichkeit zu diskutieren, ist sinnlos ;-)
+
 
 ---
 
@@ -70,7 +91,7 @@ Kommentar:
 
 * **Grundidee UML**: Viele verschiedene Diagramme beschreiben einen Gegenstand.
 * **Praxis UML**: Die Symbolmenge wird um Zeichen aus anderen Diagrammtypen erweitert.
-* **Empfehlunge**: Meiden Sie solche 'Erweiterungen'. (Im Beispieldiagramm sind das etwa die Knoten `send signal` oder `trigger`)
+* **Empfehlung**: Meiden Sie solche 'Erweiterungen'. (Im Beispieldiagramm sind das etwa die Knoten `send signal` oder `trigger`)
 
 
 **(C)** Rezept zum Erstellen eines Aktivitätsdiagramms
@@ -82,7 +103,7 @@ Kommentar:
 3. Ordnen Sie auf einem Papier jedem Akteur jede Handlung zu, die er ausführt.
 4. Legen Sie für jeden Akteur im Diagramm eine 'Lane' an, sofern der Diagrammtyp das vorsieht.
 5. Tragen Sie alle Handlungen mit entsprechendem Symbol als Aktivität bzw. Prozessschritt in das Diagramm ein. Beginnen die Beschreibung stets mit einem Verb!
-6. Arrangieren Sie die Prozessschritte / Aktivitäten (und Zustände) entsprechend der zeitlichen und logischen Reihenfolge, die der Text vorgibt. Integriere ggfls. die Symbole (\textit{JOINT, FORK})
+6. Arrangieren Sie die Prozessschritte / Aktivitäten (und Zustände) entsprechend der zeitlichen und logischen Reihenfolge, die der Text vorgibt, und zwar LEFT:RIGHT-TOP:DOWN. Integrieren Sie ggf. die Symbole (\textit{JOINT, FORK})
 7. Verknüpfen Sie die Schritte / Aktionen (und ggfls. Zustände) mit Pfeilen.
 
 **Hinweise**
@@ -91,6 +112,15 @@ Kommentar:
 2. Das Verfahren zum Erstellen eines Aktivitätsdiagramms gilt sinngemäß auch für Prozess- und Flussdiagramme. Manche von denen kennen das Konzept *Lane* nicht. Dann markieren Sie Zusammenhänge farblich. 
 
 *Faustregel*: **Pfeile immer zuletzt!**
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:diagramming:01**</span>
+
+* [ ] Modellieren Sie das Funktionieren Ihres Fadennetzwerkes als UML-Aktivitätsdiagramm
+
+<!-- uebung::end -->
 
 ---
 
@@ -122,21 +152,33 @@ Am schwierigsten zu verstehende ist der Aktivitätsbalken:
 
 * Geht man in der Zeit zurück, sieht man, dass die Sequenzdiagramme weniger komplex waren, aber auch schon da auf den Programmierkontext auslegt waren. Der Zweck von Sequenzdiagrammen sei es, "(to) emphasize the time-based flow of events". Die "lifeline" wird auch hier schon erwähnt, nicht aber der Aktivitätsbalken. Der wird nur - wie selbstverständlich - genutzt. [vgl. → Pilone: UML 2.0, 2006, S. 76ff]
 
-Dieser inneren 'Widersprüche wegen' die *Faustregel*: **Aktivitätsbalken weglassen, Pfeile immer zuletzt!**
+Dieser inneren 'Widersprüche wegen' die *Faustregel*: 
+
+**Aktivitätsbalken in einer Lebenslinie nur, wenn der Akteur auf Antwort wartet (Synchron) und Pfeile immer zuletzt!**
 
 **(C)** Rezept zum Erstellen eines Sequenzdiagramms
 
 Üblicherweise erhalten Sie einen Text, der das zu dokumentierenden Nachrichtengeflecht beschreibt. Um das in und mit einem *Sequence Diagram* zu dokumentieren, gehen Sie so vor:
 
 * Markieren Sie alle Sender u. Empfänger im Text.
-* Markiere alle Nachrichten im Text.
+* Markieren Sie alle Nachrichten im Text.
 * Ordnen Sie jedem Sender alle Nachrichten zu, die er sendet, und vermerken Sie den Empfänger dazu.
-* Legen für jeden Sender/Empfänger im Diagramm eine Lebenslinie an.
-* Tragen Sie alle Nachrichten als Pfeil von Sender zu Empfänger ein. Markieren Sie den Typ durch den Linientyp.
-* Arrangieren die Abfolge Nachrichten entsprechend der faktischen Reihenfolge top-down/left-right
-* Markiere Sie die Nachrichten inhaltlich.
-* Markiere ggf. durch Balken, ob ein Sender auf eine Antwort wartet (ohne die Zeit weiter anderwärtig zu nutzen [synchron] ) bzw. ob er prozessual im Lead ist.
+* Legen Sie für jeden Sender/Empfänger im Diagramm eine Lebenslinie an.
+* Tragen Sie alle Nachrichten als Pfeil von Sender zu Empfänger ein. Markieren Sie den Typ durch den Linientyp und Pfeilspitzentyp.
+* Arrangieren Sie die Abfolge Nachrichten entsprechend der faktischen Reihenfolge top-down/left-right
+* Markieren Sie die Nachrichten inhaltlich (ggf. in spitzen Klammen).
+* Markieren  ggf. durch Balken, ob ein Sender auf eine Antwort wartet (ohne die Zeit weiter anderwärtig zu nutzen [synchron] ) bzw. ob er prozessual im Lead ist.
 
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:diagramming:02**</span>
+
+* [ ] Modellieren Sie das Funktionieren Ihres Fadennetzwerkes als UML-Sequenzdiagramm
+
+<!-- uebung::end -->
+
+---
 
 ### 2. Sonstige Diagramme für Netzwerkerinnen
 
