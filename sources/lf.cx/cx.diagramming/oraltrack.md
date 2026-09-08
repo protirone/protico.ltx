@@ -232,6 +232,12 @@ Darum die später in die Definition eingefügten Symbole und Erläuterungen s. *
   * *Basic BPMN Modeling Elements* = S.26 - S.30
   * *BPMN Extended Modeling Elements* = S.31 - S.39
 
+**ACHTUNG:** letzter OMG/BPMN-Standard
+
+* [https://www.omg.org/spec/BPMN](https://www.omg.org/spec/BPMN), Stand 8.9.26: Version 2.0.2
+* [https://www.omg.org/spec/BPMN/2.0.2/PDF](https://www.omg.org/spec/BPMN/2.0.2/PDF)
+
+ISO-Version steht weiterhin auf 2.0.1
 
 **(A)** Zulässige Symbole und Erläuterungen s. **[→ ZP:Sheet:12]**
 
