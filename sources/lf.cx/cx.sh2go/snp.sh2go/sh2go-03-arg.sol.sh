@@ -18,9 +18,10 @@
 EXC=sh2go-03
 echo "executing Uebung $EXC"
 
-# (1) Geben Sie das 1., 2. und 3. Kommandozeilenargument aus.  
+# (1) Geben Sie das 1. und 2. Kommandozeilenargument aus.  
 # (2) Geben Sie die Anzahl der Kommandozeilenargumente aus.
-# (3) Rufen Sie diese Skript mit <sh3go-03-var.sh Good Morning> auf
+# (3) Rufen Sie dieses Skript mit <sh2go-03-var.sh Good Morning> auf
+# (4) Rufen Sie dieses Script danach mit <sh2go-03-var.sh Goord Morning Vietnamn>
 
 # Hintergrund: 
 #

@@ -28,3 +28,25 @@ echo "executing Uebung $EXC"
 # (C) Welche Parameter es gibt, liefert Ihnen <data --help>
 # (D <cat DateiX> liest DateiX von der Platte und gibt sie zeilenweise wieder aus
 
+# Sie müssen zur Lösung allerdingsa einmal um die Ecke denken:
+# a) Zuerst müssen Sie den Befehl date ausführen lassen. Das tun Sie, indem sie
+#    den Befehl in eine Befehlszeile eintragen.
+#    <date +'%Y-%m-%d'>
+# b) Tatsächlich wollen Sie hier aber das Ergebnis des Date-Befehls in einer Variable speichern.
+#    Also müssten Sie den Date-Befehl einer Variable zuweisen. Das liest die Bash aber so,
+#    dass Sie der Variable den Befehlstext zuweisen.
+#    <MYDATE=date +'%Y-%m-%d'>
+# c) Also müssten Sie die bash überreden, den Datebefehl erst auszuführen und das Ergebnis
+#    der Variable zuzuweisen. Dazu setzen Sie den Befehl nach dem zuweisenden Glecihheitszeichen
+#    in Backticks:
+#    <MYDATE=`date +'%Y-%m-%d'`>
+#    Oder Sie nutzen die neue Technik, bei der ein $ die Evaluation anstößt
+#    und Klammern abzeigen, was ausgewertet werden soll
+#    <MYDATE=$(date +'%Y-%m-%d')>
+#    
+
+HEUTE=`date +'%Y-%m-%d'`
+HEUTE=$(date +'%Y-%m-%d')
+
+echo $HEUTE > heute.txt
+cat heute.txt

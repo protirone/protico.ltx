@@ -70,3 +70,62 @@ Der Zuweisungsoperator ist wieder das einfache Gleichheitszeichen.
 
 '''
 
+# Lösung zu Aufgabe 6.1:
+my_int=42
+# Lösung zu Aufgabe 6.2:
+my_float=42.24
+# Lösung zu Aufgabe 6.3:
+my_bool=True
+# Lösung zu Aufgabe 6.4:
+my_string="Karsten"
+# Lösung zu Aufgabe 6.5:
+my_list=["Z1",1,"Z2",2]
+# Lösung zu Aufgabe 6.6:
+my_tupel=("Z1",1,"Z2",2)
+
+print("Lösung zu Aufgabe 6.7.a:")
+if (my_int == 42): 
+  print("my_int == 42")
+else:
+  print("my_int != 42")
+
+###
+print("Lösung zu Aufgabe 6.7.b:")
+print("Ist my_float == 42.24? {}".format(my_float == 42.24))
+
+###
+print("Lösung zu Aufgabe 6.7.c")
+test_result=(my_string == "Karsten")
+print(f"Ist my_string == 'Karsten'? {test_result}")
+
+###
+print("Lösung zu Aufgabe 6.7.d")
+print('Ist my_list == ["Z1",1,"Z2",2]? {}'.format(my_list == ["Z1",1,"Z2",2]))
+
+###
+print("Lösung zu Aufgabe 6.7.e")
+print('Ist my_tupel == ("Z1",1,"Z2",2)? {}'.format(my_tupel == ("Z1",1,"Z2",2)))
+
+###
+print("Lösung zu Aufgabe 6.8")
+
+my_orig_values=[my_int,my_float,my_string,my_list,my_tupel]
+for elema in my_orig_values:
+  for elemb in my_orig_values:
+    print(f"is {elema} = {elemb}? {elema == elemb}")
+
+###
+print("Lösung zu Aufgabe 6.9")
+
+x=my_int
+my_int=my_float
+my_float=my_string
+my_string=my_list
+my_tupel=my_tupel
+my_tupel=x
+
+my_new_values=[my_int,my_float,my_string,my_list,my_tupel]
+
+for elema in my_orig_values:
+  for elemb in my_new_values:
+    print(f"is {elema} = {elemb}? {elema == elemb}")
