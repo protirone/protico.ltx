@@ -106,8 +106,21 @@ Für die, die sich selbst vorbereiten wollen oder die nachholen wollen, stehen a
 
 Erste Übung zum Punktesammeln
 
-* [ ] Jede Gruppe erstelle eine Markdowndatei mit den Ergebnissen Ihrer Recherche inklusive verweisender Belege / Links
-* [ ] Jede Gruppe schicke mir Ihre Datei per Mail zu, inklusive der Namen der Mitarbeiterinnen.
+* [ ] Jede Gruppe erstelle eine Markdowndatei mit den Ergebnissen Ihrer Recherche inklusive verweisender Belege / Links.
+* [ ] Jede Gruppe lade Ihre Datei in den Ordner `uebungen` hoch. 
+
+**Hinweis:**
+
+Die Namen der in diesen Ordner hochgeladenen Dateien sollen nur Kleinbuchstaben, Zahlen und die Trenner '-' und '.' enthalten. Beachten sollen sie außerdem das Schema
+
+`ueb-YYYYMMDD-vorname-vorname*-([a-z]-)*[.md|.txt|.doc|...]` 
+
+, wobei folgende Syntagmen so aufgelöst werden sollen:
+
+* `YYYYMMDD` = aktuelles Datum 
+* `vorname-vorname*` = die Namen aller Autorinnen
+* `([a-z]-)` = optionaler Index, falls an am selben Tage mehrere Übungen hochgeladen werden
+* `[.md|.txt|.doc|...]` als die jeweilige Extension des Dateityps
 
 
 <!-- uebung::end -->

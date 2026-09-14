@@ -122,58 +122,74 @@ Hinweis: Powershell 7 (= pwsh) gibt es als Binaries auch für Linux und Mac. All
 
 Deshalb: **Varianten der Linux-Bereitstellung** 'neben' Windows:
 
-* 1. Linux+bash **auf einem zweiten Rechner/Laptop**
-  * [ ] Ubuntu-24.04.03 LTS ISO-Datei von [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop) herunterladen.
-  * [ ] Mit Windowsmitteln einen bootfähigen USB-Stick erzeugen.
-  * [ ] Rechner von USB-Stick booten.
-  * [ ] Installationsanleitung folgen.
-* 2. Linux+bash als **Dual Boot Installation**
-  * [ ] Verfahren wie unter (1). 
-  * [ ] Bei Installation 'neben Windows installieren' auswählen 
-* 3. Linux+bash **in einer virtuellen Maschine unter Windows**
-  * [ ] Virtualisierungssoftware auf Host *Windows* installieren
-     * Empfohlen: [→Virtual Box](https://www.virtualbox.org/). Ist GPL v3 lizenziert = echte freie Software [→ https://www.virtualbox.org/wiki/Licensing_FAQ](https://www.virtualbox.org/wiki/Licensing_FAQ)
-     * Abgeraten: VMware Workstation Player (kurz VMplayer) weil
-       * [→ Vmware gekauft von Broadcom](https://www.heise.de/news/Broadcoms-VMware-Uebernahme-EU-Cloudanbieter-verklagen-die-Kommission-10499025.html). 
-       * Broadcom monetarisiert die vorher (für den privaten Gebrauch) "freie" Software.
-       * Lizenzen für VMware Workstation sind über diese Produktnummer nicht mehr erhältlich. Die Nachfolge-Lizenz war VMware Desktop Hypervisor Pro, diese ist aber auch im November 2024 nicht mehr erhältlich [→ https://www.software-express.de/hersteller/vmware/workstation/player/](https://www.software-express.de/hersteller/vmware/workstation/player/)
-       * Antwort der Community: GitHub-Projekt zum Sammeln existierender Keys. [→ https://github.com/hegdepavankumar/VMware-Workstation-Pro-17-Licence-Keys](https://github.com/hegdepavankumar/VMware-Workstation-Pro-17-Licence-Keys).
-       * Aber trotzdem keine seriöse Variante mehr.
-  * [ ] Ubuntu-24.04.03 LTS ISO-Datei von [→ https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop) herunterladen.
-  * [ ] In Virtualisierungssoftware als Start-/Bootmedium aktivieren
-  * [ ] Virtuelle Maschine booten.
-  * [ ] Installationsanleitung folgen 
+#### 3.1 Linux+bash _auf einem zweiten Rechner/Laptop_
 
-* 4. Linux+bash  **in einer virtuellen Maschine unter MacOs**
-  * [ ] Virtualisierungssoftware auf Host *MacOs* installieren
-     * mögliche: [→ Virtual Box](https://www.virtualbox.org/). Ist GPL v3 lizenziert = echte freie Software [→ https://www.virtualbox.org/wiki/Licensing_FAQ](https://www.virtualbox.org/wiki/Licensing_FAQ)
-     * getestet: [→ iUTM]{https://mac.getutm.app/}. Ist Apache-v2 lizenziert = echte freie Software [→ https://github.com/utmapp/UTM](https://github.com/utmapp/UTM). Binaries auf Github und im AppleStore, dort aber angeblich gegen Geld.
-* 5. Linux+bash im **Windows Subsystem Linux**
-  * [ ] Über Windowssuchzeile nach *Features* suchen lassen
-  * [ ] Button *Windows-Features aktivieren ...* anklicken
-  * [ ] Im Dialog *Windows Subsystem für Linux* anwählen/aktivieren
-  * [ ] Neustart
-  * [ ] Powershell 7.5.x nach Windowsanleitung installieren [→ https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5)
-  * [ ] Powershell (Adminmode) aufrufen
-  * [ ] gemäß [→ Microsoftanleitung WSL-Aktivierung](https://learn.microsoft.com/de-de/windows/wsl/install) verfahren - bzw.
-    * [ ] powershell: `wsl --install`     
-    * [ ] powershell: `wsl --set-version UBUNTU 2` 
+* A) Ubuntu-24.04.03 LTS ISO-Datei von [https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop) herunterladen.
+* B) Mit Windowsmitteln einen bootfähigen USB-Stick erzeugen.
+* C) Rechner von USB-Stick booten.
+* D) Installationsanleitung folgen.
 
-**Verifikation**:
+#### 3.2 Linux+bash _als Dual Boot Installation_
 
-* LNX (als virtuelle Maschine oder Dual-Boot etc.)
-  * [ ] Linuxshell bzw. öffnen
-  * [ ] `> ping 8.8.8.8` eingeben
-  * Wenn Rückgabe *64 bytes from 8.8.8.8*, dann 
-    * [ ] Zugriff auf Linuxtool *ping* (Linux läuft)
-    * [ ] und Netzzugriff auf Google-Server (Netzzugang per NAT aktiviert)
-* WSL auf Windows 11 Rechner:
-  * Powershell öffnen
-  * [ ] `> pwsh` eingeben (= Wechsel zu Powershell 7)
-  * [ ] `> ping 8.8.8.8` eingeben (= Netzzugang verifizieren)
-  * [ ] `> ipconfig` eingeben (= Windowsanalyse Netzwerkinterface)
-  * [ ] `> wsl` eingeben (= WSL aktivieren)
-  * [ ] `> ifconfig` eingeben (= Linuxanalyse Netzwerkinterface)
+* A) Verfahren wie unter (3.1). 
+* B) Bei Installation 'neben Windows installieren' auswählen 
+
+#### 3.3 Linux+bash _in einer virtuellen Maschine unter Windows_
+
+* A) Virtualisierungssoftware auf Host *Windows* installieren
+  * Empfohlen: [→Virtual Box](https://www.virtualbox.org/). Ist GPL v3 lizenziert = echte freie Software [→ https://www.virtualbox.org/wiki/Licensing_FAQ](https://www.virtualbox.org/wiki/Licensing_FAQ)
+  * Abgeraten: VMware Workstation Player (kurz VMplayer) weil
+    * [→ Vmware gekauft von Broadcom](https://www.heise.de/news/Broadcoms-VMware-Uebernahme-EU-Cloudanbieter-verklagen-die-Kommission-10499025.html). 
+    * Broadcom monetarisiert die vorher (für den privaten Gebrauch) "freie" Software.
+    * Lizenzen für VMware Workstation sind über diese Produktnummer nicht mehr erhältlich. Die Nachfolge-Lizenz war VMware Desktop Hypervisor Pro, diese ist aber auch im November 2024 nicht mehr erhältlich [→ https://www.software-express.de/hersteller/vmware/workstation/player/](https://www.software-express.de/hersteller/vmware/workstation/player/)
+    * Antwort der Community: GitHub-Projekt zum Sammeln existierender Keys. [→ https://github.com/hegdepavankumar/VMware-Workstation-Pro-17-Licence-Keys](https://github.com/hegdepavankumar/VMware-Workstation-Pro-17-Licence-Keys).
+    * Aber trotzdem keine seriöse Variante mehr.
+* B) Ubuntu-24.04.03 LTS ISO-Datei von [→ https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop) herunterladen.
+* C) In Virtualisierungssoftware als Start-/Bootmedium aktivieren.
+* D) Virtuelle Maschine booten.
+* E) Installationsanleitung folgen 
+
+#### 3.4 Linux+bash _in einer virtuellen Maschine unter MacOs_
+
+* A) Virtualisierungssoftware auf Host *MacOs* installieren
+  * mögliche: [→ Virtual Box](https://www.virtualbox.org/). Ist GPL v3 lizenziert = echte freie Software [→ https://www.virtualbox.org/wiki/Licensing_FAQ](https://www.virtualbox.org/wiki/Licensing_FAQ)
+  * getestet: [→ UTM]{https://mac.getutm.app/}. Ist Apache-v2 lizenziert = echte freie Software [→ https://github.com/utmapp/UTM](https://github.com/utmapp/UTM). Binaries auf Github und im AppleStore, dort aber angeblich gegen Geld.
+* B) Ubuntu-24.04.03 LTS ISO-Datei von [→ https://ubuntu.com/download/desktop](https://ubuntu.com/download/desktop) herunterladen.
+* C) In Virtualisierungssoftware als Start-/Bootmedium aktivieren.
+* D) Virtuelle Maschine booten.
+* E) Installationsanleitung folgen 
+  
+#### 3.5 Linux+bash _Windows Subsystem Linux_
+
+* A) Über Windowssuchzeile nach *Features* suchen lassen
+* B) Button *Windows-Features aktivieren ...* anklicken
+* C) Im Dialog *Windows Subsystem für Linux* anwählen/aktivieren
+* D) Neustart
+* E) Powershell 7.5.x nach Windowsanleitung installieren [→ https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.5)
+* F) Powershell (Adminmode) aufrufen
+* G) gemäß [→ Microsoftanleitung WSL-Aktivierung](https://learn.microsoft.com/de-de/windows/wsl/install) verfahren - bzw.
+  * a) powershell: `wsl --install`     
+  * b) powershell: `wsl --set-version UBUNTU` 
+
+#### 4 Linux+bash _Verifikation_
+
+#### 4.1 Linux+bash _in virtueller Maschine oder als Dual-Boot-System_
+
+* A) Linuxshell bzw. öffnen
+* B) `> ping 8.8.8.8` eingeben
+* Wenn Rückgabe *64 bytes from 8.8.8.8*, dann 
+  * Zugriff auf Linuxtool *ping* (Linux läuft)
+  * und Netzzugriff auf Google-Server (Netzzugang per NAT aktiviert)
+
+#### 4.2 Linux+bash _in WSL auf Windows 11 Rechner_
+
+* A) Powershell öffnen
+* B) `> pwsh` eingeben (= Wechsel zu Powershell 7)
+* C) `> ping 8.8.8.8` eingeben (= Netzzugang verifizieren)
+* D) `> ipconfig` eingeben (= Windowsanalyse Netzwerkinterface)
+* E) `> wsl` eingeben (= WSL aktivieren)
+* F) `> ifconfig` eingeben (= Linuxanalyse Netzwerkinterface)
+
 
 Hinweis: *Falls `ifconfig` oder gar `ping` unter LNX oder WSL fehlt, bitte in der Shell eingeben: `sudo apt-get install net-tools`
 
@@ -189,7 +205,7 @@ Hinweis: *Falls `ifconfig` oder gar `ping` unter LNX oder WSL fehlt, bitte in de
 
 ---
 
-#### *VSCODE als Shellscript-Editor*
+### 5. *VSCODE als Shellscript-Editor*
 
 VSCODE
 
@@ -244,7 +260,25 @@ Die Community stellt aber unter dem Namen [→ VSCODIUM](https://vscodium.com/) 
 
 ---
 
-### 4. sh2go als (Selbst)Lernprogramm 
+### 6. sh2go als (Selbst)Lernprogramm
+
+#### 6.1 Vorbereitung
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-00.sh2go:04**</span>
+
+* [ ] Laden Sie von [https://github.com/protirone/protirone.lessons/](https://github.com/protirone/protirone.lessons/) aus dem Ordner `fachinformatik/lf.cx` die Zip-Datei `cx.sh2go-snp.zip`
+* [ ] Entpacken Sie die Zip-Datei unter Linux in einem Arbeitsordner Ihrer Wahl
+* [ ] Laden Sie die Datei `sh2go-00-happy-coding.sh` in Ihren VSCODE-Editor und lassen Sie sie ausführen.
+
+<!-- uebung::end -->
+
+---
+
+
+#### 6.2 Einführung
 
 * `bash` und `dash` haben wenig eingebaute Befehle.
 * Die meisten Fähigkeiten (zur Manipulation von Dateinamen und -inhalte) habe 
@@ -260,7 +294,7 @@ echo "Hello World"
 ```
 
 * Ganz zuletzt sind `bash`- und `dash`-Skripte also geschickt arrangierte Aufrufe von Betriebssystembefehlen.
-* Übersicht siehe `lnx-cmds.mm` = Freeplabe-Datei = Mindmap der gebräuchlichsten Kommandozeilentools.
+* Übersicht siehe `lnx-cmds.mm` = Freeplane-Datei = Mindmap der gebräuchlichsten Kommandozeilentools.
 * Die, die ich davon täglich nutze sind:
   * `cp` (= *copy*)
   * `date`
@@ -286,18 +320,15 @@ Anleitungen und die entsprechenden Lösungen. Beispiel:
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-00.sh2go:04**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11a:sbj-00.sh2go:05**</span>
 
 **sh2go** ist gedacht als (Selbst)Lernprogramm für die Shellprogrammierung:
 
-* [ ] Laden Sie sich aus Ihrem Downloadbereiche den Ordner `sbj-00.sh2go-snp.sh2go` herunter
-* [ ] Gehen Sie die Aufgaben von 0 - n durch.
-* [ ] Öffnen Sie die Aufgabendatei in einem Shellskripteditor Ihrer Wahl.
-* [ ] Lösen Sie die Aufgabe. (Ihr Kern ist immer in einer Zeile umsetzbar)
+* [ ] Gehen Sie die Aufgaben sh2go-00* - sh2go-21 durch.
+* [ ] Öffnen Sie die Aufgabendatei in einem Shellskript-Editor Ihrer Wahl.
+* [ ] Lösen Sie die Aufgabe zu erst selbst. (Ihr Kern ist immer in einer Zeile umsetzbar)
 * [ ] Testen Sie Ihren Ansatz durch das Aufrufen Ihrer Lösung in *bash* oder *dash*
-* [ ] Vergleichen Sie Ihre Lösung mit der entsprechenden Lösungsdatei.
-* [ ] Arbeiten Sie zum Schluss die Testaufgaben durch.
-
+* [ ] Vergleichen Sie Ihre Lösung mit der zugehörigen Lösungsdatei: sh2go-XY*.sol.sh
 
 <!-- uebung::end -->
 

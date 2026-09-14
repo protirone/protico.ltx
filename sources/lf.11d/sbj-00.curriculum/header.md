@@ -1,5 +1,5 @@
 ---
-title: LF11d:00:Curriculum
+title: 'LF11d:00:Curriculum'
 author: [K. Reincke]
 subject: "lf11c/sbj-00"
 date: PTCDATE
@@ -14,7 +14,9 @@ lang: "de-DE"
 papersize: a4
 colorlinks: true
 
+---
+
 **Disclaimer**: *Dieses OER-Dokument stammt aus dem Projekt [proTirone](https://github.com/protirone/), das über GitHub [freie Unterrichtsmaterialien](https://github.com/protirone/protirone.lessons) samt [Quellcode](https://github.com/protirone/protico.ltx) offeriert. proTirone-Materialien werden unter den Bedingungen der [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de)-Lizenz so angeboten, wie sie sind, ohne Zusage bestimmter Eigenschaften und ohne Gewährleistung (§5). Dafür dürfen sie -- bei angemessener Namensnennung (§3) -- für beliebige (auch kommerzielle) Zwecke verändert und weitergegeben werden (§2).*
 
----
-## LF 11d:00:Digitale Vernetzung:Curriculum
+
+## LF [11/12]d:00:Digitale Vernetzung:Curriculum

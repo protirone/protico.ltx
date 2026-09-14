@@ -6,14 +6,16 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
+
 ### 1. Kontext
 
 **1.A Leitfrage: [→ ZP:Sheet:2]** *Wer bestimmt eigentlich, was Fachinformatikerinnen für das Bestehen der AP1 und AP2 können müssen?* **[→ [Sokratisches Gespräch](https://de.wikipedia.org/wiki/Unterrichtsgespr%C3%A4ch) ]**
 
 **Antwort: [→ ZP:Sheet:3]**
 
+
 In und für Hessen im letzten Sinne die __hessische Landesregierung__ und der __hessische Landtag__: 
-  
+
 * Für die *Hessische Landesregierung* sind das (Stand 21.08.2025)
   * Der [→ Ministerpräsident des Landes Hessen](https://staatskanzlei.hessen.de/unser-ministerpraesident/aufgaben) Boris Rhein: **Richtlinienkompetenz**.
   * Der [→ Minister für Kultus, Bildung und Chancen](https://kultus.hessen.de/ueber-uns/minister-fuer-kultus-bildung-und-chancen) Armin Schwarz
@@ -193,12 +195,36 @@ Das *Tonspurdokument* enthält diese Liste. Allerdings:
 * Prüfungsfragen zu AP1 (hier LF03) lernfeldspezifisch
 * Prüfungsfragen zu AP2 (hier LF11c) fachrichtungsspezifisch formuliert
 
-Dieses *Tonspurdokument* enthält darum auch
+Angehängt an dieses *Tonspurdokument* wird darum auch
 
 * ein thematisches Exzerpt aus den realen Prüfungen AP1 und AP2, 
 * nach Jahren und Fachrichtung sortiert. 
  
 Das lässt erkennen, dass das thematische Exzerpt aus den Prüfungskatalogen gut vorgibt, was von den angehenden Fachinformatikerinnen zu lernen ist.
+
+### 3.) Umsetzung [→ ZP:Sheet:13]
+
+Aneignung der Topics in folgender *Lernsituation*:
+
+1. Sie werden einen Linux-Server aufsetzen.
+2. Ihre eigenen Geräte als Clients anbinden.
+3. Ein funktional gleiches Rack aufsetzen. (optional)
+4. Sensoren mittels MQTT anbinden.
+5. Eine REST-Applikationen mit allen HTTP-Befehlen realisieren. (optional)
+6. Einen HTTPS-Server aufsetzen.
+7. 2 Services Ihrer Wahl (z.B. git-Server) installieren und warten.
+
+Lernen werden Sie dazu und dabei:
+
+* Remote-Konfiguration/-Automation per selbst programmierter
+  * Shell-Scrips,
+  * Ansible-Scripts,
+  * Gradle-Scripts,
+* die SSH-Anbindungen von Geräten,
+* Umformung eines HTTP-Servers in einen HTTPS-Server,
+* Aufsetzen eines Mailservers mit Verschlüsselung (optional),
+* Entwickeln eines adäquaten Festplattendesigns,
+* Aufsetzen eines eigenen DNS-Servers (optional),
 
 ### Summary
 

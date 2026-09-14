@@ -43,7 +43,7 @@ _LF 11d/12d Fachrichtung 'Digitale Vernetzung':_
 
 * Herbst 2025
   * __Störungsbeseitigung in vernetzten Systemen__
-    * [ ]WLAN Access Points
+    * [ ] WLAN Access Points
   * __Betrieb u. Erweiterung vernetzter Systeme__
     * [ ] Firewall
     * [ ] MQTT
