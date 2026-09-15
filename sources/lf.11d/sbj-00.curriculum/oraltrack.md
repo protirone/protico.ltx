@@ -251,7 +251,7 @@ _LF 11/12 fachrichtungsübergreifend:_
 * [ ] PDCA-Zyklus, Soll-Ist-Vergleich [LF11,LF12/18]
 * [ ] IT-Sicherheit / IT-Grundschutzmodellierung [LF11/19]
 * [ ] Dateifreigaben (SMB/CIFS), Datenabruf (HTTP/ODBS)  [LF/]
-* [ ] Datenaustauschformate XML, JSON, CVS, YAML [LF09/21]
+* [ ] Datenaustauschformate XML, JSON, CSV, YAML [LF09/21]
 * [ ] UML: Aktivitätsdiagramme [LF12/22]
 * [ ] UML: UseCase-Diagramme [LF12/22]
 * [ ] UML: Sequenzdiagramme [LF12/22]
