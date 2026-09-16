@@ -18,15 +18,16 @@
 EXC=sh2go-08
 echo "executing Uebung $EXC"
 
+# (0) Definieren Sie eine Variable THIS_YEAR mit dem aktuellen Jahr
 # (1) Schreiben Sie das heutige Datum mit dem Format +'%Y%m%d" in eine Datei. Nutzen Sie dafür das Tool <date> 
 # (2) Hängen Sie aus dem Skript heraus die Zeile '2024 war besser' an Ihre Datei
-# (3) Lassen Sie aus dem Skript heraus die Zeile finden (herausgreppen), in der das Jahr 2025 vorkommt.
+# (3) Lassen Sie aus dem Skript heraus die Zeile finden (herausgreppen), in der das Jahr THIS_YEAR vorkommt.
 # (4) Lassen Sie aus dem Skript heraus die Zeile finden (herausgreppen), in der das Jahr 2024 vorkommt.
 # (5) Formulieren Sie einen Suchparameter für 'grep', der grep beide Zeilen finden lässt.
 
 # Hintergrund: 
 #
-# (A) Zum Suchen von Zeilen, die ein Suchmuster enthalten, ist das Tool <grep> zuständig.
+# (A) Zum Such von Zeilen, die ein Suchmuster enthalten, ist das Tool <grep> zuständig.
 # (b) <grep> nimmt einen regulären Ausdruck (RegEx) und einen Dateinamen (oder einen Zeileninhalt) 
 #     und gibt die Zeile aus, die den regulären Ausdruck erfüllt.
 
@@ -35,8 +36,4 @@ echo "executing Uebung $EXC"
 #    a[bc]a beschreibt aba oder aca aber nicht abca ...
 # c) Soll ein Buchstabe oder eine Zahl mehrfach hintereinander vorkommen, wird er quantifiziert
 #    mit + oder * (+ :- 1 oder mehrmals, * 0 oder mehrmals)
-#
-# grep returns
-#  0 in case of success (pattern found)
-#  1 in case of failure (pattern not found)
-#  2 in case of file not found
+

@@ -44,9 +44,3 @@ echo "executing Uebung $EXC"
 #    und Klammern abzeigen, was ausgewertet werden soll
 #    <MYDATE=$(date +'%Y-%m-%d')>
 #    
-
-HEUTE=`date +'%Y-%m-%d'`
-HEUTE=$(date +'%Y-%m-%d')
-
-echo $HEUTE > heute.txt
-cat heute.txt

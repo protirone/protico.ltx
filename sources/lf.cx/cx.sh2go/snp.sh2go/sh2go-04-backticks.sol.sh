@@ -27,8 +27,12 @@ echo "executing Uebung $EXC"
 # (B) Den Output eines Tools kann man im Skript auffangen, indem man es
 #     nach Variable und Gleichheitszeichen mit Backticks aufruft:
 #     VAR=`tool test`
+# (C) Alternativ kann man auch die $-Donation verwenden: Hier schreibt
+#     man den auszuwerten Term tool test in Klammern und setzt ein $
+#     davor, also $(tool test)
+#     Nutzen Sie ruhhig beide Varianten
 
-MV=`echo HOHOHO`
-
-echo $MV
+MV1=`echo HOHOHO`
+MV2=$(echo HAHAHA)
+echo $MV1 $MV2
 

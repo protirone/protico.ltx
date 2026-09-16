@@ -29,9 +29,9 @@ echo "executing Uebung $EXC"
 # Hintergrund: 
 #
 # (A) <echo> gibt alle Wörter in der Reihenfolge wieder aus, in der es sie als Parameter oder über stdin bekommen hat.
-# (B) 'in eine Datei umlenken' meint die Ausgabe mit dem Symbol '>' in eine Datei zu schreiben. Der Name der 
-#     Datei erscheint nach dem Umlenkungssymbol
-#
+# (B) 'in eine Datei umlenken' meint die Ausgabe mit dem Symbol '>' 
+#   a) '>' überschreibt eine existierende Datei mit dem Output (= die von echo ausgebeben Zeilen)
+#   b) '>>' hängt den Output (= die von echo ausgebeben Zeilen) an die existierende Datei an
 
 
 echo Hello World
