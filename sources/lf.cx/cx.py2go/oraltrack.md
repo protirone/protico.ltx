@@ -26,30 +26,28 @@ Das Snippets py2go-00.py ist etwas Besonderes: ein lauffähiges Hello World:
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**CRX:py2go:00**</span>
 
-* [ ] Bringen Sie das Hello-World-Python Script unter VSCODE / Python zum Laufen
 
-Hilfestellung: 
+Bringen Sie das Happy-Coding-Python Script unter VSCODE / Python zum Laufen:
 
-Folgen Sie Instllationsanleitungen im Netz, z.B.:
 
-* LNX: s. [https://opensource.com/article/22/11/python-vs-code-codium](https://opensource.com/article/22/11/python-vs-code-codium)
-* W11: s. [https://www.python.org/downloads/](https://www.python.org/downloads/)
-
-Haben Sie Python3 installiert, dann öffnen Sie 
-
-* unter LNX eine *bash* ...
-* unter W11 eine *powershell* ...
-
-... und 
-1. Geben Sie `python3 --help` ein. Erhalten Sie eine python3-Hilfseite, war Ihre Installation erfolgreich.
-2. Kopieren Sie *py2go-00.py* in Ihr Arbeitsverzeichnis und geben Sie dann `python3 py2go-00.py` in Ihre Shell ein. Sie sollten danach ein *Hello World* sehen.
-3. Öffnen Sie Ihre *vscode* bzw. *vscodium* Instanz:
-  1. Installieren Sie die Extensionen *Python* und *Python-Debugger* von *ms-python*.
-  2. Öffnen Sie die Datei *py2go-00.py* = Laden Sie sie in ein VSCode-Fenster.
-  3. Klicken Sie rechts oben auf das Dreieck 'Run Python File'. (Variante: Öffnen 
+* [ ] Installieren Sie Python3 nach einer der Installationsanleitungen im Netz, z.B.:
+  * LNX: s. [https://opensource.com/article/22/11/python-vs-code-codium](https://opensource.com/article/22/11/python-vs-code-codium)
+  * W11: s. [https://www.python.org/downloads/](https://www.python.org/downloads/)
+* [ ] Verifizieren Sie Ihre Installation = öffnen Sie
+  * unter LNX eine *bash* ...
+  * unter W11 eine *powershell* ...
+  * und geben Sie jeweils `python3 --help` ein. Erhalten Sie eine python3-Hilfseite, war Ihre Installation erfolgreich.
+* [ ] Laden Sie von [https://github.com/protirone/protirone.lessons/](https://github.com/protirone/protirone.lessons/) aus dem Ordner `fachinformatik/lf.cx` die Zip-Datei `cx.py2go-snp.zip` herunter:
+* [ ] Entpacken Sie die Zip-Datei unter Linux(!) in einem Arbeitsordner Ihrer Wahl
+* [ ] Laden Sie die Datei `py2go-00-happy-coding.sh` in Ihren VSCODE-Editor 
+* [ ] Öffnen Sie von VSCOD[E|IUM] ein Terminal und geben Sie `python3 py2go-00-happy-coding.py` in Ihre Shell ein. Sie sollten danach ein *einen freundlichen Gruß sehen* sehen.
+* [ ] Öffnen Sie danach Ihre *vscode* bzw. *vscodium* Instanz:
+  * [ ] Installieren Sie die Extensionen *Python* und *Python-Debugger* von *ms-python*.
+  * [ ] Öffnen Sie wiederum die Datei *py2go-00\*.py* = Laden Sie sie in ein VSCode-Fenster.
+  * [ ] Klicken Sie rechts oben auf das Dreieck 'Run Python File'. (Variante: Öffnen 
      Sie mit einem Klick auf die rechte Maustaste das Kontextmenue und wählen Sie
      `Run Python / Runy Python File in Terminal` an). Sie sollten (unten in einem
-     gesonderten Fenster) dieselbe Ausgabe bekommen, wie unter 2.
+     gesonderten Fenster) dieselbe Ausgabe bekommen, wie oben.
 
 Jetzt Sie sind bereit
 
@@ -79,8 +77,8 @@ Jetzt Sie sind bereit
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**CRX:py2go:XX**</span>
 
-* [ ] Laden Sie sich das Zipfile mit dem Ordner snp.py2go herunter.
-* [ ] Beginnen Sie mit den Aufgaben in Ihrem privaten Scrum-Mode
+* [ ] Arbeiten Sie mit die Aufgaben aus dem snp.py2go-Ordner in Ihrem privaten Scrum-Mode der Reihe nach durch.
 
 <!-- uebung::end -->
 
+---
