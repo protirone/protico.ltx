@@ -13,7 +13,7 @@
 4c. Geben Sie die Strings mea und meb mit print aus.
 5. Initialisieren Sie als Gegenprobe die Variablen mec und med mit den beiden
    anderen Methoden aus py2go-03 und gegeben Sie sie mit print aus. Es werden
-   Arrays ausgegeben, keine Strings. Das zeugt, warum Sie sie nicht zum Zweck
+   Arrays ausgegeben, keine Strings. Das zeigt, warum Sie sie nicht zum Zweck
    der Stringbildung nutzen können.
 
 Hinweis:
