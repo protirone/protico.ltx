@@ -22,7 +22,7 @@
 \def\imgGl{../../../img.gl/}
 \def\bibGl{../../../bib.gl}
 \def\cfgGl{../../../cfg.gl/}
-\def\snpGl{../../../snp.gl}
+\def\snpGl{../../../snp.gl/}
 \def\imgLf{../../img.lf}
 \def\cfgLf{../../cfg.lf}
 \def\snpLf{../../snp.lf}
@@ -58,6 +58,7 @@
 \usepackage{rotating}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{minted}
+\usepackage{setspace}
 
 \newcommand\tcrotate[1]{\begin{turn}{90}{#1}\end{turn}}
 
@@ -66,9 +67,9 @@
 \addtobeamertemplate{footnote}{\hskip -2em}{}
 
 % title frame
-\title{DE:Rechtschreibung}
-\subtitle{für die Ausbildung zur Fachinformatikerin\input{\cfgGl/inc.lfn-zp}}
-\institute{GS-LDK}
+\title{Deutsch:Rechtscheibung}
+\subtitle{für die Ausbildung zur Fachinformatikerin}
+\institute[GS-LDK]{Gewerbliche Schulen Dillenburg}
 \author{Karsten Reincke}
 \date{\today}
 
@@ -80,6 +81,8 @@
 
 \begin{frame}
   \titlepage
+
+  \input{\cfgGl/inc.licensing}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,6 +105,6 @@
 \input{\cfgGl/inc.zp-bnw}
 
 % 4. insert the liteature hints 
-\input{\cfgGl/inc.zp-lvz}
+%\input{\cfgGl/inc.zp-lvz}
 
 \end{document}
