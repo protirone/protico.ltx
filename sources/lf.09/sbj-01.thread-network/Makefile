@@ -60,12 +60,12 @@ lesson-zpr: bld zenprese
 
 zpr: zenprese
 
-bld:
-	mkdir -p ${BLD}
-
 zenprese:
 	@ echo "writing zenprese"
 	@ (cd zp && make clean && make zp.pdf && mv zp.pdf ../zenprese.pdf)
+
+bld:
+	mkdir -p ${BLD}
 
 .SUFFIXES: .md .pdf 
 

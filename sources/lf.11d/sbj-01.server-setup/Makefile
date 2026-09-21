@@ -7,10 +7,14 @@ AUX_EXTS=tmp
 RES_EXTS=pdf
 DEL_FILE=exercises
 
-LNX_TD="../.."
-PTC_TD="../${LNX_TD}"
+LNX_TD=../..
+PTC_TD=../${LNX_TD}
 BLD=${PTC_TD}/built
 MDHTMP=mdh.tmp
+
+
+SVAMM=server-setup-areas.mm
+SVTMM=server-setup-tasks.mm
 
 
 EVD="../../3ps/eisvogel"
@@ -42,7 +46,7 @@ exercises:
 lesson-ort: bld oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-    mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
+        mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
 	@ tree ${BLD}
 
 ort: oraltrack
@@ -55,7 +59,9 @@ oraltrack:
 lesson-zpr: bld zenprese
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-          mv zenprese.pdf $${TGD}/$${SJN}-zenprese.pdf	
+		cp ${SVAMM} $${TGD}/$${SJN}-${SVAMM} && \
+		cp ${SVTMM} $${TGD}/$${SJN}-${SVTMM} && \
+		mv zenprese.pdf $${TGD}/$${SJN}-zenprese.pdf	
 	@ tree ${BLD}
 
 zpr: zenprese
@@ -66,7 +72,6 @@ zenprese:
 
 bld:
 	mkdir -p ${BLD}
-
 
 
 .SUFFIXES: .md .pdf 
@@ -85,6 +90,5 @@ clear:
 clean:	clear
 	$(foreach EXT, ${RES_EXTS}, @if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; echo "removing existing .${EXT}-target-files"; fi;)
 	$(foreach BNA, ${DEL_FILE}, @if [ ! "x`ls ${BNA}.* 2>/dev/null`" = "x" ]; then rm ${BNA}.*; echo "removing existing derivated ${BNA}.*"; fi;)
-
 	(cd zp && make clean)
 
