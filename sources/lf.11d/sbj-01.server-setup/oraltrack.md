@@ -27,7 +27,8 @@
 
 ---
 
-
+* Unvollständige Skizze von zu berücksichtigenden Aspekten mit Granularität 1 **[→ ZP:Sheet:2]**
+* Als Installationsguideline / Checkliste in die Breite und Tiefe zu verfeinern.
 
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11d:01:Server-Installation:02**</span>
@@ -36,7 +37,7 @@ Sammeln Sie zuerst bitte die Aspekte und Varianten in Form von zu entscheidenden
 
 * [ ] Diskutieren Sie gruppenweise, was man alles vor einer gelungenen Serverinstallation bedacht haben muss.
 * [ ] Erfassen Sie Ihre Aspekte als Fragen in einer Mindmap.
-* [ ] Vergleichen Sie Ihre Mindmap mit der Mindmap unter [xyz](xyz).
+* [ ] Laden Sie die Task-Mindmap unter [https://github.com/protirone/protirone.lessons/tree/main/fachinformatik/lf.11d/sbj-01.server-setup-tasks.mm](https://github.com/protirone/protirone.lessons/tree/main/fachinformatik/lf.11d/sbj-01.server-setup-tasks.mm) und vergleichen Sie sie mit Ihrer Lösung.
 * [ ] Reichern Sie Ihre Mindmap um die dort zusätzlich gelisteten Fragen an.
 * [ ] Laden Sie Ihren so entstanden Leitfaden in Form einer Mindmap in den Arbeitsordner hoch.
 

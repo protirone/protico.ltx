@@ -13,10 +13,6 @@ BLD=${PTC_TD}/built
 MDHTMP=mdh.tmp
 
 
-SVAMM=server-setup-areas.mm
-SVTMM=server-setup-tasks.mm
-
-
 EVD="../../3ps/eisvogel"
 
 help:
@@ -59,8 +55,8 @@ oraltrack:
 lesson-zpr: bld zenprese
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-		cp ${SVAMM} $${TGD}/$${SJN}-${SVAMM} && \
-		cp ${SVTMM} $${TGD}/$${SJN}-${SVTMM} && \
+		cp areas.mm $${TGD}/$${SJN}-areas.mm && \
+		cp tasks.mm $${TGD}/$${SJN}-tasks.mm && \
 		mv zenprese.pdf $${TGD}/$${SJN}-zenprese.pdf	
 	@ tree ${BLD}
 
