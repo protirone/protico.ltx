@@ -6,8 +6,6 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-*Tonspur* **[→ ZP:Sheet:1]**
-
 ### 1.) Konzeption
 
 --- 
@@ -25,20 +23,33 @@
 
 <!-- uebung::start -->
 
+####
+1.A Zu beachtende Bereiche (Knowldege Areas)
+
+**[→ ZP:Sheet:2]**
+
+Grob gesagt, müssen Sie sich mindestens um folgende Fragen kümmern
+
+1. Welches Betriebssystem soll auf meinem Server installiert werden?
+2. Wie soll(en) die Festplatte(n) partioniert werden?
+3. Was sind Dateizugriffsregeln in ihrem Betriebssystem?
+4. Welches Installationsmedium / -verfahren wollen Sie verwenden?
+5. Welche Eigenschaften soll Ihr System für alle Nutzer mitbringen / vorgeben?
+6. Welche Services (= Serverprogramme) wollen Sie installieren?
+7. Welche Backupstrategie wollen Sie für Ihr System verwenden?
+8. In welches Netzwerk wollen Sie Ihren Server einbinden.
+
 ---
-
-
 
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11d:01:Server-Installation:02**</span>
 
-Sammeln Sie zuerst bitte die Aspekte und Varianten in Form von zu entscheidenden Fragen, die es bei der Installation eines Servers zu berücksichtigen gilt:
+Konkretisieren Sie diese Wissensbereiche:
 
-* [ ] Diskutieren Sie gruppenweise, was man alles vor einer gelungenen Serverinstallation bedacht haben muss.
-* [ ] Erfassen Sie Ihre Aspekte als Fragen in einer Mindmap.
-* [ ] Vergleichen Sie Ihre Mindmap mit der Mindmap unter [xyz](xyz).
-* [ ] Reichern Sie Ihre Mindmap um die dort zusätzlich gelisteten Fragen an.
-* [ ] Laden Sie Ihren so entstanden Leitfaden in Form einer Mindmap in den Arbeitsordner hoch.
+* [ ] Diskutieren Sie gruppenweise, was zu diesen Bereichen im Detail gehört
+* [ ] Erfassen Sie Ihre Fragen einer Markdowndatei.
+* [ ] Vergleichen Sie Ihre Einträge mit denen in der Mindmap `sbj-01.server-setup-tasks.mm` unter [https://github.com/protirone/protirone.lessons/tree/main/fachinformatik/lf.11d](https://github.com/protirone/protirone.lessons/tree/main/fachinformatik/lf.11d).
+* [ ] Laden Sie sich diese Mindmap herunter und reichen Sie sie um die Aspekte aus Ihrer Markdowndatei an, die in der Mindmap fehlen.
 
 <!-- uebung::end -->
 
@@ -50,12 +61,11 @@ Sammeln Sie zuerst bitte die Aspekte und Varianten in Form von zu entscheidenden
 
 Beantworten Sie bitte dann die gesammelten Fragen und Aspekte, die es bei der Installation eines Servers zu berücksichtigen gilt, und entschieden Sie sich wo nötige für eine jetzt und hier umsetzbare Variante: 
 
-* [ ] Diskutieren Sie die Fragen Ihres Leitfadens zur Installation eines Servers gruppenweise und/oder mit Ihrer Lehrerin.
+* [ ] Diskutieren Sie die Fragen Ihrer Leit-Mindmap zur Installation eines Servers gruppenweise und/oder mit Ihrer Lehrerin.
 * [ ] Markieren Sie die, für deren Beantwortung Sie noch Informationen von Ihrer Lehrerin benötigen. 
 * [ ] Entscheiden Sie bei denen, die sie beantworten können, welche Varianten Sie wählen.
 * [ ] Dokumentieren Sie Ihre Entscheidungen / Antworten in/mit entsprechenden Subknoten.
 * [ ] Entscheiden Sie sich für eine Minimalinstallation, die Sie anschließend sukzessive erweitern können.
-* [ ] 
 
 Gehen Sie bitte davon aus, dass Sie die Fragen / Entscheidungen nicht beantworten / treffen können, ohne die anderen Antworten / Entscheidungen im Blick zu haben. Gehen Sie Ihren Fragenkatalog mehrfach durch und stimmen Sie dabei die einen Antworten mit den anderen ab.
 
@@ -139,12 +149,20 @@ Unter LNX gibt es Strategien für eine geeignetes `Festplattendesign`:
 * [ ] Loggen Sie sich auf dem Übungsserver ein und ermitteln Sie dessen Festplattendesign.
 * [ ] Stecken Sie dann den USB-Stick ein.
 * [ ] Rufen Sie `gparted` auf und ermitteln Sie dessen Festplattendesign.
-* [ ] Löschen Sie dann die Partitionen des USB-Sticks und teilen Sie ihn in zwei Partitionen auf, die erste mit dem Dateisystem *FAT32*, *NTFS* oder *exFAT*.
+* [ ] Löschen Sie dann die Partitionen des USB-Sticks und teilen Sie ihn in zwei Partitionen auf, 
+  * [ ] die erste mit dem Dateisystem *FAT32*, *NTFS* oder *exFAT*,
+  * [ ] die zweite mit dem Dateisystem *ext3*.
 * [ ] Speichern Sie dann auf jeder Partition eine Datei mit Ihrem Namen als Content. Der Dateiname möge auf der ersten Partition `w11-datei.txt`, auf der zweiten `lnx-datei.txt`.
 * [ ] Unmounten Sie den Stick geordnet und stecken Sie in eine Windowsrechner.
 * [ ] Welchen Unterschied stellen Sie fest?
   
 <!-- uebung::end -->
+
+
+Lösung:
+
+Unter Windows wird nur die erste Partition gefunden und angezeigt. Grund: Windows kennt
+das Dateisystem *ext3* nicht.
 
 ---
 
