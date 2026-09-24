@@ -61,7 +61,15 @@ Jetzt Sie sind bereit
   * 1. Entscheiden Sie sich für einen (kleinen) Timeslot als Ihre heutige Arbeitszeit.
   * 2. Lesen Sie sich 3(+-x) Pythonaufgaben (= die Dateien ohne `.sol.` im Dateinamen) durch.
 * Planning-Poker:
-  * 3. Schätzen Sie informell die gefühlte Komplexität der Aufgaben.
+  * 3. Schätzen Sie informell die gefühlte Komplexität der Aufgaben. Die Komplexität geben Sie in Storypoints an:
+    * `1 STP` : sehr einfach
+    * `2 STP` : einfach
+    * `3 STP` : mäßig komplex
+    * `5 STP` : komplex
+    * `8 STP` : sehr komplex
+    * `13 STP` : überaus komplex
+    * `20 STP` : nicht wiorklich schätzbar
+    * ...
   * 4. Entscheiden Sie, wie viele Aufgaben Sie in ihrem Timeslot lösen werden.
 * Sprint-Backlog:
   * 5. Verschieben Sie diese Aufgaben in Ihren Sprint-Backlog-Ordner 
@@ -79,6 +87,11 @@ Jetzt Sie sind bereit
 
 * [ ] Arbeiten Sie mit die Aufgaben aus dem snp.py2go-Ordner in Ihrem privaten Scrum-Mode der Reihe nach durch.
 
+
+Hinweis: 
+
+* Die Aufgaben gibt es in einer Version ohne Lösung und mit Lösung. Die Idee ist, die Lösung zum Vergleich mit der selbst programmierten heranzuziehen.
+* Weitere Detailinfos finden Sie unter [https://www.w3schools.com/python/](https://www.w3schools.com/python/)
 <!-- uebung::end -->
 
 ---
