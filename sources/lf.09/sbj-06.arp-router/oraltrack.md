@@ -6,9 +6,36 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
+---
 
+Zur Erinnerung  **[→ ZP:Sheet:2]**
 
-### 1.) Definitionen **[→ ZP:Sheet:2]**
+* **`(I)`** Ein **HUB** spannt eine **Kollisionsdomäne** auf, ein **Switch** eine **Broadcastdomäne** (Subnetz):
+  * Mehrere Switches hintereinander vergrößern diese Broadcastdomäne. 
+  * Die Distribution von MAC_Adressen findet nur innerhalb einer Broadcast-Domäne statt.
+* **`(II)`** In einem vollverswitchten Netz hat die Kollisionsdomäne nur einen Rechner
+  * (→ es gibt keine Kollisionen.)
+
+---
+
+<!-- uebung::start -->
+
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:06:ARP-Router:00**</span>
+
+* [ ] (optional): Führen Sie einen Schreibtischtest für ein vollverswitshtes Netz mit 3 Rechnern und einem Switch durch. (Abstrahieren Sie dabei von der inneren Switch-Struktur.)
+* [ ] Repräsentieren Sie diese Broadcastdomäne A jetzt durch Personen im Raum.
+* [ ] Kreieren Sie eine eigenständige Broadcastdomäne B gleicher innerer Struktur und repräsentieren Sie die ebenfalls durch Personen.
+* [ ] Erfinden Sie einen eine Methode, um eine Nachricht von Broadcastdomäne A nach B zu schicken.
+* [ ] Demonstrieren Sie Ihre Lösung in Form eines 'Schreibtischtestes' (Weiterreichen von vorbereiteten Nachrichten im Stehen)
+
+Wenn nötig, dürfen Sie dazu neue Hardware erfinden, müssen aber deren Eigenschaften und Verhalten genau beschreiben.
+<!-- uebung::end -->
+
+Lösung: s.u.
+
+---
+
+### 1.B) Definitionen B **[→ ZP:Sheet:3]**
 
 * **`(I)`** Ein **HUB** spannt eine **Kollisionsdomäne** auf, ein **Switch** eine **Broadcastdomäne** (Subnetz)
 * **`(II)`** In einem vollverswitchten Netz hat die Kollisionsdomäne nur einen Rechner
@@ -66,6 +93,7 @@ Routers.
 
 ---
 
+(optional wenn Aufgabe 00 nicht durchgeführt)
 <!-- uebung::start -->
 
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF09:06:ARP-Router:01**</span>
@@ -88,7 +116,7 @@ Führen Sie einen Schreibtischtest passend zu [→  ZP:Sheet:2] durch, also für
 
 ---
 
-__Lösung: Simulation mit Schreibtischtest: *[→ ZP:Sheet:3]*__
+__Lösung: Simulation mit Schreibtischtest: *[→ ZP:Sheet:4]*__
 
 ---
 
@@ -104,7 +132,7 @@ __Lösung: Simulation mit Schreibtischtest: *[→ ZP:Sheet:3]*__
 
 Lösungen:
 
-* Aktivitätsdiagramm: **[→ ZP:Sheet:4]** (Die Idee, das Merken der Absender-IP-Adresse gesondert als parallele Akzivität zu repräsentieren, verdanken wir Waldemar, GSLDK/11iv24 
-* Sequenzdiagramm: **[→ ZP:Sheet:5]**, 
-* verdichtetes Sequenzdiagramm: **[→ ZP:Sheet:6]**
+* Aktivitätsdiagramm: **[→ ZP:Sheet:5]** (Die Idee, das Merken der Absender-IP-Adresse gesondert als parallele Akzivität zu repräsentieren, verdanken wir Waldemar, GSLDK/11iv24 
+* Sequenzdiagramm: **[→ ZP:Sheet:6]**, 
+* verdichtetes Sequenzdiagramm: **[→ ZP:Sheet:7]**
 

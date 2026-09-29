@@ -123,14 +123,11 @@ Tatsächlich:
 
 (→ Spanning Tree = Teilgraph eines ungerichteten Graphen, der ein Baum ist und alle Knoten dieses Graphen enthält. (→ [https://de.wikipedia.org/wiki/Spannbaum](https://de.wikipedia.org/wiki/Spannbaum)))
 
-**Konsequenz:**
+**Konsequenz:** Auch in einem voll verswitschten Netz kennen die Kommunikationskomponenten
 
-Auch in einem voll verswitschten Netz kennt die Kommunikationskomponenten
-
-* dauerhaft nur den Computernamen (IP-Adresse)
-* sollen Netzwerkkarten adhoc austauschbar sein (MAC-Adressen sollen nach 300ms vergessen werden)
-
-**ALSO:** Auch ein verswitschtes Netz nutzt auf Layer-II-Ebene den ARP-Request.
+* dauerhaft nur den Computernamen (IP-Adresse),
+* sollen Netzwerkkarten adhoc austauschbar sein (MAC-Adressen sollen nach 300ms vergessen werden).
+* Also: auch ein verswitschtes Netz nutzt auf Layer-II-Ebene den ARP-Request.
 
 **ARP Sequenzdiagramm/explizit: [→ ZP:Sheet:6]**
 
@@ -138,7 +135,12 @@ Nachdem wir das (vermutete) Innere eines Switches als verbundene Bridges explzie
 
 **ARP Sequenzdiagramm/verdichtet: [→ ZP:Sheet:7]**
 
-
 **ARP Aktivitätsdiagramm:** [brächte nur mehr 'Schreibkram' ohne wesentlichen Erkenntnisgewinn, deshalb hier weggelassen]
 
+
+* **`(I)`** Ein **HUB** spannt eine **Kollisionsdomäne** auf, ein **Switch** eine **Broadcastdomäne** (Subnetz):
+  * Mehrere Switches hintereinander vergrößern diese Broadcastdomäne. 
+  * Die Distribution von MAC_Adressen findet nur innerhalb einer Broadcast-Domäne statt.
+* **`(II)`** In einem vollverswitchten Netz hat die Kollisionsdomäne nur einen Rechner
+  * (→ es gibt keine Kollisionen.)
 
