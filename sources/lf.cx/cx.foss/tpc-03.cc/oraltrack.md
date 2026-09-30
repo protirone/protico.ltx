@@ -181,3 +181,23 @@ s. **[→ ZP:Sheet:31]** u. **[→ ZP:Sheet:32]**
 <!-- uebung::end -->
 
 ---
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:FOSS:05**</span>
+
+* [ ] Suchen Sie sich ein Märchen, gern ein eher unbekanntes. 
+* [ ] Verdichten Sie es so, dass Sie es in 3 kurzen Sätzen erzählen können.
+* [ ] Suchen Sie zu jedem Ihrer Sätze ein wirklich freies Bild.
+* [ ] Präsentieren und erzählen Sie Ihre Märchenversion anhand und mit Ihren illustrativen Bildern.
+
+Hier ein Beispiel zur Verkürzung auf drei Sätze:
+
+1. Mädchen mit roter Kappe trifft im Wald einen Wolf.
+2. Wolf frisst Großmutter.
+3. Mädchen erkennt den Wolf trotzdem.
+
+Und Sie haben das Märchen gewiss auch erkannt
+
+<!-- uebung::end -->
