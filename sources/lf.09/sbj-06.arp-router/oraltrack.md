@@ -25,10 +25,10 @@ Zur Erinnerung  **[→ ZP:Sheet:2]**
 * [ ] (optional): Führen Sie einen Schreibtischtest für ein vollverswitshtes Netz mit 3 Rechnern und einem Switch durch. (Abstrahieren Sie dabei von der inneren Switch-Struktur.)
 * [ ] Repräsentieren Sie diese Broadcastdomäne A jetzt durch Personen im Raum.
 * [ ] Kreieren Sie eine eigenständige Broadcastdomäne B gleicher innerer Struktur und repräsentieren Sie die ebenfalls durch Personen.
-* [ ] Erfinden Sie einen eine Methode, um eine Nachricht von Broadcastdomäne A nach B zu schicken.
+* [ ] Erfinden Sie eine Methode, um eine Nachricht von Broadcastdomäne A nach B zu schicken. Wo nötig, erfinden Sie die fehlende Hardware. Beschreiben Sie deren Eigenschaften und Verhalten dann aber genau.
 * [ ] Demonstrieren Sie Ihre Lösung in Form eines 'Schreibtischtestes' (Weiterreichen von vorbereiteten Nachrichten im Stehen)
 
-Wenn nötig, dürfen Sie dazu neue Hardware erfinden, müssen aber deren Eigenschaften und Verhalten genau beschreiben.
+
 <!-- uebung::end -->
 
 Lösung: s.u.
