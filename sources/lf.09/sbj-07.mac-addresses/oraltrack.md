@@ -100,7 +100,7 @@ vgl.
 * Es gibt jetzt **[→ ZP:Sheet 5]**
   * **OUI-24**: `MA-L`-Segemente (= MAC Address Block Large) ~ bisheriger OUI (Organizationally Unique Identifier)	Aufteilung :- (2^24 ~= 16 Million)
   * **OUI-28**: `MA-M`-Segemente (= MAC Address Block Medium)	:-	2^20 ~= 1 Million
-  * **OUI-35**: `MA-S`-Segemente (=	MAC Address Block Small) ~ bisheriger	OUI-36 :-	2^12 ~= 4,096
+  * **OUI-36**: `MA-S`-Segemente (=	MAC Address Block Small) ~ bisheriger	OUI-36 :-	2^12 ~= 4,096
 
 vgl. 
 
