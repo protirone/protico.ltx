@@ -104,7 +104,7 @@ Dies vorab vorzubereiten, macht uns bei der Präsentation, der Debatte oder dem 
   
 *Ausführung*:
 
-* Reihenfolge jetzt die der NUmmern
+* Reihenfolge jetzt die der Nummern
 
 *Auswertung*: "Was ist nun das wichtigste Tier?"
 
@@ -118,6 +118,9 @@ Dies vorab vorzubereiten, macht uns bei der Präsentation, der Debatte oder dem 
 ---
 
 Auswertung: ... wie oben.
+
+
+
 
 ### 4. Die eigene inhaltliche Vorbereitung [→ ZP:Sheet:5]
 
@@ -189,7 +192,8 @@ Storyline: Thema, Hook, 3*3 Aussagen und Take-Home-Message
 
 * [ ] Entscheiden Sie sich für ein (irgendein) Thema
 * [ ] Legen Sie Ihre Take-Home-Message fest
-* [ ] Arbeiten Sie Ihre Storyline aus
+* [ ] Arbeiten Sie Ihre Storyline (max. 7 Schritte) aus
+* [ ] Kondensieren Sie Ihre Storyline in 3-5 Topic-Lines
 
 <!-- uebung::end -->
 
@@ -199,7 +203,7 @@ Storyline: Thema, Hook, 3*3 Aussagen und Take-Home-Message
 Recherche
 
 * Sammeln Sie Bilder zu Ihren Aussagen
-* Sammeln Sie Belege zu Ihren Aussage
+* Sammeln Sie Belege zu Ihren Aussagen
 * Sammeln Sie Detailmaterial.
 
 
@@ -300,5 +304,17 @@ Für das verbleibende Auditorium:
 
 ---
 
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:Rhetorik:0X**</span>
 
+
+Auffrischungsübung für Step 1 - 3:
+
+* [ ] Fassen Sie Ihr persönliche[s,n] Motto / Ziel / Wegweiser für diesen Tag in einem Satz zusammen.
+* [ ] Bereiten Sie sich mental darauf vor, dieses Ihren Mitschülern als Ihren Tagesmaßstab kundzutun.
+* [ ] Gehen Sie nach vorne, finden Sie Ihren Startpunkt, seien Sie überzeugend und geben Sie Ihr Tagesziel bekannt.
+
+PS.: Es muss nicht real sein, nur überzeugend und souverän präsentiert.
+
+<!-- uebung::end -->
 
