@@ -42,8 +42,6 @@ Es gilt: **Keine verschiedenen Blickwinkel ohne _Prozessdokumentation_. Keine Pr
 
 ### 2. Einfaches Beispiel: **[→ ZP:Sheet:3]**
 
----
-
 <!-- uebung::start -->
 
 **Prozessbeschreibung:**
@@ -96,9 +94,9 @@ Lösung: **[→ ZP:Sheet:5]** / Prozessschrittdoubletten sind ausgegraut
 
 
 
-### 3. Komplexeres Beispiel: **[→ ZP:Sheet:6]**
+### 3. Komplexere Beispiele: 
 
----
+**3.1 Einkaufsprozess [→ ZP:Sheet:6]**
 
 <!-- uebung::start -->
 
@@ -145,9 +143,32 @@ Lösung: **[→ ZP:Sheet:8]**
 
 ---
 
-### 4. Ausgefallenes Beispiel: **[→ ZP:Sheet:9]**
+**3.2 APX-Aneignungsprozess [→ ZP:Sheet:9]**
+
+_Exkurs: **cx.apx-strategy**_
+
+Überleitung: 
+
+* Die APX-Stratgie kann man als Prozess der Aneignung interpretieren und dokumentieren.
+* Hier als Beispiel eine BPMN-Dokumentation: **[→ ZP:Sheet:10]**
+
+<!-- uebung::start -->
+
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:01:Prozessdokumentation:05**</span>
+
+
+* [ ] Dokumentieren Sie die APX-Stratgie im Sinne eines Aneignungsprozesses als *eEPK-Diagramm*. 
+
+
+*Spezifikation in `lf.cx/cx.diagramming-...`*
+
+<!-- uebung::end -->
+
+Lösung: **[→ ZP:Sheet:?]**
 
 ---
+
+### 4. Ausgefallenes Beispiel: **[→ ZP:Sheet:11]**
 
 <!-- uebung::start -->
 
@@ -164,7 +185,7 @@ Der Chef lässt die Abteilungen allerdings oft und überraschend in andere Zimme
 
 Abteilungen, die mit der Frage nicht gemeint sind, ignorieren diese. Die tatsächlich gemeinte Abteilung schickt der anfragenden Abteilung -- sie hat deren Adresse im Absender gefunden -- jedoch als Antwort ihre eigene Adresse. Danach können die beiden Abteilungen für eine kleine Weile direkt Nachrichten austauschen.
 
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:01:Prozessdokumentation:05**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:01:Prozessdokumentation:06**</span>
 
 * [ ] Wählen Sie aus den Prozessdokumentationstechniken *UML-Aktivitätsdiagramm*, *UML-Sequenzdiagramm*, *Flussdiagramm*, *BPMN-Diagramm* und *EPK-Diagramm* zunächst die aus, die Ihnen am leichtesten fällt. Und dann die, die für Sie am schwierigsten ist.
 * [ ] Dokumentieren Sie den *Switchi*-Prozess in beiden Diagrammformen. 
@@ -172,26 +193,25 @@ Abteilungen, die mit der Frage nicht gemeint sind, ignorieren diese. Die tatsäc
 
 <!-- uebung::end -->
 
-Lösung für BPMN-Diagramm: **[→ ZP:Sheet:10]**
+Lösung für BPMN-Diagramm: **[→ ZP:Sheet:12]**
 
-Lösung für EPK-Diagramm: **[→ ZP:Sheet:11]**
-
----
-
-### 5. Sehr ausgefallenes Beispiel: **[→ ZP:Sheet:10]**
+Lösung für EPK-Diagramm: **[→ ZP:Sheet:13]**
 
 ---
+
+### 5. Sehr ausgefallenes Beispiel: **[→ ZP:Sheet:14]**
 
 <!-- uebung::start -->
 
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:01:Prozessdokumentation:06**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:01:Prozessdokumentation:07**</span>
 
-* [ ] Lernen Sie, das Spiel *Werwölfe* zu spielen. ([https://de.wikipedia.org/wiki/Die_Werwölfe_von_Düsterwald_(Spiel)](https://de.wikipedia.org/wiki/Die_Werwölfe_von_Düsterwald_(Spiel)))
-* [ ] Dokumentieren einen Spieldurchgang als *UML-Aktivitätsdiagramm*, *UML-Sequenzdiagramm*, *Flussdiagramm*, *BPMN-Diagramm* ODER *EPK-Diagramm*.
+* [ ] Lernen Sie, das Spiel [*Werwölfe*](https://de.wikipedia.org/wiki/Die_Werw%C3%B6lfe_von_D%C3%BCsterwald_(Spiel)) zu spielen
+* [ ] Dokumentieren einen(!) Spieldurchgang als *UML-Aktivitätsdiagramm*, *UML-Sequenzdiagramm*, *Flussdiagramm*, *BPMN-Diagramm* ODER *EPK-Diagramm* ... ODER ...
+* [ ] Dokumentieren alle möglichen Spielvarianten als *UML-Aktivitätsdiagramm*, *UML-Sequenzdiagramm*, *Flussdiagramm*, *BPMN-Diagramm* ODER *EPK-Diagramm*
 
 <!-- uebung::end -->
 
-Lösung: 
+Lösung: ???
 
 ---
 
