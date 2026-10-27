@@ -9,15 +9,13 @@
 3. Sortieren Sie das Dictionary nach Vornnamen und geben Sie es erneut aus.
    Geben Sie dabei alle einzelnen Modifikationen gesondert aus.
    Beobachten Sie den Unterschied!
-4. Erweitern Sie das Dictionary um ein Klassenbuch in Form einer Liste hinzu,
+4. Erweitern Sie das Dictionary um ein Klassenbuch in Form einer Liste,
    das für jede Schülerin deren Stammdaten in einem Tupel erfasst. 
    Die Stammdaten seien Name, Vorname, Klasse und Lernfeld. 
    Geben Sie dieses erweiterte Dictionary aus.
 5. Begründen Sie, warum es eine schlechte Idee ist, die Stammdaten so zu erfassen.
 6. Geben Sie die Namen aller Schülerinnen Dictionary einzelnd aus.
 7. Geben Sie die Stammdaten aller Schülerinnen einzelnd aus.
-8. Erweitern Sie Ihr Dictionary um ein weiteres Dictionary, das alle Lernfelder
-   enthält, die Ihre Klasse jemals besucht hat und noch besuchen wird.
 
 Hintergrund:
 
@@ -82,7 +80,7 @@ for key in dic:
    print(key,dic{key}) 
 '''
 
-print("Lösung zu Aufgabe 7.1")
+print("Lösung zu Aufgabe 7.1:")
 class_12iv24={
    "Gall": "Alexander",
    "Nielsen": "Daniel",
@@ -94,19 +92,19 @@ class_12iv24={
 class_12iv24["Pürner"]="Janis Marvin"
 print(f"{class_12iv24}")
 
-print("Lösung zu Aufgabe 7.2")
+print("---\nLösung zu Aufgabe 7.2:")
 print("items:", class_12iv24.items())
 print("sorted items:", sorted(class_12iv24.items()))
 print("dict of sorted items:", dict(sorted(class_12iv24.items())))
 
-print("Lösung zu Aufgabe 7.3")
+print("---\nLösung zu Aufgabe 7.3:")
 print("keys:", class_12iv24.keys())
 print("sorted keys:", sorted(class_12iv24.keys()))
 
 # Dies geht nicht, da sorted(class_12iv24.keys()) kein Key-Value-Paare mehr enthält!
 #print("dict of sorted keys:", dict(sorted(class_12iv24.keys())))
 
-print("Lösung zu Aufgabe 7.4")
+print("---\nLösung zu Aufgabe 7.4:")
 
 klassenbuch={
  ("Gall","Alexander","12iv24","LF.12.d"),
@@ -118,14 +116,19 @@ klassenbuch={
 class_12iv24["Klassenbuch"]=klassenbuch
 print(f"{class_12iv24}")
 
-print("Lösung zu Aufgabe 7.6")
+print("---\nLösung zu Aufgabe 7.5:")
+# Diese Darstellung (Repräsentatio) enthält Daten doppelt
+
+print("---\nLösung zu Aufgabe 7.6:")
 
 for key in class_12iv24:
    if key!="Klassenbuch":
       print(f"{class_12iv24[key]} {key}")
 
-print("Lösung zu Aufgabe 7.7") 
-#tbd.
+print("---\nLösung zu Aufgabe 7.7:") 
 
-print("Lösung zu Aufgabe 7.8")
-#tbd.
+# Klassenbuch ist ein Eintrag im Dictionary vom Type Set bestehend aus Tupeln
+
+setvar=class_12iv24["Klassenbuch"]
+for tupvar in setvar:
+   print(tupvar)

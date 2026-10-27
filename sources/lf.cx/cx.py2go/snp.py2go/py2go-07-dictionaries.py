@@ -16,8 +16,6 @@
 5. Begründen Sie, warum es eine schlechte Idee ist, die Stammdaten so zu erfassen.
 6. Geben Sie die Namen aller Schülerinnen Dictionary einzelnd aus.
 7. Geben Sie die Stammdaten aller Schülerinnen einzelnd aus.
-8. Erweitern Sie Ihr Dictionary um ein weiteres Dictionary, das alle Lernfelder
-   enthält, die Ihre Klasse jemals besucht hat und noch besuchen wird.
 
 Hintergrund:
 
