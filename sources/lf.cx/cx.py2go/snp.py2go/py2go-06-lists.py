@@ -1,5 +1,8 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 
+exercise="py2go-06"
+print(f"solution for exercise {exercise}:")
+
 '''
 1. Weisen Sie einer Variable 'my_int' eine Integerzahl zu
 2. Weisen Sie einer Variable 'my_float' eine Floatzahl zu.

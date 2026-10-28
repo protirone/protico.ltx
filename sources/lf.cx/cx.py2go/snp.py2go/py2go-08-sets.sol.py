@@ -1,5 +1,8 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 
+exercise="py2go-08"
+print(f"solution for exercise {exercise}:")
+
 '''
 1. Erzeugen Sie eine Menge (Set). Weisen Sie ihr die Elemente 'rot', 'blau', 'grün' 
    zu und geben Sie die Menge aus.

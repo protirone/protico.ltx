@@ -1,5 +1,9 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 
+exercise="py2go-05"
+print(f"solution for exercise {exercise}:")
+
+
 '''
 1. Weisen Sie einer Variable 'number_a' den Wert 42 zu. 
 2. Weisen Sie einer Variable 'number_b' den Wert 24 zu.

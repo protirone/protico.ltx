@@ -1,4 +1,8 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
+
+exercise="py2go-03"
+print(f"solution for exercise {exercise}:")
+
 '''
 1. Weisen Sie einer Variable myName Ihren Vornamen (= IHR_VORNAME) und Namen 
    (= IHR_NACHNAME) als String zu.

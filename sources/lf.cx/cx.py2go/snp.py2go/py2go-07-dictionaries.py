@@ -1,5 +1,9 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 
+
+exercise="py2go-07"
+print(f"solution for exercise {exercise}:")
+
 '''
 1. Erzeugen Sie ein Dictionary, in dem die Nachnamen von Schülerinnen
    Ihrer Klasse jeweils auf den Vornamen der entsprechenden Schülerin verweise.

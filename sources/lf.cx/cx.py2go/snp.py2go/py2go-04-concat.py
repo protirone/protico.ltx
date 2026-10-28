@@ -1,5 +1,9 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 
+exercise="py2go-04"
+print(f"solution for exercise {exercise}:")
+
+
 '''
 1. Weisen Sie einer Variable my_first_name Ihren Vornamen zu.
 2. Weisen Sie einer Variable my_last_name Ihren Nachnamen zu.

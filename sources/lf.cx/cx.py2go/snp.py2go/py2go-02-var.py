@@ -1,5 +1,8 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 
+exercise="py2go-02"
+print(f"solution for exercise {exercise}:")
+
 '''
 1. Definieren Sie zwei Variablen <my_name> und <three>
 2. Weisen Sie <my_name> Ihren Namen als String zu

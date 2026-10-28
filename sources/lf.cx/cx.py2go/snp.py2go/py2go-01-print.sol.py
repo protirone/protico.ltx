@@ -1,5 +1,8 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 
+exercise="py2go-01"
+print(f"solution for exercise {exercise}:")
+
 '''
 1. Definieren Sie zwei Variablen my_name und my_vorname
 2. Belegen Sie diese mit Ihren realen Namen
