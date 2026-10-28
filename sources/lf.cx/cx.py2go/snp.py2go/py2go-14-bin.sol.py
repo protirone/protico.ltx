@@ -1,6 +1,6 @@
 # (C) 2025 K.Reincke: proTirone snippet [CC-BY-4.0]
 
-exercise="py2go-11"
+exercise="py2go-14"
 print(f"solution for exercise {exercise}:")
 
 '''
