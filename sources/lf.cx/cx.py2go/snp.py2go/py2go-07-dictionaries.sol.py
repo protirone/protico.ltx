@@ -10,7 +10,7 @@ print(f"solution for exercise {exercise}:")
    Geben Sie dieses Dictionary aus.
 2. Sortieren Sie dieses Dictionary nach Nachnamen und geben Sie es erneut aus.
    Geben Sie dabei alle einzelnen Modifikationen gesondert aus.
-3. Sortieren Sie das Dictionary nach Vornnamen und geben Sie es erneut aus.
+3. Sortieren Sie das Dictionary nach Nachnamen (keys) und geben Sie es erneut aus.
    Geben Sie dabei alle einzelnen Modifikationen gesondert aus.
    Beobachten Sie den Unterschied!
 4. Erweitern Sie das Dictionary um ein Klassenbuch in Form einer Liste,
@@ -46,8 +46,8 @@ a.) eine 'leere Menge' zuweist und diese schrittweise befüllt
 
 oder
 
-b) direkt mit den Schlüssel-Wert-Paaren initialisiert: sie werden in gescxhweifte Klammern gesetzt 
-   und mit Kammata von einander getrennt.
+b) direkt mit den Schlüssel-Wert-Paaren initialisiert: sie werden in geschweifte Klammern gesetzt 
+   und mit Kommata von einander getrennt.
     my_animals={
       'cat1_name': 'Lola', 
       'cat1_age': 1.6, 
@@ -81,7 +81,7 @@ die Funktion 'dict' macht dann aus dem Ergebnis der Sortierung wieder ein Dictio
 
 dic={}
 for key in dic:
-   print(key,dic{key}) 
+   print(key,dic[key]) 
 '''
 
 print("Lösung zu Aufgabe 7.1:")
