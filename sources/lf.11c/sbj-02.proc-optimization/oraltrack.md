@@ -7,9 +7,15 @@
 <!-- LTeX:Language=de-DE -->
 
 
-### A) Ausgangspunkt *AP[1|2]-Abarbeitungsprozess* (von cx.apx-strategy\*) **[→ ZP:Sheet:2]**
+### A) Anknüpfungspunkt *AP[1|2]-Abarbeitungsprozess* (von cx.apx-strategy\*) **[→ ZP:Sheet:2]**
 
-### B) *FMEA* 
+* Prozessvorschlag von mir: 3 Durchgänge
+* Vorerfahrungen der Schülerinnen
+* Ausprobieren anhand einer AP2-Prüfung
+* Erfahrungsauswertung
+* Revision des Prozesses: 2 Durchgänge, bei Durchgang 2 direkte und indirekte Infos gleichzeitig ermitteln.
+
+### B) *FMEA* **[→ ZP:Sheet:3]**
 
 * steht für *"Failure Mode and Effects Analysis"* = *"Fehlermöglichkeits- und Einflussanalyse"*,
 * ist ein Verfahren, um auf Fehler / Abweichungen entsprechend ihrer relativen Wichtigkeit reagieren zu können,
@@ -22,7 +28,7 @@
   
 #### B.1) 
 
-*FMEA*-Prozess  **[→ ZP:Sheet:3]**
+*FMEA*-Prozess **[→ ZP:Sheet:4]**
 
 * 1) Bilde interdisziplinäres Team (Experten) aus Konstruktion, Entwicklung, Versuch, Fertigungsplanung, Fertigungsausführung, Qualitätsmanagement.
 * 2) Beschreibe das System/den Prozess hinsichtlich Struktur und Funktion der seiner Elemente.
@@ -63,7 +69,6 @@ Grundidee:
 *FMEA*-Subtypen
 
 * *Design-FMEA* (D:FMEA): soll systematisch Produktfehler während der Konstruktionsphase entdecken
-* ...
 * *Prozess-FMEA* (P-FMEA): soll mögliche Schwachstellen im Herstellungsprozess zum Ziele der Qualitätssteigerung ermitteln 
   * hängt bzgl. Produktgüte mit D-FMEA zusammen,
   * als Mängel gelten dann z.B.
@@ -74,6 +79,17 @@ Grundidee:
 * *Korrektive FMEA*: soll in späteren Phasen des Productlifecycles Fehler entdecken. [REAKTION]
 
 Hinweis zur Unterscheidung:
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:Process Improvement:01**</span>
+
+* [ ] Klassifizieren Sie den AP2-Abarbeitungsprozesses nach den Kategorien *Design-FMEA*, *Prozess-FMEA*, *Präventive FMEA*, *Korrektive FMEA*
+
+<!-- uebung::end -->
+
+Lösung:
 
 Der *AP2-Abarbeitungsprozess* soll den Schülerinnen in der AP2 helfen. Mit der ersten Klasse haben wir in folgenden Schritten designt
 
@@ -89,17 +105,19 @@ Der *AP2-Abarbeitungsprozess* soll den Schülerinnen in der AP2 helfen. Mit der 
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:proc-analysis:01**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:Process Improvement:02**</span>
 
-* [ ] Formulieren Sie auf der Basis Ihrer Erfahrung 3 Fehler, die man während des AP2-Abarbeitungsprozesses machen kann.
+* [ ] Formulieren Sie auf der Basis Ihrer Erfahrung 5 Fehler, die man während des AP2-Abarbeitungsprozesses machen kann.
 * [ ] Führen Sie dafür eine FMEA-Analyse durch.
 * [ ] Ranken Sie die Fehler entsprechend ihrer **RPZ**.
 
 <!-- uebung::end -->
 
+Lösung: je persönlich
+
 ---
 
-### C) **Fehlerbaumanalyse**  **[→ ZP:Sheet:4]**
+### C) **Fehlerbaumanalyse**  **[→ ZP:Sheet:5]**
 
 * heißt auch *Fault Tree Analysis (FTA)*  
 * ist ein Verfahren zur Zuverlässigkeitsanalyse von technischen Anlagen und Systemen unter Ausnutzung der boolschen Algebra
@@ -126,7 +144,7 @@ Bewertung
   * mathematisch schwer/aufwendig auszuführen bei komplexen Systemen
 
 
-### D) **ABC**-Analyse:  **[→ ZP:Sheet:5]**
+### D) **ABC**-Analyse:  **[→ ZP:Sheet:6]**
 
 * ist ein betriebswirtschaftliches Analyseverfahren zum Klassifizieren von Ereignisse in wichtige, mittlere und unwichtige Fehler, Befunde, Ereignisse
 * setzt eine Liste von Wertepaaren (Typ -> Wert) voraus
@@ -150,12 +168,12 @@ Vorgehen
 * 10. Kümmere Dich als zuerst um die Klasse A Fehler
 
 #### D.2)
-Beispiel **[→ ZP:Sheet:6]**
+Beispiel **[→ ZP:Sheet:7]**
 
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:proc-analysis:02**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:Process Improvement:03**</span>
 
 Gesetzt, Sie wollten ermitteln, worum Sie am ehesten kümmern sollten, wenn Sie die Nutzung Ihres nächsten Füllers signifikant verbessern wollten. 
 
@@ -174,7 +192,7 @@ Gesetzt, Sie wollten ermitteln, worum Sie am ehesten kümmern sollten, wenn Sie 
 
 <!-- uebung::end -->
 
-Lösung: **[→ ZP:Sheet:7]**
+Lösung: **[→ ZP:Sheet:8]**
 
 *Prozessschritte pro Füllerleben*:
 
@@ -200,11 +218,11 @@ Lösung: **[→ ZP:Sheet:7]**
 
 ---
 
-### E) Nutzwert-Analyse: **[→ ZP:Sheet:8]**
+### E) Nutzwert-Analyse: **[→ ZP:Sheet:9]**
 
 * ist eine systematische Methode zur Bewertung von Alternativen, 
 * erlaubt es, qualitative und/oder quantitative Kriterien einzubeziehen.
-* dient einer geordnete Entscheidungsfindung
+* dient einer geordneten Entscheidungsfindung
 * →  [https://www.munich-business-school.de/l/bwl-lexikon/nutzwertanalyse](https://www.munich-business-school.de/l/bwl-lexikon/nutzwertanalyse)
 
 #### E.1)
@@ -245,7 +263,7 @@ Es gelte:
 
 Ergebnis: Gewonnen hat Ps1
 
-### F) Entscheidungsmatrix **[→ ZP:Sheet:9]**
+### F) Entscheidungsmatrix **[→ ZP:Sheet:10]**
 
 * liefert fundierte Entscheidungen
 * berücksichtigt dabei einzelne Kriterien 
@@ -275,11 +293,11 @@ Es gelte:
 | Geschwindigkeit | 0.7 | 5*0.7=3.5 | 2*0.7= 1.4 | 6*0.7= 4.2 | 
 | Gesamt | 1 | 33.5 | 61,4 | 19.2 |
 
-Hier gewinnt Ps2
+Hier gewinnt PS2
 
 
 
-### G) **Ursache-Wirkungsdiagramm** **[→ ZP:Sheet:3]**
+### G) **Ursache-Wirkungsdiagramm** **[→ ZP:Sheet:11]**
 
 * ist assoziatives Verfahren, um 'nichts' aus dem Blick zu verlieren,
 * trennt Identifikation und Aggregation von der Analyse,
@@ -324,16 +342,18 @@ Bewertung
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:proc-analysis:02**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:Process Improvement:04**</span>
 
-* [ ] Führen Sie für den wichtigsten der 3 ermittelten Fehler eine Ursache-Wirkungsanalyse durch. Nutzen Sie dabei die vier Ms.
+* [ ] Führen Sie für den wichtigsten der 3 ermittelten Fehler aus der APX?-Analyse eine Ursache-Wirkungsanalyse durch. Nutzen Sie dabei die vier Ms.
 
 <!-- uebung::end -->
+
+Lösung: je persönlich
 
 ---
 
 
-### H) Prozess-Analyse-Kritierien:
+### H) Prozess-Analyse-Kritierien: **[→ ZP:Sheet:12]**
 
 
 * **Wirtschaftlichkeit**:- pekuniäreWirkung(Prozess) > pekuniärerAufwand(Prozess),
@@ -346,7 +366,7 @@ Bewertung
 
 Anmerkungen: können in F+G eingearbeitet werden
 
-### I) Managementmethoden zur Prozessverbesserung
+### I) Managementmethoden zur Prozessverbesserung **[→ ZP:Sheet:13]**
 
 #### I.1) 
 Kaizen
@@ -401,7 +421,6 @@ TQM
 * → [https://wirtschaftslexikon.gabler.de/definition/total-quality-management-tqm-47755](https://wirtschaftslexikon.gabler.de/definition/total-quality-management-tqm-47755)
 
 
-
 ### J) **DMAIC** Prozess
 
 * steht für  Define – Measure – Analyse – Improve – Control = Definieren – Messen – Analysieren – Verbessern – Steuern 
@@ -415,7 +434,26 @@ TQM
   * *Steuern* =  verankere gefundenen Verbesserungen im Alltagsbetrieb 
 * vgl. [https://de.wikipedia.org/wiki/DMAIC](https://de.wikipedia.org/wiki/DMAIC) 
 
-#### J.1)
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:Process Improvement:05**</span>
+
+Sie haben jetzt Methoden der Fehlergewichtung, der Gegenmaßnahmen und Prozesse zur Implementierung von Prozessverbesserungen.
+
+
+* [ ] Erfinden Sie ein Verfahren zur Messung des Grades der Verbesserungen von Prozessvarianten.
+* [ ] Drücken Sie den Grad der Verbesserung in einer Zahl aus, die auch die Qualität verschiedener Prozesse vergleichbar macht.
+
+<!-- uebung::end -->
+
+Lösung: DPMO und Six Sigma
+
+---
+
+### K) DPMO 
+
 DPMO
 
 * ist zentrale Kenngröße für die Qualität eines Prozesses
@@ -426,8 +464,30 @@ DPMO
   * ermittle die Anzahl der *möglichen* Fehler pro produzierter / verglichener Einheit = O(opportunities)
   * berechne den DPMO-Wert nach der Formel **`DPMO=(D/(N\*O))*1,000,000`**
 
-#### J.2) 
-SixSigma 
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:Process Improvement:06**</span>
+
+Meine Frau beschwert sich gelegentlich über die Qualität unseres Einkaufsprozesses:
+
+* Übers Jahr gesehen, sagt sie, gingen wir 52 mal einkaufen, 40 mal ich allein, 12 mal sei sie dabei.
+* Wenn Sie dabei sei, brächten wir alles mit nach Hause, was wir brauchen und aufgeschieben haben. 
+* Wenn ich hingegen allein führe, sähe das ganz anders aus:
+  * Jedes dritte Mal vergäße ich den Einkaufszettel und versuche es auswendig zu hinzukriegen. Mit mäßigem Erfolg: dann fehlten 30% dessen, was auf dem Zettel stünde.
+  * Wenn ich den Zettel dabei hätte, vergäße ich jedes 4. Mal, sagt sie, garantiert 3 Produkte und oder fände sie einfach nicht in den Regalen.
+  * Jedes 2. Mal käme ich mit diesen verdammten, bunt bedruckten Küchenrollen nach Hause, die sie sogar nicht abkönne.
+  * Und jedes Mal kaufte ich die veganen Wurstscheiben in Plastik, was sogar nicht umweltfreundlich sei.
+
+* [ ] Berechnen Sie den DPMO-Wert unseres Einkaufsprozesses.
+
+<!-- uebung::end -->
+
+Lösung:
+
+---
+
+### L) SixSigma 
 
 * gilt als Kennzahl der Prozessgüte
 * sagt eigentlich nur etwas über die Güte eines Prozesses im Vergleich zu vorherigen Prozessversionen aus,
@@ -460,7 +520,7 @@ SixSigma- Konzeption:
 * Vorteile: Verspricht mathematische Genauigkeit
 * Nachteile: hängt von der eigenen Fehlerdefinition ab
 
-#### J.3) 
+#### L.1) 
 Beispiel
 
 > 1. Ich hatte meinen Blutdruck zwischen 05/2024 u. 03/2025 163 mal gemessen: `N=163`* 
@@ -469,7 +529,7 @@ Beispiel
 > 4. Formel: `DPMO=(D/(N*O))*1.000.000=(58/163*2)*1000000=0,17791411*1000000=177914,11`
 > 5. Demnach gehörte mein Blutdruckmessungsprozess zur 6Sigma-Klasse von 2,x
 
-#### J.4)
+#### L.2)
 Zusammenspiel von **Normalverteilung** und **SixSigma**:
 
 * Die Idee ist, dass oft durchgeführte Prozesse zwar einen (idealen) Erwartungswert haben, im konkreten aber davon abweichen.
@@ -479,7 +539,7 @@ Zusammenspiel von **Normalverteilung** und **SixSigma**:
   * die y-Achse die Häufigkeit * Varianz / bzw. Standardabweichung 
   * Der Erwartungswert bildet den Peak.
   * Hinweis: 
-    * Erhöhung des Erwartungswertes verschiebt die Kurve nach rechts
+    * Erhöhung des Erwartungswertes verschiebt die Kurve nach rechts.
     * Erhöhung der Standardabweichung streckt sie. 
   
 * SixSigma dreht das System um: 

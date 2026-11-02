@@ -96,8 +96,11 @@ Lösung:
 **A) [→ ZP:Sheet:7]** 
 
 * soll dieselbe logische Verknüpfung zweier Aussagen sein, einmal in Python, einmal in C/C++
-* ist es tatsächlich aber nicht: C++-Beispiel testet, ob bei `x / 2' Rest bleibt, wenn
-  ja : 'durch 2 teilbar'. Ein Rest bleibt aber: wenn nicht durch 2 teilbar!
+* ist es tatsächlich aber nicht: das C++-Beispiel testet, 
+*  ob bei `x / 2' Rest bleibt, wenn ja : 'durch 2 teilbar'. Ein Rest bleibt aber: wenn nicht durch 2 teilbar!
+*  ob bei `x / 3' Rest bleibt, wenn ja : 'durch 3 teilbar'. Ein Rest bleibt aber: wenn nicht durch 3 teilbar!
+
+Das Ergebnis des c++-Beispiels ist ZUFÄLLIG richtig.
 
 
 ```
@@ -108,7 +111,12 @@ if x % 2 == 0 and x % 3 == 0 :
 else:
   print("nicht durch 2 und 3 teilbar")
 ```
- 
+ > *Lehrerin leitet mit Screenannotationen die Wahrheitswerte des if-Statements her:*
+> 
+> * `2 % 2 -> 0 => 0 == 0 -> T
+> * `2 % 3 -> 2 => 2 == 0 -> F
+> * T and F -> F
+
 ```
 /* C++ Example */
 int x=2;
@@ -116,12 +124,15 @@ if ((x % 2) && (x % 3)) {
   cout << "durch 2 und 3 teilbar - hmmh?";
 }
 else {
-  cout << "nicht durch 2 und 3 teilba - hmmh?";
+  cout << "nicht durch 2 und durch 3 teilbar - hmmh?";
 }
 
 ```
-
-
+ > *Lehrerin leitet mit Screenannotationen die Wahrheitswerte des if-Statements her:*
+> 
+> * `2 % 2 -> 0 -> F
+> * `2 % 3 -> 2 -> T
+> * F && T -> F
 
 ---
 
