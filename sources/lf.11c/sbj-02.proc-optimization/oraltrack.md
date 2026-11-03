@@ -19,7 +19,7 @@
 
 * steht für *"Failure Mode and Effects Analysis"* = *"Fehlermöglichkeits- und Einflussanalyse"*,
 * ist ein Verfahren, um auf Fehler / Abweichungen entsprechend ihrer relativen Wichtigkeit reagieren zu können,
-* will mögliche Produktfehlern eine zu Kennzahl zuordnen, anhand derer die Dringlichkeit der Bearbeitung/Reaktion im Vergleich zu anderen Fehlern erkennbar wird, 
+* will möglichen Produktfehlern eine zu Kennzahl zuordnen, anhand derer die Dringlichkeit der Bearbeitung/Reaktion im Vergleich zu anderen Fehlern erkennbar wird, 
 * berechnet die relative Wertigkeit aus
   * der Bedeutung des Fehlers für den Kunden (Auswirkung),
   * der Wahrscheinlichkeit des Fehlereintritts (Auftretenswahrscheinlichkeit),
@@ -49,7 +49,7 @@ Grundidee:
 
 * **B:** je gewichtiger die Auswirkungen eines Fehlers, desto wichtiger ist es, sich um die Beseitigung seiner Ursache zu kümmern
 * **A:** je häufiger ein Fehler auftritt, desto wichtiger ist es, sich um die Beseitigung seiner Ursache zu kümmern
-* **E:** je leichter / je schwere ein Fehler zu entdecken, desto mehr / weniger Ressourcen sollte man in die Bereinigungen stecken
+* **E:** je leichter / je schwerer ein Fehler zu entdecken, desto mehr / weniger Ressourcen sollte man in die Bereinigungen stecken
 
 `=>`
 
@@ -119,10 +119,10 @@ Lösung: je persönlich
 
 ### C) **Fehlerbaumanalyse**  **[→ ZP:Sheet:5]**
 
-* heißt auch *Fault Tree Analysis (FTA)*  
-* ist ein Verfahren zur Zuverlässigkeitsanalyse von technischen Anlagen und Systemen unter Ausnutzung der boolschen Algebra
-* ist DIN normiert (DIN EN 61025)
-* arbeitet 'halb assoziativ'
+* heißt auch *Fault Tree Analysis (FTA)*, 
+* ist ein Verfahren zur Zuverlässigkeitsanalyse von technischen Anlagen und Systemen unter Ausnutzung der boolschen Algebra,
+* ist DIN normiert (DIN EN 61025),
+* arbeitet 'halb assoziativ',
 * → [https://de.wikipedia.org/wiki/Fehlerbaumanalyse](https://de.wikipedia.org/wiki/Fehlerbaumanalyse)
 
 #### C.1)
@@ -166,6 +166,20 @@ Vorgehen
   * **Klasse B Fehler**: die nächsten Fehler, die zusammen 15\% des Gesamtschadens ausmachen.
   * **Klasse C Fehler:** die letzten Fehler, die zusammen 5\% des Gesamtschadens ausmachen.
 * 10. Kümmere Dich als zuerst um die Klasse A Fehler
+
+Ideelle Basis für Clusterung: Pareto-Prinzip = 80-20-Regel = 20% der Einheiten sind für 80% Effekt zuständig.
+
+* 80%(100)=80 + 20%(100)=20 = 100
+* 80%(20%)=16 + 20%(20%)=4 = 20
+
+Daraus wird: 
+* die ersten nx Einheiten, die 80% (+x) der Wirkung ausmachen: Klasse A Probleme
+* die letzten ny Einheiten, die <=5% der Wirkung ausmachen: Klasse C Problem
+* die mitteler nz Einheiten, die 15%(+-x) der Wirkung ausmachen.
+
+> Die Einteilung in 80%,15%,5% sind "[...] sinur Beispiele für entsprechende Einteilungen. Jedes Unternehmen legt die Prozentzahl seiner Güter selbst fest.
+
+→ [vgl. [https://de.wikipedia.org/wiki/ABC-Analyse](https://de.wikipedia.org/wiki/ABC-Analyse)]
 
 #### D.2)
 Beispiel **[→ ZP:Sheet:7]**
@@ -211,12 +225,21 @@ Lösung: **[→ ZP:Sheet:8]**
 |---|---|---|---|
 | Kolbenüberlauf |0.58 | A | wichtig |
 | Tinte trocken | 0.29 | A | wichtig |
-| Feder verbogen | 0.09 | B | unwichtig |
+| Feder verbogen | 0.09 | B | mittelwichtig |
 | Haarriss | 0.04 | C | unwichtig |
 
 *Ergebnis*: Sie sollten die Füllerbefüllung neu trainieren und sich eine neue Füllerlieferantin suchen, wenn Sie Ihren Füllerprozess um 80% verbessern wollen.
 
 ---
+
+Hinweis: Die Einteilung ist in gewisser Hinsicht etwas willkürlich, weil das Pareto-Prinzip selten rein wirksam ist.
+
+Faustregel:
+
+1. Klasse-A-Fehler seien die ersten m Fehler, die zusammen für fast 80% oder knapp über 80% des Gesamtschadens verantwortlich sind.
+2. Klasse-C-Fehler seien die letzten n Fehler, die zusammen für knapp unter 5% des Gesamtschadens verantwortlich sind.
+3. Klasse-B-Fehler seien die x Fehler dazwischen.
+
 
 ### E) Nutzwert-Analyse: **[→ ZP:Sheet:9]**
 
@@ -301,7 +324,7 @@ Hier gewinnt PS2
 
 * ist assoziatives Verfahren, um 'nichts' aus dem Blick zu verlieren,
 * trennt Identifikation und Aggregation von der Analyse,
-* stellt Ursache und Wirkung grafische dar, die zu einem Ergebnis führen oder dieses maßgeblich beeinflussen, 
+* stellt Ursache und Wirkung grafisch dar, die zu einem Ergebnis führen oder dieses maßgeblich beeinflussen, 
 * expliziert faktische Abhängigkeiten,
 * hat mehrere Namen
   *  **Ishikawa-Diagramm** bekannteste Form (stammt aus Qualitätsmanagement),
@@ -357,7 +380,7 @@ Lösung: je persönlich
 
 
 * **Wirtschaftlichkeit**:- pekuniäreWirkung(Prozess) > pekuniärerAufwand(Prozess),
-* **Rentabilität**: wenn val(Output)> val(Input), je größer, je produktiver,
+* **Rentabilität**: wenn val(Output)> val(Input), je größer, je rentabler,
 * **Produktivität**: val(Output)/val(Input), je größer, je produktiver
 * **Amortisation**: Anschaffungskosten + Betriebskosten*Zeit - Gewinn*Zeit = 0
 * **Break Even**: Zeitpunkt der Amortisation
@@ -434,14 +457,23 @@ TQM
   * *Steuern* =  verankere gefundenen Verbesserungen im Alltagsbetrieb 
 * vgl. [https://de.wikipedia.org/wiki/DMAIC](https://de.wikipedia.org/wiki/DMAIC) 
 
+### K) Zwischenfazit
+
+Betrachtet haben Sie bis jetzt einige Methoden / Prozesse 
+
+1. zur Fehlergewichtung (welches Problem steht als Nächstes an),
+2. zum Finden von Ursachen und Gegenmaßnahmen (welche Ursachen gibt es dafür, was kann ich ändern?)
+3. zur Implementierung von Prozessverbesserungen (wie gehe ich bei Verbesserung vor?)
+
+Was sie nicht haben, ist eine Prozess-Kennzahl, mit/anhand der Sie
+
+1. die Qualität ihrer Prozessversionen gegeneinander abgrenzen/vergleichen können
+2. die Qualität ihres Prozesses gegen/mit der von anderen vergleichen können.
 
 ---
 
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:Process Improvement:05**</span>
-
-Sie haben jetzt Methoden der Fehlergewichtung, der Gegenmaßnahmen und Prozesse zur Implementierung von Prozessverbesserungen.
-
 
 * [ ] Erfinden Sie ein Verfahren zur Messung des Grades der Verbesserungen von Prozessvarianten.
 * [ ] Drücken Sie den Grad der Verbesserung in einer Zahl aus, die auch die Qualität verschiedener Prozesse vergleichbar macht.
@@ -452,7 +484,7 @@ Lösung: DPMO und Six Sigma
 
 ---
 
-### K) DPMO 
+### L) DPMO 
 
 DPMO
 
@@ -487,7 +519,7 @@ Lösung:
 
 ---
 
-### L) SixSigma 
+### M) SixSigma 
 
 * gilt als Kennzahl der Prozessgüte
 * sagt eigentlich nur etwas über die Güte eines Prozesses im Vergleich zu vorherigen Prozessversionen aus,
@@ -520,7 +552,7 @@ SixSigma- Konzeption:
 * Vorteile: Verspricht mathematische Genauigkeit
 * Nachteile: hängt von der eigenen Fehlerdefinition ab
 
-#### L.1) 
+#### M.1) 
 Beispiel
 
 > 1. Ich hatte meinen Blutdruck zwischen 05/2024 u. 03/2025 163 mal gemessen: `N=163`* 
@@ -529,7 +561,7 @@ Beispiel
 > 4. Formel: `DPMO=(D/(N*O))*1.000.000=(58/163*2)*1000000=0,17791411*1000000=177914,11`
 > 5. Demnach gehörte mein Blutdruckmessungsprozess zur 6Sigma-Klasse von 2,x
 
-#### L.2)
+#### M.2)
 Zusammenspiel von **Normalverteilung** und **SixSigma**:
 
 * Die Idee ist, dass oft durchgeführte Prozesse zwar einen (idealen) Erwartungswert haben, im konkreten aber davon abweichen.

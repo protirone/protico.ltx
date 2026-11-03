@@ -105,12 +105,22 @@
   \hline
   \textbf{Schritt} & \textbf{Fehler} & \textbf{Häufigkeit} & \textbf{abs.Sch} & \textbf{rel.Sch} & \textbf{\% G.Sch} & KL\\ \hline
   Füllerkauf & Haarriss im Kolben & 0.1 & 300€ & 30€ & 0.09 & C\\ \hline
-  Füllerkauf & Feder verbogen & 0.5 & 30€ & 15€ & 0.04& C\\ \hline \hline
+  Füllerkauf & Feder verbogen & 0.5 & 30€ & 15€ & 0.04& B\\ \hline \hline
   Tintenkauf & Tinte vertrocknet & 50*0.2 & 10€ & 100€ & 0.29& A\\ \hline \hline
   Befüllung & Kolbenüberlauf & 1000*0.2 & 1€ & 200€ &0.58&  A\\ \hline
    &  &  & G.Sch.: & 345€ & 1.0\\ \hline
   \end{tabular}
+  
+  $\rightarrow$
+
+  \begin{itemize}
+    \item[A] Kolbenüberlauf: für ~58\% vom Gesamtschaden verantwortlich 
+    \item[A] neu Tinte vertrocknet: für ~29\% vom Gesamtschaden verantwortlich
+    \item[B] Haarriss im Kolben: für ~9\% vom Gesamtschaden verantwortlich
+    \item[C] Feder verbogen: für ~5\% vom Gesamtschaden verantwortlich
+  \end{itemize}
   \end{footnotesize}
+
 \end{center}
 \end{frame}
 
@@ -186,12 +196,12 @@
   \frametitle{LF11C:02:Prozessverbesserung:Analysekriterien}
 
   \begin{itemize}
-    \item Wirtschaftlichkeit
-    \item Rentabilität
-    \item Produktivität
-    \item Amortisation
-    \item Break Even
-    \item Pareto Prinzip
+    \item Wirtschaftlichkeit :-  {\footnotesize pekuniäreWirkung(Prozess) > pekuniärerAufwand(Prozess)}
+    \item Rentabilität :-  {\footnotesize val(Output)> val(Input) [je größer Diff, desto rentabler]}
+    \item Produktivität :- {\footnotesize val(Output)/val(Input) [je größer Div., desto produktiver]}
+    \item Amortisation :- {\footnotesize Anschaffungskosten + Betriebskosten*Zeit - Gewinn*Zeit = 0}
+    \item Break Even :- {\footnotesize Zeitpunkt der Amortisation}
+    \item Pareto Prinzip :- {\footnotesize Zuerst das verbessern, was 80\% deiner Probleme verursacht.}
   \end{itemize} 
 \end{frame}
 
@@ -214,4 +224,29 @@
 \end{frame}
 
 
+\begin{frame}  
+  \frametitle{LF11C:02:Prozessverbesserung:Zwischenfazit}
 
+
+\end{frame}
+
+\begin{frame}  
+  \frametitle{LF11C:02:Prozessverbesserung:DPMO}
+
+\begin{itemize}
+  \item \textbf{\texttt{D}} = Anzahl der gemessenen Fehler im Bezugszeitraum
+  \item \textbf{\texttt{N}} = Anzahl der produzierten/verglichenen Units* im Bezugszeitraum
+  \item \textbf{\texttt{O}} = Anzahl möglichen Fehler pro produzierter/verglichener Unit* 
+\end{itemize}
+
+\vspace{0.5cm}
+\begin{center}
+  {\Large
+    DPMO (Defekts per Million) = \texttt{D / (N\*O) * 1.000.000}
+  }
+\end{center}
+
+\vspace{0.5cm}
+{\footnotesize *) Es kann auch ein Prozessdurchlauf eine Unit sein}
+
+\end{frame}
