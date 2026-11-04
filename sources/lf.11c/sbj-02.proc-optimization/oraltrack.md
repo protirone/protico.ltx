@@ -367,7 +367,7 @@ Bewertung
 <!-- uebung::start -->
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11c:sbj02:Process Improvement:04**</span>
 
-* [ ] Führen Sie für den wichtigsten der 3 ermittelten Fehler aus der APX?-Analyse eine Ursache-Wirkungsanalyse durch. Nutzen Sie dabei die vier Ms.
+* [ ] Führen Sie für die 3 wichtigsten ermittelten Fehler aus der APX?-Analyse eine Ursache-Wirkungsanalyse durch. Nutzen Sie dabei die vier Ms.
 
 <!-- uebung::end -->
 
