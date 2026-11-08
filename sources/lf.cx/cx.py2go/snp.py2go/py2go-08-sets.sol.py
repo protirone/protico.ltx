@@ -14,7 +14,7 @@ print(f"solution for exercise {exercise}:")
    Entfernen Sie das Element 'schwarz' aus der Originalmenge.
    Geben Sie Original und Kopie je aus.
 6. Erzeugen Sie eine zweite Menge mit den Elementen 'rot', 'gelb', 'magenta' und geben Sie diese aus.
-7. Geben Sie die Schnittmenge beider Mengen aus.
+7. Geben Sie die Schnittmenge der zuerst erzeugten Menge und der zuletzt erzeugten aus.
 8. Geben Sie die Vereinigungsmenge beider Mengen aus.
 9. Geben Sie die Differenzmenge(n) der beiden Mengen aus. Warum muss man beide Richtungen beachten?
 A. Vergleichen Sie Original und Sicherheitskopie zuerst mit der Differenzmengemethode.

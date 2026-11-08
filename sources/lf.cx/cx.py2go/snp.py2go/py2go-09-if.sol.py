@@ -27,7 +27,7 @@ Auch Python bietet Vergleichsoperatoren
 * '<'   :  ist kleiner
 
 Vergleichen kann man Variablen desselben Typs. Was als faktisch größer oder kleiner gewertet 
-wird, hängt vom Typ ab. Auswertet werdenn Vergleiche die Wahrheitswerte 'True' bzw. 'False'
+wird, hängt vom Typ ab. Ausgewertet werden Vergleiche in die Wahrheitswerte 'True' bzw. 'False'
 
 Als Reaktion auf einen Vergleich soll in der Regel eine Aktion, ein Kommando folgen. Solche
 Verbindungen stellt (z.B.) das Wenn-Dann- bzw. if-then-Stetemant her. Hier der syntaktische Aufbau
