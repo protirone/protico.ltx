@@ -1,0 +1,23 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} (C) 2025 K.Reincke: proTirone snippet [CC\PYGZhy{}BY\PYGZhy{}4.0]}
+
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{ipaddress}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{sys}
+
+\PYG{c+c1}{\PYGZsh{} set the default values}
+\PYG{n}{IP\PYGZus{}ADDR}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}192.168.0.2\PYGZsq{}}
+\PYG{n}{SN\PYGZus{}MASK}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}255.255.255.0\PYGZsq{}}
+\PYG{n}{NT\PYGZus{}ADDR}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}192.168.0.0\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} Rule: IP\PYGZus{}ADDR \PYGZam{} SN\PYGZus{}MASK \PYGZhy{}\PYGZgt{} NT\PYGZus{}ADDR:}
+
+\PYG{n}{ip\PYGZus{}addr\PYGZus{}int}\PYG{o}{=}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{)(}\PYG{n}{ipaddress}\PYG{o}{.}\PYG{n}{ip\PYGZus{}address}\PYG{p}{(}\PYG{n}{IP\PYGZus{}ADDR}\PYG{p}{))}
+\PYG{n}{nt\PYGZus{}addr\PYGZus{}int}\PYG{o}{=}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{)(}\PYG{n}{ipaddress}\PYG{o}{.}\PYG{n}{ip\PYGZus{}address}\PYG{p}{(}\PYG{n}{NT\PYGZus{}ADDR}\PYG{p}{))}
+\PYG{n}{sn\PYGZus{}mask\PYGZus{}int}\PYG{o}{=}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{)(}\PYG{n}{ipaddress}\PYG{o}{.}\PYG{n}{ip\PYGZus{}address}\PYG{p}{(}\PYG{n}{SN\PYGZus{}MASK}\PYG{p}{))}
+
+\PYG{k}{if} \PYG{p}{((}\PYG{n}{ip\PYGZus{}addr\PYGZus{}int}\PYG{o}{\PYGZam{}}\PYG{n}{sn\PYGZus{}mask\PYGZus{}int}\PYG{p}{)}\PYG{o}{==}\PYG{n}{nt\PYGZus{}addr\PYGZus{}int}\PYG{p}{):}
+  \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}The Rule: IP\PYGZus{}ADDR \PYGZam{} SN\PYGZus{}MASK \PYGZhy{}\PYGZgt{} NT\PYGZus{}ADDR is true\PYGZdq{}}\PYG{p}{)}
+\PYG{k}{else}\PYG{p}{:}
+  \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}häh?\PYGZdq{}}\PYG{p}{)}
+
+\end{MintedVerbatim}

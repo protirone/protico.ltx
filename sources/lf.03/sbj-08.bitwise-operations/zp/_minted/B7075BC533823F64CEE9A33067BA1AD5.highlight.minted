@@ -1,0 +1,8 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} (C) 2025 K.Reincke: proTirone snippet [CC\PYGZhy{}BY\PYGZhy{}4.0]}
+
+  \PYG{l+m+mh}{0x48} \PYG{l+m+mh}{0xe7} \PYG{l+m+mh}{0xda} \PYG{l+m+mh}{0x06} \PYG{l+m+mh}{0xef} \PYG{l+m+mh}{0x85}  \PYG{c+c1}{\PYGZsh{} MAC\PYGZhy{}Adresse}
+\PYG{o}{\PYGZam{}} \PYG{l+m+mh}{0xff} \PYG{l+m+mh}{0xff} \PYG{l+m+mh}{0xff} \PYG{l+m+mh}{0x00} \PYG{l+m+mh}{0x00} \PYG{l+m+mh}{0x00}  \PYG{c+c1}{\PYGZsh{} OUI\PYGZhy{}Bitmask}
+\PYG{o}{\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{o}{=} \PYG{l+m+mh}{0x48} \PYG{l+m+mh}{0xe7} \PYG{l+m+mh}{0xda} \PYG{l+m+mh}{0x00} \PYG{l+m+mh}{0x00} \PYG{l+m+mh}{0x00}  \PYG{c+c1}{\PYGZsh{} Organizationally Unique Identifier}
+\end{MintedVerbatim}
