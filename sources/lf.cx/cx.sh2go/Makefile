@@ -42,13 +42,16 @@ exercises:
 lesson-ort: bld oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-	if [ -d $${TGD}/$${SJN}-exam.sh2go ]; then rm -rf $${TGD}/$${SJN}-exam.sh2go ]; fi && \
+	if [ -d $${TGD}/$${SJN}-exa.sh2go ]; then rm -rf $${TGD}/$${SJN}-exa.sh2go ]; fi && \
 	if [ -d $${TGD}/$${SJN}-snp.sh2go ]; then rm -rf $${TGD}/$${SJN}-snp.sh2go ]; fi && \
-	cp -rd exam.sh2go $${SJN}-exam.sh2go && \
-	zip -r $${TGD}/$${SJN}-exam.zip $${SJN}-exam.sh2go && \
+	if [ -d $${TGD}/$${SJN}-prx.sh2go ]; then rm -rf $${TGD}/$${SJN}-prx.sh2go ]; fi && \
+	cp -rd prx.sh2go $${SJN}-prx.sh2go && \
+	zip -r $${TGD}/$${SJN}-prx.zip $${SJN}-prx.sh2go && \
+	cp -rd exa.sh2go $${SJN}-exa.sh2go && \
+	zip -r $${TGD}/$${SJN}-exa.zip $${SJN}-exa.sh2go && \
 	cp -rd snp.sh2go $${SJN}-snp.sh2go && \
 	zip -r $${TGD}/$${SJN}-snp.zip $${SJN}-snp.sh2go && \
-	rm -rf $${SJN}-snp.sh2go $${SJN}-exam.sh2go && \
+	rm -rf $${SJN}-snp.sh2go $${SJN}-exa.sh2go $${SJN}-prx.sh2go  && \
 	mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
 	@ tree ${BLD}
 
