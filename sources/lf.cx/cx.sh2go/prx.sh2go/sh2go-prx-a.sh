@@ -10,18 +10,23 @@ EXC=sh2go-prx-a
 echo "executing solution of task <$EXC>"
 
 # Im Arbeitsordner mit dieser Aufgabe befindet sich ein Unterordner namens
-# `preson-files`. Er enthält eine Reihe von Dateien, die in unterschiedlich
+# `students`. Er enthält eine Reihe von Dateien, die in unterschiedlich
 # tief verschachtelten Ordnern abgelegt sind.
 #
 # Die Dateien enthalten keine, eine oder mehrere Zeilen, die iggfls. jeweils 
-# nur das Präfix #xc- plus einen Usernamen enthalten. Die User können sein
+# nur das Präfix #xn- plus einen Usernamen enthalten. Die User können sein
 # Alexander, Daniel, David, Evelina oder Georgios.
 #
 # Eine Datei, die den Namen 'Georgios' enthielte, enthielte also eine Zeile
-# `#xc-Georgios`, sie könnte zusätzlich aber auch eine Zeile mit `#xc-Alexander`
+# `#xn-Georgios`, sie könnte zusätzlich aber auch eine Zeile mit `#xc-Alexander`
 # enthalten.
 
 # PREX-A: Schreiben Sie ein bash-Skript,  
 # das a) alle Dateien samt Pfad aus dem Ordner <students> auflistet und 
-# das b) (nur) unter dem Listeneintrag den Code `#xc-IHRVORNAME` ausgibt,
+# das b) (nur) unter dem Listeneintrag den Code `#xn-IHRVORNAME` ausgibt,
 # wenn die Datei Ihren wirklichen Vornahmen enthält.
+
+find students/ -type f |\
+  while read f; do\
+   echo $f;\
+  done
