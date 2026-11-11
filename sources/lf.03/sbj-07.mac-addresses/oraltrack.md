@@ -47,7 +47,8 @@ Hinweis: Nutzen Sie dazu zuerst eine Shell, recherchieren Sie dann den Vendor im
 
 1. WIN11: in *Powershell* cmd `ipconfig` bzw. `ipconfig /a` oder `getmac /v`
 2. LNX/WSL: in *bash* cmd `ifconfig` oder `ip addr show`
-3. Internetrecherche z.B. mit [https://www.dein-ip-check.de/tools/macfinder]([https://www.dein-ip-check.de/tools/macfinder)
+3. MAC: in *shell* cmd `networksetup -listallhardwareports` oder `ifconfig en0 | grep ether` oder `system_profiler SPAirPortDataType`
+4. Internetrecherche z.B. mit [https://www.dein-ip-check.de/tools/macfinder]([https://www.dein-ip-check.de/tools/macfinder)
 
 MAC-Adressen sind die Strings mit 6 Hexwerten hintereinander, getrennt durch `:` oder `-`
 
