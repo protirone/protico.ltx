@@ -1,5 +1,5 @@
 ---
-title: 'LFDE:01:iRechtschreibung'
+title: 'LF.DE:01:Rechtschreibung'
 author: [K. Reincke]
 date: PTCDATE
 keywords: [Rechtschreibung]
