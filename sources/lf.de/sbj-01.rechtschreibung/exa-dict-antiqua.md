@@ -8,4 +8,4 @@ Kurz nachdem er, so der Professor weiter, das Beispiel ausgesprochen habe, sei i
 
 Um seinen unüberlegten Fehler schnell wieder auszubügeln, habe er dann in den Hörsaal hinein gefragt, ob jemand anwesend sei, der den Namen Karl trage. Die Studenten hätten zunächst irritiert geschaut, weil ihnen nicht klar gewesen sei, warum dies von Belang gewesen wäre. Sekundenlang habe Stille geherrscht, bis sich aus einer der letzten Reihen jemand mit der Bemerkung zu Wort meldete: „Der ist krank!"
 
-Entnommen aus [https://www.diktat-truhe.de/](https://www.diktat-truhe.de/) und in die indirekte Rede 'übersetzt' v. Karsten Reincke
+Entnommen aus [https://www.diktat-truhe.de/](https://www.diktat-truhe.de/diktate/wahr-und-falsch.html). In die indirekte Rede 'übersetzt' v. K.R.

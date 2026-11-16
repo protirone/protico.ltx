@@ -210,6 +210,7 @@ Die Schüler taten, wie ihnen befohlen wurde.
 
 Nur ein Schüler brachte einen Vogel mit, der munter in seinen Händen zappelte. Die Mitschüler, die noch nicht verstanden hatten, worauf der Meister hinauswollte, lachten, weil dieser eine Schüler die Aufgabe nicht erfüllt hatte. "Warum hast du den Vogel nicht getötet?", fragte der Meister ihn. Da antwortete er: "Weil wir ihn an einem Ort töten sollten, wo niemand zusieht." Nun, da der Meister seinen Schülern gezeigt hatte, wie ehrbar und weise dieser Junge war, baten alle mit Tränen in den Augen um Vergebung.
 
+Entnommen aus [https://www.diktat-truhe.de/](https://www.diktat-truhe.de/). Modifikationen: K.R.
 
 ### 5) Zeichensetzung **[→ ZP:Sheet:5]**
 

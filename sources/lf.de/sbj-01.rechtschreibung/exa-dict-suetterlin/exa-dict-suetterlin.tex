@@ -1,0 +1,78 @@
+% This file is part of proScientia.ltx
+% (c) 2022 Karsten Reincke (https://github.com/kreincke/proScientia.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\documentclass[
+  DIV=calc,
+  BCOR=5mm,
+  11pt,
+  headings=small,
+  oneside,
+  abstract=true,
+  toc=bib,
+  english,ngerman]{scrbook}
+
+%%% (1) general configurations %%%
+\usepackage[utf8]{inputenc}
+\usepackage{a4}
+\usepackage[ngerman]{babel}
+
+%language specific quoting signs
+\usepackage[
+  style=german,
+  autostyle=true,
+]{csquotes}
+
+% language specific hyphenation
+\input{cfg/inc.babelhyphenations.tex}
+
+%%% (3) layout page configuration %%%
+
+% select the visible parts of a page
+% S.31: { plain|empty|headings|myheadings }
+\pagestyle{headings}
+
+% select the wished style of page-numbering
+% S.32: { arabic,roman,Roman,alph,Alph }
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% select the wished distances using the general setlength order:
+% S.34 { baselineskip| parskip | parindent }
+% - general no indent for paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.2ex plus 0.2ex minus 0.2ex}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{bookmarks=true,breaklinks=true,colorlinks=true,citecolor=blue,draft=false}
+
+\usepackage[T1]{fontenc}
+\usepackage{wesu}
+\usepackage{suetterl} % provided by fundus-suetterlin of TexLive
+
+\usepackage{fontawesome6}
+
+\begin{document}
+
+%% use all entries of the bliography
+\nocite{*}
+
+
+{\Large \wesu 
+
+Ein Professor erzählte einmal wie er vor einigen Jahren vielleicht waren es sieben oder acht eine Einführungsvorlesung gehalten habe Wie er es immer täte habe er auch damals mit dem Thema Logik begonnen Daher habe er zunächst erklärt was eine Aussage sei nämlich ein Satz oder ein Text dessen Inhalt entweder wahr oder falsch sei Als Beispiel habe er ohne gro{\ss} nachzudenken den Satz genannt Karl ist krank 
+
+Kurz nachdem er so der Professor weiter das Beispiel ausgesprochen habe sei ihm jedoch siedendhei{\ss} eingefallen dass er unbedingt eine lebende Person benötigt habe die Karl hie{\ss} sonst hätte sich sein Beispiel auf niemanden bezogen und der Satz wäre weder wahr noch falsch gewesen So etwas meinte der Professor sei ihm zuvor noch nie passiert und die Situation sei ihm besonders peinlich gewesen da es sich um einen Anfängerfehler handele 
+
+Um seinen unüberlegten Fehler schnell wieder auszubügeln habe er dann in den Hörsaal hinein gefragt ob jemand anwesend sei der den Namen Karl trage Die Studenten hätten zunächst irritiert geschaut weil ihnen nicht klar gewesen sei warum dies von Belang gewesen wäre Sekundenlang habe Stille geherrscht bis sich aus einer der letzten Reihen jemand mit der Bemerkung zu Wort habe Der ist krank
+
+}
+
+\vspace{0.5cm}
+
+\footnotesize{
+Entnommen aus \href{https://www.diktat-truhe.de/}{https://www.diktat-truhe.de/}. In die indirekte Rede 'übersetzt' v. K.R.
+}
+\end{document}
