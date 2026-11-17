@@ -68,19 +68,6 @@ zenprese:
 	@ echo "writing zenprese"
 	@ (cd zp && make clean && make zp.pdf && mv zp.pdf ../zenprese.pdf)
 
-# --- SECTION EXAMEN  ---
-# recreates oraltrack document, releases it into the lesson directory tree
-lesson-exa: bld exa
-	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
-	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-        mv ${EXADICTA} $${TGD}/$${SJN}-${EXADICTA} && \
-        mv ${EXADICTS} $${TGD}/$${SJN}-${EXADICTS}
-	@ tree ${BLD}
-
-exa:
-	make ${EXADICTA}
-	( cd ${EXADICTD} && make  ${EXADICTS} && mv ${EXADICTS} ../ )
-
 bld:
 	mkdir -p ${BLD}
 

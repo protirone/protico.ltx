@@ -6,7 +6,7 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-### 1.) Konzeption
+### 0.) Vorbereitung 
 
 --- 
 
@@ -21,17 +21,17 @@
     * `freeplane_xxx~upstream-1_all.deb` Datei herunterladen
     * `sudo apt-get install ./freeplane_xxx~upstream-1_all.deb` (Menueintrag wird unter Kategorie *Office* angelegt)
 
+* [ ] Laden Sie die Mindmap `sbj-01.server-setup-tasks.mm` von [https://github.com/protirone/protirone.lessons/tree/main/fachinformatik/lf.11d](https://github.com/protirone/protirone.lessons/tree/main/fachinformatik/lf.11d) herunter
 <!-- uebung::start -->
 
-####
-1.A Zu beachtende Bereiche (Knowldege Areas)
+### 1.) Konzeption einer Installation
 
 **[→ ZP:Sheet:2]**
 
-Grob gesagt, müssen Sie sich mindestens um folgende Fragen kümmern
+Grob gesagt, müssen Sie sich beim Aufsetzen eines Servers mindestens um folgende Fragen kümmern
 
 1. Welches Betriebssystem soll auf meinem Server installiert werden?
-2. Wie soll(en) die Festplatte(n) partioniert werden?
+2. Wie soll(en) die Festplatte(n) partitioniert werden?
 3. Was sind Dateizugriffsregeln in ihrem Betriebssystem?
 4. Welches Installationsmedium / -verfahren wollen Sie verwenden?
 5. Welche Eigenschaften soll Ihr System für alle Nutzer mitbringen / vorgeben?
@@ -47,9 +47,8 @@ Grob gesagt, müssen Sie sich mindestens um folgende Fragen kümmern
 Konkretisieren Sie diese Wissensbereiche:
 
 * [ ] Diskutieren Sie gruppenweise, was zu diesen Bereichen im Detail gehört
-* [ ] Erfassen Sie Ihre Fragen einer Markdowndatei.
-* [ ] Vergleichen Sie Ihre Einträge mit denen in der Mindmap `sbj-01.server-setup-tasks.mm` unter [https://github.com/protirone/protirone.lessons/tree/main/fachinformatik/lf.11d](https://github.com/protirone/protirone.lessons/tree/main/fachinformatik/lf.11d).
-* [ ] Laden Sie sich diese Mindmap herunter und reichen Sie sie um die Aspekte aus Ihrer Markdowndatei an, die in der Mindmap fehlen.
+* [ ] Vergleichen Sie Ihre Sichtweise mit der Ordnung in der heruntergeladenen Mindmap `sbj-01.server-setup-tasks.mm`,
+* [ ] Reichern Sie sie um die Aspekte an, die I.E. in der Mindmap fehlen.
 
 <!-- uebung::end -->
 
@@ -59,7 +58,7 @@ Konkretisieren Sie diese Wissensbereiche:
 <span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11d:01:Server-Installation:03**</span>
 
 
-Beantworten Sie bitte dann die gesammelten Fragen und Aspekte, die es bei der Installation eines Servers zu berücksichtigen gilt, und entschieden Sie sich wo nötige für eine jetzt und hier umsetzbare Variante: 
+Beantworten Sie bitte dann die gesammelten Fragen und Aspekte, die es bei der Installation eines Servers zu berücksichtigen gilt, und entschieden Sie sich wo nötig für eine jetzt und hier umsetzbare Variante: 
 
 * [ ] Diskutieren Sie die Fragen Ihrer Leit-Mindmap zur Installation eines Servers gruppenweise und/oder mit Ihrer Lehrerin.
 * [ ] Markieren Sie die, für deren Beantwortung Sie noch Informationen von Ihrer Lehrerin benötigen. 
@@ -71,16 +70,15 @@ Gehen Sie bitte davon aus, dass Sie die Fragen / Entscheidungen nicht beantworte
 
 <!-- uebung::end -->
 
+Lösung:
+
+
 ---
 
-
-### 2.) Umsetzung
-
-
-### 3.) Hintergrundinformationen
+### 2.) Exkurse Hintergrundinformationen
 
 
-#### 3.A)
+#### 2.A)
 Festplattendesign, Partitionen und Nutzungszuordnung
 
 * __Unter W11__:
@@ -124,8 +122,8 @@ Festplattendesign, Partitionen und Nutzungszuordnung
 Das Festplattendesign ist 
 
 * die Einteilung der Festplatte in Partitionen,
-* deren Zuordnung zu Mountpoints entsprechend der intendierten Zwecke
-* die Wahl des je dazu passenden Dateisystems
+* deren Zuordnung zu Mountpoints entsprechend der intendierten Zwecke,
+* die Wahl des je dazu passenden Dateisystems.
   
 Unter LNX gibt es Strategien für eine geeignetes `Festplattendesign`:
 
@@ -161,44 +159,104 @@ Unter LNX gibt es Strategien für eine geeignetes `Festplattendesign`:
 
 Lösung:
 
-Unter Windows wird nur die erste Partition gefunden und angezeigt. Grund: Windows kennt
-das Dateisystem *ext3* nicht.
+Unter Windows wird nur die erste Partition gefunden und angezeigt. Grund: Windows kennt das Dateisystem *ext3* nicht.
 
 ---
 
+#### 2.B)
+Was sind Tastaturlayouts
 
-#### 3.B)
+* Das Tastaturlayout stammt immer noch aus den Zeiten der Schreibmaschine: weniger oft verhaken.
+* Layoutname sind die ersten 6 Tasten von links: 
+* Im Deutschen ist das Z häufiger als das Y: deshalb: QUWERTZ statt QUERTY
+
+#### 2.C)
+Was ist eine ISO-Datei
+
+**Ausgangspunkt**
+
+* Festplatten werden partitioniert. (z.B. grparted, etc. ...)
+* Partitionen werden formatiert (mit Filesystem versehen: gparted, etc...)
+* Formatierte Paritionen werden gemounted (als Subordner/-dateien vom Mountpoint)
+* Gemountete, formatierte Partitionen werden mit Dateien beschrieben.
+* Sticks sind sozusagen 'kleinere' Festplatten.
+
+**ISO-Dateien**
+
+sind
+
+* Abbilder aller Dateien und Pfade einer CD / DVD
+* liefern das Filesystem intern mit
+* lassen sich als virtuelle Laufwerke mounten.
+
+
+**Konsequenzen**
+
+1. Eine ISO Datei auf einen Stick zu kopieren (auf ein existierendes) Filesystem, macht den Inhalt nicht zugänglich.
+2. ISO-Dateien müssen als Partition auf den Stick geschrieben werden. (Disk Creator, Brasero, etc.)
+3. Sticks mit ISO-Dateien zu formatieren, um den ganzen Platz zurückzugewinnen, reicht nicht aus, weil Partion für ISO-File erhalten bleibt. Sie müssen repartioniert werden (gpartet)
+
+
+#### 2.D)
 Distribution / Operatingsystem
 
-#### 3.C)
+#### 2.E)
 Kommandos zur Anreicherung / Modifikation der Installation
 
-#### 3.D)
-Ablage der Konfigurationsdateien
-
-#### 3.D)
+#### 2.F)
 Dateisysteme
 
-#### 3.E)
+#### 2.G)
 Installationsmedium (Bootstick etc.)
 
-#### 3.F)
-Tastaturlayout, Betriebssprache, Zeitzone und Zeitserver
+#### 2.H)
+Betriebssprache, Zeitzone und Zeitserver
 
-#### 3.G)
+#### 2.I)
 Zu installierende Services (= Server)
 
-#### 3.H)
+#### 2.J)
 User und Dateirechte
 
-#### 3.I)
+#### 2.K)
 Datenablage
 
-#### 3.J)
+#### 2.L)
 Datensicherungskonzept
 
-#### 3.K)
-Sonstiges
+#### 2.m)
+Manuelle Paketinstallation versus graphischer Paketmanager
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LF11d:01:Server-Installation:04**</span>
 
 
 
+
+* [ ] Erstellen Sie einen bootbaren USB-Stick mit der ISO-Datei zur Installation Ihres Betriebssystem [UBUNTU 26.04.01]
+* [ ] Booten Sie vom Stick (mit Hilfe des Bios des zu installierende Servers) [esc / F12]
+* [ ] Übernehmen Sie Ihre Entscheidungen
+* [ ] Wählen Sie die minimale Installation
+* [ ] Booten Sie neu
+* [ ] Updaten Sie die Pakete auf den je letzten Stand (apt-get update && apt-get upgrade)
+
+
+<!-- uebung::end -->
+
+Lösung:
+
+
+Bewertung für BGE-Stunden:
+
+| Step | Target | DoD | Points |
+|---|---|---|---|
+| 1. | Installation des Servers + Paketupdate | Booten | 1 |
+| 2. | Installation Openssh | Synaptic Pakete zeigen + systemctl status ssh | 1 |
+| 3. | Installation Nginx (Port 80 /var/www) | Nginx mit ps ermitteln + /var/www anzeigen | 1 |
+| 4. | Installation Apache2 (Port 10080 /vol/www) | Apache2 mit ps ermitteln + /var/www anzeigen | 1 |
+| 5. | Apache Module installieren | mod_php + mod_python status + rewrite | 1 |
+| 6. | Alle ssh Verbindung | mod_php + mod_python status + rewrite | 1 |
+ 
+---

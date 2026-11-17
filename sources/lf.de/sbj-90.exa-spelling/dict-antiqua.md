@@ -1,6 +1,13 @@
 <!-- LTeX:Language=de-DE -->
 
-### Prüfungsdiktat: 'Wahrheit'
+<!-- uebung::start -->
+### <span style="color: green;">Diktat</span> <span style="color:magenta;">DE:01/01:01</span>
+
+* [ ] Schreiben Sie den diktierten Text in der vereinbarten Weise mit. (Handschrift oder Editor)
+
+<!-- uebung::end -->
+
+Lösung
 
 Ein Professor erzählte einmal, wie er vor einigen Jahren, vielleicht waren es sieben oder acht, eine Einführungsvorlesung gehalten habe. Wie er es immer täte, habe er auch damals mit dem Thema („)Logik(") begonnen. Daher habe er zunächst erklärt, was eine („)Aussage(") sei, nämlich ein Satz oder ein Text, dessen Inhalt entweder wahr oder falsch sei. Als Beispiel habe er, ohne groß nachzudenken, den Satz genannt: („)Karl ist krank.(") 
 
@@ -9,3 +16,11 @@ Kurz nachdem er, so der Professor weiter, das Beispiel ausgesprochen habe, sei i
 Um seinen unüberlegten Fehler schnell wieder auszubügeln, habe er dann in den Hörsaal hinein gefragt, ob jemand anwesend sei, der den Namen Karl trage. Die Studenten hätten zunächst irritiert geschaut, weil ihnen nicht klar gewesen sei, warum dies von Belang gewesen wäre. Sekundenlang habe Stille geherrscht, bis sich aus einer der letzten Reihen jemand mit der Bemerkung zu Wort meldete: „Der ist krank!"
 
 Entnommen aus [https://www.diktat-truhe.de/](https://www.diktat-truhe.de/diktate/wahr-und-falsch.html). In die indirekte Rede 'übersetzt' v. K.R.
+
+---
+<!-- uebung::start -->
+### <span style="color: green;">Zeichensetzung</span> <span style="color:magenta;">DE:01/01:02</span>
+
+* [ ] Setzen Sie im ausgeteilten Text die Zeichensetzung richtig. Es können Punkte, Ausführungszeichen, Fragezeichen, Kommata, Doppelpunkte und 'Anführungszeichen unten' und 'Anführungszeichen oben' vorkommen
+
+<!-- uebung::end -->
