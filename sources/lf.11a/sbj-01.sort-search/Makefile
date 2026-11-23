@@ -43,10 +43,12 @@ lesson-ort: oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
 		if [ -d $${TGD}/$${SJN}-snp.sose ]; then rm -rf $${TGD}/$${SJN}-snp.sose ]; fi && \
-		cp -rd snp.sose $${TGD}/$${SJN}-snp.sose && \
-		cp -rd snp.sose $${SJN}-snp.sose && \
-		zip -r $${TGD}/$${SJN}-snp.sose.zip $${SJN}-snp.sose && \
-		rm -rf $${SJN}-snp.sose && \
+		cp -rd snp.sose $${SJN}-snp && \
+		zip -r $${TGD}/$${SJN}-snp.zip $${SJN}-snp && \
+		rm -rf $${SJN}-snp && \
+		cp -rd exa.sose $${SJN}-exa && \
+		zip -r $${TGD}/$${SJN}-exa.zip $${SJN}-exa && \
+		rm -rf $${SJN}-exa && \
     mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
 	@ tree ${BLD}
 

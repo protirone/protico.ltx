@@ -1,0 +1,13 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} (C) 2025 K.Reincke: }
+\PYG{c+c1}{\PYGZsh{} proTirone }
+\PYG{c+c1}{\PYGZsh{} snippet [CC\PYGZhy{}BY\PYGZhy{}4.0]}
+
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{pandas}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{pd}
+
+\PYG{n}{ma} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}Hello World\PYGZdq{}}
+\PYG{n}{mb} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}from the\PYGZdq{}}
+\PYG{n}{mc} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}script included\PYGZdq{}}
+\PYG{n}{md} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}by \PYGZbs{}inputminted\PYGZdq{}}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{ma}\PYG{p}{,}\PYG{n}{mb}\PYG{p}{,}\PYG{n}{mc}\PYG{p}{,}\PYG{n}{md}\PYG{p}{)}
+\end{MintedVerbatim}

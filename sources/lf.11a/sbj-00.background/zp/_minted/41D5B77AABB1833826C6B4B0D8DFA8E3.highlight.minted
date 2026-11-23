@@ -1,0 +1,11 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash}
+
+\PYG{c+c1}{\PYGZsh{} script literally}
+\PYG{c+c1}{\PYGZsh{} embedded into the}
+\PYG{c+c1}{\PYGZsh{} latex file by:}
+\PYG{c+c1}{\PYGZsh{} \PYGZbs{}begin\PYGZob{}minted\PYGZcb{}}
+
+\PYG{n+nv}{MESSAGE}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Hello World\PYGZdq{}}
+\PYG{n+nb}{echo}\PYG{+w}{ }\PYG{n+nv}{\PYGZdl{}MESSAGE}
+\end{MintedVerbatim}
