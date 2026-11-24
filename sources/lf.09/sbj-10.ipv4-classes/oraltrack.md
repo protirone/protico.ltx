@@ -196,11 +196,10 @@ Bitte planen Sie ein Netz, dass die Wünsche durch eine geeignete Segmentierung 
 
 <!-- uebung::end -->
 
----
 
 **Lösung:** 
 
-**LF09:02:02 [→ ZP:Sheet:11] Initiale Bedarfsanalyse**
+**LF09:10:02 [→ ZP:Sheet:11] Initiale Bedarfsanalyse**
 
 * _Abkürzungen_
   * **E** = Employees / Mitarbeiter
@@ -224,7 +223,7 @@ Bitte planen Sie ein Netz, dass die Wünsche durch eine geeignete Segmentierung 
 
 → Das Netzwerkdesign wird zu einem mehrstufigen, iterativen Prozess.
 
-**LF09:02:02 [→ ZP:Sheet:12] initiales Netzwerkdesign**
+**LF09:10:02 [→ ZP:Sheet:12] initiales Netzwerkdesign**
 
 * *Minimal Viable Product* : 1 Core-Netz, alle Rechner im Core-Netz, 1 Router im Core-Netz mit Hopping heraus ins Internet (Core-Dateway).
 * *Erweiterungen*: 
@@ -237,7 +236,7 @@ Bitte planen Sie ein Netz, dass die Wünsche durch eine geeignete Segmentierung 
   * X:) 2. Router in DEV mit Interface nach PROD
   * Z:) Goldplating: Router in MNG mit Interface nach HR und DEa etc.
 
-**LF09:02:02 [→ ZP:Sheet:13] Bereinigte Bedarfsanalyse**
+**LF09:10:02 [→ ZP:Sheet:13] Bereinigte Bedarfsanalyse**
 
 * _Abkürzungen_
   * **E** = Employees / Mitarbeiter
@@ -258,8 +257,31 @@ Bitte planen Sie ein Netz, dass die Wünsche durch eine geeignete Segmentierung 
    * Die Zugriffe müssen zusätzlich zu Netzwerkstruktur per Firewall-Regeln in den zuständigen Routern begrenzt werden. 
 
 
-**LF09:02:02 [→ ZP:Sheet:14] Adressinstantiierung**
+**LF09:10:02 [→ ZP:Sheet:14] Adressinstantiierung**
 
-**LF09:02:02 [→ ZP:Sheet:15] Finales Netzwerkdesign**
+**LF09:10:02 [→ ZP:Sheet:15] Finales Netzwerkdesign**
 
+---
 
+**LF09:10:03 [→ ZP:Sheet:17] Mini-Segmentation-Task**
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">LF09:10:Mini-Segmentierung:03</span>
+
+* [ ] Segmentieren Sie ein /25 Netz in 2 Gebrauchsnetze und ein Verwaltungsnetz.
+* [ ] Das Verwaltungsnetz enthalte den Außenrouter (Zugang ins Internet), einen Arbeitsrechner und zwei Binnenrouter (, die den Gebrauchsnetzen einen indirekten Zugang ins Internet bieten).
+* [ ] Beantworten Sie die Frage, wie viele Geräte man jeweils zusätzlich in den Gebrauchsnetzen noch anschließen kann.
+
+Hinweis: Clever wäre es, auch hier folgende Arbeitsschritte zu durchlaufen
+
+* Initiale Bedarfsanalyse erstellen
+* Initialen Netzplan erstellen
+* ggf. bereinigte Bedarfsanalyse erstellen
+* Adressbereiche verteilen
+* Finalen Netzplan erstellen 
+
+<!-- uebung::end -->
+
+Lösung **[→ ZP:Sheet:17]**
+
+---
