@@ -94,6 +94,10 @@ ether a0:d3:65:d3:60:ee  (Ethernet)
 
 ist moderner als ipfconfig, liefert feinere Aussagen.
 
+Alternative in der Powershell:
+
+`pwsh Get-NetIPAddress` ggf. mit Parameter `-addressfamily ipv6`
+
 **Nette Einzelanwendungen:**
 
 * `ip address show`  (= IPv4- und IPv6-Adressen in CIDR-Notation)

@@ -42,7 +42,7 @@ Anmerkung:
 
 Finden Sie mit `ipconfig` bzw.  `ifconfig` Ihre IPv6-Adresse im Schulnetz
 
-* [ ] Finden Sie mit `ipconfig` bzw.  `ifconfig` Ihre IPv6-Adresse im Schulnetz
+* [ ] Finden Sie mit `ipconfig` bzw.  `ifconfig` bzw. mit `pwsh Get-NetIPAddress [-addressfamily IPv6]` Ihre IPv6-Adresse im Schulnetz
 * [ ] Geben Sie die IPv6-Netzadresse des Schulnetzes an.
   
 <!-- uebung::end -->
