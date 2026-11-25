@@ -288,7 +288,9 @@ Denn
 Für jede einzelne Schülerin: 
 
 * [ ] Wenden Sie die Auftrittstechnik an: gehen Sie nach vorne und wünschen Sie Ihrem Publikum einen "guten Morgen"
+
 Für das verbleibende Auditorium:
+
 * [ ] Geben Sie Feedback zum Gelingen: Wie hat das auf Sie gewirkt.
 
 <!-- uebung::end -->
@@ -305,7 +307,7 @@ Für das verbleibende Auditorium:
 ---
 
 <!-- uebung::start -->
-<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:Rhetorik:0X**</span>
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:Rhetorik:06**</span>
 
 
 Auffrischungsübung für Step 1 - 3:
@@ -317,4 +319,24 @@ Auffrischungsübung für Step 1 - 3:
 PS.: Es muss nicht real sein, nur überzeugend und souverän präsentiert.
 
 <!-- uebung::end -->
+
+---
+
+### ProbeLauf
+
+Konzept: Lehrerin verteilt die Bewertungstemplates mit Ihrem Namen. Anschließend präsentiert sie den rhethorik-zenpräse und lässt sich selbst bwewerten.
+
+---
+
+<!-- uebung::start -->
+<span style="color: green;">_ÜBUNG_</span> <span style="color:magenta;">**LFCX:Rhetorik:07**</span>
+
+Sie hören / sehen jetzt eine Präsentation zum Thema Richtiges Präsentieren. Sie haben das Bewertungstemplate erhalten, anhand dessen Sie diese Präsentation (anonym) bewerten. Anhand der gleichen Bewertungsmatrix werden Sie auch die Präsentation Ihrer Mitschüler bewerten. Dies ist also ein Probelauf:
+
+* [ ] Folgen Sie der Präsentation jetzt so gut Sie können.
+* [ ] Bewerten Sie die Präsentation anhand der Kriterien aus der Bewertungsmatrix
+
+<!-- uebung::end -->
+
+---
 

@@ -144,9 +144,7 @@ Lösung:
 ### Bewertung
 
 * 28 Standardpunkte (P) + 21 Zusatzpunkte (ZP) möglich.
-* 28 Punkte insgesamt = 2.0
-* 33 Punkte insgesamt = 1.0
-* Rest: [https://www.lehrerfreund.de/notenschluesselrechner/form-ihk-notenschluessel] mit dem Höchstwert 33
+* 28 Punkte insgesamt = 2.0 33 Punkte insgesamt = 1.0
 
 <!-- uebung::end -->
 
