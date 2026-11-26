@@ -324,7 +324,13 @@ PS.: Es muss nicht real sein, nur überzeugend und souverän präsentiert.
 
 ### ProbeLauf
 
-Konzept: Lehrerin verteilt die Bewertungstemplates mit Ihrem Namen. Anschließend präsentiert sie den rhethorik-zenpräse und lässt sich selbst bwewerten.
+Konzept: 
+
+1. Lehrerin verteilt die Bewertungstemplates, die noch nur ihren Namen enthält. 
+2. Sie erläutert die drei Bewertungsdimensionen.
+3. Anschließend präsentiert sie den Rhethorik-zenpräse und lässt ihr Tun bewerten.
+
+> Ziel: Die Schülerinnen sollen das Bewerten geübt haben, bevor sie sich bei den eigenen Präsentationen gegenseitig bewerten.
 
 ---
 
@@ -337,6 +343,10 @@ Sie hören / sehen jetzt eine Präsentation zum Thema Richtiges Präsentieren. S
 * [ ] Bewerten Sie die Präsentation anhand der Kriterien aus der Bewertungsmatrix
 
 <!-- uebung::end -->
+
+Nacharbeit:
+
+Die Schüler organisieren die Auswertung (Durchschnitt?) und formulieren ein Fazit.
 
 ---
 

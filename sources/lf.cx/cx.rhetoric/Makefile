@@ -42,13 +42,17 @@ exercises:
 lesson-ort: bld oraltrack
 	@ WD=`pwd` && SJN=`basename $${WD}` && LFN=`cat ../td.lf` && \
 	  TGD="${BLD}/$${LFN}" && mkdir -p $${TGD} && \
-        mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf	
+    mv oraltrack.pdf $${TGD}/$${SJN}-oraltrack.pdf && \
+		mv examen.pdf $${TGD}/$${SJN}-examen.pdf && \
+		mv evaluation.pdf $${TGD}/$${SJN}-evaluation.pdf 	
 	@ tree ${BLD}
 
 ort: oraltrack
 
 oraltrack:
 	make oraltrack.pdf
+	make examen.pdf
+	make evaluation.pdf
 
 # --- SECTION ZENPRESE ---
 # recreates the zp document, releases it into the lesson directory tree
